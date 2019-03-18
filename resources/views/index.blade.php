@@ -21,14 +21,13 @@
 <div class="container">
     <div class="chat-bubble-container">
         <div class="chat-box" style="display: none">
-            <div class="chat-box-top clearfix">
-                <div>
-                    <i class="fas fa-video action" id="videoCallBtn"></i>
-                </div>
-                <div>
-                    <i class="fas fa-phone action" id="voiceCallBtn"></i>
-                </div>
-
+            <div class="chat-box-top">
+                {{--<div>--}}
+                    {{--<i class="fas fa-video action" id="videoCallBtn"></i>--}}
+                {{--</div>--}}
+                {{--<div>--}}
+                    {{--<i class="fas fa-phone action" id="voiceCallBtn"></i>--}}
+                {{--</div>--}}
             </div>
             <div class="chat-box-content">
                 <div class="chat-message message-reply">
@@ -54,50 +53,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="chat-message message-send">
-                    <div class="avatar">
-                        <img src="{{ asset('svg/female-35.svg') }}" class="img-responsive img-rounded" alt="">
-                    </div>
-                    <div class="messages">
-                        <div class="message-wrapper">
-                            <div class="message">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
-                            </div>
-                            <div class="message-time">
-                                <span>12:30</span>
-                            </div>
-                        </div>
-                        <div class="message-wrapper">
-                            <div class="message">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
-                            </div>
-                            <div class="message-time">
-                                <span>12:30</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="chat-box-footer">
-                <form class="no-margin">
+                <form id="chatForm" class="no-margin">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="file-preview">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-9">
-                            <input type="text" class="form-control message-input" placeholder="Type and press [Enter]">
+                            <input id="messageInp" type="text" class="form-control message-input" placeholder="Type and press [Enter]">
                         </div>
                         <div class="col-3 action-group">
-                            <i class="fas fa-paperclip action"></i>
-                            <i class="fas fa-images action"></i>
+                            <i class="fas fa-paperclip action" id="btnAddFile"></i>
+                            <i class="fas fa-images action" id="btnAddImage"></i>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="chat-bubble">
-            <div class="chat-icon open">
-                <i class=" fas fa-comments"></i>
+        <div class="chat-icons">
+            <div class="chat-bubble">
+                <div class="chat-icon open">
+                    <i class=" fas fa-comments"></i>
+                </div>
+                <div class="chat-icon close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
-            <div class="chat-icon close">
-                <i class="fas fa-times"></i>
+            <div class="chat-bubble video-call">
+                <div class="chat-icon">
+                    <i class="fas fa-video action" id="videoCallBtn"></i>
+                </div>
+            </div>
+            <div class="chat-bubble voice-call ">
+                <div class="chat-icon">
+                    <i class="fas fa-phone action" id="voiceCallBtn"></i>
+                </div>
             </div>
         </div>
     </div>

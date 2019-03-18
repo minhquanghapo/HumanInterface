@@ -23,6 +23,12 @@ $cyan: #6cb2eb;
     margin: 0 !important;
 }
 
+.hover-pointer {
+    &:hover {
+        cursor: pointer;  
+    }
+}
+
 // animation
 @keyframes icon-appear {
     0% {

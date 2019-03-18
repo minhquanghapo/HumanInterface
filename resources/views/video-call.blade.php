@@ -9,10 +9,6 @@
 <body>
     <video id="video" width="640" height="480" autoplay></video>
 
-    <div class="text-center">
-        <button ></button>
-    </div>
-
     <script>
         var video = document.getElementById('video');
 
