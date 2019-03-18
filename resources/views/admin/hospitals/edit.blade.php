@@ -91,10 +91,4 @@
     <script src="/adminlte/js/morris.min.js"></script>
     <script src="/adminlte/js/metisMenu.min.js"></script>
     <script src="/adminlte/js/startmin.js"></script>
-    <script type="text/javascript">
-        // In your Javascript (external .js resource or <script> tag)
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
-    </script>
 @endsection

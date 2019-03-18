@@ -18,11 +18,11 @@
                     
                 <!--Create , Edit -->
                 <div style="margin:10px 0px 10px 0px">
-                    <a href="#" type="button" class="btn btn-default">
+                    <a href="/admin/hospitals/create" type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                      Create hospitals page
                     </a>
-                    <a href="#" type="button" class="btn btn-info">
+                    <a href="/admin/hospitals/15/edit" type="button" class="btn btn-info">
                     <span class="glyphicon glyphicon-pencil"></span>
                      Edit hospitals page
                     </a>   
