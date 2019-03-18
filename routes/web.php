@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/video-call', function () {
+    return view('video-call');
+})->name('video_call');

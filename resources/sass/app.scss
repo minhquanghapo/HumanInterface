@@ -12,3 +12,163 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.chat-bubble-container {
+    * {
+        font-size: 14px;
+    }
+    
+    .chat-box {
+        width: 400px;
+        position: fixed;
+        right: 20px;
+        bottom: 100px;
+        background: white;
+        border: solid 1px gainsboro;
+        border-radius: 3px;
+        
+        .chat-box-top {
+            background-color: $blue;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 2px solid #e1e1e1;
+            box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+            
+            .action {
+                cursor: pointer;
+                color: gainsboro;
+                font-size: 24px;
+                margin: 0 20px;
+            }
+        }
+        
+        .chat-box-content {
+            padding: 15px 5px;
+            height: 400px;
+            overflow-y: auto;
+            
+            .chat-message {
+                display: flex;
+                .avatar {
+                    width: 80px;
+                }
+                
+                .message-wrapper {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+                
+                .message-time {
+                    opacity: 0;
+                    display: flex;
+                    width: 35%;
+                    align-items: center;
+                    color: #999;
+                    span {
+                        font-size: 11px;
+                    }
+                }
+                
+                .message {
+                    border-radius: .4em;
+                    padding: 7px;
+                    width: 60%;
+                }
+                
+                &.message-reply {
+                    justify-content: flex-start;
+                    .avatar {
+                        margin-right: 5px;
+                    }
+                    .message {
+                        background: gainsboro;
+                        margin-right: auto;
+                    }
+                }
+    
+                &.message-send {
+                    flex-flow: row-reverse nowrap;
+                    justify-content: flex-end;
+                    .avatar {
+                        margin-left: 5px;
+                    }
+                    .message-wrapper {
+                        flex-flow: row-reverse nowrap;
+                        .message-time {
+                            justify-content: flex-end;
+                        }
+                    }
+                    .message {
+                        background: $blue;
+                        color: white;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+        
+        .chat-box-footer {
+            border-top: 2px solid #e1e1e1;
+            
+            .message-input {
+                border: none;
+                box-shadow: none;
+                outline: none;
+                height: 40px;
+            }
+        }
+        
+        .action-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        
+            .action {
+                font-size: 18px;
+                color: grey;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .chat-bubble {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 50%;
+        background: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+        -webkit-box-shadow: 0 0 62px -17px rgba(128,128,128,1);
+        -moz-box-shadow: 0 0 62px -17px rgba(128,128,128,1);
+        box-shadow: 0 0 62px -17px rgba(128,128,128,1);
+        
+        animation-name: icon-appear;
+        animation-duration: 0.25s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        
+        .chat-icon {
+            i {
+                line-height: 60px;
+                font-size: 30px;
+                color: white;
+            }
+            
+            &.close {
+                display: none;
+            }
+        }
+    }
+}
