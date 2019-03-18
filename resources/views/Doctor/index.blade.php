@@ -9,122 +9,7 @@
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
     <script src='{{asset('js/fullcalendar.min.js')}}'></script>
-    <script>
-
-        $(document).ready(function() {
-
-            $('#calendar').fullCalendar({
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,basicWeek,basicDay'
-                },
-                defaultDate: '2019-03-12',
-                navLinks: true, // can click day/week names to navigate views
-                editable: true,
-                eventLimit: true, // allow "more" link when too many events
-                events: [
-                    {
-                        title: 'Họp cả ngày',
-                        start: '2019-03-18'
-                    },
-                    {
-                        title: 'Đi công tác',
-                        start: '2019-03-07',
-                        end: '2019-03-10'
-                    },
-                    // {
-                    //     id: 999,
-                    //     title: 'Repeating Event',
-                    //     start: '2019-03-09T16:00:00'
-                    // },
-                    {
-                        title: 'Dự hội thảo',
-                        start: '2019-03-11',
-                        end: '2019-03-13'
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-12T10:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-19T11:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-19T13:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-19T15:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-19T15:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-19T16:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-20T8:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-20T10:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-22T9:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-22T13:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-23T14:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-23T14:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-25T8:00:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-25T10:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-25T10:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-27T13:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-27T15:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-30T8:30:00',
-                    },
-                    {
-                        title: 'ca khám',
-                        start: '2019-03-30T10:30:00',
-                    },
-                ]
-            });
-
-        });
-
-    </script>
+    <script src='{{asset('js/doctor/custom.js')}}'></script>
     <style>
 
         body {
@@ -157,6 +42,79 @@
     </div>
     <div class = "col-md-10">
         <div id="calendar"></div>
+    </div>
+</div>
+
+<div id="detailModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+                            <li class="active"><a href="#step-1">
+                                    <p class="list-group-item-text">Thông tin bệnh nhân</p>
+                                </a></li>
+                            <li ><a href="#step-2">
+                                    <p class="list-group-item-text">Tình trang bệnh</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row setup-content" id="step-1">
+                    <div class="col-xs-12">
+                        <div class="col-md-12 well text-center">
+                            <table class="table">
+                                <tr>
+                                    <td><b>Mã hồ sơ</b></td>
+                                    <td id="idhoso"></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Họ tên</b></td>
+                                    <td>Vũ Văn A</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Giới tính</b></td>
+                                    <td>Nam</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tuổi</b></td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Địa chỉ</b></td>
+                                    <td>Hà Nội</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row setup-content" id="step-2">
+                    <div class="col-xs-12">
+                        <div class="col-md-12 well">
+                            <p>
+                                Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                Thành bụng căng cứng.
+                                Sốt nhẹ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ ca khám</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>
