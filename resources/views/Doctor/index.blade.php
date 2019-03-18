@@ -9,7 +9,7 @@
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
     <script src='{{asset('js/fullcalendar.min.js')}}'></script>
-    <script src='{{asset('js/doctor/custom.js')}}'></script>
+    <script src='{{asset('js/doctor/index.js')}}'></script>
     <style>
 
         body {
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
+                <a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ ca khám</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>

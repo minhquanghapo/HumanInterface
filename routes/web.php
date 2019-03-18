@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/doctor',"DoctorController@index");
+Route::get('/doctor/examination',"DoctorController@examination");
