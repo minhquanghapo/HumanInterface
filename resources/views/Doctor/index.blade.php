@@ -3,9 +3,11 @@
 <head>
     <meta charset='utf-8' />
     <link href='{{asset('css/fullcalendar.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
     <script src='{{asset('js/moment.min.js')}}'></script>
     <script src='{{asset('js/jquery.min.js')}}'></script>
+    <script src='{{asset('js/bootstrap.min.js')}}'></script>
     <script src='{{asset('js/fullcalendar.min.js')}}'></script>
     <script>
 
@@ -126,21 +128,36 @@
     <style>
 
         body {
-            margin: 40px 10px;
+            margin: 40px auto;
             padding: 0;
             font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
             font-size: 14px;
         }
 
         #calendar {
-            max-width: 900px;
-            margin: 0 auto;
+            width: 90%;
+            margin: auto;
         }
 
     </style>
 </head>
 <body>
-<div id='calendar'></div>
+<div class="container">
+    <div class="col-md-2">
+        <div class="avatar">
+            <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" alt="Cinque Terre">
+            <center>
+                <h4>BS. Lê Hoàng Vũ</h4>
+                <p>Khoa: Chấn thương chỉnh hình</p>
+                <p>sdt: 0123456789</p>
+                <button type="button" class="btn btn-primary">Cập nhật thông tin</button>
+            </center>
 
+        </div>
+    </div>
+    <div class = "col-md-10">
+        <div id="calendar"></div>
+    </div>
+</div>
 </body>
 </html>
