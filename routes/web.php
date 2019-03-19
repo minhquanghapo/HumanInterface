@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
-	'uses'=>'PageController@getPatientExaminationSchedule'
+	'uses'=>'PageControllerHI04@getPatientExaminationSchedule'
 ]);

@@ -17,26 +17,26 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
         <base href="{{asset('')}}">
-        <link rel="stylesheet" href="/source/css/open-iconic-bootstrap.min.css">
-        <link rel="stylesheet" href="/source/css/animate.css">
+        <link rel="stylesheet" href="/HI_04/css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="/HI_04/css/animate.css">
         
-        <link rel="stylesheet" href="/source/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="/source/css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="/source/css/magnific-popup.css">
+        <link rel="stylesheet" href="/HI_04/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/HI_04/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/HI_04/css/magnific-popup.css">
 
-        <link rel="stylesheet" href="/source/css/aos.css">
+        <link rel="stylesheet" href="/HI_04/css/aos.css">
 
-        <link rel="stylesheet" href="/source/css/ionicons.min.css">
+        <link rel="stylesheet" href="/HI_04/css/ionicons.min.css">
 
-        <link rel="stylesheet" href="/source/css/bootstrap-datepicker.css">
-        <link rel="stylesheet" href="/source/css/jquery.timepicker.css">
+        <link rel="stylesheet" href="/HI_04/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="/HI_04/css/jquery.timepicker.css">
 
         
-        <link rel="stylesheet" href="/source/css/flaticon.css">
-        <link rel="stylesheet" href="/source/css/icomoon.css">
-        <link rel="stylesheet" href="/source/css/style.css">
+        <link rel="stylesheet" href="/HI_04/css/flaticon.css">
+        <link rel="stylesheet" href="/HI_04/css/icomoon.css">
+        <link rel="stylesheet" href="/HI_04/css/style.css">
 
-        <link rel="stylesheet" href="/source/css/lich-kham-benh-nhan.css">
+        <link rel="stylesheet" href="/HI_04/css/lich-kham-benh-nhan.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="full-heigh col-md-9 ftco-animate p-4 p-md-5 d-flex fadeInUp ftco-animated dark-color">
                     <div style="width: 100%">
-                        <h1>Lịch Khám</h1>
+                        <h1>Lịch khám</h1>
                         <div id="search-result">
                         </div>
                         <div class="search-result-container-properties">
@@ -84,6 +84,6 @@
                 </div>
             </div>
         </section>
-        <script src="source/js/lich-kham-benh-nhan.js"></script>
+        <script src="HI_04/js/lich-kham-benh-nhan.js"></script>
     </body>
 </html>

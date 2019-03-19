@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class PageControllerHI04 extends Controller
 {
     public function getPatientExaminationSchedule(){
-        return view('master');
+        return view('LichKhamBenhNhan_HI_04/lichKhamCaNhan');
     }
 }
