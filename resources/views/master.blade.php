@@ -45,7 +45,7 @@
                 <div class="full-heigh col-md-3 ftco-animate py-5 nav-link-wrap fadeInUp ftco-animated">
                     <div class="fix-left">
                         <div class="search-box">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            <input id="search-value" type="text" class="form-control" placeholder="Tìm kiếm">
                             <i id="button-search" class="fas fa-search"></i>
                         </div>                    
 
@@ -68,6 +68,18 @@
                         <h1>Lịch Khám</h1>
                         <div id="search-result">
                         </div>
+                        <div class="search-result-container-properties">
+                            <div class="container">
+                                <div class="properties-title">
+                                    <h1>Thông tin chi tiết</h1>
+                                </div>
+                                <div id="main-content"></div>
+                                <p class="cancel-button"><button type="button" class="btn btn-danger">HỦY LỊCH</button></p>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="dark-shadow"></div>
                     </div>
                 </div>
             </div>
