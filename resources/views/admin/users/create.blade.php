@@ -2,7 +2,7 @@
 @section('customcss')
 <link rel="stylesheet" href="/adminlte/css/toggle-switch.css" />
 <link rel="stylesheet" href="/adminlte/css/startmin.css" />
-<link rel="stylesheet" href="{{ asset('/admin/dynamic_form.css') }}" />
+<link rel="stylesheet" href="{{ asset('/css/admin/dynamic_form.css') }}" />
 @endsection
 @section('pagename')
 <div class="container-fluid">
@@ -193,5 +193,5 @@
 <script src="/adminlte/js/morris.min.js"></script>
 <script src="/adminlte/js/metisMenu.min.js"></script>
 <script src="/adminlte/js/startmin.js"></script>
-<script src="{{ asset('/admin/dynamic_form.js') }}"></script>
+<script src="{{ asset('/css/admin/dynamic_form.js') }}"></script>
 @endsection
