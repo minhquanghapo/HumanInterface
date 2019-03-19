@@ -19,11 +19,9 @@ class UserController extends Controller
         return view ('admin.users.create');        
     }
 
-    public function edit(Request $request)
+    public function edit($id)
     {
-        $type = $request->query('type');
- 
-        switch ($type) {
+        switch ($id) {
             case 'admin':
                 return view ('admin.users.edit_admin');
             case 'staff':

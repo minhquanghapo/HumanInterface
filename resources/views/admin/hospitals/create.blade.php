@@ -121,7 +121,7 @@
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
-                                <button type="submit" class="btn btn-default">Cancel</button>
+                                <a href="/admin/hospitals" class="btn btn-default">Back</a>
                                 <button type="submit" class="btn btn-info pull-right">Save</button>
                             </div>
                             <!-- /.box-footer -->

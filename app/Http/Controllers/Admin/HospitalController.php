@@ -17,11 +17,6 @@ class HospitalController extends Controller
         return view ('admin.hospitals.create');        
     }
 
-    public function show($id)   
-    {
-        return view ('admin.hospitals.detail');
-    }
-
     public function edit($id)
     {
         return view ('admin.hospitals.edit');        
