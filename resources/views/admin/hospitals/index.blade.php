@@ -79,22 +79,22 @@
                 <br>
 
                 <!--Table content-->
-                <table class="table table-bordered table-hover" style="text-align: center">
+                <table class="table table-bordered table-hover">
                     <thead class="bg-info">
                         <tr>
-                            <th style="text-align: center">#</th>
-                            <th style="text-align: center">Customer</th>
-                            <th style="text-align: center">Location</th>
-                            <th style="width: 15%; text-align: center">Order date</th>
-                            <th style="text-align: center">Status</th>
-                            <th style="text-align: center">Net Amount</th>
-                            <th style="width: 10%; text-align: center">Action</th>
+                            <th>#</th>
+                            <th class="center_text">Customer</th>
+                            <th>Location</th>
+                            <th style="width: 15%">Order date</th>
+                            <th>Status</th>
+                            <th>Net Amount</th>
+                            <th style="width: 10%">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanA</td>
+                            <td><img style="width: 10%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanA</td>
                             <td>Internet
                             </td>
                             <td>Jun 18,2019</td>
@@ -104,7 +104,7 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
+                            <td><img style="width: 10%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
                             <td>Internet
                             </td>
                             <td>Jun 18,2019</td>
@@ -114,7 +114,7 @@
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
+                            <td><img style="width: 10%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
                             <td>Internet
                             </td>
                             <td>Jun 18,2019</td>
@@ -124,7 +124,7 @@
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
+                            <td><img style="width: 10%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
                             <td>Internet
                             </td>
                             <td>Jun 18,2019</td>
