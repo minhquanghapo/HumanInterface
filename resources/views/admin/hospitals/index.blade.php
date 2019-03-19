@@ -17,7 +17,7 @@
                 <div class="body-box">
                     
                 <!--Create , Edit -->
-                <div style="margin-bottom: 10px">
+                <div style="margin:10px 0px 10px 0px">
                     <a href="#" type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                      Create hospitals page
@@ -28,51 +28,129 @@
                     </a>   
                 </div>
 
+                <!--Show entries,search-->
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon" title="Show">Show</span>
+                            <select class="form-control">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>                  
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" title="City">City</span>
+                            <select class="form-control">
+                                <option value="1">HaNoi</option>
+                                <option value="2">ThaiBinh</option>
+                                <option value="3">DaNang</option>
+                                <option value="4">TP.HCM</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" title="Level">Level</span>
+                            <select class="form-control">
+                                <option value="TU">TrungUong</option>
+                                <option value="TP">ThanhPho</option>
+                                <option value="HUYEN">Huyen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <form action="/search" method="POST" role="search">
+                            {{ csrf_field() }}
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="q" placeholder="Search ..."> 
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br>
+
                 <!--Table content-->
-                <table id="example2" class="table table-bordered table-hover">
-                    <thead>
+                <table class="table table-bordered table-hover" style="text-align: center">
+                    <thead class="bg-info">
                         <tr>
-                            <th>#</th>
-                            <th>Customer</th>
-                            <th>Location</th>
-                            <th>Order date</th>
-                            <th>Status</th>
-                            <th>Net Amount</th>
-                            <th>Action</th>
+                            <th style="text-align: center">#</th>
+                            <th style="text-align: center">Customer</th>
+                            <th style="text-align: center">Location</th>
+                            <th style="width: 15%; text-align: center">Order date</th>
+                            <th style="text-align: center">Status</th>
+                            <th style="text-align: center">Net Amount</th>
+                            <th style="width: 10%; text-align: center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Trident</td>
+                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanA</td>
                             <td>Internet
-                            Explorer 4.0
                             </td>
-                            <td>Win 95+</td>
-                            <td> 4</td>
-                            <td>X</td>
+                            <td>Jun 18,2019</td>
+                            <td><img style="width: 8px" src="/adminlte/images/green_dot.png"> Delivered</td>
+                            <td>250$</td>
+                            <td><img style="width: 20%" src="/adminlte/images/next_action.png"></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>Trident</td>
+                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
                             <td>Internet
-                            Explorer 5.0
                             </td>
-                            <td>Win 95+</td>
-                            <td>5</td>
-                            <td>C</td>
+                            <td>Jun 18,2019</td>
+                            <td><img style="width: 8px" src="/adminlte/images/blue_dot.png"> Cancelled</td>
+                            <td>130$</td>
+                            <td><img style="width: 20%" src="/adminlte/images/next_action.png"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
+                            <td>Internet
+                            </td>
+                            <td>Jun 18,2019</td>
+                            <td><img style="width: 8px" src="/adminlte/images/red_dot.png"> Cancelled</td>
+                            <td>290$</td>
+                            <td><img style="width: 20%" src="/adminlte/images/next_action.png"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img style="width: 20%" class="img-circle" src="/adminlte/images/user2-160x160.jpg">NguyenVanB</td>
+                            <td>Internet
+                            </td>
+                            <td>Jun 18,2019</td>
+                            <td><img style="width: 8px" src="/adminlte/images/yellow_dot.png"> Pending</td>
+                            <td>800$</td>
+                            <td><img style="width: 20%" src="/adminlte/images/next_action.png"></td>
                         </tr>
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Rendering engine</th>
-                            <th>Browser</th>
-                            <th>Platform(s)</th>
-                            <th>Engine version</th>
-                            <th>CSS grade</th>
-                        </tr>
-                    </tfoot>
                 </table>
+                <div class="row">
+                    <div class="col-sm-5">
+                        Showing 1 to 10 of 57 entries
+                    </div>
+                    <div class="col-sm-7">
+                        <ul class="pagination">
+                            <li class="paginate_button previous disabled"><a href="#">Previous</a></li>
+                            <li class="paginate_button active"><a href="#">1</a></li>
+                            <li class="paginate_button"><a href="#">2</a></li>
+                            <li class="paginate_button"><a href="#">3</a></li>
+                            <li class="paginate_button"><a href="#">4</a></li>
+                            <li class="paginate_button"><a href="#">5</a></li>
+                            <li class="paginate_button"><a href="#">6</a></li>
+                            <li class="paginate_button"><a href="#">Next</a></li>
+                        </ul> 
+                    </div>
+                </div>
             </div>
             </div>
         </div>
