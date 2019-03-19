@@ -29,74 +29,73 @@
         <form role="form" class="dynamic-form">
             <div class="box-body" id="admin">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password</label>
                     <input type="password" class="form-control" id="confirm-password" placeholder="Password">
                 </div>
             </div>
-
             <div class="box-body" id="staff">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label>Email address</label>
+                    <input type="email" class="form-control"  placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="tel">Tel</label>
-                    <input type="tel" class="form-control" id="tel" placeholder="Telephone Number">
+                    <label>Tel</label>
+                    <input type="tel" class="form-control" placeholder="Telephone Number">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <label>Address</label>
+                    <input type="text" class="form-control" placeholder="Address">
                 </div>
                 <div class="form-group">
-                    <label for="hopital">Hopital</label>
-                    <input type="text" class="form-control" id="hopital" placeholder="Hopital">
+                    <label>Hopital</label>
+                    <input type="text" class="form-control" placeholder="Hopital">
                 </div>
             </div>
             <div class="box-body" id="doctor">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="tel">Tel</label>
-                    <input type="tel" class="form-control" id="tel" placeholder="Telephone Number">
+                    <label>Tel</label>
+                    <input type="tel" class="form-control" placeholder="Telephone Number">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <label>Address</label>
+                    <input type="text" class="form-control" placeholder="Address">
                 </div>
                 <div class="form-group">
-                    <label for="hopital">Hopital</label>
-                    <input type="text" class="form-control" id="hopital" placeholder="Hopital">
+                    <label>Hopital</label>
+                    <input type="text" class="form-control" placeholder="Hopital">
                 </div>
                 <div class="form-group">
-                    <label for="specialist">Specialist</label>
+                    <label>Specialist</label>
                     <div class="form-horizontal">
-                        <select class="form-control" id="specialist">
+                        <select class="form-control">
                             <option>Nội khoa</option>
                             <option>Ngoại khoa</option>
                             <option>Da liễu</option>
@@ -107,24 +106,24 @@
             </div>
             <div class="box-body" id="patient">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="tel">Tel</label>
-                    <input type="tel" class="form-control" id="tel" placeholder="Telephone Number">
+                    <label>Tel</label>
+                    <input type="tel" class="form-control" placeholder="Telephone Number">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <label>Address</label>
+                    <input type="text" class="form-control" placeholder="Address">
                 </div>
             </div>
 
