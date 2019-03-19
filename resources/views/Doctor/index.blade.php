@@ -38,7 +38,7 @@
                 <h4>BS. Lê Hoàng Vũ</h4>
                 <p>Khoa: Chấn thương chỉnh hình</p>
                 <p>sdt: 0123456789</p>
-                <button type="button" class="btn btn-primary">Cập nhật thông tin</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
             </center>
 
         </div>
@@ -137,6 +137,84 @@
             </div>
             <div class="modal-footer">
                 <button type="button" id="accept-remove" value="" class="btn btn-danger">Tiến hành huỷ</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="infoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thông tin cá nhân</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" alt="Cinque Terre">
+                    </div>
+                    <div class="col-sm-8">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">Họ tên</label>
+                                <input type="text" class="form-control" value="Lê Hoàng Vũ" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" value="vu.hl@gmail.com" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại:</label>
+                                <input type="number" class="form-control" value="0123456789">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Địa chỉ:</label>
+                                <input type="text" class="form-control" value="Thanh Xuân-Hà Nội">
+                            </div>
+                            <button type="button" id="update-password" class="btn btn-success">Thay đổi mật khẩu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" id="update-info" class="btn btn-primary">Cập nhật</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="passModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Cập nhật mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="oldpass">Mật khẩu cũ:</label>
+                        <input type="password" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label for="newpass">Mật khẩu mới:</label>
+                        <input type="password" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpass">Nhập lại mật khẩu:</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" id="accept-pass" class="btn btn-primary">Cập nhật</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

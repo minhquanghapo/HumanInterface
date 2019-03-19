@@ -196,4 +196,20 @@ $(document).ready(function() {
         })
     });
 
+    $("#update-info").on("click",function () {
+        $("#infoModal").modal("hide");
+        toastr["success"]("Cập nhật thành công!");
+    });
+
+    $("#update-password").on("click",function () {
+        $("#infoModal").modal("hide");
+        $("#passModal").modal("show");
+    });
+
+    $("#accept-pass").on("click",function () {
+        $("#passModal").modal("hide");
+        toastr["success"]("Cập nhật mật khẩu thành công!");
+    });
+
+
 });
