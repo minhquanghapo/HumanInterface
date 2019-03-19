@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/doctor',"DoctorController@index");
+Route::get('/doctor/examination',"DoctorController@examination");
