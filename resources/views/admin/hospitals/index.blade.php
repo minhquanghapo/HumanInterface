@@ -83,7 +83,7 @@
                     <thead class="bg-info">
                         <tr>
                             <th>#</th>
-                            <th class="center_text">Customer</th>
+                            <th>Customer</th>
                             <th>Location</th>
                             <th style="width: 15%">Order date</th>
                             <th>Status</th>
