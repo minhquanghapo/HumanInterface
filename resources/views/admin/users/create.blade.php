@@ -26,75 +26,105 @@
             </div>
         </div>
         <!-- Body -->
-        <form role="form" class="dynamic-form">
+        <form role="form" class="form-horizontal dynamic-form">
             <div class="box-body" id="admin">
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control" placeholder="Enter email">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
             </div>
             <div class="box-body" id="staff">
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control"  placeholder="Enter email">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Tel</label>
-                    <input type="tel" class="form-control" placeholder="Telephone Number">
+                    <label class="col-sm-2 control-label">Tel</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" placeholder="Telephone Number">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Address</label>
-                    <input type="text" class="form-control" placeholder="Address">
+                    <label class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Hopital</label>
-                    <input type="text" class="form-control" placeholder="Hopital">
+                    <label class="col-sm-2 control-label">Hopital</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Hopital">
+                    </div>
                 </div>
             </div>
             <div class="box-body" id="doctor">
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control" placeholder="Enter email">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Tel</label>
-                    <input type="tel" class="form-control" placeholder="Telephone Number">
+                    <label class="col-sm-2 control-label">Tel</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" placeholder="Telephone Number">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Address</label>
-                    <input type="text" class="form-control" placeholder="Address">
+                    <label class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Hopital</label>
-                    <input type="text" class="form-control" placeholder="Hopital">
+                    <label class="col-sm-2 control-label">Hopital</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Hopital">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Specialist</label>
-                    <div class="form-horizontal">
+                    <label class="col-sm-2 control-label">Specialist</label>
+                    <div class="col-sm-10">
                         <select class="form-control">
                             <option>Nội khoa</option>
                             <option>Ngoại khoa</option>
@@ -106,29 +136,40 @@
             </div>
             <div class="box-body" id="patient">
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control" placeholder="Enter email">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Tel</label>
-                    <input type="tel" class="form-control" placeholder="Telephone Number">
+                    <label class="col-sm-2 control-label">Tel</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" placeholder="Telephone Number">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Address</label>
-                    <input type="text" class="form-control" placeholder="Address">
+                    <label class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
                 </div>
             </div>
 
             <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-info pull-right">Sign in</button>
             </div>
         </form>
     </div>
