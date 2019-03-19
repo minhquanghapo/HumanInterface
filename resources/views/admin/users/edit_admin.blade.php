@@ -23,31 +23,37 @@
                         </div>
                     </div>
                 </div>
-                <!-- Body -->
-                <form role="form" class="dynamic-form">
-                    <div class="box-body" id="admin">
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm-password" placeholder="Password">
-                        </div>
-                    </div>
-
-                    <div class="box-footer">
-                        <button type="submit" class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-info pull-right">Save</button>
-                    </div>
-                </form>
-            </div>  
+            </div>
         </div>
-    </section>
+        <!-- Body -->
+        <form role="form" class="form-horizontal">
+            <div class="box-body" id="admin">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control"  placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-footer">
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-info pull-right">Sign in</button>
+            </div>
+        </form>
+    </div>
 </div>
 @endsection
 @section('content')
