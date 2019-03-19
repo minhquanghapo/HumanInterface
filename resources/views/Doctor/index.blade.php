@@ -4,12 +4,16 @@
     <meta charset='utf-8' />
     <link href='{{asset('css/fullcalendar.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/toastr.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
     <script src='{{asset('js/moment.min.js')}}'></script>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
+    <script src='{{asset('js/toastr.min.js')}}'></script>
     <script src='{{asset('js/fullcalendar.min.js')}}'></script>
     <script src='{{asset('js/doctor/index.js')}}'></script>
+    <script src='{{asset('js/doctor/locale-all.js')}}'></script>
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
     <style>
 
         body {
@@ -23,7 +27,6 @@
             width: 90%;
             margin: auto;
         }
-
     </style>
 </head>
 <body>
@@ -110,7 +113,30 @@
             </div>
             <div class="modal-footer">
                 <a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ ca khám</button>
+                <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="removeModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Huỷ ca khám</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="comment">Ghi chú (lý do):</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="accept-remove" value="" class="btn btn-danger">Tiến hành huỷ</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

@@ -32,5 +32,12 @@ $(document).ready(function() {
         $('ul.setup-panel li a[href="#step-4"]').trigger('click');
         $(this).remove();
     })
+
+    $(document).on('click',"#complete-btn", function(e) {
+        toastr["success"]("Ca khám kết thúc!");
+        setTimeout(function(){ window.location = "/doctor"; }, 1000);
+
+    })
+
 });
 

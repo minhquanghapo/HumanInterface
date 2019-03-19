@@ -11,6 +11,7 @@ $(document).ready(function() {
         navLinks: true, // can click day/week names to navigate views
         editable: true,
         eventLimit: true, // allow "more" link when too many events
+        locale: 'vi',
         events: [
             {
                 title: 'Họp cả ngày',
@@ -130,6 +131,7 @@ $(document).ready(function() {
         ],
         eventClick: function(info) {
             $("#idhoso").html(info.id);
+            $("#accept-remove").val(info.id);
             $("#detailModal").modal("show");
         }
     });
@@ -158,5 +160,40 @@ $(document).ready(function() {
     });
 
     $('ul.setup-panel li.active a').trigger('click');
+
+    $("#remove-examination").on("click",function () {
+        $("#detailModal").modal("hide");
+        $("#removeModal").modal("show");
+    });
+    
+    $("#accept-remove").on("click",function () {
+        console.log($(this).val());
+        var del_val = $(this).val();
+        Swal.fire({
+            title: 'Xác nhận ?',
+            text: "Bạn sẽ không thể khôi phục lại lịch khám này!",
+            type: 'warning',
+            width: '30%',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Vâng, tôi muốn xoá!',
+            cancelButtonText: 'Không!',
+        }).then((result) => {
+            if (result.value) {
+                // Swal.fire(
+                //     'Deleted!',
+                //     'Your file has been deleted.',
+                //     'success'
+                // );
+                $("#calendar").fullCalendar('removeEvents', del_val);
+                toastr["success"]("Huỷ thành công ca khám!");
+            }
+            else{
+                toastr["error"]("Huỷ không thành công!");
+            }
+            $("#removeModal").modal("hide");
+        })
+    });
 
 });

@@ -3,9 +3,12 @@
 <head>
     <meta charset='utf-8' />
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/toastr.min.css')}}' rel='stylesheet' />
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
+    <script src='{{asset('js/toastr.min.js')}}'></script>
     <script src='{{asset('js/doctor/examination.js')}}'></script>
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
     <style>
 
         body {
@@ -98,7 +101,7 @@
                     <table class="table">
                         <tr>
                             <td class="col-sm-3"><b>Chẩn đoán</b></td>
-                            <td class="col-sm-9">viêm ruột thừa</td>
+                            <td class="col-sm-9"><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td class="col-sm-3"><b>Các yêu cầu xét nghiệm</b></td>
@@ -164,26 +167,27 @@
                     <table class="table">
                         <tr>
                             <td><b>Kết luận bệnh</b></td>
-                            <td>Viêm ruột thừa cấp tính</td>
+                            <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><b>Chỉ định</b></td>
-                            <td>Tiến hành phẫu thuật cắt bỏ ruột thừa</td>
+                            <td><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><b>Đơn thuốc</b></td>
                             <td>
-                                <textarea class="form-control" rows="5" id="donthuoc"></textarea>
+                                <textarea class="form-control" rows="5" ></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td><b>Hẹn khám lại</b></td>
                             <td>
-                                <textarea class="form-control" rows="5" id="henkham"></textarea>
+                                <input type="date" class="form-control">
                             </td>
                         </tr>
                     </table>
-                    <a href="/doctor" class="btn btn-primary btn-lg" style="margin-top: 10px" role="button">Kết thúc ca khám</a>
+                    <button id="complete-btn" class="btn btn-primary btn-lg">Kết thúc ca khám</button>
+                    {{--<a href="/doctor" id="ketthuc" class="btn btn-primary btn-lg" style="margin-top: 10px" role="button">Kết thúc ca khám</a>--}}
                 </div>
             </div>
         </div>
