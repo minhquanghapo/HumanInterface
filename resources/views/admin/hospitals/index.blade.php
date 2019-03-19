@@ -79,7 +79,7 @@
                 <br>
 
                 <!--Table content-->
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover" style="text-align: center">
                     <thead class="bg-info">
                         <tr>
                             <th>#</th>
