@@ -25,15 +25,18 @@
     }
 
     // display time when hover message
-    $('.message').hover(
-        function () {
-            $(this).parent().find('.message-time').css('opacity', '1');
-        },
-        function () {
+    function bindMessageHoverListener() {
+        $('.message').hover(
+            function () {
+                $(this).parent().find('.message-time').css('opacity', '1');
+            },
+            function () {
 
-            $(this).parent().find('.message-time').css('opacity', '0');
-        }
-    );
+                $(this).parent().find('.message-time').css('opacity', '0');
+            }
+        );
+    }
+    bindMessageHoverListener();
 
     // display remove btn when hover preview image
     function bindRemoveBtnHoverListener() {
@@ -183,10 +186,86 @@
                 </div>
             `)
         }
+        bindMessageHoverListener();
         messInpElm.val('');
         $('.remove-file').click();
+        scrollToBottomOfChatbox();
+        
+        // reply
+        let loadingElm = replying();
+        setTimeout(function() {
+            loadingElm.remove();
+            reply(`<p>You can go to hospital at <a href="#" data-toggle="tooltip" title="Set appointment">14:30</a></p>`);
+        }, 3000)
+    })
+
+
+    // reply message handler
+    function replying() {
+        let chatBoxContentElm = $('.chat-box-content');
+        let lastMessageElm = $('.chat-box-content .chat-message:last-child').last();
+        let loadingElm;
+        if(lastMessageElm.hasClass('message-reply')) {
+            loadingElm = $(`<p class="loading"><span>.</span><span>.</span><span>.</span></p>`)
+            lastMessageElm.find('.messages').append(loadingElm);
+        }
+        else {
+            loadingElm = $(`
+                <div class="chat-message message-reply">
+                    <div class="avatar">
+                        <img src="/svg/female-35.svg" class="img-responsive img-rounded" alt="">
+                    </div>
+                    <div class="messages">
+                        <p class="loading"><span>.</span><span>.</span><span>.</span></p>
+                    </div>
+                </div>
+            `)
+            chatBoxContentElm.append(loadingElm)
+        }
+
+        return loadingElm;
+    }
+
+    function reply(message) {
+        let now = new Date();
+        let time = now.getHours() + ':' + now.getMinutes();
+
+        let chatBoxContentElm = $('.chat-box-content');
+        let lastMessageElm = $('.chat-box-content .chat-message:last-child').last();
+        newMessageHtml = `
+            <div class="message-wrapper">
+                <div class="message">
+                    <p>${message}</p>
+                </div>
+                <div class="message-time">
+                    <span>${time}</span>
+                </div>
+            </div>
+        `;
+        if(lastMessageElm.hasClass('message-reply')) {
+            lastMessageElm.find('.messages').append(newMessageHtml);
+        }
+        else {
+            chatBoxContentElm.append(`
+                <div class="chat-message message-reply">
+                    <div class="avatar">
+                        <img src="/svg/female-35.svg" class="img-responsive img-rounded" alt="">
+                    </div>
+                    <div class="messages">
+                        ${newMessageHtml}
+                    </div>
+                </div>
+            `)
+        }
+        bindMessageHoverListener();
+        scrollToBottomOfChatbox();
+    }
+
+
+    function scrollToBottomOfChatbox(){
+        let chatBoxContentElm = $('.chat-box-content');
         chatBoxContentElm.stop().animate({
             scrollTop: chatBoxContentElm[0].scrollHeight
         }, 800);
-    })
+    }
 })(jQuery);

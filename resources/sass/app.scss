@@ -14,10 +14,11 @@
 }
 
 .chat-bubble-container {
-    * {
+    p {
         font-size: 14px;
+        margin-bottom: 0;
     }
-    
+
     .chat-box {
         width: 400px;
         height: 500px;
@@ -36,11 +37,11 @@
         
         .chat-box-top {
             background-color: $blue;
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 100px;
+            text-align: center;
+            padding: 15px;
             border-bottom: 2px solid #e1e1e1;
             box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+            color: white;
             
             .action {
                 cursor: pointer;
@@ -236,4 +237,36 @@
             z-index: 1;
         }
     }
+
+    @keyframes blink {
+        0% {
+          opacity: .2;
+        }
+        20% {
+          opacity: 1;
+        }
+        100% {
+          opacity: .2;
+        }
+    }
+
+    .loading {
+        font-size: 50px;
+    }
+
+    .loading span {
+        animation-name: blink;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+
+    .loading span:nth-child(2) {
+        animation-delay: .2s;
+    }
+
+    .loading span:nth-child(3) {
+        animation-delay: .4s;
+    }
 }
+

@@ -22,12 +22,8 @@
     <div class="chat-bubble-container">
         <div class="chat-box" style="display: none">
             <div class="chat-box-top">
-                {{--<div>--}}
-                    {{--<i class="fas fa-video action" id="videoCallBtn"></i>--}}
-                {{--</div>--}}
-                {{--<div>--}}
-                    {{--<i class="fas fa-phone action" id="voiceCallBtn"></i>--}}
-                {{--</div>--}}
+                <h2>Need help?</h2>
+                <p>Let's chat with our supporter</p>
             </div>
             <div class="chat-box-content">
                 <div class="chat-message message-reply">

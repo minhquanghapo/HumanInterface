@@ -10696,8 +10696,9 @@ a.text-dark:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-.chat-bubble-container * {
+.chat-bubble-container p {
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .chat-bubble-container .chat-box {
@@ -10716,11 +10717,11 @@ a.text-dark:focus {
 
 .chat-bubble-container .chat-box .chat-box-top {
   background-color: #3490dc;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 100px;
+  text-align: center;
+  padding: 15px;
   border-bottom: 2px solid #e1e1e1;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .chat-bubble-container .chat-box .chat-box-top .action {
@@ -10925,5 +10926,58 @@ a.text-dark:focus {
 .chat-bubble-container .chat-bubble.voice-call {
   position: absolute;
   z-index: 1;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.chat-bubble-container .loading {
+  font-size: 50px;
+}
+
+.chat-bubble-container .loading span {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.chat-bubble-container .loading span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.chat-bubble-container .loading span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
