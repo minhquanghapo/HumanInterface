@@ -47,9 +47,7 @@
 
   <div class="content-wrapper">
   <section class="content-header " style="margin-bottom: 10px;">
-      <h1>
-          @yield('pagename')
-      </h1>
+    @yield('pagename')
   </section>
    @yield('content')
     <!-- /.content -->

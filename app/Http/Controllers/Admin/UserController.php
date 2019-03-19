@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
@@ -18,8 +19,21 @@ class UserController extends Controller
         return view ('admin.users.create');        
     }
 
-    public function edit($id)
+    public function edit(Request $request)
     {
-        return view ('admin.users.edit');        
+        $type = $request->query('type');
+ 
+        switch ($type) {
+            case 'admin':
+                return view ('admin.users.edit_admin');
+            case 'staff':
+                return view ('admin.users.edit_staff');
+            case 'doctor':
+                return view ('admin.users.edit_doctor');
+            case 'patient':
+                return view ('admin.users.edit_patient');
+            default:
+                return view ('admin.users.edit_admin');   
+        }  
     }
 }
