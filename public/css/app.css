@@ -10856,6 +10856,7 @@ a.text-dark:focus {
   box-shadow: none;
   outline: none;
   height: 40px;
+  font-size: 14px;
 }
 
 .chat-bubble-container .chat-box .action-group {
