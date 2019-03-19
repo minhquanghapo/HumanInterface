@@ -7,7 +7,11 @@
             font-size: medium;
         }
         .select2-selection__choice {
-            background: #00c0ef;
+            background: #00c0ef !important;
+            border: 1px #fff !important;
+        }
+        .select2-selection__choice__remove {
+            color: #fff !important;
         }
     </style>
 @endsection
@@ -61,12 +65,47 @@
                             <div class="form-group">
                                 <label for="inputEmail3" class="col-sm-2 control-label">Chuyên khoa</label>
                                 <div class="col-sm-10">
-                                    <select style="width: 100%;" class="js-example-basic-multiple" name="states[]" multiple="multiple" placehoder="Chọn chuyên khoa">
-                                        <option>Nội khoa</option>
+                                    <select class="form-control select2" multiple="multiple" data-placeholder="Chọn chuyên khoa"style="width: 100%;">
+                                        <option selected="selected">Nội khoa</option>
                                         <option>Ngoại khoa</option>
                                         <option>Da liễu</option>
                                         <option>Tim mạch</option>
                                     </select>
+                                </div>                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Giờ làm việc:</label>
+                                <div class="col-sm-4 bootstrap-timepicker">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Từ" class="form-control timepicker">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 bootstrap-timepicker">
+                                    <div class="input-group">
+                                        <input type="text"  placeholder="đến" class="form-control timepicker">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                    </div>
+                                  <!-- /.input group -->
+                                </div>
+                                <!-- /.form group -->
+                            </div>
+                           <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="inputEmail3" value="(084 – 4) 38686390; (084 – 4) 36291818" placeholder="Nhập số điện thoại">
+                                </div>                                
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Fax</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" id="inputEmail3" value="(084-4) 38687524" placeholder="Nhập số điện thoại" >
                                 </div>                                
                             </div>
                         </div>

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/adminlte/css/jquery-jvectormap.css">
     <!-- Date Picker -->
     <link rel="stylesheet" href="/adminlte/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/adminlte/css/bootstrap-timepicker.min.css">
     <!-- Daterange picker -->
     <link rel="stylesheet" href="/adminlte/css/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
@@ -31,7 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="/adminlte/css/select2.min.css" rel="stylesheet" />
 
     @yield('customcss')
   <!-- Google Font -->
@@ -98,22 +99,24 @@
 <script src="/adminlte/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/adminlte/js/dashboard.js"></script>
+<script src="/adminlte/js/bootstrap-timepicker.min.js"></script>
+
 <!-- AdminLTE for demo purposes -->
 <script src="/adminlte/js/demo.js"></script>
 <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-
+<script src="/adminlte/js/select2.full.min.js"></script>
 @yield('customscript')
     <script>
     // Basic example
     $(document).ready(function () {
         $('#listtable').DataTable({
         });
-    });
-    $(document).ready(function() {
-        $('.js-example-basic-multiple').select2();
+        $('.select2').select2()
+        $('.timepicker').timepicker({
+          showInputs: false
+        })
     });
 </script>
 </body>
