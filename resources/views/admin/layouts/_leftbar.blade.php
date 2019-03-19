@@ -14,17 +14,17 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active">
+            <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
                 <a href="/admin">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
-            <li>
+            <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
                 <a href="/admin/users">
                     <i class="fa fa-user"></i> <span>Users</span>
                 </a>
             </li>
-            <li>
+            <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
                 <a href="/admin/hospitals">
                     <i class="fa fa-hospital-o"></i> <span>Hospitals</span>
                 </a>

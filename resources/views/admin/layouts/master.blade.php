@@ -98,7 +98,7 @@
 <!-- AdminLTE App -->
 <script src="/adminlte/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/adminlte/js/dashboard.js"></script>
+{{-- <script src="/adminlte/js/dashboard.js"></script> --}}
 <script src="/adminlte/js/bootstrap-timepicker.min.js"></script>
 
 <!-- AdminLTE for demo purposes -->
