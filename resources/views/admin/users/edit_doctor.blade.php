@@ -15,37 +15,49 @@
             </div>
         </div>
         <!-- Body -->
-        <form role="form" class="dynamic-form">
+        <form role="form" class="form-horizontal">
             
             <div class="box-body" id="doctor">
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label class="col-sm-2 control-label">Email address</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                    <label class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="tel">Tel</label>
-                    <input type="tel" class="form-control" id="tel" placeholder="Telephone Number">
+                    <label class="col-sm-2 control-label">Tel</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" placeholder="Telephone Number">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <label class="col-sm-2 control-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="hopital">Hopital</label>
-                    <input type="text" class="form-control" id="hopital" placeholder="Hopital">
+                    <label class="col-sm-2 control-label">Hopital</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Hopital">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="specialist">Specialist</label>
-                    <div class="form-horizontal">
-                        <select class="form-control" id="specialist">
+                    <label class="col-sm-2 control-label">Specialist</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
                             <option>Nội khoa</option>
                             <option>Ngoại khoa</option>
                             <option>Da liễu</option>
@@ -57,7 +69,8 @@
             
 
             <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-info pull-right">Sign in</button>
             </div>
         </form>
     </div>
