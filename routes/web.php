@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
+	Route::get('/', 'AdminController@index');
+
+	Route::resource('/users', 'UserController');
+	Route::resource('/hospitals', 'HospitalController');
+});
 
 Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
