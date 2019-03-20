@@ -23,36 +23,36 @@
                         </div>
                     </div>
                 </div>
+                <!-- Body -->
+                <div class="box-body" id="admin">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email address</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control"  placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>                
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-info pull-right">Save</button>
+                </div>
             </div>
         </div>
-        <!-- Body -->
-        <form role="form" class="form-horizontal">
-            <div class="box-body" id="admin">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Email address</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" placeholder="Enter email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control"  placeholder="Password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">Confirm Password</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control" id="confirm-password" placeholder="Password">
-                    </div>
-                </div>
-            </div>
 
-            <div class="box-footer">
-                <button type="submit" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-info pull-right">Sign in</button>
-            </div>
-        </form>
     </div>
 </div>
 @endsection
