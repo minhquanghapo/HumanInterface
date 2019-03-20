@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('HI_03.detail-page-3');
+    return view('HI_03.confirm');
 });
 
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
