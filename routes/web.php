@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
 	'uses'=>'PageControllerHI04@getPatientExaminationSchedule'
 ]);
+Route::get('/doctor',"DoctorController@index");
+Route::get('/doctor/examination',"DoctorController@examination");
