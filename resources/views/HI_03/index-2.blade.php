@@ -9,7 +9,8 @@
 					<p>
 						Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.
 					</p>
-					<form method="post" action="list.html">
+					<form method="post" action="{{ route('grid-list') }}">
+						@csrf
 						<div id="custom-search-input">
 							<div class="input-group">
 								<input type="text" class=" search-query" placeholder="Ex. Name, Specialization ....">
@@ -65,7 +66,7 @@
 				</div>
 			</div>
 			<!-- /row -->
-			<p class="text-center"><a href="list.html" class="btn_1 medium">Find Doctor</a></p>
+			<p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p>
 		</div>
 		<!-- /container -->
 
@@ -77,7 +78,7 @@
 				</div>
 				<div id="reccomended" class="owl-carousel owl-theme">
 					<div class="item">
-						<a href="detail-page.html">
+						<a href="{{ url('detail-page') }}">
 							<div class="views"><i class="icon-eye-7"></i>140</div>
 							<div class="title">
 								<h4>Dr. Julia Holmes<em>Pediatrician - Cardiologist</em></h4>
@@ -85,7 +86,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="detail-page.html">
+						<a href="{{ url('detail-page') }}">
 							<div class="views"><i class="icon-eye-7"></i>120</div>
 							<div class="title">
 								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -93,7 +94,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="detail-page.html">
+						<a href="{{ url('detail-page') }}">
 							<div class="views"><i class="icon-eye-7"></i>115</div>
 							<div class="title">
 								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -101,7 +102,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="detail-page.html">
+						<a href="{{ url('detail-page') }}">
 							<div class="views"><i class="icon-eye-7"></i>98</div>
 							<div class="title">
 								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -109,7 +110,7 @@
 						</a>
 					</div>
 					<div class="item">
-						<a href="detail-page.html">
+						<a href="{{ url('detail-page') }}">
 							<div class="views"><i class="icon-eye-7"></i>98</div>
 							<div class="title">
 								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -130,7 +131,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_1.svg') }}" width="60" height="60" alt="">
 						<h3>Primary Care</h3>
@@ -141,7 +142,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
 						<h3>Cardiology</h3>
@@ -152,7 +153,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_3.svg') }}" width="60" height="60" alt="">
 						<h3>MRI Resonance</h3>
@@ -163,7 +164,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_4.svg') }}" width="60" height="60" alt="">
 						<h3>Blood test</h3>
@@ -174,7 +175,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_7.svg') }}" width="60" height="60" alt="">
 						<h3>Laboratory</h3>
@@ -185,7 +186,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
 						<h3>Dentistry</h3>
@@ -196,7 +197,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
 						<h3>X - Ray</h3>
@@ -207,7 +208,7 @@
 					</a>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<a href="#0" class="box_cat_home">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
 						<i class="icon-info-4"></i>
 						<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
 						<h3>Piscologist</h3>

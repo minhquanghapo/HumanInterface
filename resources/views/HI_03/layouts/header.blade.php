@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-6">
                 <div id="logo_home">
-                    <h1><a href="index.html" title="Findoctor">Findoctor</a></h1>
+                    <h1><a href="{{ url('/') }}" title="Findoctor">Findoctor</a></h1>
                 </div>
             </div>
             <nav class="col-lg-9 col-6">
@@ -60,7 +60,6 @@
                                 <li><a href="404.html">404 page</a></li>
                             </ul>
                         </li>
-                        <li><a href="#0">Buy this template</a></li>
                     </ul>
                 </div>
                 <!-- /main-menu -->

@@ -175,7 +175,7 @@
 							</li>
 						</ul>
 						<hr>
-						<div class="text-center"><a href="booking-page.html" class="btn_1 medium">Book Now</a></div>
+						<div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Book Now</a></div>
 					</div>
 					<!-- /box_general -->
 					

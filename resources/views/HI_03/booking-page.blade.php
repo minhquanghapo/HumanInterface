@@ -228,7 +228,7 @@
 								</li>
 							</ul>
 							<hr>
-							<a href="confirm.html" class="btn_1 full-width">Confirm and pay</a>
+							<a href="{{ url('confirm') }}" class="btn_1 full-width">Confirm and pay</a>
 						</form>
 					</div>
 					<!-- /box_general -->
