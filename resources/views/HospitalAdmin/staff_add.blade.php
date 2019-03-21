@@ -9,7 +9,7 @@
         <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
             <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
             <li><a href="/admin_hospital/doctors">Staffs</a></li>
-            <li class="active"> Edit</li>
+            <li class="active"> Add</li>
         </ol>
     </section>
     <section class="content row">
