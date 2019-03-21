@@ -29,7 +29,7 @@
                     <div class="body-box">
                     <!--Create , Edit -->
                     <div style="margin:10px 0px 10px 0px">
-                        <a href="/admin/users/create" type="button" class="btn btn-default">
+                        <a href="/admin/users/create" type="button" class="label label-default">
                         <span class="glyphicon glyphicon-plus-sign"></span>
                          Create user
                         </a>   
@@ -65,7 +65,7 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="q" placeholder="Nhập tên người dùng..."> 
                                     <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-default">
+                                        <button type="submit" class="label label-default">
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>
@@ -95,9 +95,18 @@
                                 <td>Nguyễn Văn A</td>
                                 <td>Quản trị hệ thống</td>
                                 <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/admin/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td></td>
+                                <td></td>
+                                <td><a class="label label-info" href="/admin/users/admin/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Nguyễn Văn E</td>
+                                <td>Quản trị hệ thóng</td>
+                                <td>19-2-1997</td>
+                                <td></td>
+                                <td></td>
+                                <td><a class="label label-info" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -106,7 +115,7 @@
                                 <td>19-2-1997</td>
                                 <td>Bạch Mai</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/staff/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-default" href="/admin/users/staff"><i class="fa fa-eye"></i>View</a></td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -115,7 +124,7 @@
                                 <td>19-2-1997</td>
                                 <td>Bạch Mai</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/doctor/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-default" href="/admin/users/doctor"><i class="fa fa-eye"></i>View</a></td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -124,18 +133,8 @@
                                 <td>19-2-1997</td>
                                 <td>Bạch Mai</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/patient/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Nguyễn Văn E</td>
-                                <td>Bác sỹ</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                        
+                                <td><a class="label label-default" href="/admin/users/patient"><i class="fa fa-eye"></i>View</a></td>
+                            </tr>                        
                         </tbody>
                     </table>
                     <div class="row">
