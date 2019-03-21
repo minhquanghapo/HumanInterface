@@ -29,4 +29,12 @@ class HospitalAdminController extends Controller
     public function doctor_edit() {
         return view('HospitalAdmin.doctor_edit');
     }
+
+    public function staff_add() {
+        return view('HospitalAdmin.staff_add');
+    }
+
+    public function doctor_add() {
+        return view('HospitalAdmin.doctor_add');
+    }
 }

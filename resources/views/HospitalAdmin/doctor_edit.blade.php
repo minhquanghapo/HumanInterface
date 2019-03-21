@@ -76,6 +76,25 @@
                     </div>
             </div>
         </div>
+        <div class="col-sm-3">
+                <div class="box box-primary">
+                    <!-- Header -->
+                    <div class="box-header with-border">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h3 class="box-title">Edit avatar</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body" id="doctor">
+                        <form id="form1" runat="server">
+                            <input type='file' id="imgInp" />
+                            <img id="blah" src="{{asset('img/HI_06/dist/img/bstuyet.jpeg')}}" alt="your image" style="width: 128px;height: 128px"/>
+                        </form>
+                    </div>
+                </div>
+                          
+            </div>
     </section>
 </div>
 @endsection
@@ -86,4 +105,22 @@
 <script src="/adminlte/js/morris.min.js"></script>
 <script src="/adminlte/js/metisMenu.min.js"></script>
 <script src="/adminlte/js/startmin.js"></script>
+<script>
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+    
+        reader.onload = function(e) {
+        $('#blah').attr('src', e.target.result);
+        }
+    
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+    
+$("#imgInp").change(function() {
+    readURL(this);
+});
+</script>
 @endsection
