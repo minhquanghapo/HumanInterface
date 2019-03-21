@@ -1,4 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);.navbar-laravel {
+@import url(https://fonts.googleapis.com/css?family=Nunito);.no-margin {
+  margin: 0 !important;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes icon-appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes icon-appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }

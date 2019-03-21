@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('HI_03.index-2');
 });
 
+
+Route::get('/chat-box', function () {
+    return view('HI_02.index');
+});
+
+Route::get('/video-call', function () {
+    return view('HI_02.video-call');
+})->name('video_call');
+
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
 	Route::get('/', 'AdminController@index');
 
