@@ -33,7 +33,7 @@
 							<i class="icon_star voted"></i>
 							<i class="icon_star"></i>
 							<small>(145)</small>
-							<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+							<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 						</span>
 						<ul class="statistic">
 							<li>854 Views</li>

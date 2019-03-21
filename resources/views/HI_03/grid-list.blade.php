@@ -44,8 +44,8 @@
 							<h6>Layout</h6>
 							<div class="layout_view">
 								<a href="#0" class="active"><i class="icon-th"></i></a>
-								<a href="list.html"><i class="icon-th-list"></i></a>
-								<a href="list-map.html"><i class="icon-map-1"></i></a>
+								<a href="#0"><i class="icon-th-list"></i></a>
+								<a href="#0"><i class="icon-map-1"></i></a>
 							</div>
 						</li>
 						<li>
@@ -71,7 +71,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -81,7 +81,7 @@
 
 									<p>Special interests: Skin cancer medicine, Travel medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>View on map</a></li>
@@ -96,7 +96,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -105,7 +105,7 @@
 									<h3>Dr. Will Griever</h3>
 									<p>Special interests: Paediatrics and Obstetrics, Skin cancer medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_2.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_2.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>View on map</a></li>
@@ -120,7 +120,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -129,7 +129,7 @@
 									<h3>Dr. Jhoanna Steel</h3>
 									<p>Special interests: Women's health, General medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>View on map</a></li>
@@ -144,7 +144,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -153,7 +153,7 @@
 									<h3>Dr. Slaughter</h3>
 									<p>Special interests: Obstetrics Shared Care, Paediatrics</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 3)"><i class="icon_pin_alt"></i>View on map</a></li>
@@ -168,7 +168,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -177,7 +177,7 @@
 									<h3>Dr. Watchmaker</h3>
 									<p>Special interests: Adolescent health</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>View on map</a></li>
@@ -192,7 +192,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 										<div class="preview"><span>Read more</span></div>
 									</a>
 								</figure>
@@ -201,7 +201,7 @@
 									<h3>Dr. Sunshine</h3>
 									<p>Special interests: Paediatrics, Skin cancer medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
-									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>View on map</a></li>

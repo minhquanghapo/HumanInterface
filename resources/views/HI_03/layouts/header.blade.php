@@ -9,8 +9,8 @@
             <nav class="col-lg-9 col-6">
                 <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="#0"><span>Menu mobile</span></a>
                 <ul id="top_access">
-                    <li><a href="login.html"><i class="pe-7s-user"></i></a></li>
-                    <li><a href="register-doctor.html"><i class="pe-7s-add-user"></i></a></li>
+                    <li><a href="#0"><i class="pe-7s-user"></i></a></li>
+                    <li><a href="#0"><i class="pe-7s-add-user"></i></a></li>
                 </ul>
                 <div class="main-menu">
                     <ul>
@@ -28,36 +28,36 @@
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Your Health<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="alcohol-drugs.html">Alcohol and drugs</a></li>
-                                <li><a href="dementia.html">Dementia</a></li>
-                                <li><a href="farming-health.html">Farming health</a></li>
-                                <li><a href="heart-health.html">Heart health</a></li>
-                                <li><a href="mental-health.html">Mental health</a></li>
-                                <li><a href="obesity.html">Obesity</a></li>
-                                <li><a href="nutrition.html">Nutrition</a></li>
-                                <li><a href="physical-activity.html">Physical activity</a></li>
-                                <li><a href="stroke-prevention.html">Stroke prevention</a></li>
+                                <li><a href="#0">Alcohol and drugs</a></li>
+                                <li><a href="#0">Dementia</a></li>
+                                <li><a href="#0">Farming health</a></li>
+                                <li><a href="#0">Heart health</a></li>
+                                <li><a href="#0">Mental health</a></li>
+                                <li><a href="#0">Obesity</a></li>
+                                <li><a href="#0">Nutrition</a></li>
+                                <li><a href="#0">Physical activity</a></li>
+                                <li><a href="#0">Stroke prevention</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Primary Care<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="diagnostics.html">Diagnostics</a></li>
-                                <li><a href="care-pathways.html">Care Pathways</a></li>
-                                <li><a href="clinics-services.html">Clinics/Services</a></li>
-                                <li><a href="antibiotic-and-infection-control.html">Antibiotic & Infection Control</a></li>
+                                <li><a href="#0">Diagnostics</a></li>
+                                <li><a href="#0">Care Pathways</a></li>
+                                <li><a href="#0">Clinics/Services</a></li>
+                                <li><a href="#0">Antibiotic & Infection Control</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Contact Us<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="emergency-contacts.html">Emergency contacts</a></li>
-                                <li><a href="service-user-feedback.html">Service user feedback</a></li>
-                                <li><a href="trust-headquarters.html">Trust Headquarters</a></li>
-                                <li><a href="facility-contacts.html">Facility contacts</a></li>
-                                <li><a href="accessing-your-information.html">Accessing your information</a></li>
-                                <li><a href="external-links.html">External links</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="#0">Emergency contacts</a></li>
+                                <li><a href="#0">Service user feedback</a></li>
+                                <li><a href="#0">Trust Headquarters</a></li>
+                                <li><a href="#0">Facility contacts</a></li>
+                                <li><a href="#0">Accessing your information</a></li>
+                                <li><a href="#0">External links</a></li>
+                                <li><a href="#0">FAQs</a></li>
                             </ul>
                         </li>
                     </ul>

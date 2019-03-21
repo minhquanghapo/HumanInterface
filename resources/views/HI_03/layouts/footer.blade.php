@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-12">
                 <p>
-                    <a href="index.html" title="Findoctor">
+                    <a href="#0" title="Findoctor">
                         <img src="img/logo.png" data-retina="true" alt="" width="163" height="36" class="img-fluid">
                     </a>
                 </p>
@@ -12,10 +12,10 @@
                 <h5>About</h5>
                 <ul class="links">
                     <li><a href="#0">About us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#0">Blog</a></li>
                     <li><a href="#0">FAQ</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#0">Login</a></li>
+                    <li><a href="#0">Register</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-4">
