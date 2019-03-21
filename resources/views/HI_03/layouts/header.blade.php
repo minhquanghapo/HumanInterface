@@ -37,7 +37,7 @@
                                 <li><a href="blog-1.html">Blog</a></li>
                                 <li><a href="badges.html">Badges</a></li>
                                 <li><a href="login.html">Login</a></li>
-                                <li><a href="login-2.html">Login 2</a></li>
+                                <li><a href="/doctor">Login Doctor</a></li>
                                 <li><a href="register-doctor.html">Register Doctor</a></li>
                                 <li><a href="register.html">Register</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
