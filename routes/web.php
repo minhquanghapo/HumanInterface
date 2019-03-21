@@ -46,3 +46,11 @@ Route::get('/confirm', function () {
     return view('HI_03.confirm');
 })->name('confirm');
 // HI_03
+//HI_06_{
+Route::get('/admin_hospital', "HospitalAdminController@index");
+Route::get('/admin_hospital/doctors', "HospitalAdminController@doctor_info");
+Route::get('/admin_hospital/staffs', "HospitalAdminController@staff_info");
+Route::get('/admin_hospital/edit', "HospitalAdminController@edit_info");
+Route::get('/admin_hospital/staffs/edit', "HospitalAdminController@staff_edit");
+Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit");
+//}
