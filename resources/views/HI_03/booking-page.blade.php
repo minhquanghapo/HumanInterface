@@ -18,12 +18,12 @@
 				<div class="col-xl-8 col-lg-8">
 				<div class="box_general_3 cart">
 					<div class="message">
-						<p>Exisitng Customer? <a href="#0">Click here to login</a></p>
+						<p>Existing Customer? <a href="#0">Click here to login</a></p>
 					</div>
 					<div class="form_title">
 						<h3><strong>1</strong>Your Details</h3>
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
+							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
 					</div>
 					<div class="step">
@@ -70,7 +70,7 @@
 					<div class="form_title">
 						<h3><strong>2</strong>Payment Information</h3>
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
+							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
 					</div>
 					<div class="step">
@@ -125,7 +125,7 @@
 
 						<h5>Or checkout with Paypal</h5>
 						<p>
-							Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie, reque fierent dissentiunt mel ea.
+							<!-- Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie, reque fierent dissentiunt mel ea. -->
 						</p>
 						<p>
 							<img src="{{ asset('HI_03/img/paypal_bt.png') }}" alt="Image">
@@ -137,7 +137,7 @@
 					<div class="form_title">
 						<h3><strong>3</strong>Billing Address</h3>
 						<p>
-							Mussum ipsum cacilds, vidis litro abertis.
+							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
 					</div>
 					<div class="step">

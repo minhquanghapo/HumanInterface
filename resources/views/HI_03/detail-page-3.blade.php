@@ -33,7 +33,7 @@
 							<i class="icon_star voted"></i>
 							<i class="icon_star"></i>
 							<small>(145)</small>
-							<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+							<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 						</span>
 						<ul class="statistic">
 							<li>854 Views</li>
@@ -193,14 +193,16 @@
 						<div class="tab-content">
 							<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
 								
-								<p class="lead add_bottom_30">Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+								<p class="lead add_bottom_30">Dr Julia Jhones is a highly trained practitioner of dry needling for acute and chronic musculoskeletal pain.</p>
 								<div class="indent_title_in">
 									<i class="pe-7s-user"></i>
 									<h3>Professional statement</h3>
-									<p>Mussum ipsum cacilds, vidis litro abertis.</p>
+									<!-- <p>Mussum ipsum cacilds, vidis litro abertis.</p> -->
 								</div>
 								<div class="wrapper_indent">
-									<p>Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>
+									<p>She is the author of the “Australian Drug Guide”, a plain language multi-bestselling guide to prescription and over the counter drugs.
+
+									The Eighth edition of the Australian Drug Guide will be released by Black Inc. in 2016 in print, and as a mobile application.</p>
 									<h6>Specializations</h6>
 									<div class="row">
 										<div class="col-lg-6">
@@ -229,10 +231,10 @@
 								<div class="indent_title_in">
 									<i class="pe-7s-news-paper"></i>
 									<h3>Education</h3>
-									<p>Mussum ipsum cacilds, vidis litro abertis.</p>
+									<!-- <p>Mussum ipsum cacilds, vidis litro abertis.</p> -->
 								</div>
 								<div class="wrapper_indent">
-									<p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Nullam mollis. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapi.</p>
+									<p>Dr Julia Jhones graduated with honours from Faculty of Medicine, University of Sydney in 1983.</p>
 									<h6>Curriculum</h6>
 									<ul class="list_edu">
 										<li><strong>New York Medical College</strong> - Doctor of Medicine</li>
@@ -247,10 +249,10 @@
 								<div class="indent_title_in">
 									<i class="pe-7s-cash"></i>
 									<h3>Prices &amp; Payments</h3>
-									<p>Mussum ipsum cacilds, vidis litro abertis.</p>
+									<!-- <p>Mussum ipsum cacilds, vidis litro abertis.</p> -->
 								</div>
 								<div class="wrapper_indent">
-									<p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
+									<!-- <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p> -->
 									<table class="table table-responsive table-striped">
 										<thead>
 											<tr>
@@ -367,7 +369,7 @@
 											</div>
 											<div class="rev-text">
 												<p>
-													Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+													She is the best doctor I have ever met
 												</p>
 											</div>
 										</div>
@@ -386,7 +388,7 @@
 											</div>
 											<div class="rev-text">
 												<p>
-													Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+													Good service
 												</p>
 											</div>
 										</div>
@@ -405,7 +407,7 @@
 											</div>
 											<div class="rev-text">
 												<p>
-													Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis
+													Very good
 												</p>
 											</div>
 										</div>
