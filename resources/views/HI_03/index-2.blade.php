@@ -7,7 +7,7 @@
 				<div class="content">
 					<h3>Find a Doctor!</h3>
 					<p>
-						Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.
+						What is the name of your medical centre or doctor?
 					</p>
 					<form method="post" action="{{ route('grid-list') }}">
 						@csrf
@@ -41,27 +41,27 @@
 		<div class="container margin_120_95">
 			<div class="main_title">
 				<h2>Discover the <strong>online</strong> appointment!</h2>
-				<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p>
+				<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p> -->
 			</div>
 			<div class="row add_bottom_30">
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_1">
 						<span></span>
 						<h3>Find a Doctor</h3>
-						<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie.</p>
+						<p>You can find a doctor easily within a minute.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_2">
 						<span></span>
 						<h3>View profile</h3>
-						<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie.</p>
+						<p>You can read detailed information about your doctor, their specializations, years of experience, reviews of other patients, and so on.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_3">
 						<h3>Book a visit</h3>
-						<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie.</p>
+						<p>Book the doctor you would like to meet.</p>
 					</div>
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 			<div class="container margin_120_95">
 				<div class="main_title">
 					<h2>Most Viewed doctors</h2>
-					<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p>
+					<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p> -->
 				</div>
 				<div id="reccomended" class="owl-carousel owl-theme">
 					<div class="item">
@@ -127,7 +127,7 @@
 		<div class="container margin_120_95">
 			<div class="main_title">
 				<h2>Find by specialization</h2>
-				<p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p>
+				<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
@@ -223,7 +223,7 @@
 		</div>
 		<!-- /container -->
 
-		<div id="app_section">
+		<!-- <div id="app_section">
 			<div class="container">
 				<div class="row justify-content-around">
 					<div class="col-md-5">
@@ -244,10 +244,10 @@
 						</div>
 					</div>
 				</div>
-				<!-- /row -->
+				/row
 			</div>
-			<!-- /container -->
-		</div>
+			/container
+		</div> -->
 		<!-- /app_section -->
 	</main>
 @endsection

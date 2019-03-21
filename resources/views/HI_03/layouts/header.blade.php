@@ -15,49 +15,49 @@
                 <div class="main-menu">
                     <ul>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Home<i class="icon-down-open-mini"></i></a>
-                            <ul>
+                            <a href="#0" class="show-submenu">Home</a>
+                            <!-- <ul>
                                 <li><a href="index.html">Home Default</a></li>
                                 <li><a href="index-2.html">Home Version 2</a></li>
                                 <li><a href="index-3.html">Home Version 3</a></li>
                                 <li><a href="index-4.html">Home Version 4</a></li>
                                 <li><a href="index-6.html">Revolution Slider</a></li>
                                 <li><a href="index-5.html">With Cookie Bar (EU law)</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="submenu">
+                            <a href="#0" class="show-submenu">Your Health<i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="alcohol-drugs.html">Alcohol and drugs</a></li>
+                                <li><a href="dementia.html">Dementia</a></li>
+                                <li><a href="farming-health.html">Farming health</a></li>
+                                <li><a href="heart-health.html">Heart health</a></li>
+                                <li><a href="mental-health.html">Mental health</a></li>
+                                <li><a href="obesity.html">Obesity</a></li>
+                                <li><a href="nutrition.html">Nutrition</a></li>
+                                <li><a href="physical-activity.html">Physical activity</a></li>
+                                <li><a href="stroke-prevention.html">Stroke prevention</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Pages<i class="icon-down-open-mini"></i></a>
+                            <a href="#0" class="show-submenu">Primary Care<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="list.html">List page</a></li>
-                                <li><a href="grid-list.html">List grid page</a></li>
-                                <li><a href="list-map.html">List map page</a></li>
-                                <li><a href="detail-page.html">Detail page</a></li>
-                                <li><a href="detail-page-2.html">Detail page 2</a></li>
-                                <li><a href="detail-page-3.html">Detail page 3</a></li>
-                                <li><a href="blog-1.html">Blog</a></li>
-                                <li><a href="badges.html">Badges</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="login-2.html">Login 2</a></li>
-                                <li><a href="register-doctor.html">Register Doctor</a></li>
-                                <li><a href="register.html">Register</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="diagnostics.html">Diagnostics</a></li>
+                                <li><a href="care-pathways.html">Care Pathways</a></li>
+                                <li><a href="clinics-services.html">Clinics/Services</a></li>
+                                <li><a href="antibiotic-and-infection-control.html">Antibiotic & Infection Control</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Extra Elements<i class="icon-down-open-mini"></i></a>
+                            <a href="#0" class="show-submenu">Contact Us<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="detail-page-working-booking.html">Detail working booking</a></li>
-                                <li><a href="booking-page.html">Booking page</a></li>
-                                <li><a href="confirm.html">Confirm page</a></li>
-                                <li><a href="faq.html">Faq page</a></li>
-                                <li><a href="coming_soon/index.html">Coming soon</a></li>
-                                 <li><a href="pricing-tables.html">Responsive pricing tables</a></li>
-                                 <li><a href="pricing-tables-2.html">Responsive pricing tables 2</a></li>
-                                 <li><a href="register-doctor-working.html">Working doctor register</a></li>
-                                <li><a href="icon-pack-1.html">Icon pack 1</a></li>
-                                <li><a href="icon-pack-2.html">Icon pack 2</a></li>
-                                <li><a href="icon-pack-3.html">Icon pack 3</a></li>
-                                <li><a href="404.html">404 page</a></li>
+                                <li><a href="emergency-contacts.html">Emergency contacts</a></li>
+                                <li><a href="service-user-feedback.html">Service user feedback</a></li>
+                                <li><a href="trust-headquarters.html">Trust Headquarters</a></li>
+                                <li><a href="facility-contacts.html">Facility contacts</a></li>
+                                <li><a href="accessing-your-information.html">Accessing your information</a></li>
+                                <li><a href="external-links.html">External links</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -79,7 +79,7 @@
 									<small>Psicologist</small>
 									<h3>Dr. Sickman</h3>
 
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Skin cancer medicine, Travel medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -103,7 +103,7 @@
 								<div class="wrapper">
 									<small>Psicologist</small>
 									<h3>Dr. Will Griever</h3>
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Paediatrics and Obstetrics, Skin cancer medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_2.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -127,7 +127,7 @@
 								<div class="wrapper">
 									<small>Pediatrician</small>
 									<h3>Dr. Jhoanna Steel</h3>
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Women's health, General medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -151,7 +151,7 @@
 								<div class="wrapper">
 									<small>Pediatrician</small>
 									<h3>Dr. Slaughter</h3>
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Obstetrics Shared Care, Paediatrics</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -175,7 +175,7 @@
 								<div class="wrapper">
 									<small>Psicologist</small>
 									<h3>Dr. Watchmaker</h3>
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Adolescent health</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -199,7 +199,7 @@
 								<div class="wrapper">
 									<small>Psicologist - Pediatrician</small>
 									<h3>Dr. Sunshine</h3>
-									<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>
+									<p>Special interests: Paediatrics, Skin cancer medicine</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
