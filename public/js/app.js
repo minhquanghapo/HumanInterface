@@ -47240,6 +47240,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/HI_02/scss/app.scss":
+/*!************************************!*\
+  !*** ./public/HI_02/scss/app.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -47296,11 +47307,7 @@ try {
   window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-<<<<<<< HEAD
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/npm.js");
-=======
-  __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
->>>>>>> Add doctor booking date
 } catch (e) {}
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -47421,19 +47428,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!******************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./public/HI_02/scss/app.scss ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! /Users/trinhhuuvu/Desktop/Human Interface/HumanInterface/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/trinhhuuvu/Desktop/Human Interface/HumanInterface/resources/sass/app.scss */"./resources/sass/app.scss");
->>>>>>> Add doctor booking date
+__webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/public/HI_02/scss/app.scss */"./public/HI_02/scss/app.scss");
 
 
 /***/ })

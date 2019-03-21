@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('HospitalAdmin.layouts.master')
 @section('customcss')
 <link rel="stylesheet" href="/adminlte/css/toggle-switch.css" />
 <link rel="stylesheet" href="/adminlte/css/startmin.css" />
@@ -7,8 +7,8 @@
 <div class="container-fluid">
     <section class="content-header">
         <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
-            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/users">Users</a></li>
+            <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="/admin_hospital/doctors">Doctors</a></li>
             <li class="active"> Edit</li>
         </ol>
     </section>
@@ -26,40 +26,34 @@
                 <div class="box-body" id="doctor">
                     <!-- Body -->
                     <form role="form" class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Email address</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" placeholder="Enter email">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Họ tên</label>
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control" value="Nguyễn Thị Minh Tuyết">
                                 </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" placeholder="Password">
                             </div>
-                        </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Confirm Password</label>
+                            <label class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
+                                <input type="email" class="form-control" value="tuyet.ntm@gmail.com">
+                                </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Tel</label>
                             <div class="col-sm-10">
-                                <input type="tel" class="form-control" placeholder="Telephone Number">
+                                <input type="tel" class="form-control" value="0123456789">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Address</label>
+                            <label class="col-sm-2 control-label">Địa chỉ</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="Address">
+                                <input type="text" class="form-control" value="Thanh Xuân, Hà Nội">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Hopital</label>
+                            <label class="col-sm-2 control-label">Hospital</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" placeholder="Hopital">
+                                <input type="text" class="form-control" placeholder="Việt Đức" disabled>
                             </div>
                         </div>
                         <div class="form-group">
@@ -73,10 +67,34 @@
                                 </select>
                             </div>
                         </div>
+                        
                     </form>
                 </div>
+                <div class="box-footer">
+                        <button type="submit" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-info pull-right">Save</button>
+                    </div>
             </div>
         </div>
+        <div class="col-sm-3">
+                <div class="box box-primary">
+                    <!-- Header -->
+                    <div class="box-header with-border">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h3 class="box-title">Edit avatar</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body" id="doctor">
+                        <form id="form1" runat="server">
+                            <input type='file' id="imgInp" />
+                            <img id="blah" src="{{asset('img/HI_06/dist/img/bstuyet.jpeg')}}" alt="your image" style="width: 128px;height: 128px"/>
+                        </form>
+                    </div>
+                </div>
+                          
+            </div>
     </section>
 </div>
 @endsection
@@ -87,4 +105,22 @@
 <script src="/adminlte/js/morris.min.js"></script>
 <script src="/adminlte/js/metisMenu.min.js"></script>
 <script src="/adminlte/js/startmin.js"></script>
+<script>
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+    
+        reader.onload = function(e) {
+        $('#blah').attr('src', e.target.result);
+        }
+    
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+    
+$("#imgInp").change(function() {
+    readURL(this);
+});
+</script>
 @endsection

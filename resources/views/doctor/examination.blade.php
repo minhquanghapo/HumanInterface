@@ -22,15 +22,16 @@
 </head>
 <body>
 <div class="container">
+
     <div class="col-md-2">
         <div class="avatar">
-            <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" alt="Cinque Terre">
+            <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" style="margin: auto" alt="Cinque Terre">
             <center>
                 <h4>BS. Lê Hoàng Vũ</h4>
                 <p>Khoa: Chấn thương chỉnh hình</p>
                 <p>sdt: 0123456789</p>
-                <button type="button" class="btn btn-primary">Cập nhật thông tin</button>
-                <a href="/doctor" class="btn btn-info" style="margin-top: 10px" role="button">Quay lại trang chủ</a>
+                <button type="button" class="btn btn-primary" style="margin-: 10px" data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
+                <a href="/doctor" class="btn btn-info" role="button">Quay lại trang chủ</a>
             </center>
 
         </div>

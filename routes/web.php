@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('HI_03.index-2');
 });
 
+
+Route::get('/chat-box', function () {
+    return view('HI_02.index');
+});
+
+Route::get('/video-call', function () {
+    return view('HI_02.video-call');
+})->name('video_call');
+
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
 	Route::get('/', 'AdminController@index');
 
@@ -46,3 +55,13 @@ Route::get('/confirm', function () {
     return view('HI_03.confirm');
 })->name('confirm');
 // HI_03
+//HI_06_{
+Route::get('/admin_hospital', "HospitalAdminController@index");
+Route::get('/admin_hospital/doctors', "HospitalAdminController@doctor_info");
+Route::get('/admin_hospital/staffs', "HospitalAdminController@staff_info");
+Route::get('/admin_hospital/edit', "HospitalAdminController@edit_info");
+Route::get('/admin_hospital/staffs/edit', "HospitalAdminController@staff_edit");
+Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit");
+Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
+Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
+//}
