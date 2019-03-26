@@ -27,6 +27,10 @@
             width: 90%;
             margin: auto;
         }
+
+        *{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
