@@ -116,7 +116,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
+                {{--<a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>--}}
+                <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
                 <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>

@@ -7,7 +7,6 @@ $(document).ready(function() {
             center: 'title',
             right: 'month,agendaWeek,agendaDay,listWeek'
         },
-        defaultDate: '2019-03-12',
         navLinks: true, // can click day/week names to navigate views
         eventLimit: true, // allow "more" link when too many events
         locale: 'vi',
@@ -100,7 +99,7 @@ $(document).ready(function() {
             {
                 id: 15,
                 title: 'ca khám',
-                start: '2019-03-25T10:30:00',
+                start: '2019-03-26T15:51:00',
                 
             },
             {
@@ -130,6 +129,7 @@ $(document).ready(function() {
         ],
         eventClick: function(info) {
             $("#idhoso").html(info.id);
+            $("#start-examination").val(info.id);
             $("#accept-remove").val(info.id);
             $("#detailModal").modal("show");
         }
@@ -159,6 +159,19 @@ $(document).ready(function() {
     });
 
     $('ul.setup-panel li.active a').trigger('click');
+
+    $("#start-examination").on("click",function () {
+        $id = $(this).val();
+        $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
+        $current = moment($('#calendar').fullCalendar('getDate'));
+        if(Math.abs($current - $date) <= 600000){
+            window.location = "/doctor/examination";
+        }
+        else{
+            toastr["error"]("Hiện tại chưa thể bắt đầu ca khám! Xin quay lại sau!");
+        }
+
+    });
 
     $("#remove-examination").on("click",function () {
         $("#detailModal").modal("hide");
