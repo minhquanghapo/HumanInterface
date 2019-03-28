@@ -103,7 +103,7 @@
                                 <td>78 Giải Phóng, Hà Nội</td>
                                 <td>Trung ương</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-info" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                            <tr>
                                 <td>2</td>
@@ -111,7 +111,7 @@
                                 <td>78 Giải Phóng, Hà Nội</td>
                                 <td>Trung ương</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-info" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -119,7 +119,7 @@
                                 <td>78 Giải Phóng, Hà Nội</td>
                                 <td>Trung ương</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-info" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -127,7 +127,7 @@
                                 <td>78 Giải Phóng, Hà Nội</td>
                                 <td>Trung ương</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-info" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                             <tr>
                                 <td>5</td>
@@ -135,7 +135,7 @@
                                 <td>78 Giải Phóng, Hà Nội</td>
                                 <td>Trung ương</td>
                                 <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                <td><a class="label label-info" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
                             </tr>
                         </tbody>
                     </table>

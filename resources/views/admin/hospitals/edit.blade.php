@@ -13,6 +13,9 @@
         .select2-selection__choice__remove {
             color: #fff !important;
         }
+        h4 {
+            text-decoration: underline;
+        }
     </style>
 @endsection
 @section('pagename')
@@ -36,6 +39,7 @@
                         <!-- form start -->
                         <form class="form-horizontal">
                             <div class="box-body">
+                                <h4 class="box-title">Hoispital information </h4>
                                 <div class="form-group">
                                     <label for="inputEmail3" class="col-sm-2 control-label">Tên</label>
                                     <div class="col-sm-10">
@@ -115,6 +119,25 @@
                                     <div class="col-sm-10">
                                         <input class="form-control" id="inputEmail3" value="(084-4) 38687524" placeholder="Nhập số điện thoại" >
                                     </div>                                
+                                </div>
+                                <h4 class="box-title">Admin information </h4>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" value="admin">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
                                 </div>
                             </div>
                             <!-- /.box-body -->
