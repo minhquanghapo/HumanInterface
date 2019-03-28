@@ -13,7 +13,7 @@ $(function() {
 	// 	$container.insertAfter($input);
 	// });
 	//
-    $("#select-state").on("change",function () {
+    $("#select-medicine").on("change",function () {
         $list = $(this).val();
         $length = $list.length;
         $("#medicine_list").html("");
@@ -34,6 +34,19 @@ $(function() {
                 "                                            <td><button type=\"button\"  class=\"btn btn-sm btn-danger remove-medicine\">X</button></td>\n" +
                 "                                        </tr>";
             $("#medicine_list").append($medicine);
+        }
+    });
+
+    $("#select-test").on("change",function () {
+        $list = $(this).val();
+        $length = $list.length;
+        $("#test_list").html("");
+        for($i=0;$i<$length;$i++){
+            $test = "<tr>\n" +
+                "                                            <td>"+($i+1)+"</td>\n" +
+                "                                            <td>"+$list[$i]+"</td>\n" +
+                "                                        </tr>";
+            $("#test_list").append($test);
         }
     });
 

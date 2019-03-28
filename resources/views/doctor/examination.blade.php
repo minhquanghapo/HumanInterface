@@ -110,55 +110,44 @@
                         <tr>
                             <td class="col-sm-3"><b>Các yêu cầu xét nghiệm</b></td>
                             <td class="col-sm-9">
-                                <div class="col-md-4">
-                                    <h4>Các xét nghiệm</h4>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Xét nghiệm máu</label>
+                                <div class="">
+                                    <div class="control-group">
+                                        <select id="select-test" name="state[]" multiple class="demo-default" style="max-width: 100%"  placeholder="Lựa chọn các loại xét nghiệm...">
+                                            <option value="">Select a state...</option>
+                                            <option value="Xét nghiệm máu">Xét nghiệm máu</option>
+                                            <option value="Xét nghiệm nước tiểu">Xét nghiệm nước tiểu</option>
+                                            <option value="Siêu âm não xuyên thóp">Siêu âm não xuyên thóp</option>
+                                            <option value="Siêu âm các tuyến mang tai">Siêu âm các tuyến mang tai</option>
+                                            <option value="Siêu âm vú">Siêu âm vú</option>
+                                            <option value="Siêu âm tuyến giáp (bao gồm hạch cổ)">Siêu âm tuyến giáp (bao gồm hạch cổ)</option>
+                                            <option value="Siêu âm bụng">Siêu âm bụng</option>
+                                            <option value="Siêu âm vùng nách">Siêu âm vùng nách</option>
+                                            <option value="Siêu âm bẹn">Siêu âm bẹn</option>
+                                            <option value="Siêu âm thận, bàng quang">Siêu âm thận, bàng quang</option>
+                                            <option value="Nội soi dạ dày">Nội soi dạ </option>
+                                        </select>
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Xét nghiệm nước tiểu</label>
-                                    </div>
+                                    <script>
+                                        $('#select-test').selectize({
+                                            closeAfterSelect: true
+                                        });
+                                    </script>
                                 </div>
-                                <div class="col-md-4">
-                                    <h4>Chụp chiếu</h4>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm não xuyên thóp</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm các tuyến mang tai</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm vú</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm tuyến giáp (bao gồm hạch cổ)</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm bụng</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm vùng nách</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm bẹn</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm thận, bàng quang</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm vùng chậu</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Siêu âm doppler động tĩnh mạch ngoại biên</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <h4>Nội soi</h4>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Nội soi dạ dày</label>
-                                    </div>
+                                <div class="table-responsive text-center">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tên </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="test_list" >
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </td>
+                            
                         </tr>
                     </table>
                     <button id="activate-step-4" class="btn btn-primary btn-lg">Kết luận</button>
@@ -182,7 +171,7 @@
                             <td>
                                 <div class="">
                                     <div class="control-group">
-                                        <select id="select-state" name="state[]" multiple class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
+                                        <select id="select-medicine" name="state[]" multiple class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
                                             <option value="">Select a state...</option>
                                             <option value="Alabama">Alabama</option>
                                             <option value="Alaska">Alaska</option>
@@ -238,7 +227,7 @@
                                         </select>
                                     </div>
                                     <script>
-                                        $('#select-state').selectize({
+                                        $('#select-medicine').selectize({
                                             closeAfterSelect: true
                                         });
                                     </script>
