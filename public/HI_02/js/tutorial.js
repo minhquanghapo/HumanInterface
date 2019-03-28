@@ -68,6 +68,11 @@
         `);
         $(elm).after(_overlay);
         $(elm).css('z-index', 10001);
+
+
+        $('html, body').stop().animate({
+            scrollTop: $(elm).offset().top - $(window).height() / 2
+        }, 800);
     }
 
     function removeOverlay() {
