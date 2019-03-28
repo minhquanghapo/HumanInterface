@@ -64,4 +64,5 @@ Route::get('/admin_hospital/staffs/edit', "HospitalAdminController@staff_edit");
 Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit");
 Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
 Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
+Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
 //}

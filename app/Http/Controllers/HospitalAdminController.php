@@ -37,4 +37,7 @@ class HospitalAdminController extends Controller
     public function doctor_add() {
         return view('HospitalAdmin.doctor_add');
     }
+    public function review_comment(){
+        return view('HospitalAdmin.review_comment.index');
+    }
 }
