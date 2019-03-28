@@ -164,12 +164,13 @@ $(document).ready(function() {
         $id = $(this).val();
         $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
         $current = moment($('#calendar').fullCalendar('getDate'));
-        if(Math.abs($current - $date) <= 600000){
-            window.location = "/doctor/examination";
-        }
-        else{
-            toastr["error"]("Hiện tại chưa thể bắt đầu ca khám! Xin quay lại sau!");
-        }
+        window.location = "/doctor/examination";
+        // if(Math.abs($current - $date) <= 600000){
+        //     window.location = "/doctor/examination";
+        // }
+        // else{
+        //     toastr["error"]("Hiện tại chưa thể bắt đầu ca khám! Xin quay lại sau!");
+        // }
 
     });
 

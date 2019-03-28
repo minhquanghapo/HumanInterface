@@ -3,11 +3,14 @@
 <head>
     <meta charset='utf-8' />
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/toastr.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet'/>
+    <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
     <script src='{{asset('js/toastr.min.js')}}'></script>
     <script src='{{asset('js/doctor/examination.js')}}'></script>
+    <script src='{{asset('js/doctor/selectize.min.js')}}'></script>
+    <script src='{{asset('js/doctor/select_index.js')}}'></script>
     <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
     <style>
 
@@ -168,7 +171,7 @@
                     <table class="table">
                         <tr>
                             <td><b>Kết luận bệnh</b></td>
-                            <td><input type="text" class="form-control"></td>
+                            <td class="col-sm-10"><input type="text" class="form-control"></td>
                         </tr>
                         <tr>
                             <td><b>Chỉ định</b></td>
@@ -177,7 +180,88 @@
                         <tr>
                             <td><b>Đơn thuốc</b></td>
                             <td>
-                                <textarea class="form-control" rows="5" ></textarea>
+                                <div class="">
+                                    <div class="control-group">
+                                        <select id="select-state" name="state[]" multiple class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
+                                            <option value="">Select a state...</option>
+                                            <option value="Alabama">Alabama</option>
+                                            <option value="Alaska">Alaska</option>
+                                            <option value="Arizona">Arizona</option>
+                                            <option value="Arkansas">Arkansas</option>
+                                            <option value="California">California</option>
+                                            <option value="Colorado">Colorado</option>
+                                            <option value="Connecticut">Connecticut</option>
+                                            <option value="Delaware">Delaware</option>
+                                            <option value="District of Columbia">District of Columbia</option>
+                                            <option value="Florida">Florida</option>
+                                            <option value="Georgia">Georgia</option>
+                                            <option value="Hawaii">Hawaii</option>
+                                            <option value="Idaho">Idaho</option>
+                                            <option value="Illinois">Illinois</option>
+                                            <option value="Indiana">Indiana</option>
+                                            <option value="Iowa">Iowa</option>
+                                            <option value="Kansas">Kansas</option>
+                                            <option value="Kentucky">Kentucky</option>
+                                            <option value="Louisiana">Louisiana</option>
+                                            <option value="Maine">Maine</option>
+                                            <option value="Maryland">Maryland</option>
+                                            <option value="Massachusetts">Massachusetts</option>
+                                            <option value="Michigan">Michigan</option>
+                                            <option value="Minnesota">Minnesota</option>
+                                            <option value="Mississippi">Mississippi</option>
+                                            <option value="Missouri">Missouri</option>
+                                            <option value="Montana">Montana</option>
+                                            <option value="Nebraska">Nebraska</option>
+                                            <option value="Nevada">Nevada</option>
+                                            <option value="New Hampshire">New Hampshire</option>
+                                            <option value="New Jersey">New Jersey</option>
+                                            <option value="New Mexico">New Mexico</option>
+                                            <option value="New York">New York</option>
+                                            <option value="North Carolina">North Carolina</option>
+                                            <option value="North Dakota">North Dakota</option>
+                                            <option value="Ohio">Ohio</option>
+                                            <option value="Oklahoma">Oklahoma</option>
+                                            <option value="Oregon">Oregon</option>
+                                            <option value="Pennsylvania">Pennsylvania</option>
+                                            <option value="Rhode Island">Rhode Island</option>
+                                            <option value="outh Carolina">South Carolina</option>
+                                            <option value="South Dakota">South Dakota</option>
+                                            <option value="Tennessee">Tennessee</option>
+                                            <option value="Texas">Texas</option>
+                                            <option value="Utah">Utah</option>
+                                            <option value="Vermont">Vermont</option>
+                                            <option value="Virginia">Virginia</option>
+                                            <option value="Washington">Washington</option>
+                                            <option value="West Virginia">West Virginia</option>
+                                            <option value="West VirginiaI">West Virginia</option>
+                                            <option value="Wyoming">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <script>
+                                        $('#select-state').selectize({
+                                            closeAfterSelect: true
+                                        });
+                                    </script>
+                                </div>
+                                <div class="table-responsive text-center">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Tên </th>
+                                                <th>Số lượng</th>
+                                                <th>Đơn vị</th>
+                                                <th>Liều dùng</th>
+                                                <th>Số lần / ngày</th>
+                                                <th>Chỉ định</th>
+                                                <th>Xoá</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="medicine_list" >
+
+                                        </tbody>
+                                    </table>
+                                </div>
                             </td>
                         </tr>
                         <tr>

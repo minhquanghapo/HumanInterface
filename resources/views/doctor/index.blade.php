@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <link href='{{asset('css/fullcalendar.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/toastr.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+    <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
     <script src='{{asset('js/moment.min.js')}}'></script>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
@@ -28,9 +28,7 @@
             margin: auto;
         }
 
-        *{
-            cursor: pointer;
-        }
+
     </style>
 </head>
 <body>
