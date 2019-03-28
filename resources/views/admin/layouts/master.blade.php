@@ -72,6 +72,7 @@
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="/adminlte/js/bootstrap.min.js"></script>
+<script src="/adminlte/js/Chart.js"></script>
 <!-- Morris.js charts -->
 <script src="/adminlte/js/raphael.min.js"></script>
 <script src="/adminlte/js/morris.min.js"></script>
@@ -116,6 +117,7 @@
           showInputs: false
         })
     });
+
 </script>
 </body>
 </html>

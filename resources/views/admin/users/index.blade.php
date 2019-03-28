@@ -29,7 +29,7 @@
                     <div class="body-box">
                     <!--Create , Edit -->
                     <div style="margin:10px 0px 10px 0px">
-                        <a href="/admin/users/create" type="button" class="label label-default">
+                        <a href="/admin/users/create" type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-plus-sign"></span>
                          Create user
                         </a>   
