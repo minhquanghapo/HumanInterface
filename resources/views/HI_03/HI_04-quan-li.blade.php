@@ -1,3 +1,4 @@
+<!-- This file is of group HI_04, please not change this file -->
 @extends('HI_03.layouts.master')
 
 @section('content')
@@ -6,7 +7,7 @@
 			<div id="hero_video">
 				<div class="content">
 					<h3>Find schedules!</h3>
-					<form method="post" action="{{ route('grid-list') }}">
+					<form method="post" action="{{ route('result') }}">
 						@csrf
 						<div id="custom-search-input">
 							<div class="input-group">
