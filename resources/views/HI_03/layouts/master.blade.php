@@ -22,6 +22,9 @@
 	<link href="{{ asset('HI_03/css/menu.css') }}" rel="stylesheet">
 	<link href="{{ asset('HI_03/css/vendors.css') }}" rel="stylesheet">
     <link href="{{ asset('HI_03/css/icon_fonts/css/all_icons_min.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('HI_02/css/app.css') }}">
     
     @yield('SPECIFIC CSS')
     
@@ -52,14 +55,140 @@
 	@include('HI_03.layouts.footer')
 	<!--/footer-->
 
-	<div id="toTop"></div>
+    <div class="need-help">
+        <p>You need help ?</p>
+    </div>
+    <div class="tutorial-icons">
+        <div class="need-help">
+            <p>Walk through tutorial -> </p>
+        </div>
+        <div class="tutorial-icon open">
+            <i class="far fa-question-circle"></i>
+        </div>
+        <div class="tutorial-icon close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div>
+        <div class="chat-bubble-container">
+            <div class="need-help">
+                <p>Chat with our supporter -> </p>
+            </div>
+            <div class="chat-box" style="display: none">
+                <div class="chat-box-top">
+                    <h2>Need help?</h2>
+                    <p>Let's chat with our supporter</p>
+                </div>
+                <div class="chat-box-content">
+                    <div class="chat-message message-reply">
+                        <div class="avatar">
+                            <img src="{{ asset('HI_02/svg/female-35.svg') }}" class="img-responsive img-rounded" alt="">
+                        </div>
+                        <div class="messages">
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
+                                </div>
+                                <div class="message-time">
+                                    <span>12:30</span>
+                                </div>
+                            </div>
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
+                                </div>
+                                <div class="message-time">
+                                    <span>12:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box-footer">
+                    <form id="chatForm" class="no-margin">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="file-preview">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input id="messageInp" type="text" class="form-control message-input" placeholder="Type and press [Enter]">
+                            </div>
+                            <div class="col-md-3 action-group">
+                                <i class="fas fa-paperclip action" id="btnAddFile"></i>
+                                <i class="fas fa-images action" id="btnAddImage"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="chat-icons">
+                <div class="chat-bubble">
+                    <div class="chat-icon open">
+                        <i class=" fas fa-comments"></i>
+                    </div>
+                    <div class="chat-icon close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="chat-bubble video-call">
+                    <div class="chat-icon">
+                        <i class="fas fa-video action" id="videoCallBtn"></i>
+                    </div>
+                </div>
+                <div class="chat-bubble voice-call ">
+                    <div class="chat-icon">
+                        <i class="fas fa-phone action" id="voiceCallBtn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- Back to top button -->
 
 	<!-- COMMON SCRIPTS -->
-	<script src="{{ asset('HI_03/js/jquery-2.2.4.min.js') }}"></script>
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+
 	<script src="{{ asset('HI_03/js/common_scripts.min.js') }}"></script>
 	<script src="{{ asset('HI_03/js/functions.js') }}"></script>
-    
+
+    <script src="{{ asset('HI_02/js/chat-box.js') }}"></script>
+    <script src="{{ asset('HI_02/js/tutorial.js') }}"></script>
+
+    <script>
+        // open video call
+        $(document).ready(function () {
+            $('#videoCallBtn').click(function () {
+                window.open("{{ route('video_call') }}", "", "width=640,height=480");
+            });
+
+            setTimeout(function() {
+                $('body').append(`<div id="overlay"></div>`);
+                $('.need-help').show();
+                let interval = setInterval(function(){
+                    $('.tutorial-icons .need-help, .chat-bubble-container .need-help')
+                        .effect("bounce", {direction: 'left', distance: 10}, 5000);
+                }, 5000);
+
+                $('body').on('click.show_help', function () {
+                    $('#overlay').remove();
+                    $('body').off('click.show_help');
+                    $('.need-help').hide();
+                    clearInterval(interval);
+                });
+            }, 1000 * 60 * 2);
+        })
+    </script>
+
     @yield('SPECIFIC SCRIPTS')
 
 </body>

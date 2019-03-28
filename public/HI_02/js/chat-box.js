@@ -1,8 +1,16 @@
 (function ($) {
     // show chat box
     let chatBoxShow = false;
-    $('.chat-bubble').click(toogleChatbox);
+    $('.chat-bubble').click(function(){
+        toogleChatIcon();
+        toogleChatbox();
+        chatBoxShow = !chatBoxShow;
+    });
     function toogleChatbox() {
+        $('.chat-box').slideToggle('fast');
+    }
+
+    function toogleChatIcon(){
         if(chatBoxShow) {
             $.when(
                 $('.chat-icon.close').hide('scale', { direction: "both" }, 50).promise()
@@ -20,8 +28,6 @@
             $('.voice-call').animate({ left: -70 }, 'fast');
             $('.video-call').animate({ left: -140 }, 'fast');
         }
-        chatBoxShow = !chatBoxShow;
-        $('.chat-box').slideToggle('fast');
     }
 
     // display time when hover message
@@ -42,10 +48,10 @@
     function bindRemoveBtnHoverListener() {
         $('.file-preview .file').hover(
             function () {
-                $(this).find('.remove-file').show();
+                $(this).find('.remove-file').css('display', 'table');
             },
             function () {
-                $(this).find('.remove-file').hide();
+                $(this).find('.remove-file').css('display', 'none');
             }
         );
     }
@@ -82,7 +88,7 @@
                 let imgElm = $(`<img style="height: 50px" src="" alt="">`);
                 let fileInfoElm = $(`
                     <div class="file-info">
-                        <h4 class="file-ext">${ext}</h4>
+                        <h6 class="file-ext">${ext}</h6>
                         <p class="no-margin">${fileName}</p>
                     </div>
                 `);
