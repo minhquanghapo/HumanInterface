@@ -13,8 +13,8 @@
 						@csrf
 						<div id="custom-search-input">
 							<div class="input-group">
-								<input type="text" class=" search-query" placeholder="Ex. Name, Specialization ....">
-								<input type="submit" class="btn_search" value="Search">
+								<input type="text" id="searchInp" class=" search-query" placeholder="Ex. Name, Specialization ....">
+								<input type="submit" id="searchBtn" class="btn_search" value="Search">
 							</div>
 							<ul>
 								<li>
@@ -263,5 +263,21 @@
 			videoTrigger: $("#video-trigger"),
 			autoPlayVideo: true
 		});
+
+		$(document).ready(function(){
+            let searchInp = document.getElementById("searchInp");
+            let searchBtn = document.getElementById("searchBtn");
+
+            $('.tutorial-icon.open').tutorial([
+                {
+                    element: searchInp,
+                    suggestion: 'Type in your symptom'
+                },
+                {
+                    element: searchBtn,
+                    suggestion: 'And then find a doctor'
+                }
+            ]);
+        })
 	</script>
 @endsection
