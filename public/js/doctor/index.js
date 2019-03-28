@@ -132,8 +132,26 @@ $(document).ready(function() {
             $("#start-examination").val(info.id);
             $("#accept-remove").val(info.id);
             $("#detailModal").modal("show");
-        }
+        },
+
     });
+
+    $current = moment($('#calendar').fullCalendar('getDate'));
+    $list_event = $("#calendar").fullCalendar('clientEvents');
+    for($i=0;$i<$list_event.length;$i++){
+        $event = $list_event[$i];
+        if(($current - $event.start) > 600000){
+            console.log($event.start);
+            $event.color = "#9494b8";
+            $('#calendar').fullCalendar('updateEvent', $event);
+        }
+    };
+
+    $list_event_html = $(".fc-event");
+    $list_event_html.each(function () {
+       $(this).css("cursor","pointer");
+    });
+
 
     // $("#calendar").on("click",".fc-content",function () {
     //
@@ -163,7 +181,6 @@ $(document).ready(function() {
     $("#start-examination").on("click",function () {
         $id = $(this).val();
         $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
-        $current = moment($('#calendar').fullCalendar('getDate'));
         // window.location = "/doctor/examination";
         if(Math.abs($current - $date) <= 600000){
             window.location = "/doctor/examination";
@@ -225,12 +242,13 @@ $(document).ready(function() {
     });
 
     $("#calendar").on("mouseover",".fc-event",function () {
-        $(this).css("background","red");
+        $color = $(this).css("background");
+        $(this).css("background"," #ff6666");
+        $(this).on("mouseout",function () {
+            $(this).css("background",$color);
+        });
     });
 
-    $("#calendar").on("mouseout",".fc-event",function () {
-        $(this).css("background","");
-    });
 
 
 });

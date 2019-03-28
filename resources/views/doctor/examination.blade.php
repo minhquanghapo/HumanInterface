@@ -33,7 +33,7 @@
                 <h4>BS. Lê Hoàng Vũ</h4>
                 <p>Khoa: Chấn thương chỉnh hình</p>
                 <p>sdt: 0123456789</p>
-                <button type="button" class="btn btn-primary" style="margin-: 10px" data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
+                <button type="button" class="btn btn-primary" style="margin-bottom: 10px" data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
                 <a href="/doctor" class="btn btn-info" role="button">Quay lại trang chủ</a>
             </center>
 
@@ -88,13 +88,23 @@
         </div>
         <div class="row setup-content" id="step-2">
             <div class="col-xs-12">
-                <div class="col-md-12 well text-center">
-                    <p>
-                        Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                        Thành bụng căng cứng.
-                        Sốt nhẹ.
-                    </p>
+                <div class="col-md-12 well ">
+                    <div>
+                        <h3>Triệu chứng</h3>
+                        <p>
+                            Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                            Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                            Thành bụng căng cứng.
+                            Sốt nhẹ.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Tiền sử bệnh</h3>
+                        <p>
+                            Từng mắc bệnh dạ dày ngày bé
+                        </p>
+                    </div>
                     <button id="activate-step-3" class="btn btn-primary btn-lg">Tiến hành khám</button>
                 </div>
             </div>
@@ -105,7 +115,13 @@
                     <table class="table">
                         <tr>
                             <td class="col-sm-3"><b>Chẩn đoán</b></td>
-                            <td class="col-sm-9"><input type="text" class="form-control"></td>
+                            <td class="col-sm-9">
+                                <div class="form-group" style="position:relative">
+                                    <div style="position:absolute;right: 10px;top:5px"><span id="counter">100</span>/100</div>
+                                    <textarea onkeyup="textCounter(this,'counter',100);" id="chuandoan" class="form-control" rows="5"  style="padding-right:40px"></textarea>
+                                </div>
+
+                            </td>
                         </tr>
                         <tr>
                             <td class="col-sm-3"><b>Các yêu cầu xét nghiệm</b></td>
@@ -160,11 +176,21 @@
                     <table class="table">
                         <tr>
                             <td><b>Kết luận bệnh</b></td>
-                            <td class="col-sm-10"><input type="text" class="form-control"></td>
+                            <td class="col-sm-10">
+                                <div class="form-group" style="position:relative">
+                                    <div style="position:absolute;right: 10px;top:5px"><span id="counter1">100</span>/100</div>
+                                    <textarea onkeyup="textCounter(this,'counter1',100);" id="ketluan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td><b>Chỉ định</b></td>
-                            <td><input type="text" class="form-control"></td>
+                            <td>
+                                <div class="form-group" style="position:relative">
+                                    <div style="position:absolute;right: 10px;top:5px"><span id="counter2">100</span>/100</div>
+                                    <textarea onkeyup="textCounter(this,'counter2',100);" id="chuandoan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td><b>Đơn thuốc</b></td>
@@ -268,4 +294,16 @@
     </div>
 </div>
 </body>
+<script>
+    function textCounter(field,field2,maxlimit)
+    {
+        var countfield = document.getElementById(field2);
+        if ( field.value.length > maxlimit ) {
+            field.value = field.value.substring( 0, maxlimit );
+            return false;
+        } else {
+            countfield.innerHTML = maxlimit - field.value.length;
+        }
+    }
+</script>
 </html>
