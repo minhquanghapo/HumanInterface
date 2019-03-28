@@ -1,117 +1,51 @@
-.nav-link-wrap {
-  background-color: #167ce9;
-  color: #fff;
-  position: relative;
-}
-
-.search-box{
-	display: flex;
-	align-items: center;
-}
-
-.search-box i{
-	font-size: 30px;
-	padding: 10px;
-	border: solid 2px #fff;
-	box-sizing: border-box;
-	height: 52px;
-}
-
-.search-box .form-control{
-	border: solid 2px #fff;
-}
-
-.dark-color{
-	background-color: #cecdcd45;
-}
-
-.dark-color h1{
-	color: #167ce9;
-}
-
-.full-heigh{
-	min-height: 100vh;
-	height: 100%;
-}
-
-.search-result-container{
-	background-color: #167ce985;
-	margin: 10px 0;
-	color: #fff;
-}
-
-.search-result-container-time{
-	padding: 20px;
-	background-color: #167ce9;
-}
-
-.search-result-container-info{
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%
-}
-
-.search-result-container-info p{
-	width: 49%;
-}
-
-#search-result{
-	width: 100%;
-}
-
-.dark-shadow{
-	z-index: 1000;
-	width: 100vw;
-	height: 100vh;
+.dark-background{
+	background-color: #000000db;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #000000bf;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1000;
 	display: none;
 }
 
-.search-result-container-properties{
+.anti-scroll{
+	height: 100vh;
+	overflow: hidden !important;
+}
+
+.full-info{
 	position: fixed;
-	width: 50%;
+	height: 60vh;
+	min-height: 390px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	top: 20%;
+	left: 20%;
+	width: 60vw;
 	background-color: #fff;
-	left: 35%;
-	top: 15vh;
 	z-index: 2000;
 	display: none;
 }
 
-.properties-title{
-	padding: 10px 0;
+.full-info .col-md-5{
+	background-color: #fff
 }
 
-.properties-title h1{
-	text-align: center;
-	color: #167ce9;
+.full-info .col-md-7{
+	background-color: #fff
 }
 
-.cancel-button{
-	text-align: center;
-}
-
-.cancel-button button{
-	margin-top: 20px;
-	font-size: 18px;
-	border-radius: 5px;
-}
-
-.anti-scroll{
-	overflow: hidden;
-	height: 100%;
-}
-
-/*.fix-left{
-	width: 100%;
+.full-info-img{
 	padding: 15px;
-	background-color: #167ce9;
-	position: fixed;
-	height: 100vh;
-	left: 0;
-	top: 0;
-}*/
+}
+
+.full-info-status{
+	padding: 15px;
+}
+
+.button-row{
+	text-align: center;
+	margin: 15px;
+}
+
