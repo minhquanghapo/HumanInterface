@@ -5,6 +5,7 @@
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet'/>
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
+    <link href='{{asset('css/doctor/custom.css')}}' rel='stylesheet'/>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
     <script src='{{asset('js/toastr.min.js')}}'></script>

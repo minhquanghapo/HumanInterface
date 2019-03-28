@@ -141,8 +141,7 @@ $(document).ready(function() {
     for($i=0;$i<$list_event.length;$i++){
         $event = $list_event[$i];
         if(($current - $event.start) > 600000){
-            console.log($event.start);
-            $event.color = "#9494b8";
+            $event.color = "#6c757d";
             $('#calendar').fullCalendar('updateEvent', $event);
         }
     };
@@ -243,7 +242,7 @@ $(document).ready(function() {
 
     $("#calendar").on("mouseover",".fc-event",function () {
         $color = $(this).css("background");
-        $(this).css("background"," #ff6666");
+        $(this).css("background"," #e83e8c");
         $(this).on("mouseout",function () {
             $(this).css("background",$color);
         });

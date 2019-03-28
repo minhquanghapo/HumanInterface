@@ -6,6 +6,7 @@
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+    <link href='{{asset('css/doctor/custom.css')}}' rel='stylesheet'/>
     <script src='{{asset('js/moment.min.js')}}'></script>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
