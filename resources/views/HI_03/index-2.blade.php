@@ -6,9 +6,11 @@
 			<div id="hero_video">
 				<div class="content">
 					<h3>Find a Doctor!</h3>
-					<p>
+					<br>
+					<!-- <p>
 						What is the name of your medical centre or doctor?
 					</p>
+					<p>Or, just type in your symptoms</p> -->
 					<form method="post" action="{{ route('grid-list') }}">
 						@csrf
 						<div id="custom-search-input">
@@ -28,6 +30,10 @@
 								<li>
 									<input type="radio" id="clinic" name="radio_search" value="clinic">
 									<label for="clinic">Clinic</label>
+								</li>
+								<li>
+									<input type="radio" id="symptom" name="radio_search" value="symptom">
+									<label for="symptom">Symptom</label>
 								</li>
 							</ul>
 						</div>
@@ -73,153 +79,153 @@
 		<div class="bg_color_1">
 			<div class="container margin_120_95">
 				<div class="main_title">
-					<h2>Most Viewed doctors</h2>
-					<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p> -->
+					<h2>Find by specialization</h2>
+					<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
 				</div>
-				<div id="reccomended" class="owl-carousel owl-theme">
-					<div class="item">
-						<a href="{{ url('detail-page') }}">
-							<div class="views"><i class="icon-eye-7"></i>140</div>
-							<div class="title">
-								<h4>Dr. Julia Holmes<em>Pediatrician - Cardiologist</em></h4>
-							</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_1.svg') }}" width="60" height="60" alt="">
+							<h3>Primary Care</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
 						</a>
 					</div>
-					<div class="item">
-						<a href="{{ url('detail-page') }}">
-							<div class="views"><i class="icon-eye-7"></i>120</div>
-							<div class="title">
-								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
-							</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
+							<h3>Cardiology</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
 						</a>
 					</div>
-					<div class="item">
-						<a href="{{ url('detail-page') }}">
-							<div class="views"><i class="icon-eye-7"></i>115</div>
-							<div class="title">
-								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
-							</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_3.svg') }}" width="60" height="60" alt="">
+							<h3>MRI Resonance</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
 						</a>
 					</div>
-					<div class="item">
-						<a href="{{ url('detail-page') }}">
-							<div class="views"><i class="icon-eye-7"></i>98</div>
-							<div class="title">
-								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
-							</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_4.svg') }}" width="60" height="60" alt="">
+							<h3>Blood test</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
 						</a>
 					</div>
-					<div class="item">
-						<a href="{{ url('detail-page') }}">
-							<div class="views"><i class="icon-eye-7"></i>98</div>
-							<div class="title">
-								<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
-							</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_7.svg') }}" width="60" height="60" alt="">
+							<h3>Laboratory</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
+							<h3>Dentistry</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
+							<h3>X - Ray</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<a href="{{ url('grid-list') }}" class="box_cat_home">
+							<i class="icon-info-4"></i>
+							<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
+							<h3>Piscologist</h3>
+							<ul class="clearfix">
+								<li><strong>124</strong>Doctors</li>
+								<li><strong>60</strong>Clinics</li>
+							</ul>
 						</a>
 					</div>
 				</div>
-				<!-- /carousel -->
+				<!-- /row -->
 			</div>
 			<!-- /container -->
 		</div>
 		<!-- /white_bg -->
-
+		
 		<div class="container margin_120_95">
 			<div class="main_title">
-				<h2>Find by specialization</h2>
-				<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
+				<h2>Most Viewed doctors</h2>
+				<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p> -->
 			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_1.svg') }}" width="60" height="60" alt="">
-						<h3>Primary Care</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
+			<div id="reccomended" class="owl-carousel owl-theme">
+				<div class="item">
+					<a href="{{ url('detail-page') }}">
+						<div class="views"><i class="icon-eye-7"></i>140</div>
+						<div class="title">
+							<h4>Dr. Julia Holmes<em>Pediatrician - Cardiologist</em></h4>
+						</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
-						<h3>Cardiology</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
+				<div class="item">
+					<a href="{{ url('detail-page') }}">
+						<div class="views"><i class="icon-eye-7"></i>120</div>
+						<div class="title">
+							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
+						</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_3.svg') }}" width="60" height="60" alt="">
-						<h3>MRI Resonance</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
+				<div class="item">
+					<a href="{{ url('detail-page') }}">
+						<div class="views"><i class="icon-eye-7"></i>115</div>
+						<div class="title">
+							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
+						</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_4.svg') }}" width="60" height="60" alt="">
-						<h3>Blood test</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
+				<div class="item">
+					<a href="{{ url('detail-page') }}">
+						<div class="views"><i class="icon-eye-7"></i>98</div>
+						<div class="title">
+							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
+						</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_7.svg') }}" width="60" height="60" alt="">
-						<h3>Laboratory</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
-						<h3>Dentistry</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
-						<h3>X - Ray</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<a href="{{ url('grid-list') }}" class="box_cat_home">
-						<i class="icon-info-4"></i>
-						<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
-						<h3>Piscologist</h3>
-						<ul class="clearfix">
-							<li><strong>124</strong>Doctors</li>
-							<li><strong>60</strong>Clinics</li>
-						</ul>
+				<div class="item">
+					<a href="{{ url('detail-page') }}">
+						<div class="views"><i class="icon-eye-7"></i>98</div>
+						<div class="title">
+							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
+						</div><img src="http://via.placeholder.com/350x500.jpg" alt="">
 					</a>
 				</div>
 			</div>
-			<!-- /row -->
+			<!-- /carousel -->
 		</div>
 		<!-- /container -->
 
@@ -271,7 +277,7 @@
             $('.tutorial-icon.open').tutorial([
                 {
                     element: searchInp,
-                    suggestion: 'Type in your symptom'
+                    suggestion: 'Type in your symptoms, or the name of your medical centre or doctor'
                 },
                 {
                     element: searchBtn,
