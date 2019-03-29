@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+}
+input[type="radio"]:checked+label{ border: solid; }
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex input {
+    flex: 1 1 300px;
+    border-left: 0 !important;
+    border: 1px solid #ccc !important;
+}
+.flex .currency {
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+    color: #999;
+    border: 1px solid #ccc;
+    border-right: 0;
+    line-height: 2.5;
+    border-radius: 7px 0 0 7px;
+    background: white;
+}

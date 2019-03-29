@@ -1,0 +1,7 @@
+.color-filter {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.color-filter1{background-color:#00bbec}.color-filter2{background-color:#2c6ed5}.color-filter3{background-color:#ffa037}.color-filter4{background-color:#ff5337}.color-filter5{background-color:#a88c77}.color-filter6{background-color:#393939}.color-filter7{background-color:#ccc}
