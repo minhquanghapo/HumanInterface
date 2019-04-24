@@ -35,6 +35,10 @@ Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
 	'uses'=>'PageControllerHI04@getPatientExaminationSchedule'
 ]);
+Route::match(['get', 'post'],'/result', function () {
+    return view('HI_03.result');
+})->name('result');
+
 Route::get('/doctor',"DoctorController@index");
 Route::get('/doctor/examination',"DoctorController@examination");
 
@@ -64,4 +68,5 @@ Route::get('/admin_hospital/staffs/edit', "HospitalAdminController@staff_edit");
 Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit");
 Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
 Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
+Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
 //}
