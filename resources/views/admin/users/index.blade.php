@@ -77,67 +77,69 @@
 
                     <!--Table content-->
                                         <!--Table content-->
-                    <table class="table table-bordered table-hover">
-                        <thead class="bg-info">
-                            <tr>
-                                <th>#</th>
-                                <th>Tên</th>
-                                <th>Loại người dùng</th>
-                                <th>Ngày sinh</th>
-                                <th>Bệnh viện</th>
-                                <th>Tỉnh/TP</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>Quản trị hệ thống</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/admin/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Nguyễn Văn B</td>
-                                <td>Nhân viên bệnh viện</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/staff/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Nguyễn Văn C</td>
-                                <td>Bác sỹ</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/doctor/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Nguyễn Văn D</td>
-                                <td>Bệnh nhân</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/patient/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Nguyễn Văn E</td>
-                                <td>Bác sỹ</td>
-                                <td>19-2-1997</td>
-                                <td>Bạch Mai</td>
-                                <td>Hà Nội</td>
-                                <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
-                            </tr>
-                        
-                        </tbody>
-                    </table>
+                    <div style="overflow-x:auto">
+                        <table class="table table-bordered table-hover">
+                            <thead class="bg-info">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tên</th>
+                                    <th>Loại người dùng</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Bệnh viện</th>
+                                    <th>Tỉnh/TP</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>Quản trị hệ thống</td>
+                                    <td>19-2-1997</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/admin/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nguyễn Văn B</td>
+                                    <td>Nhân viên bệnh viện</td>
+                                    <td>19-2-1997</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/staff/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Nguyễn Văn C</td>
+                                    <td>Bác sỹ</td>
+                                    <td>19-2-1997</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/doctor/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Nguyễn Văn D</td>
+                                    <td>Bệnh nhân</td>
+                                    <td>19-2-1997</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/patient/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Nguyễn Văn E</td>
+                                    <td>Bác sỹ</td>
+                                    <td>19-2-1997</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="row">
                         <div class="col-sm-5">
                             Showing 1 to 10 of 57 entries
