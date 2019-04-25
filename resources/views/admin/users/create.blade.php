@@ -6,14 +6,7 @@
 @endsection
 @section('pagename')
 <div class="container-fluid">
-    <section class="content-header">
-        <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
-            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/hospitals">Users</a></li>
-            <li class="active"> Create</li>
-        </ol>
-    </section>
-    <section class="content row">
+    <section class="row">
         <div class="col-sm-8">
             <div class="box box-primary">
                 <!-- Header -->
@@ -24,19 +17,19 @@
                         </div>
                         <div class="col-md-4 col-md-offset-5">
                             <div class="form-horizontal">
-                                {{-- <select class="form-control" id="role-user-checkbox">
+                                <select class="form-control" id="role-user-checkbox">
                                     <option value="admin">Quản trị hệ thống</option>
                                     <option value="staff">Nhân viên bệnh viên</option>
                                     <option value="doctor">Bác sĩ</option>
                                     <option value="patient">Bệnh nhân</option>
-                                </select> --}}
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
-        <!-- Body -->
+                <!-- Body -->
                 <form role="form" class="form-horizontal dynamic-form">
-                    <div class="box-body" id="admin" style="display: block !important;">
+                    <div class="box-body" id="admin">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email address</label>
                             <div class="col-sm-10">
@@ -55,7 +48,7 @@
                                 <input type="password" class="form-control" placeholder="Password">
                             </div>
                         </div>
-                    </div>{{-- 
+                    </div>
                     <div class="box-body" id="staff">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email address</label>
@@ -159,7 +152,6 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Confirm Password</label>
                             <div class="col-sm-10">
-
                                 <input type="password" class="form-control" placeholder="Password">
                             </div>
                         </div>
@@ -175,16 +167,14 @@
                                 <input type="text" class="form-control" placeholder="Address">
                             </div>
                         </div>
-                    </div> --}}
-                    <div class="box-footer">
-                        <button type="submit" class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-info pull-right">Sign in</button>
                     </div>
                 </form>
+
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-info pull-right">Save</button>
+                </div>
             </div>
-        </div>
-
-
         </div>
     </section>
 </div>
