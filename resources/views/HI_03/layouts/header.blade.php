@@ -34,15 +34,15 @@
                                 <li><a href="#0">Nội tiết</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="submenu">
-                            <a href="#0" class="show-submenu">Primary Care<i class="icon-down-open-mini"></i></a>
-                            <ul>
+                        <li class="submenu">
+                            <a href="{{ route('lich-kham-benh-nhan') }}" class="show-submenu">Lịch khám của tôi<i class=""></i></a>
+                            <!-- <ul>
                                 <li><a href="#0">Diagnostics</a></li>
                                 <li><a href="#0">Care Pathways</a></li>
                                 <li><a href="#0">Clinics/Services</a></li>
                                 <li><a href="#0">Antibiotic & Infection Control</a></li>
-                            </ul>
-                        </li> -->
+                            </ul> -->
+                        </li>
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Liên hệ<i class="icon-down-open-mini"></i></a>
                             <ul>

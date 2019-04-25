@@ -39,9 +39,7 @@ Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
 	'uses'=>'PageControllerHI04@getPatientExaminationSchedule'
 ]);
-Route::match(['get', 'post'],'/result', function () {
-    return view('HI_03.result');
-})->name('result');
+Route::match(['get', 'post'],'/result', 'PageControllerHI04@getFormSearch')->name('result');
 
 Route::get('/doctor',"DoctorController@index");
 Route::get('/doctor/examination',"DoctorController@examination");
