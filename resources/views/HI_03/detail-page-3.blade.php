@@ -9,9 +9,9 @@
 		<div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Category</a></li>
-					<li>Page active</li>
+					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('grid-list') }}">Tất cả bác sĩ</a></li>
+					<li>Thông tin bác sĩ</li>
 				</ul>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 				<aside class="col-xl-3 col-lg-4" id="sidebar">
 					<div class="box_profile">
 						<figure>
-							<img src="http://via.placeholder.com/565x565.jpg" alt="" class="img-fluid">
+							<img src="{{ asset('HI_03/img/doctor/doctor.png') }}" alt="" class="img-fluid">
 						</figure>
 						<small>Khoa Tai Mũi Họng</small>
 						<h1>Bác sĩ Lê Thị Hương</h1>
