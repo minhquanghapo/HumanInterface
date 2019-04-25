@@ -4,7 +4,7 @@ var lich_kham = [
     {img:'HI_04/images/person_4.jpg', date: '12/1/2019', time: '9:00', hospital: "Bạch Mai", clinic: "Răng - Hàm - Mặt" ,doctor: 'Lê Văn Lộc', id: 3, status: "completed", no: 11, symptom: "Đau răng số 6 hàm trên bên trái"},
     {img:'HI_04/images/image_3.jpg', date: '12/8/2018', time: '9:00', hospital: "Bạch Mai", clinic: "Tai - Mũi - Họng" ,doctor: 'Nguyễn A', id: 4, status: "completed", no: 55, symptom: "Đau họng, sưng amidan, ho ra đờm"},
     {img:'HI_04/images/person_3.jpg', date: '12/6/2018', time: '9:00', hospital: "Bạch Mai", clinic: "Tai - Mũi - Họng" ,doctor: 'Nguyễn B', id: 5, status: "completed", no: 66, symptom: "Đau họng, sưng amidan, ho ra đờm"},
-    {img:'HI_04/images/image_6.jpg', date: '11/1/2018', time: '9:00', hospital: "Bạch Mai", clinic: "Tai - Mũi - Họng" ,doctor: 'Nguyễn C', id: 6, status: "completed", no: 66, symptom: "Đau họng, sưng amidan, ho ra đờm"}
+    {img:'HI_04/images/image_6.jpg', date: '11/1/2018', time: '9:00', hospital: "Bạch Mai", clinic: "Tai - Mũi - Họng" ,doctor: 'Nguyễn C', id: 6, status: "canceled", no: 66, symptom: "Đau họng, sưng amidan, ho ra đờm"}
 ];
 
 function getStatus(status){
@@ -21,7 +21,6 @@ function getResultView(array, sort_type = null){
 		});
 	else
 		jQuery.each( array, function( i, val ) {
-			console.log(sort_type);
 			if(val["status"] == sort_type) view += '<div class="col-md-4 info-container" id="'+ val["id"] +'"><div class="box_list wow fadeIn"><figure><div><img src="' + val["img"] + '" class="img-fluid" alt=""><div class="preview"><span>Read more</span></div></div></figure><div class="wrapper"><small>' + val["clinic"] + '</small><h3>BS. ' + val["doctor"] + '</h3><p><span>Ngày hẹn: '+ val["date"] +' &nbsp; Giờ: '+ val["time"]+'</span><br><span>Trạng thái: '+ getStatus(val["status"]) +'</span><br><span>Thứ tự: '+ val["no"] +'</span><br></p></div></div></div>'
 		});
 	return view
@@ -33,7 +32,9 @@ $(".add_top_20").hide();
 function getDetailView(val){
 	var view = '';
 	view = '<div class="row"><div class="col-md-5"><div class="full-info-img"><img src="' + val["img"] + '" class="img-fluid" alt=""></div></div><div class="col-md-7"><div class="full-info-status"><h3>BS. '+ val["doctor"] +'</h3><p><span>Mã lịch khám: '+ val["id"] +'</span><br><br><span>Ngày hẹn: '+ val["date"] +' &nbsp; Giờ: '+ val["time"] +'</span><br><span>Trạng thái: '+ getStatus(val["status"]) +'</span><br><br><span>Bệnh viện: '+ val["hospital"] +'</span><br><span>Phòng khám: '+ val["clinic"] +'</span><br><span>Thứ tự: '+ val["no"] +'</span><br><br><span>Triệu chứng: '+ val["symptom"] +'</span></p></div></div>';
-	// if(val["status"] == "imcomplete") view += '</div><div class="button-row"><button type="button" class="btn btn-danger">HỦY</button></div>';
+	view += '</div><div class="button-row">';
+	if(val["status"] == "imcomplete") view += '<button type="button" class="btn btn-warning" style="margin-right: 20px; color: #fff" id="cancel-' + val["id"] + '">HỦY LỊCH</button>';
+	view += '<button type="button" class="btn btn-danger">THOÁT</button></div>';
 	return view;
 }
 
@@ -59,10 +60,35 @@ $(document).on('click', ".dark-background", function(event) {
 	$('body').removeClass('anti-scroll');
 });
 
+$(document).on('click', ".btn-danger", function(event) {
+	$('.dark-background').hide();
+	$('.full-info').hide();
+	$('body').removeClass('anti-scroll');
+});
+
+$(document).on('click', ".btn-warning", function(event) {
+	// $('.dark-background').hide();
+	// $('.full-info').hide();
+	setTimeout(function(){
+		$(".full-info .row").html('<div style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100%;"><h1 style="text-align: center; line-height: 50vh"><img src="HI_04/images/Complete_Symbol-128.png" style="height: 40px;">Đã hủy thành công!</h1><div>');
+		$('.btn-warning').hide();
+		$("#search-result").html(getResultView(lich_kham));
+	}, 300);
+	
+	// $('body').removeClass('anti-scroll');
+	var button_id = $(this).attr('id');
+	var id = button_id.replace("cancel-", "");
+	jQuery.each( lich_kham, function( i, val ) {
+		console.log(id);
+		if(val["id"] == id) val["status"] = "canceled";
+	});
+});
+
 $( "#sort-box" ).change(function() {
 	console.log($("#sort-box").val());
 	$("#search-result").html(getResultView(lich_kham, $("#sort-box").val()));
 	if($("#sort-box").val() == "all") $("#result_count").html(6);
 	if($("#sort-box").val() == "imcomplete") $("#result_count").html(2);
-	if($("#sort-box").val() == "completed") $("#result_count").html(4);
+	if($("#sort-box").val() == "completed") $("#result_count").html(3);
+	if($("#sort-box").val() == "canceled") $("#result_count").html(1);
 });

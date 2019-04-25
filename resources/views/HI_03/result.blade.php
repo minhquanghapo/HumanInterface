@@ -9,8 +9,8 @@
 
 @section('content')
 	<script>
-		var search_value = <?= $data['search_value'] ?>;
-		var search_type = <?= $data['search_type'] ?>;
+		var search_value = "<?= $data['search_value'] ?>";
+		var search_type = "<?= $data['search_type'] ?>";
 	</script>
 	<main>
 		<form method="post" action="{{ route('result') }}">
@@ -23,7 +23,7 @@
 						</div>
 						<div class="col-md-4">
 								<div class="search_bar_list">
-								<input type="text" class="form-control" placeholder="Tìm kiếm">
+								<input type="text" class="form-control" placeholder="<?= $data['search_value'] ?>">
 								<input type="submit" value="Tìm kiếm">
 							</div>
 						</div>
@@ -51,9 +51,10 @@
 							<li>
 								<h6>Sắp xếp</h6>
 								<select name="orderby" class="selectbox" id="sort-box">
-								<option value="all">Tất cả</option>
-								<option value="imcomplete">Chưa xong</option>
-								<option value="completed">Đã xong</option>
+									<option value="all">Tất cả</option>
+									<option value="imcomplete">Chưa xong</option>
+									<option value="completed">Đã xong</option>
+									<option value="canceled">Đã hủy</option>
 								</select>
 							</li>
 						</ul>
@@ -260,4 +261,5 @@
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>
+    <link href="{{ asset('HI_04/css/result.css') }}" rel="stylesheet">	
 @endsection
