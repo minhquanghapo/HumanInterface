@@ -24,6 +24,10 @@ Route::get('/video-call', function () {
     return view('HI_02.video-call');
 })->name('video_call');
 
+Route::get('/booking-page-2', function () {
+    return view('HI_02.booking-page');
+})->name('booking-page-2');
+
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
 	Route::get('/', 'AdminController@index');
 
@@ -35,6 +39,8 @@ Route::get('lich-kham-benh-nhan', [
 	'as' => 'lich-kham-benh-nhan',
 	'uses'=>'PageControllerHI04@getPatientExaminationSchedule'
 ]);
+Route::match(['get', 'post'],'/result', 'PageControllerHI04@getFormSearch')->name('result');
+
 Route::get('/doctor',"DoctorController@index");
 Route::get('/doctor/examination',"DoctorController@examination");
 

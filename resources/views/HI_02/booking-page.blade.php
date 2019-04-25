@@ -211,9 +211,9 @@
 							</div>
 							<div class="summary">
 								<ul>
-									<li>Date: <strong class="float-right">11/12/2017</strong></li>
-									<li>Time: <strong class="float-right">10.30 am</strong></li>
-									<li>Dr. Name: <strong class="float-right">Dr. julia Jhones</strong></li>
+									<li>Date: <strong class="float-right">29/4/2019</strong></li>
+									<li>Time: <strong class="float-right">14:30</strong></li>
+									<li>Dr. Name: <strong class="float-right">Bác sĩ ABC - BV Chợ Rẫy</strong></li>
 								</ul>
 							</div>
 							<ul class="treatments checkout clearfix">
