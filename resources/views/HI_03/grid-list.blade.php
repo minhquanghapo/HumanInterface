@@ -81,7 +81,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -106,7 +106,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -131,7 +131,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -156,7 +156,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" height="565" width="565" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -181,7 +181,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -206,7 +206,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -229,7 +229,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic1"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -253,7 +253,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic2"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -276,7 +276,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic3"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -299,7 +299,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic4"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -322,7 +322,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic5"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -345,7 +345,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="#top"><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
+									<a href="#top"><img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" class="img-fluid" alt="">
 										<div class="preview showClinic6"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
