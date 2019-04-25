@@ -25,8 +25,8 @@
 								</g>
 							</svg>
 						</div>
-					<h2>Thanks for your booking!</h2>
-					<p>You'll receive a confirmation email at mail@example.com</p>
+					<h2>Cảm ơn vì đã sử dụng dịch vụ!</h2>
+					<p>Email xác nhận sẽ được gửi đến hộp thư của bạn. Xin hãy kiểm tra và bấm vào đường dẫn trong thư để hoàn tất thủ tục.</p>
 					</div>
 				</div>
 			</div>

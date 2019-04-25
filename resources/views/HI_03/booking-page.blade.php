@@ -17,11 +17,11 @@
 			<div class="row">
 				<div class="col-xl-8 col-lg-8">
 				<div class="box_general_3 cart">
-					<div class="message">
+					<!-- <div class="message">
 						<p>Existing Customer? <a href="#0">Click here to login</a></p>
-					</div>
+					</div> -->
 					<div class="form_title">
-						<h3><strong>1</strong>Your Details</h3>
+						<h3><strong>1</strong>Thông tin của bạn</h3>
 						<p>
 							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
@@ -30,14 +30,14 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<label>First name</label>
-									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Jhon">
+									<label>Họ</label>
+									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Nguyễn">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<label>Last name</label>
-									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking" placeholder="Doe">
+									<label>Tên</label>
+									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking" placeholder="Vũ">
 								</div>
 							</div>
 						</div>
@@ -45,21 +45,21 @@
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
 									<label>Email</label>
-									<input type="email" id="email_booking" name="email_booking" class="form-control" placeholder="jhon@doe.com">
+									<input type="email" id="email_booking" name="email_booking" class="form-control" placeholder="nguyenvu@gmail.com">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<label>Confirm email</label>
-									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control" placeholder="jhon@doe.com">
+									<label>Xác nhận email</label>
+									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control" placeholder="nguyenvu@gmail.com">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6">
 								<div class="form-group">
-									<label>Telephone</label>
-									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" placeholder="00 44 678 94329">
+									<label>Điện thoại</label>
+									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" placeholder="0975 095 416">
 								</div>
 							</div>
 						</div>
@@ -68,20 +68,20 @@
 					<!--End step -->
 
 					<div class="form_title">
-						<h3><strong>2</strong>Payment Information</h3>
+						<h3><strong>2</strong>Thông tin thanh toán</h3>
 						<p>
 							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
 					</div>
 					<div class="step">
 						<div class="form-group">
-							<label>Name on card</label>
-							<input type="text" class="form-control" id="name_card_booking" name="name_card_booking" placeholder="Jhon Doe">
+							<label>Tên trên thẻ</label>
+							<input type="text" class="form-control" id="name_card_booking" name="name_card_booking" placeholder="nguyenvu">
 						</div>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Card number</label>
+									<label>Mã số thẻ</label>
 									<input type="text" id="card_number" name="card_number" class="form-control" placeholder="xxxx - xxxx - xxxx - xxxx">
 								</div>
 							</div>
@@ -91,23 +91,23 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<label>Expiration date</label>
+								<label>Ngày hết hạn</label>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" id="expire_month" name="expire_month" class="form-control" placeholder="MM">
+											<input type="text" id="expire_month" name="expire_month" class="form-control" placeholder="Tháng">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" id="expire_year" name="expire_year" class="form-control" placeholder="Year">
+											<input type="text" id="expire_year" name="expire_year" class="form-control" placeholder="Năm">
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Security code</label>
+									<label>Mã an ninh</label>
 									<div class="row">
 										<div class="col-md-4">
 											<div class="form-group">
@@ -115,7 +115,7 @@
 											</div>
 										</div>
 										<div class="col-md-8">
-											<img src="{{ asset('HI_03/img/icon_ccv.gif') }}" width="50" height="29" alt="ccv"><small>Last 3 digits</small>
+											<img src="{{ asset('HI_03/img/icon_ccv.gif') }}" width="50" height="29" alt="ccv"><small>3 chữ số cuối</small>
 										</div>
 									</div>
 								</div>
@@ -123,7 +123,7 @@
 						</div>
 						<!--End row -->
 
-						<h5>Or checkout with Paypal</h5>
+						<h5>Hoặc trả bằng Paypal</h5>
 						<p>
 							<!-- Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie, reque fierent dissentiunt mel ea. -->
 						</p>
@@ -135,55 +135,36 @@
 					<!--End step -->
 
 					<div class="form_title">
-						<h3><strong>3</strong>Billing Address</h3>
+						<h3><strong>3</strong>Địa chỉ hoá đơn</h3>
 						<p>
 							<!-- Mussum ipsum cacilds, vidis litro abertis. -->
 						</p>
 					</div>
 					<div class="step">
 						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<label>Country</label>
+							<div class="col-md-12">
 								<div class="form-group">
-									<select class="form-control" name="country" id="country">
-										<option value="">Select your country</option>
-										<option value="Europe">Europe</option>
-										<option value="United states">United states</option>
-										<option value="Asia">Asia</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<div class="form-group">
-									<label>Street line 1</label>
-									<input type="text" id="street_1" name="street_1" class="form-control" placeholder="Street line 1">
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<div class="form-group">
-									<label>Street line 2</label>
-									<input type="text" id="street_2" name="street_2" class="form-control" placeholder="Street line 1">
+									<label>Địa chỉ</label>
+									<input type="text" id="street_1" name="street_1" class="form-control" placeholder="Số 1 Đại Cồ Việt, Hai Bà Trưng">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>City</label>
-									<input type="text" id="city_booking" name="city_booking" class="form-control" placeholder="Miami">
+									<label>Tỉnh/Thành phố</label>
+									<input type="text" id="city_booking" name="city_booking" class="form-control" placeholder="Hà Nội">
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<label>State</label>
-									<input type="text" id="state_booking" name="state_booking" class="form-control" placeholder="Florida">
+									<label>Quận/Huyện</label>
+									<input type="text" id="state_booking" name="state_booking" class="form-control" placeholder="Hai Bà Trưng">
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="form-group">
-									<label>Postal code</label>
+									<label>Mã bưu điện</label>
 									<input type="text" id="postal_code" name="postal_code" class="form-control" placeholder="00342">
 								</div>
 							</div>
@@ -193,10 +174,10 @@
 					<hr>
 					<!--End step -->
 					<div id="policy">
-						<h4>Cancellation policy</h4>
+						<h4>Điều khoản sử dụng</h4>
 						<div class="form-group">
 							<label>
-								<input type="checkbox" name="policy_terms" id="policy_terms"> I accept terms and conditions and general policy.
+								<input type="checkbox" name="policy_terms" id="policy_terms" checked> Tôi chấp nhận chính sách và điều khoản chung khi sử dụng dịch vụ này.
 							</label>
 						</div>
 					</div>
@@ -207,28 +188,28 @@
 					<div class="box_general_3 booking">
 						<form>
 							<div class="title">
-								<h3>Your booking</h3>
+								<h3>Hoá đơn của bạn</h3>
 							</div>
 							<div class="summary">
 								<ul>
-									<li>Date: <strong class="float-right">11/12/2017</strong></li>
-									<li>Time: <strong class="float-right">10.30 am</strong></li>
-									<li>Dr. Name: <strong class="float-right">Dr. julia Jhones</strong></li>
+									<li>Ngày: <strong class="float-right">11/12/2017</strong></li>
+									<li>Thời gian: <strong class="float-right">10:30 </strong></li>
+									<li>Bác sĩ: <strong class="float-right">Lê Thị Hương</strong></li>
 								</ul>
 							</div>
 							<ul class="treatments checkout clearfix">
 								<li>
-									Back Pain visit <strong class="float-right">$55</strong>
+									Lấy dị vật trong tai <strong class="float-right">200.000 VNĐ</strong>
 								</li>
 								<li>
-									Cardiovascular screen <strong class="float-right">$55</strong>
+									Phẫu thuật vá màng nhĩ <strong class="float-right">200.000 VNĐ</strong>
 								</li>
 								<li class="total">
-									Total <strong class="float-right">$110</strong>
+									Tổng cộng <strong class="float-right">400.000 VNĐ</strong>
 								</li>
 							</ul>
 							<hr>
-							<a href="{{ url('confirm') }}" class="btn_1 full-width">Confirm and pay</a>
+							<a href="{{ url('confirm') }}" class="btn_1 full-width">Xác nhận và thanh toán</a>
 						</form>
 					</div>
 					<!-- /box_general -->
