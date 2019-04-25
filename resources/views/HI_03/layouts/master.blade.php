@@ -58,7 +58,7 @@
     <div class="need-help">
         <p>Cần giúp đỡ ?</p>
     </div>
-    <div class="tutorial-icons">
+    <div class="tutorial-icons" style="display:none">
         <div class="need-help">
             <p>Làm theo hướng dẫn -> </p>
         </div>
@@ -181,9 +181,9 @@
 
                 $('body').on('click.show_help', function () {
                     $('#overlay').remove();
-                    $('body').off('click.show_help');
-                    $('.need-help').hide();
                     clearInterval(interval);
+                    $('.need-help').stop(true).hide();
+                    $('body').off('click.show_help');
                 });
             }, 1000 * 60 * 2);
         })
