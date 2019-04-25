@@ -234,11 +234,11 @@
             $('.tutorial-icon.open').tutorial([
                 {
                     element: searchInp,
-                    suggestion: 'Type in your symptoms, or the name of your medical centre or doctor'
+                    suggestion: 'Nhập triệu chứng, tên bác sĩ hoặc tên phòng khám mong muốn'
                 },
                 {
                     element: searchBtn,
-                    suggestion: 'And then find a doctor'
+                    suggestion: 'Nhấn vào nút "Tìm kiếm" để tiếp tục'
                 }
             ]);
         })
