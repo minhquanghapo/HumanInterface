@@ -6,6 +6,9 @@
         .row{
             font-size: medium;
         }
+        .select2-selection__rendered {
+            line-height: 20px;
+        }
     </style>
 @endsection
 @section('pagename')
@@ -116,14 +119,14 @@
                                             <li data-type="monthChart"><a href="#monthChartBox" data-toggle="tab">Month</a></li>
                                             <li class="pull-left header"><i class="fa fa-inbox"></i> Medical Examination Report</li>
                                         </ul>
-                                        <div class="tab-content no-padding">
-                                            <canvas id="areaChart" style="height: 250px; width: 670px;" width="670" height="250"></canvas>
+                                        <div class="tab-content no-padding col-sm-8 col-xs-12">
+                                            <canvas id="areaChart"></canvas>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Minimal</label>
+                                        <label>Bệnh viện</label>
                                         <select class="form-control select2" style="width: 100%;">
                                           <option selected="selected">Chọn tất cả</option>
                                           <option>Bệnh viện Bạch Mai</option>
@@ -132,12 +135,11 @@
                                         </select>
                                     </div>
 
-                                    <h3 style="margin-top: 20px"><strong>Glossary</strong></h3>
                                     <div>
-                                        <span class="label label-default" style="padding-right: 50px; "> </span> : <strong>All books</strong>
+                                        <span class="label label-default" style="padding-right: 20px; "> </span> : <strong>All bookings</strong>
                                     </div>
                                     <div>
-                                        <span class="label label-info" style="background: rgba(60,141,188,0.9) !important; padding-right: 50px;"> </span> : <strong>Success books</strong>
+                                        <span class="label label-info" style="background: rgba(60,141,188,0.9) !important; padding-right: 20px;"> </span> : <strong>Success bookings</strong>
                                     </div>
                                 </div>
                             </div>
@@ -227,9 +229,6 @@
 
             //Create the line chart
             areaChart.Line(areaChartData, areaChartOptions)
-            $('#' + type).css({"width" : "670px", "height" : "250px"})
-            areaChartCanvas.canvas.width = 670
-            areaChartCanvas.canvas.height = 250    
         }
         drawChart("dayChart");
     </script>

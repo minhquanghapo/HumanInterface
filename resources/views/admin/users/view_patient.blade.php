@@ -5,27 +5,22 @@
 @endsection
 @section('pagename')
 <div class="container-fluid">
-    <section class="content-header row">
-        <ol class="breadcrumb" style="float: left; left : 10px; top : 0px;">
-            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/users">Users</a></li>
-            <li class="active"> Edit</li>
-        </ol>
-    </section>
-    <section class="content row">
-        <div class="col-sm-8">
+    <section class="row">
+        <div class="col-sm-8 col-xs-12">
             <div class="box box-primary">
                 <!-- Header -->
                 <div class="box-header with-border">
                     <div class="row">
                         <div class="col-md-3">
-                            <h3 class="box-title">Edit Patient</h3>
+                            <h3 class="box-title">View Patient</h3>
                         </div>
                     </div>
                 </div>
+
                 <!-- Body -->
-                <div class="box-body" id="patient">
-                    <form role="form" class="form-horizontal">
+                <form role="form" class="form-horizontal">
+
+                    <div class="box-body" id="patient">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email address</label>
                             <div class="col-sm-10">
@@ -62,10 +57,12 @@
                                 <input type="text" class="form-control" value="Bạch Mai, Hà Nội" disabled>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+
                 <div class="box-footer">
-                    <a href="/admin/users" class="btn btn-default pull-right">Back</a>
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-info pull-right">Save</button>
                 </div>
             </div>
         </div>
