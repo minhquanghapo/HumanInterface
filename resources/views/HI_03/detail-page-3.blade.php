@@ -24,8 +24,8 @@
 						<figure>
 							<img src="http://via.placeholder.com/565x565.jpg" alt="" class="img-fluid">
 						</figure>
-						<small>Primary care - Internist</small>
-						<h1>DR. Julia Jhones</h1>
+						<small>Khoa Tai Mũi Họng</small>
+						<h1>Bác sĩ Lê Thị Hương</h1>
 						<span class="rating">
 							<i class="icon_star voted"></i>
 							<i class="icon_star voted"></i>
@@ -36,14 +36,14 @@
 							<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 						</span>
 						<ul class="statistic">
-							<li>854 Views</li>
-							<li>124 Patients</li>
+							<li>854 lượt xem</li>
+							<li>124 bệnh nhân</li>
 						</ul>
 						<ul class="contacts">
-							<li><h6>Address</h6>859 60th, Brooklyn, NY, 11220</li>
-							<li><h6>Phone</h6><a href="tel://000434323342">+00043 4323342</a></li>
+							<li><h6>Địa chỉ</h6>29 Nguyễn Bỉnh Khiêm, Nguyễn Du, Hai Bà Trưng, Hà Nội</li>
+							<li><h6>Điện thoại</h6><a href="tel://000434323342">0975 056 124</a></li>
 						</ul>
-						<div class="text-center"><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" class="btn_1 outline" target="_blank"><i class="icon_pin"></i> View on map</a></div>
+						<div class="text-center"><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" class="btn_1 outline" target="_blank"><i class="icon_pin"></i> Xem trên bản đồ</a></div>
 					</div>
 				</aside>
 				<!-- /asdide -->
@@ -52,7 +52,7 @@
 					
 					<div class="box_general_2 add_bottom_45">
 						<div class="main_title_4">
-							<h3><i class="icon_circle-slelected"></i>Select your date and time</h3>
+							<h3><i class="icon_circle-slelected"></i>Chọn ngày và giờ khám</h3>
 						</div>
 						
 						<div class="row add_bottom_45">
@@ -61,8 +61,8 @@
 									<div id="calendar"></div>
 									<input type="hidden" id="my_hidden_input">
 									<ul class="legend">
-										<li><strong></strong>Available</li>
-										<li><strong></strong>Not available</li>
+										<li><strong></strong>Lịch trống</li>
+										<li><strong></strong>Bận</li>
 									</ul>
 								</div>
 							</div>
@@ -70,51 +70,51 @@
 								<ul class="time_select version_2 add_top_20">
 									<li>
 										<input type="radio" id="radio1" name="radio_time" value="09.30am">
-										<label for="radio1">09.30am</label>
+										<label for="radio1">09.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio2" name="radio_time" value="10.00am">
-										<label for="radio2">10.00am</label>
+										<label for="radio2">10.00</label>
 									</li>
 									<li>
 										<input type="radio" id="radio3" name="radio_time" value="10.30am">
-										<label for="radio3">10.30am</label>
+										<label for="radio3">10.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio4" name="radio_time" value="11.00am">
-										<label for="radio4">11.00am</label>
+										<label for="radio4">11.00</label>
 									</li>
 									<li>
 										<input type="radio" id="radio5" name="radio_time" value="11.30am">
-										<label for="radio5">11.30am</label>
+										<label for="radio5">11.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio6" name="radio_time" value="12.00am">
-										<label for="radio6">12.00am</label>
+										<label for="radio6">12.00</label>
 									</li>
 									<li>
 										<input type="radio" id="radio7" name="radio_time" value="01.30pm">
-										<label for="radio7">01.30pm</label>
+										<label for="radio7">13.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio8" name="radio_time" value="02.00pm">
-										<label for="radio8">02.00pm</label>
+										<label for="radio8">14.00</label>
 									</li>
 									<li>
 										<input type="radio" id="radio9" name="radio_time" value="02.30pm">
-										<label for="radio9">02.30pm</label>
+										<label for="radio9">14.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio10" name="radio_time" value="03.00pm">
-										<label for="radio10">03.00pm</label>
+										<label for="radio10">15.00</label>
 									</li>
 									<li>
 										<input type="radio" id="radio11" name="radio_time" value="03.30pm">
-										<label for="radio11">03.30pm</label>
+										<label for="radio11">15.30</label>
 									</li>
 									<li>
 										<input type="radio" id="radio12" name="radio_time" value="04.00pm">
-										<label for="radio12">04.00pm</label>
+										<label for="radio12">16.00</label>
 									</li>
 								</ul>
 							</div>
@@ -122,60 +122,48 @@
 						<!-- /row -->
 						
 						<div class="main_title_4">
-							<h3><i class="icon_circle-slelected"></i>Select visit - treatment</h3>
+							<h3><i class="icon_circle-slelected"></i>Chọn hình thức khám</h3>
 						</div>
 						<ul class="treatments clearfix">
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit1" name="visit1">
-									<label for="visit1" class="css-label">Back Pain visit <strong>$55</strong></label>
+									<label for="visit1" class="css-label">Khám tổng quát <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit2" name="visit2">
-									<label for="visit2" class="css-label">Cardiovascular screen <strong>$55</strong></label>
+									<label for="visit2" class="css-label">Lấy dị vật trong tai <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit3" name="visit3">
-									<label for="visit3" class="css-label">Diabetes consultation <strong>$55</strong></label>
+									<label for="visit3" class="css-label">Lấy dị vật trong mũi <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit4" name="visit4">
-									<label for="visit4" class="css-label">Icontinence visit <strong>$55</strong></label>
+									<label for="visit4" class="css-label">Bệnh lý về họng – thanh quản <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit5" name="visit5">
-									<label for="visit5" class="css-label">Foot Pain visit <strong>$55</strong></label>
+									<label for="visit5" class="css-label">Phẫu thuật xoang mũi <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 							<li>
 								<div class="checkbox">
 									<input type="checkbox" class="css-checkbox" id="visit6" name="visit6">
-									<label for="visit6" class="css-label">Food intollerance visit <strong>$55</strong></label>
-								</div>
-							</li>
-							<li>
-								<div class="checkbox">
-									<input type="checkbox" class="css-checkbox" id="visit7" name="visit7">
-									<label for="visit7" class="css-label">Neck Pain visit <strong>$55</strong></label>
-								</div>
-							</li>
-							<li>
-								<div class="checkbox">
-									<input type="checkbox" class="css-checkbox" id="visit8" name="visit8">
-									<label for="visit8" class="css-label">Back Pain visit <strong>$55</strong></label>
+									<label for="visit6" class="css-label">Phẫu thuật vá màng nhĩ <strong>200.000 VNĐ</strong></label>
 								</div>
 							</li>
 						</ul>
 						<hr>
-						<div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Book Now</a></div>
+						<div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Đặt lịch</a></div>
 					</div>
 					<!-- /box_general -->
 					
@@ -275,7 +263,7 @@
 											</tr>
 											<tr>
 												<td>Diabetes Consultation</td>
-												<td>$55</td>
+												<td>200.000 VNĐ</td>
 											</tr>
 											<tr>
 												<td>Eating disorder</td>

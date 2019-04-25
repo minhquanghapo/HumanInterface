@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Find easily a doctor and book online an appointment">
 	<meta name="author" content="Ansonika">
-	<title>FINDOCTOR - Find easily a doctor and book online an appointment</title>
+	<title>FINDOCTOR - Tìm và đặt lịch online với bác sĩ</title>
 
 	<!-- Favicons-->
 	<link rel="shortcut icon" href="{{ asset('HI_03/img/favicon.ico') }}" type="image/x-icon">
@@ -56,11 +56,11 @@
 	<!--/footer-->
 
     <div class="need-help">
-        <p>You need help ?</p>
+        <p>Cần giúp đỡ ?</p>
     </div>
     <div class="tutorial-icons" style="display:none">
         <div class="need-help">
-            <p>Walk through tutorial -> </p>
+            <p>Làm theo hướng dẫn -> </p>
         </div>
         <div class="tutorial-icon open">
             <i class="far fa-question-circle"></i>
@@ -72,12 +72,12 @@
     <div>
         <div class="chat-bubble-container">
             <div class="need-help">
-                <p>Chat with our supporter -> </p>
+                <p>Liên hệ ngay với chúng tôi -> </p>
             </div>
             <div class="chat-box" style="display: none">
                 <div class="chat-box-top">
-                    <h2>Need help?</h2>
-                    <p>Let's chat with our supporter</p>
+                    <h2>Cần giúp đỡ?</h2>
+                    <p>Liên hệ với chúng tôi</p>
                 </div>
                 <div class="chat-box-content">
                     <div class="chat-message message-reply">
