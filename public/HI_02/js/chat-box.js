@@ -201,7 +201,7 @@
         let loadingElm = replying();
         setTimeout(function() {
             loadingElm.remove();
-            reply(`<p>You can go to hospital at <a href="#" data-toggle="tooltip" title="Set appointment">14:30</a></p>`);
+            reply(`<p>Bạn có thể click vào link sau để đặt lịch <a href="#" data-toggle="tooltip" title="Set appointment">14:30 - Bác sĩ ABC - BV Chợ Rẫy</a></p>`);
         }, 3000)
     })
 

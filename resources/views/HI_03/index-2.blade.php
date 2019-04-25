@@ -260,6 +260,7 @@
 
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
+	<script src="{{ asset('HI_02/js/jquery.clickout.js') }}"></script>
 	<script src="{{ asset('HI_03/js/video_header.js') }}"></script>
 	<script>
 		'use strict';

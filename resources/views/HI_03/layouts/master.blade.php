@@ -58,7 +58,7 @@
     <div class="need-help">
         <p>You need help ?</p>
     </div>
-    <div class="tutorial-icons">
+    <div class="tutorial-icons" style="display:none">
         <div class="need-help">
             <p>Walk through tutorial -> </p>
         </div>
@@ -184,6 +184,7 @@
                     $('body').off('click.show_help');
                     $('.need-help').hide();
                     clearInterval(interval);
+                    $('.tutorial-icons .need-help, .chat-bubble-container .need-help').stop();
                 });
             }, 1000 * 60 * 2);
         })
