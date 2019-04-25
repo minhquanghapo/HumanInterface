@@ -15,7 +15,7 @@
                 <div class="main-menu">
                     <ul>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Home</a>
+                            <a href="#0" class="show-submenu">Trang chủ</a>
                             <!-- <ul>
                                 <li><a href="index.html">Home Default</a></li>
                                 <li><a href="index-2.html">Home Version 2</a></li>
@@ -26,20 +26,15 @@
                             </ul> -->
                         </li>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Your Health<i class="icon-down-open-mini"></i></a>
+                            <a href="#0" class="show-submenu">Sức khoẻ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Alcohol and drugs</a></li>
-                                <li><a href="#0">Dementia</a></li>
-                                <li><a href="#0">Farming health</a></li>
-                                <li><a href="#0">Heart health</a></li>
-                                <li><a href="#0">Mental health</a></li>
-                                <li><a href="#0">Obesity</a></li>
-                                <li><a href="#0">Nutrition</a></li>
-                                <li><a href="#0">Physical activity</a></li>
-                                <li><a href="#0">Stroke prevention</a></li>
+                                <li><a href="#0">Bài tiết</a></li>
+                                <li><a href="#0">Hô hấp</a></li>
+                                <li><a href="#0">Tim mạch</a></li>
+                                <li><a href="#0">Nội tiết</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#0" class="show-submenu">Primary Care<i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="#0">Diagnostics</a></li>
@@ -47,17 +42,14 @@
                                 <li><a href="#0">Clinics/Services</a></li>
                                 <li><a href="#0">Antibiotic & Infection Control</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Contact Us<i class="icon-down-open-mini"></i></a>
+                            <a href="#0" class="show-submenu">Liên hệ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Emergency contacts</a></li>
-                                <li><a href="#0">Service user feedback</a></li>
-                                <li><a href="#0">Trust Headquarters</a></li>
-                                <li><a href="#0">Facility contacts</a></li>
-                                <li><a href="#0">Accessing your information</a></li>
-                                <li><a href="#0">External links</a></li>
-                                <li><a href="#0">FAQs</a></li>
+                                <li><a href="#0">Khẩn cấp</a></li>
+                                <li><a href="#0">Đánh giá từ người dùng</a></li>
+                                <li><a href="#0">Đường dẫn ngoài</a></li>
+                                <li><a href="#0">Câu hỏi thường gặp</a></li>
                             </ul>
                         </li>
                     </ul>
