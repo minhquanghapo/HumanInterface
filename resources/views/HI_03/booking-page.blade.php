@@ -5,9 +5,10 @@
 		<div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Category</a></li>
-					<li>Page active</li>
+					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('grid-list') }}">Tất cả bác sĩ</a></li>
+					<li><a href="{{ url('detail-page') }}">Thông tin bác sĩ</a></li>
+					<li>Đặt lịch</li>
 				</ul>
 			</div>
 		</div>
@@ -124,12 +125,8 @@
 						<!--End row -->
 
 						<h5>Or checkout with Paypal</h5>
-						<p>
-							<!-- Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie, reque fierent dissentiunt mel ea. -->
-						</p>
-						<p>
-							<img src="{{ asset('HI_03/img/paypal_bt.png') }}" alt="Image">
-						</p>
+						<div class="paypal col-md-2">
+						</div>
 					</div>
 					<hr>
 					<!--End step -->
@@ -239,4 +236,9 @@
 		</div>
 		<!-- /container -->
 	</main>
+@endsection
+
+@section('SPECIFIC SCRIPTS')
+	<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+	<script>paypal.Buttons().render('.paypal');</script>
 @endsection

@@ -9,9 +9,9 @@
 		<div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Category</a></li>
-					<li>Page active</li>
+					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('grid-list') }}">Tất cả bác sĩ</a></li>
+					<li>Thông tin bác sĩ</li>
 				</ul>
 			</div>
 		</div>

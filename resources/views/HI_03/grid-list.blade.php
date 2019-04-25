@@ -7,8 +7,12 @@
 
 @section('content')
 	<main>
-		<div id="results">
+		<div id="breadcrumb">
 			<div class="container">
+				<ul>
+					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li>Kết quả tìm kiếm</li>
+				</ul>
 				<div class="row">
 					<div class="col-md-6">
 						<h4><strong>Hiển thị 10</strong> trong 140 kết quả tìm thấy</h4>
