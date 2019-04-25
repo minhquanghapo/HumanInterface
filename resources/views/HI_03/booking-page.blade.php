@@ -6,7 +6,7 @@
 			<div class="container">
 				<ul>
 					<li><a href="{{ url('/') }}">Trang chủ</a></li>
-					<li><a href="{{ url('grid-list') }}">Tất cả bác sĩ</a></li>
+					<li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
 					<li><a href="{{ url('detail-page') }}">Thông tin bác sĩ</a></li>
 					<li>Đặt lịch</li>
 				</ul>
@@ -124,14 +124,15 @@
 						</div>
 						<!--End row -->
 
-						<h5>Hoặc trả bằng Paypal</h5>
+						<h5>Hoặc thanh toán bằng Paypal</h5>
 						<p>
 							<!-- Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie, reque fierent dissentiunt mel ea. -->
 						</p>
-						<p>
+						<!-- <p>
 							<img src="{{ asset('HI_03/img/paypal_bt.png') }}" alt="Image">
-						</p>
-
+						</p> -->
+						<div class="paypal col-md-2">
+						</div>
 					</div>
 					<hr>
 					<!--End step -->
@@ -179,7 +180,7 @@
 						<h4>Điều khoản sử dụng</h4>
 						<div class="form-group">
 							<label>
-								<input type="checkbox" name="policy_terms" id="policy_terms" checked> Tôi chấp nhận chính sách và điều khoản chung khi sử dụng dịch vụ này.
+								<input type="checkbox" name="policy_terms" id="policy_terms" checked> Tôi chấp nhận <a href="#myModal" class="" data-toggle="modal">chính sách và điều khoản chung</a> khi sử dụng dịch vụ này.
 							</label>
 						</div>
 					</div>
@@ -222,6 +223,34 @@
 		</div>
 		<!-- /container -->
 	</main>
+
+	<!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+          	<h4 class="modal-title">Chính sách và điều khoản chung</h4>
+            <button type="button" class="close" data-dismiss="modal"
+              aria-hidden="true">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            <p>CHÚNG TÔI KHÔNG ĐẢM BẢO RẰNG CÁC DỊCH VỤ, PHẦN MỀM NÀY HOẶC CÁC CHỨC NĂNG TRONG PHẦN MỀM SẼ LUÔN KHẢ DỤNG, CÓ THỂ TRUY CẬP, KHÔNG BỊ GIÁN ĐOẠN, KỊP THỜI, AN TOÀN, CHÍNH XÁC, HOÀN CHỈNH HAY KHÔNG CÓ LỖI, RẰNG CÁC KHIẾM KHUYẾT, NẾU CÓ, SẼ ĐƯỢC KHẮC PHỤC, HAY RẰNG PHẦN MỀM NÀY VÀ/HOẶC MÁY CHỦ CUNG CẤP PHẦN MỀM NÀY LÀ KHÔNG CÓ VIRUS, ĐỒNG HỒ, HẸN GIỜ, BỘ ĐẾM, KHÓA PHẦN MỀM, THIẾT BỊ DROP DEAD, TROJAN, ĐỊNH TUYẾN, TRAP DOOR, BOM HẸN GIỜ HOẶC BẤT KỲ MÃ, CHỈ THỊ, CHƯƠNG TRÌNH HAY THÀNH PHẦN CÓ HẠI NÀO KHÁC.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="background: #74d1c6; color: #fff" >Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+@endsection
+
+@section('SPECIFIC CSS')
+	<style type="text/css">
+		.btn-default:hover {
+		    background-color: #e74e84 !important;
+		}
+	</style>
 @endsection
 
 @section('SPECIFIC SCRIPTS')

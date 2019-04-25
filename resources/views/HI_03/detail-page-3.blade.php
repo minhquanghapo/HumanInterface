@@ -10,7 +10,7 @@
 			<div class="container">
 				<ul>
 					<li><a href="{{ url('/') }}">Trang chủ</a></li>
-					<li><a href="{{ url('grid-list') }}">Tất cả bác sĩ</a></li>
+					<li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
 					<li>Thông tin bác sĩ</li>
 				</ul>
 			</div>
@@ -25,7 +25,7 @@
 							<img src="{{ asset('HI_03/img/doctor/doctor.png') }}" alt="" class="img-fluid">
 						</figure>
 						<small>Khoa Tai Mũi Họng</small>
-						<h1>Bác sĩ Lê Thị Hương</h1>
+						<h1><a href="#general-tab">Bác sĩ Lê Thị Hương</a></h1>
 						<span class="rating">
 							<i class="icon_star voted"></i>
 							<i class="icon_star voted"></i>
