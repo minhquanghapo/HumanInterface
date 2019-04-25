@@ -181,10 +181,9 @@
 
                 $('body').on('click.show_help', function () {
                     $('#overlay').remove();
-                    $('body').off('click.show_help');
-                    $('.need-help').hide();
                     clearInterval(interval);
-                    $('.tutorial-icons .need-help, .chat-bubble-container .need-help').stop();
+                    $('.need-help').stop(true).hide();
+                    $('body').off('click.show_help');
                 });
             }, 1000 * 60 * 2);
         })
