@@ -8,24 +8,24 @@
                     </a>
                 </p>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <!-- <div class="col-lg-3 col-md-4">
                 <h5>Về chúng tôi</h5>
                 <ul class="links">
                     <li><a href="#0">Văn phòng đại diện</a></li>
                     <li><a href="#0">Blog</a></li>
-                    <!-- <li><a href="#0">FAQ</a></li>
+                    <li><a href="#0">FAQ</a></li>
                     <li><a href="#0">Login</a></li>
-                    <li><a href="#0">Register</a></li> -->
+                    <li><a href="#0">Register</a></li>
                 </ul>
-            </div>
-            <div class="col-lg-3 col-md-4">
+            </div> -->
+            <div class="col-lg-3 col-md-6">
                 <h5>Đường dẫn</h5>
                 <ul class="links">
                     <li><a href="{{ url('grid-list') }}">Bác sĩ</a></li>
                     <li><a href="{{ url('grid-list') }}">Chuyên khoa</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-6">
                 <h5>Liên hệ</h5>
                 <ul class="contacts">
                     <li><a href="tel://61280932400"><i class="icon_mobile"></i> + 61 23 8093 3400</a></li>

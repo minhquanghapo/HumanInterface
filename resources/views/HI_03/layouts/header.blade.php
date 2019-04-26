@@ -43,7 +43,7 @@
                                 <li><a href="#0">Antibiotic & Infection Control</a></li>
                             </ul> -->
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#0" class="show-submenu">Liên hệ<i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="#0">Khẩn cấp</a></li>
@@ -51,7 +51,7 @@
                                 <li><a href="#0">Đường dẫn ngoài</a></li>
                                 <li><a href="#0">Câu hỏi thường gặp</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- /main-menu -->
