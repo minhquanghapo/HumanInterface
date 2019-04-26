@@ -344,12 +344,17 @@
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/doctors">
-                  <i class="fa fa-user"></i> <span>Doctor</span>
+                  <i class="fa fa-user-md"></i> <span>Doctor</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/staffs">
                   <i class="fa fa-user"></i> <span>Staff</span>
+              </a>
+          </li>
+          <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/medicines">
+                  <i class="fa fa-medkit"></i> <span>Medicine</span>
               </a>
           </li>
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
@@ -368,7 +373,7 @@
     <section class="content-header">
       <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
           <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active"><a href="/admin_hospital/doctors">Doctors</a></li>
+          <li class="active"><a href="/admin_hospital/staffs">Staffs</a></li>
 
       </ol>
     </section>
@@ -401,7 +406,7 @@
                   <td>Kế Toán</td>
                   <td>Trưởng phòng</td>
                   <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="even" id="s2">
                       <td class="sorting_1">Nguyễn Thị Linh</td>
                       <td class="">Thanh Xuân-Hà Nội</td>
@@ -409,7 +414,7 @@
                       <td>Kế Toán</td>
                       <td>Trưởng phòng</td>
                       <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s3">
                       <td class="sorting_1">Nguyễn Thị Linh</td>
                       <td class="">Thanh Xuân-Hà Nội</td>
@@ -417,7 +422,7 @@
                       <td>Kế Toán</td>
                       <td>Trưởng phòng</td>
                       <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>    
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>    
                   </tr></tbody>
                   <tfoot>
                   </tfoot>

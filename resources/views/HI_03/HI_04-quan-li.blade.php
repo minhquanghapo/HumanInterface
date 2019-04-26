@@ -1,4 +1,4 @@
-<!-- This file is of group HI_04, please not change this file -->
+<!-- This file is belong to group HI_04, please not change this file -->
 @extends('HI_03.layouts.master')
 
 @section('content')
@@ -6,18 +6,18 @@
 		<div class="header-video">
 			<div id="hero_video">
 				<div class="content">
-					<h3>Find schedules!</h3>
+					<h3>Tìm kiếm lịch khám!</h3>
 					<form method="post" action="{{ route('result') }}">
 						@csrf
 						<div id="custom-search-input">
 							<div class="input-group">
-								<input type="text" class=" search-query" placeholder="">
-								<input type="submit" class="btn_search" value="Search">
+								<input type="text" class=" search-query" placeholder="Tìm kiếm" name="search_box">
+								<input type="submit" class="btn_search" value="Tìm kiếm">
 							</div>
 							<ul>
 								<li>
 									<input type="radio" id="phone_number" name="radio_search" value="phone_number" checked>
-									<label for="phone_number">Phone number</label>
+									<label for="phone_number">Số điện thoại</label>
 								</li>
 								<li>
 									<input type="radio" id="email" name="radio_search" value="email">
@@ -25,7 +25,7 @@
 								</li>
 								<li>
 									<input type="radio" id="code" name="radio_search" value="code">
-									<label for="code">Code</label>
+									<label for="code">Mã lịch khám</label>
 								</li>
 							</ul>
 						</div>

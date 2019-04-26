@@ -109,21 +109,15 @@ $(document).ready(function() {
                 
             },
             {
-                id: 20,
-                title: 'ca khám',
-                start: '2019-04-26T9:20:00',
-
-            },
-            {
-                id: 21,
-                title: 'ca khám',
-                start: '2019-04-26T9:40:00',
-
-            },
-            {
                 id: 22,
                 title: 'ca khám',
                 start: '2019-04-26T10:00:00',
+
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-04-26T10:30:00',
 
             },
             {
@@ -199,7 +193,7 @@ $(document).ready(function() {
         $id = $(this).val();
         $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
         // window.location = "/doctor/examination";
-        if(Math.abs($current - $date) <= 600000){
+        if(Math.abs($current - $date) <= 6000000){
             window.location = "/doctor/examination";
         }
         else{

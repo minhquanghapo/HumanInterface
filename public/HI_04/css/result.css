@@ -1,0 +1,11 @@
+option{
+	font-size: 14px;
+}
+
+h6{
+	font-size: 14px!important;
+}
+
+.full-info p, .full-info span{
+	font-size: 16px;
+}
