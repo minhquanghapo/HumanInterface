@@ -4,20 +4,20 @@
             <div class="col-lg-3 col-md-12">
                 <p>
                     <a href="#0" title="Findoctor">
-                        <img src="img/logo.png" data-retina="true" alt="" width="163" height="36" class="img-fluid">
+                        <img src="{{ asset('HI_03/img/logo.png') }}" data-retina="true" alt="" width="163" height="36" class="img-fluid">
                     </a>
                 </p>
             </div>
-            <!-- <div class="col-lg-3 col-md-4">
-                <h5>Về chúng tôi</h5>
+            <div class="col-lg-3 col-md-4">
+                {{-- <h5>Về chúng tôi</h5>
                 <ul class="links">
                     <li><a href="#0">Văn phòng đại diện</a></li>
                     <li><a href="#0">Blog</a></li>
                     <li><a href="#0">FAQ</a></li>
                     <li><a href="#0">Login</a></li>
                     <li><a href="#0">Register</a></li>
-                </ul>
-            </div> -->
+                </ul> --}}
+            </div>
             <div class="col-lg-3 col-md-6">
                 <h5>Đường dẫn</h5>
                 <ul class="links">
