@@ -269,7 +269,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src='{{("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
+                <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -317,7 +317,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src='{{("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
+          <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -335,6 +335,7 @@
         </div>
       </form>
       <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
           <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
               <a href="/admin_hospital">
@@ -361,8 +362,7 @@
                   <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
               </a>
           </li>
-      </ul>     
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+      </ul>   
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -371,325 +371,78 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+      <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
+          <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active"><a href="/admin_hospital/doctors">Medicines</a></li>
+
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44 <i class="fa fa-user-md"></i></h3>
-              
-              <p>Bác sĩ</p>
-            </div>
-            
-            <a href="{{ url()->current() }}/doctors" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65 <i class="fa fa-user"></i></h3>
-
-              <p>Nhân viên</p>
-            </div>
-
-            <a href="{{ url()->current() }}/staffs" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-            <div class="small-box bg-green">
-              <div class="inner">
-                <h3>44 <i class="fa fa-medkit"></i></h3>
-                
-                <p>Danh mục thuốc</p>
+          <div class="col-xs-12">
+          <!-- /.box -->
+  
+          <div class="box">
+              <div class="box-header">
+              <h3 class="box-title">Danh mục thuốc</h3>
               </div>
-              
-              <a href="{{ url()->current() }}/medicines" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+              <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example1_length"><label>Show <select name="example1_length" aria-controls="example1" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                  <a href="/admin_hospital/medicines/add" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                     Tạo mới
+                  </a>
+                  <thead>
+                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 160px;" aria-sort="ascending">Tên thuốc</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 100px;">Mã vạch</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 80px;">Danh mục</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 150px;">Xuất xứ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 90px;">Số lượng</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 110px;">Số lượng còn lại</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 90px;">Ngày hết hạn</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 70px;">Thao tác</th></tr>
+                  </thead>
+                  <tbody>
+                  <tr role="row" class="odd" id="s1">
+                  <td class="sorting_1">Paracetamol</td>
+                  <td class="">123456789</td>
+                  <td>Thuốc giảm đau</td>
+                  <td>Công ty dược Hà Nội</td>
+                  <td>2500</td>
+                  <td>500</td>
+                  <td>31-3-2020</td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
+                    <a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <tr role="row" class="even" id="s2">
+                    <td class="sorting_1">Paracetamol</td>
+                    <td class="">123456789</td>
+                    <td>Thuốc giảm đau</td>
+                    <td>Công ty dược Hà Nội</td>
+                    <td>2500</td>
+                    <td>500</td>
+                    <td>31-3-2020</td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
+                    <a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <tr role="row" class="odd" id="s3">
+                    <td class="sorting_1">APTX-4869</td>
+                    <td class="">123456789</td>
+                    <td>Thuốc giảm đau</td>
+                    <td>Công ty dược Hà Nội</td>
+                    <td>2500</td>
+                    <td>500</td>
+                    <td>31-3-2020</td>s
+                    <td>
+                        <a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
+                        <a href="" class="delbut glyphicon glyphicon-trash"></a>
+                    </td>    
+                  </tr></tbody>
+                  <tfoot>
+                  </tfoot>
+              </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0">5</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0">6</a></li><li class="paginate_button next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">Next</a></li></ul></div></div></div></div>
+              </div>
+              <!-- /.box-body -->
           </div>
-        <!-- ./col -->
-      </div>
-    </section>
-    <section class="content-header">
-        <h1>
-          Lịch làm việc
-        </h1>
-      </section>
-    <section class="content">
-      <div id="datetimepicker" class="input-append date" style="margin-bottom: 15px">
-        <input type="text"></input>
-        <span class="add-on">
-          <span class="glyphicon glyphicon-calendar"></span>
-          <i style="display: none" data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-        </span>
+          <!-- /.box -->
+          </div>
+          <!-- /.col -->
       </div>
       <!-- /.row -->
-      <!-- Main row -->
-      <div class="row">
-        <!-- Left col -->
-        <section class="col-lg-12 connectedSortable">
-          <!-- Custom tabs (Charts with tabs)-->
-          <div class="nav-tabs-custom">
-            <!-- Tabs within a box -->
-            <ul class="nav nav-tabs pull-right">
-              <li class="pull-left header"><i class="fa fa-inbox"></i> Thời gian biểu</li>
-            </ul>
-            <div class="tab-content no-padding">
-              <!-- Morris chart - Sales -->
-              <div class="cd-schedule loading">
-                <div class="timeline">
-                  <ul>
-                    <li><span>09:00</span></li>
-                    <li><span>09:30</span></li>
-                    <li><span>10:00</span></li>
-                    <li><span>10:30</span></li>
-                    <li><span>11:00</span></li>
-                    <li><span>11:30</span></li>
-                    <li><span>12:00</span></li>
-                    <li><span>12:30</span></li>
-                    <li><span>13:00</span></li>
-                    <li><span>13:30</span></li>
-                    <li><span>14:00</span></li>
-                    <li><span>14:30</span></li>
-                    <li><span>15:00</span></li>
-                    <li><span>15:30</span></li>
-                    <li><span>16:00</span></li>
-                    <li><span>16:30</span></li>
-                    <li><span>17:00</span></li>
-                    <li><span>17:30</span></li>
-                    <li><span>18:00</span></li>
-                  </ul>
-                </div> <!-- .timeline -->
-              
-                <div class="events">
-                  <ul>
-                    <li class="events-group">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bshung.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Hùng</span></div>              
-                      <ul>
-                        <li class="single-event" data-start="9:30" data-end="11:15"  data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-
-                      </ul>
-                    </li>
-              
-                    <li class="events-group">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstruong.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Trường</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Họp</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Phẫu thuật</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstuyet.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Tuyết</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Họp bàn giao</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Phẫu thuật</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstu.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Tú</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bslan.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Lan</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="9:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Đi công tác</em>
-                          </a>
-                        </li>
-              
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              
-                <div class="event-modal">
-                  <header class="header">
-                    <div class="content">
-                      <span class="event-date"></span>
-                      <h3 class="event-name"></h3>
-                    </div>
-              
-                    <div class="header-bg"></div>
-                  </header>
-              
-                  <div class="body">
-                    <div class="event-info">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                    <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row form-group">
-                                        <div class="col-xs-12">
-                                            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                                                <li class="active"><a href="#step-1" id="step-11">
-                                                        <p class="list-group-item-text">Thông tin bệnh nhân</p>
-                                                    </a></li>
-                                                <li class=""><a href="#step-2" id="step-22">
-                                                        <p class="list-group-item-text">Tình trang bệnh</p>
-                                                    </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="row setup-content" id="step-1" style="">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12 well text-center">
-                                                <table class="table">
-                                                    <tbody><tr>
-                                                        <td><b>Mã hồ sơ</b></td>
-                                                        <td id="idhoso">8</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Họ tên</b></td>
-                                                        <td>Vũ Văn A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Giới tính</b></td>
-                                                        <td>Nam</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Tuổi</b></td>
-                                                        <td>30</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Địa chỉ</b></td>
-                                                        <td>Hà Nội</td>
-                                                    </tr>
-                                                </tbody></table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row setup-content" id="step-2" style="display: none;">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12 well">
-                                                <p>
-                                                    Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                                    Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                                    Thành bụng căng cứng.
-                                                    Sốt nhẹ.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
-                                    
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    
-                    <div class="body-bg"></div>
-                  </div>
-                </div>
-              
-                <div class="cover-layer"></div>
-              </div> <!-- .cd-schedule -->
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- /.row (main row) -->
-
     </section>
     <!-- /.content -->
   </div>
@@ -948,14 +701,9 @@
     format: 'dd/MM/yyyy hh:mm:ss',
     language: 'en-US'
   });
-  $('#step-11').click(function() {
-    console.log("ssấss");
-    $('#step-1').show();
-    $('#step-2').hide();
-  });
-  $('#step-22').click(function() {
-    $('#step-2').show();
-    $('#step-1').hide();
+  $('.delbut').click(function(event) {
+      event.preventDefault();
+      $(this).parent().parent().remove();
   });
 </script>
 </body>

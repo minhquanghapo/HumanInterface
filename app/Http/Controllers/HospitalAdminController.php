@@ -40,4 +40,16 @@ class HospitalAdminController extends Controller
     public function review_comment(){
         return view('HospitalAdmin.review_comment.index');
     }
+
+    public function medicine_info() {
+        return view('HospitalAdmin.medicine_info');
+    }
+
+    public function medicine_add() {
+        return view('HospitalAdmin.medicine_add');
+    }
+
+    public function medicine_edit() {
+        return view('HospitalAdmin.medicine_edit');
+    }
 }
