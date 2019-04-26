@@ -14,116 +14,128 @@ $(document).ready(function() {
             {
                 id: 1,
                 title: 'ca khám',
-                start: '2019-03-12T10:30:00',
+                start: '2019-04-12T10:30:00',
                 
             },
             {
                 id: 2,
                 title: 'ca khám',
-                start: '2019-03-19T11:00:00',
+                start: '2019-04-19T11:00:00',
                 
             },
             {
                 id: 3,
                 title: 'ca khám',
-                start: '2019-03-19T13:00:00',
+                start: '2019-04-19T13:00:00',
                 
             },
             {
                 id: 4,
                 title: 'ca khám',
-                start: '2019-03-19T15:00:00',
+                start: '2019-04-19T15:00:00',
                 
             },
             {
                 id: 5,
                 title: 'ca khám',
-                start: '2019-03-19T15:30:00',
+                start: '2019-04-19T15:30:00',
                 
             },
             {
 
                 id: 6,
                 title: 'ca khám',
-                start: '2019-03-19T16:00:00',
+                start: '2019-04-19T16:00:00',
                 
             },
             {
                 id: 7,
                 title: 'ca khám',
-                start: '2019-03-20T8:30:00',
+                start: '2019-04-20T8:30:00',
                 
             },
             {
                 id: 8,
                 title: 'ca khám',
-                start: '2019-03-20T10:00:00',
+                start: '2019-04-20T10:00:00',
                 
             },
             {
                 id: 9,
                 title: 'ca khám',
-                start: '2019-03-22T9:00:00',
+                start: '2019-04-22T9:00:00',
                 
             },
             {
                 id: 10,
                 title: 'ca khám',
-                start: '2019-03-22T13:30:00',
+                start: '2019-04-22T13:30:00',
                 
             },
             {
                 id: 11,
                 title: 'ca khám',
-                start: '2019-03-23T14:00:00',
+                start: '2019-04-24T14:00:00',
                 
             },
             {
                 id: 12,
                 title: 'ca khám',
-                start: '2019-03-23T14:30:00',
+                start: '2019-04-24T14:30:00',
                 
             },
             {
                 id: 13,
                 title: 'ca khám',
-                start: '2019-03-25T8:00:00',
+                start: '2019-04-25T8:00:00',
                 
             },
             {
                 id: 14,
                 title: 'ca khám',
-                start: '2019-03-25T10:30:00',
+                start: '2019-04-25T10:30:00',
                 
             },
             {
                 id: 15,
                 title: 'ca khám',
-                start: '2019-03-26T15:51:00',
+                start: '2019-04-26T15:51:00',
                 
             },
             {
                 id: 16,
                 title: 'ca khám',
-                start: '2019-03-27T13:30:00',
+                start: '2019-04-27T13:30:00',
                 
+            },
+            {
+                id: 22,
+                title: 'ca khám',
+                start: '2019-04-26T10:00:00',
+
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-04-26T10:30:00',
+
             },
             {
                 id: 17,
                 title: 'ca khám',
-                start: '2019-03-27T15:30:00',
+                start: '2019-04-27T15:30:00',
                 
             },
             {
                 id: 18,
                 title: 'ca khám',
-                start: '2019-03-30T8:30:00',
+                start: '2019-04-30T8:30:00',
                 
             },
             {
                 id: 19,
                 title: 'ca khám',
-                start: '2019-03-30T10:30:00',
+                start: '2019-04-30T10:30:00',
                 
             },
         ],
@@ -181,7 +193,7 @@ $(document).ready(function() {
         $id = $(this).val();
         $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
         // window.location = "/doctor/examination";
-        if(Math.abs($current - $date) <= 600000){
+        if(Math.abs($current - $date) <= 6000000){
             window.location = "/doctor/examination";
         }
         else{
