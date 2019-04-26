@@ -15,7 +15,7 @@
                 <div class="main-menu">
                     <ul>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Trang chủ</a>
+                            <a href="{{ url('/') }}" class="show-submenu">Trang chủ</a>
                             <!-- <ul>
                                 <li><a href="index.html">Home Default</a></li>
                                 <li><a href="index-2.html">Home Version 2</a></li>
@@ -28,10 +28,10 @@
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Sức khoẻ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Bài tiết</a></li>
-                                <li><a href="#0">Hô hấp</a></li>
-                                <li><a href="#0">Tim mạch</a></li>
-                                <li><a href="#0">Nội tiết</a></li>
+                                <li><a href="{{ url('grid-list') }}">Bài tiết</a></li>
+                                <li><a href="{{ url('grid-list') }}">Hô hấp</a></li>
+                                <li><a href="{{ url('grid-list') }}">Tim mạch</a></li>
+                                <li><a href="{{ url('grid-list') }}">Nội tiết</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
