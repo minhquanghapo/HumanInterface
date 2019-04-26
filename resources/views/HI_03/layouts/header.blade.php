@@ -9,13 +9,17 @@
             <nav class="col-lg-9 col-6">
                 <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="#0"><span>Menu mobile</span></a>
                 <ul id="top_access">
-                    <li><a href="#0"><i class="pe-7s-user"></i></a></li>
-                    <li><a href="#0"><i class="pe-7s-add-user"></i></a></li>
+                    <li id="user">
+                        <a href="#0">
+                            <figure><img src="http://via.placeholder.com/150x150.jpg" alt=""></figure>
+                            Nguyen Anh
+                        </a>
+                    </li>
                 </ul>
                 <div class="main-menu">
                     <ul>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Trang chủ</a>
+                            <a href="{{ url('/') }}" class="show-submenu">Trang chủ</a>
                             <!-- <ul>
                                 <li><a href="index.html">Home Default</a></li>
                                 <li><a href="index-2.html">Home Version 2</a></li>
@@ -28,10 +32,10 @@
                         <li class="submenu">
                             <a href="#0" class="show-submenu">Sức khoẻ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Bài tiết</a></li>
-                                <li><a href="#0">Hô hấp</a></li>
-                                <li><a href="#0">Tim mạch</a></li>
-                                <li><a href="#0">Nội tiết</a></li>
+                                <li><a href="{{ url('grid-list') }}">Bài tiết</a></li>
+                                <li><a href="{{ url('grid-list') }}">Hô hấp</a></li>
+                                <li><a href="{{ url('grid-list') }}">Tim mạch</a></li>
+                                <li><a href="{{ url('grid-list') }}">Nội tiết</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -43,7 +47,7 @@
                                 <li><a href="#0">Antibiotic & Infection Control</a></li>
                             </ul> -->
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#0" class="show-submenu">Liên hệ<i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="#0">Khẩn cấp</a></li>
@@ -51,7 +55,7 @@
                                 <li><a href="#0">Đường dẫn ngoài</a></li>
                                 <li><a href="#0">Câu hỏi thường gặp</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- /main-menu -->
