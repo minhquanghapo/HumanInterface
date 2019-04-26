@@ -214,6 +214,14 @@
 	</main>
 @endsection
 
+@section('SPECIFIC CSS')
+	<style type="text/css">
+		.btn-default:hover {
+		    background-color: #e74e84 !important;
+		}
+	</style>
+@endsection
+
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="{{ asset('HI_02/js/jquery.clickout.js') }}"></script>
