@@ -10595,7 +10595,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 
 ( function() {
 
-	// Executing both pixelPosition & boxSizingReliable tests require only one layout
+	// Executing both pixelPosition & boxSizingReliable tests require only one layouts
 	// so they're executed at the same time to save the second computation.
 	function computeStyleTests() {
 
@@ -44138,7 +44138,7 @@ var TransitionGroup = {
     }
 
     // we divide the work into three loops to avoid mixing DOM reads and writes
-    // in each iteration - which helps prevent layout thrashing.
+    // in each iteration - which helps prevent layouts thrashing.
     children.forEach(callPendingCbs);
     children.forEach(recordPosition);
     children.forEach(applyTranslation);
@@ -47240,6 +47240,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/HI_02/scss/app.scss":
+/*!************************************!*\
+  !*** ./public/HI_02/scss/app.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -47417,14 +47428,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!******************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./public/HI_02/scss/app.scss ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/thanhbinh/20182/HumanInteraction/HumanInterface/public/HI_02/scss/app.scss */"./public/HI_02/scss/app.scss");
 
 
 /***/ })
