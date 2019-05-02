@@ -47,3 +47,16 @@ class HospitalAdminController extends Controller
 	return view('HospitalAdmin.doctor_schedule_add');
     }
 }
+
+    public function medicine_info() {
+        return view('HospitalAdmin.medicine_info');
+    }
+
+    public function medicine_add() {
+        return view('HospitalAdmin.medicine_add');
+    }
+
+    public function medicine_edit() {
+        return view('HospitalAdmin.medicine_edit');
+    }
+}

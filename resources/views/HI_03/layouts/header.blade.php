@@ -9,13 +9,17 @@
             <nav class="col-lg-9 col-6">
                 <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="#0"><span>Menu mobile</span></a>
                 <ul id="top_access">
-                    <li><a href="#0"><i class="pe-7s-user"></i></a></li>
-                    <li><a href="#0"><i class="pe-7s-add-user"></i></a></li>
+                    <li id="user">
+                        <a href="#0">
+                            <figure><img src="http://via.placeholder.com/150x150.jpg" alt=""></figure>
+                            Nguyen Anh
+                        </a>
+                    </li>
                 </ul>
                 <div class="main-menu">
                     <ul>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Home</a>
+                            <a href="{{ url('/') }}" class="show-submenu">Trang chủ</a>
                             <!-- <ul>
                                 <li><a href="index.html">Home Default</a></li>
                                 <li><a href="index-2.html">Home Version 2</a></li>
@@ -26,40 +30,32 @@
                             </ul> -->
                         </li>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Your Health<i class="icon-down-open-mini"></i></a>
+                            <a href="#0" class="show-submenu">Sức khoẻ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Alcohol and drugs</a></li>
-                                <li><a href="#0">Dementia</a></li>
-                                <li><a href="#0">Farming health</a></li>
-                                <li><a href="#0">Heart health</a></li>
-                                <li><a href="#0">Mental health</a></li>
-                                <li><a href="#0">Obesity</a></li>
-                                <li><a href="#0">Nutrition</a></li>
-                                <li><a href="#0">Physical activity</a></li>
-                                <li><a href="#0">Stroke prevention</a></li>
+                                <li><a href="{{ url('grid-list') }}">Bài tiết</a></li>
+                                <li><a href="{{ url('grid-list') }}">Hô hấp</a></li>
+                                <li><a href="{{ url('grid-list') }}">Tim mạch</a></li>
+                                <li><a href="{{ url('grid-list') }}">Nội tiết</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#0" class="show-submenu">Primary Care<i class="icon-down-open-mini"></i></a>
-                            <ul>
+                            <a href="{{ route('lich-kham-benh-nhan') }}" class="show-submenu">Lịch khám của tôi<i class=""></i></a>
+                            <!-- <ul>
                                 <li><a href="#0">Diagnostics</a></li>
                                 <li><a href="#0">Care Pathways</a></li>
                                 <li><a href="#0">Clinics/Services</a></li>
                                 <li><a href="#0">Antibiotic & Infection Control</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
-                        <li class="submenu">
-                            <a href="#0" class="show-submenu">Contact Us<i class="icon-down-open-mini"></i></a>
+                        <!-- <li class="submenu">
+                            <a href="#0" class="show-submenu">Liên hệ<i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="#0">Emergency contacts</a></li>
-                                <li><a href="#0">Service user feedback</a></li>
-                                <li><a href="#0">Trust Headquarters</a></li>
-                                <li><a href="#0">Facility contacts</a></li>
-                                <li><a href="#0">Accessing your information</a></li>
-                                <li><a href="#0">External links</a></li>
-                                <li><a href="#0">FAQs</a></li>
+                                <li><a href="#0">Khẩn cấp</a></li>
+                                <li><a href="#0">Đánh giá từ người dùng</a></li>
+                                <li><a href="#0">Đường dẫn ngoài</a></li>
+                                <li><a href="#0">Câu hỏi thường gặp</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- /main-menu -->

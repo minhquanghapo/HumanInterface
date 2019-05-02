@@ -1,10 +1,3 @@
-button{
-    background: #74d1c6!important;
-    border-color: #74d1c6!important;
-    color: white!important;
-}
-button:hover{
-    background: #e83e8c!important;
-    border-color: #e83e8c!important;
-    color: white!important;
+.fc-list-item{
+    cursor: pointer;
 }
