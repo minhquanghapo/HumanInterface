@@ -47,7 +47,7 @@
         <div class="row">
             <div class="col-md-8">
                 <ul id="additional_links">
-                    <li><a href="#policy" data-toggle="modal">Điều kiện sử dụng trang web</a></li>
+                    <li><a href="#policy_modal" data-toggle="modal">Điều kiện sử dụng trang web</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
@@ -56,7 +56,7 @@
         </div>
     </div>
     
-    <div id="policy" class="modal fade">
+    <div id="policy_modal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -75,3 +75,9 @@
         </div>
     </div>
 </footer>
+
+<style type="text/css">
+    .btn-default:hover {
+        background-color: #e74e84 !important;
+    }
+</style>
