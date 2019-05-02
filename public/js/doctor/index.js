@@ -5,7 +5,7 @@ $(document).ready(function() {
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay,listWeek'
+            right: 'listDay,month'
         },
         navLinks: true, // can click day/week names to navigate views
         eventLimit: true, // allow "more" link when too many events
@@ -14,128 +14,146 @@ $(document).ready(function() {
             {
                 id: 1,
                 title: 'ca khám',
-                start: '2019-04-12T10:30:00',
+                start: '2019-05-12T10:30:00',
                 
             },
             {
                 id: 2,
                 title: 'ca khám',
-                start: '2019-04-19T11:00:00',
+                start: '2019-05-03T11:00:00',
                 
             },
             {
                 id: 3,
                 title: 'ca khám',
-                start: '2019-04-19T13:00:00',
-                
+                start: '2019-05-03T08:00:00',
+
             },
             {
                 id: 4,
                 title: 'ca khám',
-                start: '2019-04-19T15:00:00',
-                
+                start: '2019-05-03T09:00:00',
+
             },
             {
                 id: 5,
                 title: 'ca khám',
-                start: '2019-04-19T15:30:00',
-                
+                start: '2019-05-03T09:30:00:00',
+
             },
             {
-
                 id: 6,
                 title: 'ca khám',
-                start: '2019-04-19T16:00:00',
+                start: '2019-05-03T13:00:00',
                 
             },
             {
                 id: 7,
                 title: 'ca khám',
-                start: '2019-04-20T8:30:00',
+                start: '2019-05-03T15:00:00',
                 
             },
             {
                 id: 8,
                 title: 'ca khám',
-                start: '2019-04-20T10:00:00',
+                start: '2019-05-03T15:30:00',
                 
             },
             {
+
                 id: 9,
                 title: 'ca khám',
-                start: '2019-04-22T9:00:00',
+                start: '2019-05-03T16:00:00',
                 
             },
             {
                 id: 10,
                 title: 'ca khám',
-                start: '2019-04-22T13:30:00',
+                start: '2019-05-20T8:30:00',
                 
             },
             {
                 id: 11,
                 title: 'ca khám',
-                start: '2019-04-24T14:00:00',
+                start: '2019-05-20T10:00:00',
                 
             },
             {
                 id: 12,
                 title: 'ca khám',
-                start: '2019-04-24T14:30:00',
+                start: '2019-05-22T9:00:00',
                 
             },
             {
                 id: 13,
                 title: 'ca khám',
-                start: '2019-04-25T8:00:00',
+                start: '2019-05-22T13:30:00',
                 
             },
             {
                 id: 14,
                 title: 'ca khám',
-                start: '2019-04-25T10:30:00',
+                start: '2019-05-24T14:00:00',
                 
             },
             {
                 id: 15,
                 title: 'ca khám',
-                start: '2019-04-26T15:51:00',
+                start: '2019-05-24T14:30:00',
                 
             },
             {
                 id: 16,
                 title: 'ca khám',
-                start: '2019-04-27T13:30:00',
+                start: '2019-05-25T8:00:00',
                 
-            },
-            {
-                id: 22,
-                title: 'ca khám',
-                start: '2019-04-26T10:00:00',
-
-            },
-            {
-                id: 23,
-                title: 'ca khám',
-                start: '2019-04-26T10:30:00',
-
             },
             {
                 id: 17,
                 title: 'ca khám',
-                start: '2019-04-27T15:30:00',
+                start: '2019-05-25T10:30:00',
                 
             },
             {
                 id: 18,
                 title: 'ca khám',
-                start: '2019-04-30T8:30:00',
+                start: '2019-05-26T15:51:00',
                 
             },
             {
                 id: 19,
                 title: 'ca khám',
-                start: '2019-04-30T10:30:00',
+                start: '2019-05-27T13:30:00',
+                
+            },
+            {
+                id: 20,
+                title: 'ca khám',
+                start: '2019-05-26T10:00:00',
+
+            },
+            {
+                id: 21,
+                title: 'ca khám',
+                start: '2019-05-26T10:30:00',
+
+            },
+            {
+                id: 22,
+                title: 'ca khám',
+                start: '2019-05-27T15:30:00',
+                
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-05-30T8:30:00',
+                
+            },
+            {
+                id: 24,
+                title: 'ca khám',
+                start: '2019-05-30T10:30:00',
                 
             },
         ],
@@ -259,7 +277,5 @@ $(document).ready(function() {
             $(this).css("background",$color);
         });
     });
-
-
 
 });
