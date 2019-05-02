@@ -5,163 +5,182 @@ $(document).ready(function() {
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month,basicWeek,basicDay'
+            right: 'listDay,month'
         },
-        defaultDate: '2019-03-12',
         navLinks: true, // can click day/week names to navigate views
-        editable: true,
         eventLimit: true, // allow "more" link when too many events
         locale: 'vi',
         events: [
             {
-                title: 'Họp cả ngày',
-                start: '2019-03-18',
-                className: 'meeting',
-                color: '#FF33BE'
-            },
-            {
-                title: 'Đi công tác',
-                start: '2019-03-07',
-                end: '2019-03-10',
-                className: 'mission',
-                color: '#FF3346'
-            },
-            // {
-            //     id: 999,
-            //     title: 'Repeating Event',
-            //     start: '2019-03-09T16:00:00'
-            // },
-            {
-                title: 'Dự hội thảo',
-                start: '2019-03-11',
-                end: '2019-03-13',
-                className: 'seminor',
-                color: '#FF336E'
-            },
-            {
                 id: 1,
                 title: 'ca khám',
-                start: '2019-03-12T10:30:00',
-                className: 'examination'
+                start: '2019-05-12T10:30:00',
+                
             },
             {
                 id: 2,
                 title: 'ca khám',
-                start: '2019-03-19T11:00:00',
-                className: 'examination'
+                start: '2019-05-03T11:00:00',
+                
             },
             {
                 id: 3,
                 title: 'ca khám',
-                start: '2019-03-19T13:00:00',
-                className: 'examination'
+                start: '2019-05-03T08:00:00',
+
             },
             {
                 id: 4,
                 title: 'ca khám',
-                start: '2019-03-19T15:00:00',
-                className: 'examination'
+                start: '2019-05-03T09:00:00',
+
             },
             {
                 id: 5,
                 title: 'ca khám',
-                start: '2019-03-19T15:30:00',
-                className: 'examination'
+                start: '2019-05-03T09:30:00:00',
+
             },
             {
-
                 id: 6,
                 title: 'ca khám',
-                start: '2019-03-19T16:00:00',
-                className: 'examination'
+                start: '2019-05-03T13:00:00',
+                
             },
             {
                 id: 7,
                 title: 'ca khám',
-                start: '2019-03-20T8:30:00',
-                className: 'examination'
+                start: '2019-05-03T15:00:00',
+                
             },
             {
                 id: 8,
                 title: 'ca khám',
-                start: '2019-03-20T10:00:00',
-                className: 'examination'
+                start: '2019-05-03T15:30:00',
+                
             },
             {
+
                 id: 9,
                 title: 'ca khám',
-                start: '2019-03-22T9:00:00',
-                className: 'examination'
+                start: '2019-05-03T16:00:00',
+                
             },
             {
                 id: 10,
                 title: 'ca khám',
-                start: '2019-03-22T13:30:00',
-                className: 'examination'
+                start: '2019-05-20T8:30:00',
+                
             },
             {
                 id: 11,
                 title: 'ca khám',
-                start: '2019-03-23T14:00:00',
-                className: 'examination'
+                start: '2019-05-20T10:00:00',
+                
             },
             {
                 id: 12,
                 title: 'ca khám',
-                start: '2019-03-23T14:30:00',
-                className: 'examination'
+                start: '2019-05-22T9:00:00',
+                
             },
             {
                 id: 13,
                 title: 'ca khám',
-                start: '2019-03-25T8:00:00',
-                className: 'examination'
+                start: '2019-05-22T13:30:00',
+                
             },
             {
                 id: 14,
                 title: 'ca khám',
-                start: '2019-03-25T10:30:00',
-                className: 'examination'
+                start: '2019-05-24T14:00:00',
+                
             },
             {
                 id: 15,
                 title: 'ca khám',
-                start: '2019-03-25T10:30:00',
-                className: 'examination'
+                start: '2019-05-24T14:30:00',
+                
             },
             {
                 id: 16,
                 title: 'ca khám',
-                start: '2019-03-27T13:30:00',
-                className: 'examination'
+                start: '2019-05-25T8:00:00',
+                
             },
             {
                 id: 17,
                 title: 'ca khám',
-                start: '2019-03-27T15:30:00',
-                className: 'examination'
+                start: '2019-05-25T10:30:00',
+                
             },
             {
                 id: 18,
                 title: 'ca khám',
-                start: '2019-03-30T8:30:00',
-                className: 'examination'
+                start: '2019-05-26T15:51:00',
+                
             },
             {
                 id: 19,
                 title: 'ca khám',
-                start: '2019-03-30T10:30:00',
-                className: 'examination'
+                start: '2019-05-27T13:30:00',
+                
+            },
+            {
+                id: 20,
+                title: 'ca khám',
+                start: '2019-05-26T10:00:00',
+
+            },
+            {
+                id: 21,
+                title: 'ca khám',
+                start: '2019-05-26T10:30:00',
+
+            },
+            {
+                id: 22,
+                title: 'ca khám',
+                start: '2019-05-27T15:30:00',
+                
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-05-30T8:30:00',
+                
+            },
+            {
+                id: 24,
+                title: 'ca khám',
+                start: '2019-05-30T10:30:00',
+                
             },
         ],
         eventClick: function(info) {
-            if(info.className == "examination"){
-                $("#idhoso").html(info.id);
-                $("#accept-remove").val(info.id);
-                $("#detailModal").modal("show");
-            }
-        }
+            $("#idhoso").html(info.id);
+            $("#start-examination").val(info.id);
+            $("#accept-remove").val(info.id);
+            $("#detailModal").modal("show");
+        },
+
     });
+
+    $current = moment($('#calendar').fullCalendar('getDate'));
+    $list_event = $("#calendar").fullCalendar('clientEvents');
+    for($i=0;$i<$list_event.length;$i++){
+        $event = $list_event[$i];
+        if(($current - $event.start) > 600000){
+            $event.color = "#6c757d";
+            $('#calendar').fullCalendar('updateEvent', $event);
+        }
+    };
+
+    $list_event_html = $(".fc-event");
+    $list_event_html.each(function () {
+       $(this).css("cursor","pointer");
+    });
+
 
     // $("#calendar").on("click",".fc-content",function () {
     //
@@ -187,6 +206,19 @@ $(document).ready(function() {
     });
 
     $('ul.setup-panel li.active a').trigger('click');
+
+    $("#start-examination").on("click",function () {
+        $id = $(this).val();
+        $date = moment($("#calendar").fullCalendar('clientEvents', $id)[0].start);
+        // window.location = "/doctor/examination";
+        if(Math.abs($current - $date) <= 6000000){
+            window.location = "/doctor/examination";
+        }
+        else{
+            toastr["error"]("Hiện tại chưa thể bắt đầu ca khám! Xin quay lại sau!");
+        }
+
+    });
 
     $("#remove-examination").on("click",function () {
         $("#detailModal").modal("hide");
@@ -238,5 +270,15 @@ $(document).ready(function() {
         toastr["success"]("Cập nhật mật khẩu thành công!");
     });
 
+    $("#calendar").on("mouseover",".fc-event",function () {
+        $color = $(this).css("background");
+        $(this).css("background"," #e83e8c");
+        $(this).on("mouseout",function () {
+            $(this).css("background",$color);
+        });
+    });
 
+    $(document).on("click",".fc-day",function () {
+       window.location = "/doctor/examination-list";
+    });
 });

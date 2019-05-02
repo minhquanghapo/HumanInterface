@@ -53,16 +53,16 @@
             <div class="chat-box-footer">
                 <form id="chatForm" class="no-margin">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-md-12">
                             <div class="file-preview">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-md-9">
                             <input id="messageInp" type="text" class="form-control message-input" placeholder="Type and press [Enter]">
                         </div>
-                        <div class="col-3 action-group">
+                        <div class="col-md-3 action-group">
                             <i class="fas fa-paperclip action" id="btnAddFile"></i>
                             <i class="fas fa-images action" id="btnAddImage"></i>
                         </div>
@@ -105,6 +105,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+<script src="{{ asset('HI_02/js/jquery.clickout.js') }}"></script>
 <script src="{{ asset('HI_02/js/chat-box.js') }}"></script>
 
 

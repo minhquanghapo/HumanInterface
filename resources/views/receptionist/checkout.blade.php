@@ -18,7 +18,7 @@
         <ul id="checkin-tabs">
             <li class="current active"><span>1.</span> thông tin bệnh nhân</li>
             <li><span>2.</span> Thanh toán tiền ra viện</li>
-            <li><span>2.</span> </li>
+
         </ul>
         <div id="fieldsets">
 
@@ -131,6 +131,29 @@
                         <label name="so_bhyt"   >2.000.000</label>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt"   > </label>
+                    </div>
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt" size=""   >Tiền đặt cọc</label>
+                    </div>
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt"   >1.000.000</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt"   > </label>
+                    </div>
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt" size=""   >Tiền cần thanh toán</label>
+                    </div>
+                    <div class="col-sm-4" >
+                        <label name="so_bhyt"   >1.000.000</label>
+                    </div>
+                </div>
 
 
 
@@ -142,8 +165,8 @@
 
 
 
-            <a class="btn" id="next">Next Section ▷</a>
-            <input type="submit" class="btn">
+            <a class="btn" id="next">Tiếp ▷</a>
+            <input type="submit" class="btn" value="Thanh Toán">
         </div>
     </form>
     </div>

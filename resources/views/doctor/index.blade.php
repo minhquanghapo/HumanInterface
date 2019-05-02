@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <link href='{{asset('css/fullcalendar.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/toastr.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+    <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+    <link href='{{asset('css/doctor/custom.css')}}' rel='stylesheet'/>
     <script src='{{asset('js/moment.min.js')}}'></script>
     <script src='{{asset('js/jquery.min.js')}}'></script>
     <script src='{{asset('js/bootstrap.min.js')}}'></script>
@@ -27,6 +28,8 @@
             width: 90%;
             margin: auto;
         }
+
+
     </style>
 </head>
 <body>
@@ -112,7 +115,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>
+                {{--<a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>--}}
+                <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
                 <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>

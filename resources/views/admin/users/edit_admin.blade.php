@@ -12,48 +12,51 @@
             <li class="active"> Edit</li>
         </ol>
     </section>
-    <section class="content row">
-        <div class="col-sm-8">
-            <div class="box box-primary">
-                <!-- Header -->
-                <div class="box-header with-border">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3 class="box-title">Edit Admin</h3>
+    <section class="content">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="box box-primary">
+                    <!-- Header -->
+                    <div class="box-header with-border">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h3 class="box-title">Edit Admin</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Body -->
-                <div class="box-body" id="admin">
+                    <!-- Body -->
                     <form role="form" class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Email address</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" placeholder="Enter email">
+                        <div class="box-body" id="admin">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email address</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control"  placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Confirm Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="confirm-password" placeholder="Password">
-                            </div>
-                        </div>
-                    </form>                
-                </div>
-                <div class="box-footer">
-                    <button type="submit" class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-info pull-right">Save</button>
+
+                    </form>
+
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-info pull-right">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </div>
+    </section>
 </div>
 @endsection
 @section('content')

@@ -24,16 +24,16 @@
                     <i class="fa fa-dashboard"></i> <span>Thanh toán ra viện</span>
                 </a>
             </li>
-            <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
-                <a href="/receptionist/pay_for_test">
-                    <i class="fa fa-user"></i> <span>Đóng phí xét nghiệm</span>
-                </a>
-            </li>
-            <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
-                <a href="/admin/hospitals">
-                    <i class="fa fa-hospital-o"></i> <span>Hospitals</span>
-                </a>
-            </li>
+            {{--<li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">--}}
+                {{--<a href="/receptionist/pay_for_test">--}}
+                    {{--<i class="fa fa-user"></i> <span>Đóng phí xét nghiệm</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--<li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">--}}
+                {{--<a href="/admin/hospitals">--}}
+                    {{--<i class="fa fa-hospital-o"></i> <span>Hospitals</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
         </ul>    
     </section>
     <!-- /.sidebar -->

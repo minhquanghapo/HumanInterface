@@ -13,17 +13,13 @@
         .select2-selection__choice__remove {
             color: #fff !important;
         }
+        h4 {
+              text-decoration: underline;
+        }
     </style>
 @endsection
 @section('pagename')
     <div class="container-fluid">
-        <section class="content-header">
-            <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
-                <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="/admin/hospitals">Hospitals</a></li>
-                <li class="active"> Create</li>
-            </ol>
-        </section>
         <section class="content">
             <div class="row">
                 <div class="col-md-8">
@@ -116,6 +112,25 @@
                                     <div class="col-sm-10">
                                         <input class="form-control" id="inputEmail3" placeholder="Nhập số fax">
                                     </div>                                
+                                </div>
+                                <div style="padding: 20px;"></div>
+                                 <div class="form-group">
+                                    <label class="col-sm-2 control-label">Username</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" placeholder="Enter email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
                                 </div>
 
                             </div>

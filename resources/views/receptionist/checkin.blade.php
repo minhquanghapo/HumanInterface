@@ -263,7 +263,7 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <form action="/action_page.php">
-                                        <input type="radio" name="editList" id="always" value="always"/>
+                                        <input type="radio" name="editList" id="sex_male" value="always"/>
                                         <label for="always">Nam</label>
 
                                         <input type="radio" name="editList" id="never" value="never"/>
@@ -315,7 +315,7 @@
                                         <option value="1987">1987</option>
                                         <option value="1986">1986</option>
                                         <option value="1985">1985</option>
-                                        <option value="1984"　selected>1984</option>
+                                        <option value="1984"　>1984</option>
                                         <option value="1983">1983</option>
                                         <option value="1982">1982</option>
                                         <option value="1981">1981</option>
@@ -420,8 +420,8 @@
 
                         </fieldset>
 
-                        <a class="btn" id="next">Next Section ▷</a>
-                        <input type="submit" class="btn" style="visibility: visible">
+                        <a class="btn" id="next">Tiếp ▷</a>
+                        <input type="submit" class="btn" style="visibility: visible" value="Xác nhận">
                     </div>
                 </form>
             </div></div>
@@ -457,7 +457,10 @@
                     $.playSound('https://notificationsounds.com/notification-sounds/unconvinced-569/download/mp3');
                     $('#so_bhyt').val('SV | 4 | 01 | 012 161 9422');
                     $('#ten_nb').val('Lê Huy Hùng');
-                    $('#so_cmt').val('0011 8300 0001');
+                    // $('#sex_male').attr("checked", true);
+            $("#sex_male").attr('checked', 'checked');
+
+            $('#so_cmt').val('0011 8300 0001');
 
                 },4000);
 

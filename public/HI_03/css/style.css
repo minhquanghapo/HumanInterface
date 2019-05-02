@@ -430,7 +430,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #e74e84;
+  background: #74d1c6;
   cursor: pointer;
   padding: 7px 20px;
   display: inline-block;
@@ -465,17 +465,18 @@ a.btn_1.full-width,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background: #74d1c6;
+  background: #e74e84;
 }
 a.btn_1.outline,
 .btn_1.outline {
-  background: transparent;
-  border: 2px solid #e74e84;
-  color: #e74e84;
+  background: #74d1c6;
+  border: 2px solid #74d1c6;
+  color: #fff;
 }
 a.btn_1.outline:hover,
 .btn_1.outline:hover {
   background: #e74e84;
+  border: 2px solid #e74e84;
   color: #fff;
 }
 
@@ -1867,9 +1868,9 @@ iframe {
   float: right;
 }
 .box_list ul li:last-child a {
-  background: #fff;
-  border: 2px solid #e74e84;
-  color: #e74e84;
+  background: #74d1c6;
+  border: 2px solid #74d1c6;
+  color: #fff;
   padding: 5px 20px;
   font-weight: 500;
   line-height: 1;
@@ -1885,6 +1886,7 @@ iframe {
 }
 .box_list ul li:last-child a:hover {
   background: #e74e84;
+  border: 2px solid #e74e84;
   color: #fff;
 }
 .box_list.home ul li:first-child, .box_list.home ul li:nth-child(2), .box_list.home ul li:last-child {
@@ -2603,6 +2605,13 @@ a.wish_bt:hover:after {
   content: '';
   margin-right: 0;
 }
+#breadcrumb h4 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
 
 .tabs_styled_2 .nav-tabs .nav-item.show .nav-link,
 .tabs_styled_2 .nav-tabs .nav-link.active {
