@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
-    <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet'/>
+
+@extends('doctor.master')
+
+@section('custom_css')
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
-    <link href='{{asset('css/doctor/custom.css')}}' rel='stylesheet'/>
-    <script src='{{asset('js/jquery.min.js')}}'></script>
-    <script src='{{asset('js/bootstrap.min.js')}}'></script>
-    <script src='{{asset('js/toastr.min.js')}}'></script>
-    <script src='{{asset('js/doctor/examination.js')}}'></script>
-    <script src='{{asset('js/doctor/selectize.min.js')}}'></script>
-    <script src='{{asset('js/doctor/select_index.js')}}'></script>
-    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
     <style>
 
         body {
@@ -23,9 +13,30 @@
         }
 
     </style>
-</head>
-<body>
-<div class="container">
+@endsection
+
+@section('custom_js')
+
+    <script src='{{asset('js/doctor/examination.js')}}'></script>
+    <script src='{{asset('js/doctor/selectize.min.js')}}'></script>
+    <script src='{{asset('js/doctor/select_index.js')}}'></script>
+
+    <script>
+        function textCounter(field,field2,maxlimit)
+        {
+            var countfield = document.getElementById(field2);
+            if ( field.value.length > maxlimit ) {
+                field.value = field.value.substring( 0, maxlimit );
+                return false;
+            } else {
+                countfield.innerHTML = maxlimit - field.value.length;
+            }
+        }
+    </script>
+
+@endsection
+
+@section('page_body')<div class="container">
 
     <div class="col-md-2">
         <div class="avatar">
@@ -164,7 +175,7 @@
                                     </table>
                                 </div>
                             </td>
-                            
+
                         </tr>
                     </table>
                     <button id="activate-step-4" class="btn btn-primary btn-lg">Kết luận</button>
@@ -262,16 +273,16 @@
                                 <div class="table-responsive text-center">
                                     <table class="table">
                                         <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Tên </th>
-                                                <th>Số lượng</th>
-                                                <th>Đơn vị</th>
-                                                <th>Liều dùng</th>
-                                                <th>Số lần / ngày</th>
-                                                <th>Chỉ định</th>
-                                                <th>Xoá</th>
-                                            </tr>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tên </th>
+                                            <th>Số lượng</th>
+                                            <th>Đơn vị</th>
+                                            <th>Liều dùng</th>
+                                            <th>Số lần / ngày</th>
+                                            <th>Chỉ định</th>
+                                            <th>Xoá</th>
+                                        </tr>
                                         </thead>
                                         <tbody id="medicine_list" >
 
@@ -294,17 +305,4 @@
         </div>
     </div>
 </div>
-</body>
-<script>
-    function textCounter(field,field2,maxlimit)
-    {
-        var countfield = document.getElementById(field2);
-        if ( field.value.length > maxlimit ) {
-            field.value = field.value.substring( 0, maxlimit );
-            return false;
-        } else {
-            countfield.innerHTML = maxlimit - field.value.length;
-        }
-    }
-</script>
-</html>
+@endsection
