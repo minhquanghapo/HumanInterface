@@ -38,7 +38,8 @@
                     <h4>BS. Lê Hoàng Vũ</h4>
                     <p>Khoa: Chấn thương chỉnh hình</p>
                     <p>sdt: 0123456789</p>
-                    <button type="button" class="btn btn-primary" style="margin-: 10px" data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
+                    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
+                    <a href="/doctor/login" class="btn btn-info" style="margin-top:10px; width: 96%;" role="button">Đăng xuất</a>
                 </center>
 
             </div>

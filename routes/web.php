@@ -43,6 +43,7 @@ Route::match(['get', 'post'],'/result', 'PageControllerHI04@getFormSearch')->nam
 
 Route::get('/doctor',"DoctorController@index");
 Route::get('/doctor/examination',"DoctorController@examination");
+Route::get('/doctor/login',"DoctorController@login");
 
 // HI_03
 Route::match(['get', 'post'],'/grid-list', function () {
