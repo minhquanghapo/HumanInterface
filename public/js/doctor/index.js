@@ -38,12 +38,7 @@ $(document).ready(function() {
             {
                 id: 5,
                 title: 'ca khám',
-<<<<<<< HEAD
                 start: '2019-05-03T09:30:00',
-=======
-                start: '2019-05-03T09:30:00:00',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
-
             },
             {
                 id: 6,
@@ -73,12 +68,7 @@ $(document).ready(function() {
             {
                 id: 10,
                 title: 'ca khám',
-<<<<<<< HEAD
                 start: '2019-05-20T08:30:00',
-=======
-                start: '2019-05-20T8:30:00',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
-                
             },
             {
                 id: 11,
@@ -89,11 +79,7 @@ $(document).ready(function() {
             {
                 id: 12,
                 title: 'ca khám',
-<<<<<<< HEAD
                 start: '2019-05-22T09:00:00',
-=======
-                start: '2019-05-22T9:00:00',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
                 
             },
             {
@@ -117,12 +103,7 @@ $(document).ready(function() {
             {
                 id: 16,
                 title: 'ca khám',
-<<<<<<< HEAD
                 start: '2019-05-25T08:00:00',
-=======
-                start: '2019-05-25T8:00:00',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
-                
             },
             {
                 id: 17,
@@ -132,7 +113,6 @@ $(document).ready(function() {
             },
             {
                 id: 18,
-<<<<<<< HEAD
                 title: 'ca khám',
                 start: '2019-05-26T15:51:00',
                 
@@ -146,21 +126,6 @@ $(document).ready(function() {
             {
                 id: 20,
                 title: 'ca khám',
-=======
-                title: 'ca khám',
-                start: '2019-05-26T15:51:00',
-                
-            },
-            {
-                id: 19,
-                title: 'ca khám',
-                start: '2019-05-27T13:30:00',
-                
-            },
-            {
-                id: 20,
-                title: 'ca khám',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
                 start: '2019-05-26T10:00:00',
 
             },
@@ -179,12 +144,7 @@ $(document).ready(function() {
             {
                 id: 23,
                 title: 'ca khám',
-<<<<<<< HEAD
                 start: '2019-05-30T08:30:00',
-=======
-                start: '2019-05-30T8:30:00',
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
-                
             },
             {
                 id: 24,
@@ -313,11 +273,4 @@ $(document).ready(function() {
             $(this).css("background",$color);
         });
     });
-
-<<<<<<< HEAD
-=======
-    $(document).on("click",".fc-day",function () {
-       window.location = "/doctor/examination-list";
-    });
->>>>>>> 138ca547effce786f8b16dd95a583aeb6ccf8b6c
 });
