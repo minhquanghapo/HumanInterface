@@ -71,6 +71,29 @@ Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit"
 Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
 Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
 Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
+
+Route::get('/receptionist/', "NewPatient@index");
+Route::get('/receptionist/checkin', "NewPatient@checkin");
+
+Route::get('/receptionist/checkout', "NewPatient@checkout");
+
+Route::get('/receptionist/pay_for_test', "NewPatient@pay_for_test");
+Route::get('media/{filename}', function ($filename) {
+    $path = storage_path('app') . $filename;
+
+    if(!File::exists($path)) abort(404);
+
+    $file = File::get($path);
+    $type = File::mimeType($path);
+
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+
+    return $response;
+});
+
+//}
+
 //}
 //HI_02
 Route::get('/admin_hospital/doctors/schedule', "HospitalAdminController@doctor_schedule");
