@@ -69,6 +69,9 @@ Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
 Route::get('/receptionist/', "NewPatient@index");
 Route::get('/receptionist/checkin', "NewPatient@checkin");
 
+Route::get('/receptionist/checkout', "NewPatient@checkout");
+
+Route::get('/receptionist/pay_for_test', "NewPatient@pay_for_test");
 Route::get('media/{filename}', function ($filename) {
     $path = storage_path('app') . $filename;
 

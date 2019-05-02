@@ -15,17 +15,17 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">Tiếp đón bệnh nhân </li>
             <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
-                <a href="/receptionist/checkin>
+                <a href="/receptionist/checkin">
                     <i class="fa fa-user"></i> <span>Nhập viện</span>
                 </a>
             </li>
             <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
-                <a href="/admin">
+                <a href="/receptionist/checkin">
                     <i class="fa fa-dashboard"></i> <span>Thanh toán ra viện</span>
                 </a>
             </li>
             <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
-                <a href="/admin/users">
+                <a href="/receptionist/pay_for_test">
                     <i class="fa fa-user"></i> <span>Đóng phí xét nghiệm</span>
                 </a>
             </li>

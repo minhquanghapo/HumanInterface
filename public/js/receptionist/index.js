@@ -31,8 +31,10 @@ function goToSection(i){
         $("#next").hide();
         $("input[type=submit]").show();
       } else {
-        $("#next").show();
-        $("input[type=submit]").hide();
+        // $("#next").show();
+          $("#next").hide();
+          $("input[type=submit]").show();
+        // $("input[type=submit]").hide();
       }
   }, 80);
 
@@ -50,11 +52,12 @@ function nextSection(){
  
 $("li").on("click", function(e){
   var i = $(this).index();
-  if ($(this).hasClass("active")){
     goToSection(i);
-  } else {
-    alert("Please complete previous sections first.");
-  }
+  // if ($(this).hasClass("active")){
+  //   goToSection(i);
+  // } else {
+  //   alert("Please complete previous sections first.");
+  // }
 });
 
 

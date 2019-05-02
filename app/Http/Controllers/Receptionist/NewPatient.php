@@ -18,6 +18,16 @@ class NewPatient extends Controller
     {
         return view('receptionist.checkin');
     }
+
+    public function checkout()
+    {
+        return view('receptionist.checkout');
+    }
+
+    public function pay_for_test()
+    {
+        return view('receptionist.pay_for_test');
+    }
     public function getAudio($filename){
         $fileContents = Storage::disk('local')->get('HI_06/audio/'.$filename);
         $response = Response::make($fileContents, 200);
