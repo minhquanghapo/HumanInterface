@@ -71,6 +71,10 @@ Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit"
 Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
 Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
 Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
+//}
+//HI_02
+Route::get('/admin_hospital/doctors/schedule', "HospitalAdminController@doctor_schedule");
+Route::get('/admin_hospital/doctors/schedule/add', "HospitalAdminController@doctor_schedule_add");
 Route::get('/admin_hospital/medicines', "HospitalAdminController@medicine_info");
 Route::get('/admin_hospital/medicines/edit', "HospitalAdminController@medicine_edit");
 Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_add");
