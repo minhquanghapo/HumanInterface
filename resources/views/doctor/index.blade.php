@@ -31,16 +31,20 @@
 
 @section('page_body')
     <div class="container">
-        <div class="col-md-2">
+        <div class="col-md-2" style="overflow: hidden; margin-bottom: 10px">
             <div class="avatar">
-                <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" style="margin: auto" alt="Cinque Terre">
-                <center>
-                    <h4>BS. Lê Hoàng Vũ</h4>
-                    <p>Khoa: Chấn thương chỉnh hình</p>
-                    <p>sdt: 0123456789</p>
-                    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
-                    <a href="/doctor/login" class="btn btn-info" style="margin-top:10px; width: 96%;" role="button">Đăng xuất</a>
-                </center>
+                <div class="col-sm-4 col-md-12">
+                    <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" style="margin: auto" alt="Cinque Terre">
+                </div>
+                <div class="col-sm-8 col-md-12">
+                    <center>
+                        <h4>BS. Lê Hoàng Vũ</h4>
+                        <p>Khoa: Chấn thương chỉnh hình</p>
+                        <p>sdt: 0123456789</p>
+                        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#infoModal">Cập nhật thông tin</button>
+                        <a href="/doctor/login" class="btn btn-info" role="button">Đăng xuất</a>
+                    </center>
+                </div>
 
             </div>
         </div>
