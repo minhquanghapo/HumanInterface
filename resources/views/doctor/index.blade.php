@@ -33,6 +33,19 @@
         .mybtn{
             width: 100%;
         }
+        .notification {
+            margin-top: 55px;
+            position: relative;
+        }
+        .notification .badge {
+            position: absolute;
+            top: -24px;
+            right: -10px;
+            padding: 8px 10px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
         /*nhóm 2*/
     </style>
 
@@ -52,7 +65,7 @@
             <div class="avatar">
                 <div class="col-sm-4 col-md-12">
                     <!-- Nhóm 2  thêm button-->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#urgentModal">Thông báo khám khẩn cấp</button>
+                    <button type="button" class="btn btn-primary notification" data-toggle="modal" data-target="#urgentModal" style="padding-left: 4px;"><span>Thông báo khám khẩn cấp</span></button>
                     <!-- end Nhóm 2  thêm button-->
                     <br><br>    
                     <img src="{{asset('img/avatar.jpg')}}" class="img-responsive" style="margin: auto" alt="Cinque Terre">
