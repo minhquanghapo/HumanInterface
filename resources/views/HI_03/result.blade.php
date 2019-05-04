@@ -1,4 +1,4 @@
-<!-- This file is of group HI_04, please not change this file -->
+<!-- This file is belong to group HI_04, please not change this file -->
 @extends('HI_03.layouts.master')
 
 @section('SPECIFIC CSS')
@@ -8,53 +8,62 @@
 
 
 @section('content')
+	<script>
+		var search_value = "<?= $data['search_value'] ?>";
+		var search_type = "<?= $data['search_type'] ?>";
+	</script>
 	<main>
-		<div id="results">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h4><strong>Showing 6</strong> of 18 results</h4>
-					</div>
-					<div class="col-md-4">
-							<div class="search_bar_list">
-							<input type="text" class="form-control" placeholder="">
-							<input type="submit" value="Search">
+		<form method="post" action="{{ route('result') }}">
+			@csrf
+			<div id="results">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h4>Có <span id="result_count">6</span> kết quả</h4>
+						</div>
+						<div class="col-md-4">
+								<div class="search_bar_list">
+								<input type="text" class="form-control" placeholder="<?= $data['search_value'] ?>">
+								<input type="submit" value="Tìm kiếm">
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /results -->
-		
-		<div class="filters_listing">
-				<div class="container">
-					<ul class="clearfix">
-						<li>
-							<h6>Type</h6>
-							<div class="switch-field">
-								<input type="radio" id="phone_number" name="type_patient" value="phone_number" checked>
-								<label for="phone_number">Phone number</label>
-								<input type="radio" id="email" name="type_patient" value="email">
-								<label for="email">Email</label>
-								<input type="radio" id="Code" name="type_patient" value="Code">
-								<label for="Code">Code</label>
-							</div>
-						</li>
-						<li>
-							<h6>Sort by</h6>
-							<select name="orderby" class="selectbox">
-							<option value="Closest">Closest</option>
-							<option value="Completed">Completed</option>
-							<option value="Incomplete">Incomplete</option>
-							</select>
-						</li>
-					</ul>
+					<!-- /row -->
 				</div>
 				<!-- /container -->
-		</div>
-		<!-- /filters -->
+			</div>
+			<!-- /results -->
+			
+			<div class="filters_listing">
+					<div class="container">
+						<ul class="clearfix">
+							<li>
+								<h6>Tìm kiếm theo</h6>
+								<div class="switch-field">
+									<input type="radio" id="phone_number" name="type_patient" value="phone_number" checked>
+									<label for="phone_number">Số điện thoại</label>
+									<input type="radio" id="email" name="type_patient" value="email">
+									<label for="email">Email</label>
+									<input type="radio" id="Code" name="type_patient" value="Code">
+									<label for="Code">Mã lịch khám</label>
+								</div>
+							</li>
+							<li>
+								<h6>Sắp xếp</h6>
+								<select name="orderby" class="selectbox" id="sort-box">
+									<option value="all">Tất cả</option>
+									<option value="imcomplete">Chưa xong</option>
+									<option value="completed">Đã xong</option>
+									<option value="canceled">Đã hủy</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+					<!-- /container -->
+			</div>
+			<!-- /filters -->
+		</form>
+		
 		
 		<div class="container margin_60_35">
 			<div class="row">
@@ -252,4 +261,5 @@
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>
+    <link href="{{ asset('HI_04/css/result.css') }}" rel="stylesheet">	
 @endsection

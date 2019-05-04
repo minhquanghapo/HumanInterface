@@ -9,17 +9,12 @@
         tutorial: function(s) {
             _steps = s;
             _tutorialBtn = this;
-            _tutorialBtn.click(function() {
+            $(this).parent().show();
+            $(this).click(function(e) {
+                e.stopPropagation();
                 endTutorial();
                 beginTutorial();
             });
-
-            // setTimeout(function() {
-            //     function loop(){
-            //         _tutorialBtn.effect("shake", {distance: 10}, 1000, loop);
-            //     }
-            //     loop();
-            // }, 1000 * 5)
         }
     });
 
@@ -42,6 +37,7 @@
         showCurrentStep();
 
         $(document).on('keydown.tutorial', function(e){
+            e.stopPropagation();
             if(e.which == 13){
                 e.preventDefault();
                 nextStep();
@@ -62,28 +58,28 @@
                     <p>${ step.suggestion }</p>
                 </div>
                 <div class="suggestion-text">
-                    <p>[Enter] - next step, [Esc] - quit tutorial</p>
+                    <p>[Enter] - Bước sau, [Esc] - Thoát</p>
                 </div>
             </div>
         `);
         $(elm).after(_overlay);
         $(elm).css('z-index', 10001);
 
-
         $('html, body').stop().animate({
             scrollTop: $(elm).offset().top - $(window).height() / 2
         }, 800);
-    }
 
-    function removeOverlay() {
-        if(_overlay)
-            _overlay.remove();
+        $(elm).on('clickout', function (e) {
+            e.stopPropagation();
+            nextStep();
+        });
     }
 
     function hideCurrentStep() {
         let step = _steps[_currentStep];
         let elm = step.element;
         $(elm).css('z-index', step.oldZIndex);
+        $(elm).off('clickout');
         removeOverlay();
     }
 
@@ -100,9 +96,15 @@
     }
 
     function endTutorial() {
+        if(_steps[_currentStep]) hideCurrentStep();
         removeOverlay();
-        _currentStep = 0;
+        _currentStep = undefined;
         restoreZIndex();
         $(document).off('keydown.tutorial');
+    }
+
+    function removeOverlay() {
+        if(_overlay)
+            _overlay.remove();
     }
 })(jQuery);

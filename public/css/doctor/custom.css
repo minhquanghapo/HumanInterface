@@ -1,10 +1,32 @@
-button{
-    background: #74d1c6!important;
-    border-color: #74d1c6!important;
-    color: white!important;
+.fc-list-item{
+    cursor: pointer;
 }
-button:hover{
-    background: #e83e8c!important;
-    border-color: #e83e8c!important;
-    color: white!important;
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+
+    .avatar .btn{
+        max-width: 40%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    .avatar .btn{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
 }

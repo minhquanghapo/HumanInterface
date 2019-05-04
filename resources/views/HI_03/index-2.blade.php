@@ -5,7 +5,7 @@
 		<div class="header-video">
 			<div id="hero_video">
 				<div class="content">
-					<h3>Find a Doctor!</h3>
+					<h3>Tìm bác sĩ</h3>
 					<br>
 					<!-- <p>
 						What is the name of your medical centre or doctor?
@@ -15,25 +15,25 @@
 						@csrf
 						<div id="custom-search-input">
 							<div class="input-group">
-								<input type="text" id="searchInp" class=" search-query" placeholder="Ex. Name, Specialization ....">
-								<input type="submit" id="searchBtn" class="btn_search" value="Search">
+								<input type="text" id="searchInp" class=" search-query" placeholder="Vd. Tên bác sĩ, triệu chứng ....">
+								<input type="submit" id="searchBtn" class="btn_search" value="Tìm kiếm">
 							</div>
 							<ul>
 								<li>
 									<input type="radio" id="all" name="radio_search" value="all" checked>
-									<label for="all">All</label>
+									<label for="all">Tất cả</label>
 								</li>
 								<li>
 									<input type="radio" id="doctor" name="radio_search" value="doctor">
-									<label for="doctor">Doctor</label>
+									<label for="doctor">Bác sĩ</label>
 								</li>
 								<li>
 									<input type="radio" id="clinic" name="radio_search" value="clinic">
-									<label for="clinic">Clinic</label>
+									<label for="clinic">Bệnh viện</label>
 								</li>
 								<li>
 									<input type="radio" id="symptom" name="radio_search" value="symptom">
-									<label for="symptom">Symptom</label>
+									<label for="symptom">Triệu chứng</label>
 								</li>
 							</ul>
 						</div>
@@ -46,95 +46,51 @@
 
 		<div class="container margin_120_95">
 			<div class="main_title">
-				<h2>Discover the <strong>online</strong> appointment!</h2>
+				<h2>Khám phá website đặt lịch khám <strong>online</strong>!</h2>
 				<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p> -->
 			</div>
 			<div class="row add_bottom_30">
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_1">
 						<span></span>
-						<h3>Find a Doctor</h3>
-						<p>You can find a doctor easily within a minute.</p>
+						<h3>Tìm bác sĩ</h3>
+						<p>Bạn có thể tìm một bác sĩ dễ dàng chỉ trong vòng 1 phút.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_2">
 						<span></span>
-						<h3>View profile</h3>
-						<p>You can read detailed information about your doctor, their specializations, years of experience, reviews of other patients, and so on.</p>
+						<h3>Xem hồ sơ</h3>
+						<p>Bạn có thể đọc thông tin về bác sĩ của mình, như bằng cấp, chuyên môn, kinh nghiệm làm việc.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_3">
-						<h3>Book a visit</h3>
-						<p>Book the doctor you would like to meet.</p>
+						<h3>Đặt lịch khám</h3>
+						<p>Hẹn gặp bác sĩ mà bạn muốn.</p>
 					</div>
 				</div>
 			</div>
 			<!-- /row -->
-			<p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p>
+			<!-- <p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p> -->
 		</div>
 		<!-- /container -->
 
-		<div class="bg_color_1">
+		<div class="">
 			<div class="container margin_120_95">
 				<div class="main_title">
-					<h2>Find by specialization</h2>
+					<h2>Tìm theo chuyên khoa</h2>
 					<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
 				</div>
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
 						<a href="{{ url('grid-list') }}" class="box_cat_home">
 							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_1.svg') }}" width="60" height="60" alt="">
-							<h3>Primary Care</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
 							<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
-							<h3>Cardiology</h3>
+							<h3>Khoa tim mạch</h3>
 							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_3.svg') }}" width="60" height="60" alt="">
-							<h3>MRI Resonance</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_4.svg') }}" width="60" height="60" alt="">
-							<h3>Blood test</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_7.svg') }}" width="60" height="60" alt="">
-							<h3>Laboratory</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
+								<li><strong>124</strong>Bác sĩ</li>
+								<li><strong>60</strong>Bệnh viện</li>
 							</ul>
 						</a>
 					</div>
@@ -142,10 +98,10 @@
 						<a href="{{ url('grid-list') }}" class="box_cat_home">
 							<i class="icon-info-4"></i>
 							<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
-							<h3>Dentistry</h3>
+							<h3>Nha khoa</h3>
 							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
+								<li><strong>124</strong>Bác sĩ</li>
+								<li><strong>60</strong>Bệnh viện</li>
 							</ul>
 						</a>
 					</div>
@@ -153,10 +109,10 @@
 						<a href="{{ url('grid-list') }}" class="box_cat_home">
 							<i class="icon-info-4"></i>
 							<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
-							<h3>X - Ray</h3>
+							<h3>Khoa X-quang</h3>
 							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
+								<li><strong>124</strong>Bác sĩ</li>
+								<li><strong>60</strong>Bệnh viện</li>
 							</ul>
 						</a>
 					</div>
@@ -164,10 +120,10 @@
 						<a href="{{ url('grid-list') }}" class="box_cat_home">
 							<i class="icon-info-4"></i>
 							<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
-							<h3>Piscologist</h3>
+							<h3>Khoa tâm lý</h3>
 							<ul class="clearfix">
-								<li><strong>124</strong>Doctors</li>
-								<li><strong>60</strong>Clinics</li>
+								<li><strong>124</strong>Bác sĩ</li>
+								<li><strong>60</strong>Bệnh viện</li>
 							</ul>
 						</a>
 					</div>
@@ -178,10 +134,10 @@
 		</div>
 		<!-- /white_bg -->
 		
-		<div class="container margin_120_95">
+		<!-- <div class="container margin_120_95">
 			<div class="main_title">
 				<h2>Most Viewed doctors</h2>
-				<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p> -->
+				<p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.</p>
 			</div>
 			<div id="reccomended" class="owl-carousel owl-theme">
 				<div class="item">
@@ -225,8 +181,8 @@
 					</a>
 				</div>
 			</div>
-			<!-- /carousel -->
-		</div>
+			/carousel
+		</div> -->
 		<!-- /container -->
 
 		<!-- <div id="app_section">
@@ -260,6 +216,7 @@
 
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
+	<script src="{{ asset('HI_02/js/jquery.clickout.js') }}"></script>
 	<script src="{{ asset('HI_03/js/video_header.js') }}"></script>
 	<script>
 		'use strict';
@@ -277,11 +234,11 @@
             $('.tutorial-icon.open').tutorial([
                 {
                     element: searchInp,
-                    suggestion: 'Type in your symptoms, or the name of your medical centre or doctor'
+                    suggestion: 'Nhập triệu chứng, tên bác sĩ hoặc tên phòng khám mong muốn'
                 },
                 {
                     element: searchBtn,
-                    suggestion: 'And then find a doctor'
+                    suggestion: 'Nhấn vào nút "Tìm kiếm" để tiếp tục'
                 }
             ]);
         })
