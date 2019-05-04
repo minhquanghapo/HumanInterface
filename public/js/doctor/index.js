@@ -221,6 +221,33 @@ $(document).ready(function() {
         $("#removeModal").modal("show");
     });
     
+    // Nhóm 2
+    $("#show-detail").on("click",function () {
+    $("#urgentModal").modal("hide");
+    $("#urgentdetailModal").modal("show");
+    });
+
+    $("#show-detail1").on("click",function () {
+    $("#urgentModal").modal("hide");
+    $("#urgentdetailModal").modal("show");
+    });
+
+    $("#show-detail2").on("click",function () {
+    $("#urgentModal").modal("hide");
+    $("#urgentdetailModal").modal("show");
+    });
+
+    $("#show-detail3").on("click",function () {
+    $("#urgentModal").modal("hide");
+    $("#urgentdetailModal").modal("show");
+    });
+
+    $("#backto-urgent").on("click",function () {
+    $("#urgentdetailModal").modal("hide");
+    $("#urgentModal").modal("show");
+    });
+    // end Nhóm 2
+
     $("#accept-remove").on("click",function () {
         console.log($(this).val());
         var del_val = $(this).val();

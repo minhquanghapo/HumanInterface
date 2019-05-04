@@ -42,6 +42,7 @@ Route::get('lich-kham-benh-nhan', [
 Route::match(['get', 'post'],'/result', 'PageControllerHI04@getFormSearch')->name('result');
 
 Route::get('/doctor',"DoctorController@index");
+Route::get('/doctor1',"DoctorController@urgent");
 Route::get('/doctor/examination',"DoctorController@examination");
 Route::get('/doctor/login',"DoctorController@login");
 

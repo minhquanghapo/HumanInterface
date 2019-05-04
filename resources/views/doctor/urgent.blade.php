@@ -307,7 +307,7 @@
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" disabled="">Từ chối tất cả</button>
+                    <button type="submit" id="" class="btn btn-primary">Cập nhật</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
