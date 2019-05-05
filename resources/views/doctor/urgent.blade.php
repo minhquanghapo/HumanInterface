@@ -47,6 +47,14 @@
             background-color: red;
             color: white;
         }
+
+        input[type='checkbox'] {
+            width:20px;
+            height:20px;
+            background:white;
+            border-radius:5px;
+            border:2px solid #555;
+        }
         /*nhóm 2*/
     </style>
 
@@ -230,95 +238,159 @@
         </div>
     </div>
 
-    <!-- Nhóm 2 thêm cửa sổ danh sách khám khẩn cấp -->
+<!-- Nhóm 2 thêm cửa sổ danh sách khám khẩn cấp -->
     <div id="urgentModal" class="modal fade" role="dialog" >
-        <div class="modal-dialog" style="width: 60%; height: 80%;">
+        <div class="modal-dialog" style="width: 80%; height: 80%;">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Danh sách yêu cầu khám khẩn cấp</h4>
                 </div>
-                <div class="modal-body" style="height: 500px; overflow-y: auto; overflow-x: hidden;">
-                    <div class="row card">
-                        <div class="col-sm-12 incard">
-                            <div class="col-sm-3">
-                                <p><strong>10/05 10:00</strong></p>
-                                <p>Vũ Văn A</p>
-                                <p>Nam - 30</p>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="col-sm-9"><strong>Khám khẩn cấp</strong></div>
-                                <div class="col-sm-3">
-                                    <button type="button" id="show-detail" class="btn mybtn">Đã được nhận</button>
-                                </div>
-                                <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                        Thành bụng căng cứng.
-                                        Sốt nhẹ.</p>
-                            </div>
+                <div class="modal-body" >
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div id="urgent-calendar"></div>
                         </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-sm-12 incard">
-                            <div class="col-sm-3">
-                                <p><strong>10/05 9:30</strong></p>
-                                <p>Vũ Văn A</p>
-                                <p>Nam - 30</p>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="col-sm-9"><strong>Khám cháu giám đốc</strong></div>
-                                <div class="col-sm-3">
-                                    <button type="button" id="show-detail1" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                        <div class="col-sm-7" style="height: 500px; overflow-y: auto; overflow-x: hidden;">
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 10:00</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Khám khẩn cấp</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail" class="btn mybtn">Đã được nhận</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
                                 </div>
-                                <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                        Thành bụng căng cứng.
-                                        Sốt nhẹ.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-sm-12 incard">
-                            <div class="col-sm-3">
-                                <p><strong>10/05 9:00</strong></p>
-                                <p>Vũ Văn A</p>
-                                <p>Nam - 30</p>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="col-sm-9"><strong>Bệnh nhân đã chờ lâu</strong></div>
-                                <div class="col-sm-3">
-                                    <button type="button" id="show-detail2" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 9:30</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail1" class="btn mybtn">Đã được nhận</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
                                 </div>
-                                <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                        Thành bụng căng cứng.
-                                        Sốt nhẹ.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-sm-12 incard">
-                            <div class="col-sm-3">
-                                <p><strong>10/05 8:30</strong></p>
-                                <p>Vũ Văn A</p>
-                                <p>Nam - 30</p>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="col-sm-9"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
-                                <div class="col-sm-3">
-                                    <button type="button" id="show-detail3" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 9:00</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Khám Gấp</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail2" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
                                 </div>
-                                <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                        Thành bụng căng cứng.
-                                        Sốt nhẹ.</p>
+                            </div>
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 9:00</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail3" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 8:30</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <div class="col-sm-12 incard">
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" disabled>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p><strong>10/05 8:00</strong></p>
+                                        <p>Vũ Văn A</p>
+                                        <p>Nam - 30</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
+                                        <div class="col-sm-4">
+                                            <button type="button" id="show-detail" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                        </div>
+                                        <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                Thành bụng căng cứng.
+                                                Sốt nhẹ.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="remove-urgent" class="btn btn-primary">Từ chối tất cả</button>
+                    <input type="checkbox" > Chọn tất cả &nbsp;&nbsp;
+                    <button type="button" id="" class="btn btn-danger" >Từ chối mục đã chọn</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -390,11 +462,10 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="backto-urgent" class="btn btn-danger">Quay lại</button>
+                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
     <div id="denyModal" class="modal fade" role="dialog">
