@@ -227,26 +227,6 @@ $(document).ready(function() {
         $("#denyModal").modal("show");
     });
 
-    $("#show-detail").on("click",function () {
-    $("#urgentModal").modal("hide");
-    $("#urgentdetailModal").modal("show");
-    });
-
-    $("#show-detail1").on("click",function () {
-    $("#urgentModal").modal("hide");
-    $("#urgentdetailModal").modal("show");
-    });
-
-    $("#show-detail2").on("click",function () {
-    $("#urgentModal").modal("hide");
-    $("#urgentdetailModal").modal("show");
-    });
-
-    $("#show-detail3").on("click",function () {
-    $("#urgentModal").modal("hide");
-    $("#urgentdetailModal").modal("show");
-    });
-
     $("#backto-urgent").on("click",function () {
     $("#urgentdetailModal").modal("hide");
     $("#urgentModal").modal("show");
@@ -325,7 +305,7 @@ $(document).ready(function() {
             {
                 id: 11,
                 title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
-                start: '2019-05-10T10:30:00',
+                start: '2019-05-10T10:00:00',
                 
             },
             {

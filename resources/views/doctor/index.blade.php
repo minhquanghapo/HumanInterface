@@ -21,6 +21,7 @@
         .card{
             border-bottom: solid;
             border-color: #ddd;
+            cursor: pointer;
         }
         .card:hover{
             background-color: #f5f5f5;
@@ -54,8 +55,17 @@
             border-radius:5px;
             border:2px solid #555;
         }
+
         /*nhóm 2*/
     </style>
+    <!-- nhóm 2 -->
+    <script>
+        function openDetail() {
+            $("#urgentModal").modal("hide");
+            $("#urgentdetailModal").modal("show");
+        }
+    </script>
+    <!-- nhóm 2 -->
 
     @endsection
 
@@ -253,7 +263,7 @@
                         </div>
                         <div class="col-sm-7" style="height: 500px; overflow-y: auto; overflow-x: hidden;">
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -265,7 +275,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám khẩn cấp</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail" class="btn mybtn">Đã được nhận</button>
+                                            <button type="button" class="btn mybtn">Đã được nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -275,7 +285,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -287,7 +297,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail1" class="btn mybtn">Đã được nhận</button>
+                                            <button type="button" class="btn mybtn">Đã được nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -297,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -309,7 +319,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám Gấp</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail2" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -319,7 +329,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -331,7 +341,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail3" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -341,7 +351,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -353,7 +363,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -363,7 +373,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard">
+                                <div class="col-sm-12 incard" onclick="openDetail()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -375,7 +385,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" id="show-detail" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
