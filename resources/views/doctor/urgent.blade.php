@@ -316,12 +316,9 @@
                             </div>
                         </div>
                     </div>
-                    
-
-                    
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" id="" class="btn btn-primary">Cập nhật</button>
+                    <button type="button" id="remove-urgent" class="btn btn-primary">Từ chối tất cả</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -394,6 +391,29 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="backto-urgent" class="btn btn-danger">Quay lại</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="denyModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Huỷ ca khám</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="comment">Ghi chú (lý do):</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="accept-remove" value="" class="btn btn-danger">Tiến hành huỷ</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>

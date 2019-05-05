@@ -222,6 +222,11 @@ $(document).ready(function() {
     });
     
     // Nhóm 2
+    $("#remove-urgent").on("click",function () {
+        $("#urgentModal").modal("hide");
+        $("#denyModal").modal("show");
+    });
+
     $("#show-detail").on("click",function () {
     $("#urgentModal").modal("hide");
     $("#urgentdetailModal").modal("show");
@@ -246,6 +251,163 @@ $(document).ready(function() {
     $("#urgentdetailModal").modal("hide");
     $("#urgentModal").modal("show");
     });
+
+        $('#urgent-calendar').fullCalendar({
+        defaultView: 'listDay',
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'listDay,month'
+        },
+        navLinks: true, // can click day/week names to navigate views
+        eventLimit: true, // allow "more" link when too many events
+        locale: 'vi',
+        events: [
+            {
+                id: 1,
+                title: 'ca khám',
+                start: '2019-05-12T10:30:00',
+                
+            },
+            {
+                id: 2,
+                title: 'ca khám',
+                start: '2019-05-05T11:00:00',
+                
+            },
+            {
+                id: 3,
+                title: 'ca khám',
+                start: '2019-05-05T08:00:00',
+
+            },
+            {
+                id: 4,
+                title: 'ca khám',
+                start: '2019-05-03T09:00:00',
+
+            },
+            {
+                id: 5,
+                title: 'ca khám',
+                start: '2019-05-03T09:30:00',
+            },
+            {
+                id: 6,
+                title: 'ca khám',
+                start: '2019-05-03T13:00:00',
+                
+            },
+            {
+                id: 7,
+                title: 'ca khám',
+                start: '2019-05-03T15:00:00',
+                
+            },
+            {
+                id: 8,
+                title: 'ca khám',
+                start: '2019-05-03T15:30:00',
+                
+            },
+            {
+
+                id: 9,
+                title: 'ca khám',
+                start: '2019-05-03T16:00:00',
+                
+            },
+            {
+                id: 10,
+                title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
+                start: '2019-05-10T08:30:00',
+            },
+            {
+                id: 11,
+                title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
+                start: '2019-05-10T10:00:00',
+                
+            },
+            {
+                id: 12,
+                title: 'ca khám',
+                start: '2019-05-22T09:00:00',
+                
+            },
+            {
+                id: 13,
+                title: 'ca khám',
+                start: '2019-05-22T13:30:00',
+                
+            },
+            {
+                id: 14,
+                title: 'ca khám',
+                start: '2019-05-24T14:00:00',
+                
+            },
+            {
+                id: 15,
+                title: 'ca khám',
+                start: '2019-05-24T14:30:00',
+                
+            },
+            {
+                id: 16,
+                title: 'ca khám',
+                start: '2019-05-25T08:00:00',
+            },
+            {
+                id: 17,
+                title: 'ca khám',
+                start: '2019-05-25T10:30:00',
+                
+            },
+            {
+                id: 18,
+                title: 'ca khám',
+                start: '2019-05-26T15:51:00',
+                
+            },
+            {
+                id: 19,
+                title: 'ca khám',
+                start: '2019-05-27T13:30:00',
+                
+            },
+            {
+                id: 20,
+                title: 'ca khám',
+                start: '2019-05-26T10:00:00',
+
+            },
+            {
+                id: 21,
+                title: 'ca khám',
+                start: '2019-05-26T10:30:00',
+
+            },
+            {
+                id: 22,
+                title: 'ca khám',
+                start: '2019-05-27T15:30:00',
+                
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-05-30T08:30:00',
+            },
+            {
+                id: 24,
+                title: 'ca khám',
+                start: '2019-05-30T10:30:00',
+                
+            },
+        ],
+    });
+
+
     // end Nhóm 2
 
     $("#accept-remove").on("click",function () {
