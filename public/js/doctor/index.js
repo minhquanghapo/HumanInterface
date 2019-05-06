@@ -1,12 +1,29 @@
 
 $(document).ready(function() {
+    $('#calendar_picker').datepicker({
+        language: "vi",
+        todayHighlight: true,
+        format: "yyyy-mm-dd",
+        todayBtn: "linked"
+    });
+    $('#calendar_picker').datepicker('setDate', 'today');
+    $picked_date = $('#calendar_picker').datepicker('getDate');
+
+    $('#calendar_picker').datepicker().on('changeDate', function (e) {
+        $picked_date = e.date;
+        $('#calendar').fullCalendar('gotoDate', $picked_date);
+        $('#calendar').fullCalendar('changeView', 'listDay');
+    });
+
 
     $('#calendar').fullCalendar({
         header: {
-            left: 'prev,next today',
+            left: '',
             center: 'title',
             right: 'listDay,month'
         },
+        defaultView: 'listDay',
+        defaultDate: $picked_date,
         navLinks: true, // can click day/week names to navigate views
         eventLimit: true, // allow "more" link when too many events
         locale: 'vi',
@@ -158,6 +175,12 @@ $(document).ready(function() {
             $("#start-examination").val(info.id);
             $("#accept-remove").val(info.id);
             $("#detailModal").modal("show");
+        },
+        viewRender: function () {
+            if($('#calendar').fullCalendar('getView').name == 'listDay'){
+                $picked_date=$('#calendar').fullCalendar('getView').start._d;
+                $('#calendar_picker').datepicker('setDate', $picked_date);
+            }
         },
 
     });
