@@ -4,7 +4,7 @@ $(document).ready(function() {
         language: "vi",
         todayHighlight: true,
         format: "yyyy-mm-dd",
-        todayBtn: "linked"
+        todayBtn: "linked",
     });
     $('#calendar_picker').datepicker('setDate', 'today');
     $picked_date = $('#calendar_picker').datepicker('getDate');
@@ -50,6 +50,51 @@ $(document).ready(function() {
                 id: 4,
                 title: 'ca khám',
                 start: '2019-05-03T09:00:00',
+
+            },
+            {
+                title: 'ca khám',
+                start: '2019-05-03T09:01:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:02:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:03:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:04:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:05:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:06:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:07:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:08:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:09:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:10:00',
+
+            },{
+                title: 'ca khám',
+                start: '2019-05-03T09:11:00',
 
             },
             {
@@ -296,4 +341,5 @@ $(document).ready(function() {
             $(this).css("background",$color);
         });
     });
+
 });
