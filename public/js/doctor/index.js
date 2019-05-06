@@ -387,7 +387,35 @@ $(document).ready(function() {
         ],
     });
 
-
+    $("#deny-urgent").on("click",function () {
+        console.log($(this).val());
+        var del_val = $(this).val();
+        Swal.fire({
+            title: 'Xác nhận ?',
+            text: "Bạn sẽ không thể nhận lại lịch khám khẩn cấp đã từ chối",
+            type: 'warning',
+            width: '30%',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Vâng, tôi muốn từ chối!',
+            cancelButtonText: 'Không!',
+        }).then((result) => {
+            if (result.value) {
+                // Swal.fire(
+                //     'Deleted!',
+                //     'Your file has been deleted.',
+                //     'success'
+                // );
+                $("#calendar").fullCalendar('removeEvents', del_val);
+                toastr["success"]("Từ chối thành công!");
+            }
+            else{
+                toastr["error"]("từ chối không không thành công!");
+            }
+            $("#removeModal").modal("hide");
+        })
+    });
     // end Nhóm 2
 
     $("#accept-remove").on("click",function () {
