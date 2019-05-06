@@ -58,4 +58,10 @@ class HospitalAdminController extends Controller
     public function medicine_edit() {
         return view('HospitalAdmin.medicine_edit');
     }
+
+// Nhóm 2
+    public function urgent() {
+        return view('HospitalAdmin.urgent');
+    }
+// end Nhóm 2
 }
