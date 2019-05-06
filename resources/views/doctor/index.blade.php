@@ -21,6 +21,9 @@
             </div>
             <div class="col-md-8">
                 <div id="calendar"></div>
+                <div class="help">
+                    <p>Chọn một ngày để xem danh sách lịch khám</p>
+                </div>
             </div>
         </div>
     </div>

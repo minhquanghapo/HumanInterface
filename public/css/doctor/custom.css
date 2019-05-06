@@ -47,9 +47,15 @@ button a:hover{
     .header{
         padding-bottom: 10px;
     }
-    .fc-scroller{
+    .fc-scroller:not(.fc-day-grid-container){
         height: 500px!important;
 
+    }
+    .fc-day-grid-container{
+        height: 340px!important;
+    }
+    .fc-content-skeleton tbody{
+        display: none;
     }
 }
 
@@ -68,6 +74,14 @@ button a:hover{
     #calendar_picker {
         margin-top: 52px;
     }
+    .help{
+        display: none;
+    }
+}
+
+.help{
+    text-decoration: underline;
+    color: #e74e84;
 }
 
 .fc-view-container, .fc-list-empty{

@@ -15,7 +15,6 @@ $(document).ready(function() {
         $('#calendar').fullCalendar('changeView', 'listDay');
     });
 
-
     $('#calendar').fullCalendar({
         header: {
             left: '',
@@ -50,51 +49,6 @@ $(document).ready(function() {
                 id: 4,
                 title: 'ca khám',
                 start: '2019-05-03T09:00:00',
-
-            },
-            {
-                title: 'ca khám',
-                start: '2019-05-03T09:01:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:02:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:03:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:04:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:05:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:06:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:07:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:08:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:09:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:10:00',
-
-            },{
-                title: 'ca khám',
-                start: '2019-05-03T09:11:00',
 
             },
             {
@@ -227,6 +181,10 @@ $(document).ready(function() {
                 $('#calendar_picker').datepicker('setDate', $picked_date);
             }
         },
+        dayClick: function (date) {
+            $picked_date = date.format();
+            $('#calendar_picker').datepicker('setDate', $picked_date);
+        }
 
     });
 
