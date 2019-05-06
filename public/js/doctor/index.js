@@ -305,7 +305,7 @@ $(document).ready(function() {
             {
                 id: 11,
                 title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
-                start: '2019-05-10T10:00:00',
+                start: '2019-05-10T09:00:00',
                 
             },
             {
