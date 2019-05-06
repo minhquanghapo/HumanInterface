@@ -21,6 +21,13 @@ button a:hover{
         max-width: 40%;
         font-size: 10px;
     }
+
+    .navbar-nav.nav-mobile{
+        display: block;
+    }
+    .navbar-nav.nav-pc{
+        display: none;
+    }
 }
 
 @media (min-width: 993px) {
@@ -28,5 +35,11 @@ button a:hover{
         width: 100%;
         margin-bottom: 10px;
         font-size: 10px;
+    }
+    .navbar-nav.nav-mobile{
+        display: none;
+    }
+    .navbar-nav.nav-pc{
+        display: block;
     }
 }
