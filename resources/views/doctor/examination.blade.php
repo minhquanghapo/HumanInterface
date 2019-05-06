@@ -3,16 +3,7 @@
 
 @section('custom_css')
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
-    <style>
 
-        body {
-            margin: 40px auto;
-            padding: 0;
-            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-            font-size: 14px;
-        }
-
-    </style>
 @endsection
 
 @section('custom_js')

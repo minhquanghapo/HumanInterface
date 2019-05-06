@@ -5,13 +5,6 @@
     <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
     <style>
 
-        body {
-            margin: 40px auto;
-            padding: 0;
-            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-            font-size: 14px;
-        }
-
         #calendar {
             width: 90%;
             margin: auto;
