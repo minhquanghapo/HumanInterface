@@ -73,6 +73,11 @@
             $("#urgentdetailModal").modal("show");
         }
 
+        function openDetail1() {
+            $("#urgentModal").modal("hide");
+            $("#superurgentdetailModal").modal("show");
+        }
+
         function openDenyUrgent() {
             $("#urgentModal").modal("hide");
             $("#urgentdetailModal").modal("hide");
@@ -90,6 +95,7 @@
         }
 
         function denyForm() {
+
             Swal.fire({
                 title: 'Xác nhận ?',
                 text: "Bạn sẽ không thể nhận lại lịch khám khẩn cấp đã từ chối",
@@ -112,10 +118,34 @@
             })
         }
 
+        function superdenyForm() {
+            Swal.fire({
+                title: 'Xác nhận ?',
+                text: "Bạn sẽ từ chối lịch khám khẩn cấp với lý do trùng lịch",
+                type: 'warning',
+                width: '30%',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Vâng, tôi muốn từ chối!',
+                cancelButtonText: 'Không!',
+            }).then((result) => {
+                if (result.value) {
+                    toastr["success"]("Từ chối thành công!");
+                }
+                else{
+                    toastr["error"]("từ chối không không thành công!");
+                }
+                $("#denyModal").modal("hide");
+                $("#superurgentdetailModal").modal("hide");
+                $("#urgentModal").modal("show");
+            })
+        }
+
         function urgentAccept() {
             Swal.fire({
                 title: 'Xác nhận ?',
-                text: "Bạn sẽ hủy hẹn lịch khám bị trùng vì lý do khám khẩn cấp",
+                text: "Bạn sẽ hủy hẹn lịch khám bị trùng vì lý do có lịch khám khẩn cấp",
                 type: 'warning',
                 width: '30%',
                 showCancelButton: true,
@@ -131,6 +161,7 @@
                     toastr["error"]("Hủy hẹn không thành công!");
                 }
                 $("#denyModal").modal("hide");
+                $("#superurgentdetailModal").modal("hide");
                 $("#urgentModal").modal("show");
 
             })
@@ -138,6 +169,8 @@
 
         function accept() {
             toastr["success"]("Thêm lịch khám khẩn cấp thành công!");
+            $("#urgentdetailModal").modal("hide");
+            $("#urgentModal").modal("show");
         }
 
         function toggle(source) {
@@ -205,7 +238,7 @@
                                     <div class="col-sm-1">
                                         <input type="checkbox" name="foo">
                                     </div>
-                                    <div class="col-sm-2" onclick="openDetail()">
+                                    <div class="col-sm-2" onclick="openDetail1()">
                                         <p><strong>10/05 10:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
@@ -220,7 +253,7 @@
                                             </div>
                                             <div class="col-sm-5">
                                                 <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
-                                                <button type="button" id="deny-urgent" class="btn btn-danger inbtn">Từ chối</button>
+                                                <button type="button" onclick="superdenyForm()" class="btn btn-danger inbtn">Từ chối</button>
                                             </div>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -360,7 +393,7 @@
                     <button type="button" onclick="openDenyUrgent()" class="btn btn-danger" >Từ chối mục đã chọn</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-            </div>
+            </div>  
 
         </div>
     </div>
@@ -457,6 +490,69 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div id="superurgentdetailModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 80%; height: 80%;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin chi tiết lịch khám khẩn cấp</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-md-12 well text-center">
+                                <table class="table">
+                                    <tr>
+                                        <td><b>lịch khám</b></td>
+                                        <td><b>Thường</b></td>
+                                        <td><b>Khẩn cấp</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Mã hồ sơ</b></td>
+                                        <td>35</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Họ tên</b></td>
+                                        <td>Vũ Văn A</td>
+                                        <td>Lê Thị B</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Giới tính</b></td>
+                                        <td>Nam</td>
+                                        <td>Nữ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tuổi</b></td>
+                                        <td>30</td>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Địa chỉ</b></td>
+                                        <td>Hà Nội</td>
+                                        <td>Đà Nẵng</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tình trạng bệnh</b></td>
+                                        <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn.</td>
+                                        <td>Thành bụng căng cứng.
+                                    Sốt 40 độ.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 2px;">Chấp nhận</button>
+                    <button type="button" onclick="superdenyForm()" class="btn btn-danger">Từ chối</button>
+                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end Nhóm 2 thêm cửa sổ danh sách khám khẩn cấp -->
