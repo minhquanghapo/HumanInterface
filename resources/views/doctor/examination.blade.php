@@ -3,7 +3,15 @@
 
 @section('custom_css')
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
-
+    <style>
+        li.active > a{
+            background: #74d1c6!important;
+        }
+        .nav-pills li:hover > a{
+            background: #e74e84!important;
+            color: #fff!important;
+        }
+    </style>
 @endsection
 
 @section('custom_js2')
@@ -30,16 +38,16 @@
     <div class="row form-group">
         <div class="col-xs-12">
             <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                <li class="active"><a href="#step-1">
+                <li id="st1" class="active passed"><a href="#step-1">
                         <p class="list-group-item-text">Thông tin bệnh nhân</p>
                     </a></li>
-                <li ><a href="#step-2">
+                <li id="st2"><a href="#step-2">
                         <p class="list-group-item-text">Tình trang bệnh</p>
                     </a></li>
-                <li class="disabled"><a href="#step-3">
+                <li class="disabled" id="st3"><a href="#step-3">
                         <p class="list-group-item-text">Chuẩn đoán và yêu cầu</p>
                     </a></li>
-                <li class="disabled"><a href="#step-4">
+                <li class="disabled" id="st4"><a href="#step-4">
                         <p class="list-group-item-text">Kết luận</p>
                     </a></li>
             </ul>

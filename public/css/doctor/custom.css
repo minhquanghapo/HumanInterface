@@ -160,3 +160,8 @@ button a:hover{
 .nav li:hover{
     text-decoration: underline;
 }
+
+li.passed > a{
+    background: #74d1c6;
+    color: #fff;
+}
