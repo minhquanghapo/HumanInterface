@@ -40,8 +40,8 @@
 
   <!-- Schedule custom-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
-	<link rel="stylesheet" href='{{asset("css/HI_06/reset.css")}}'> <!-- CSS reset -->
-	<link rel="stylesheet" href='{{asset("css/HI_06/style.css")}}'> <!-- Resource style -->
+  <link rel="stylesheet" href='{{asset("css/HI_06/reset.css")}}'> <!-- CSS reset -->
+  <link rel="stylesheet" href='{{asset("css/HI_06/style.css")}}'> <!-- Resource style -->
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -380,7 +380,7 @@
     <section class="content-header">
       <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
           <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active"><a href="/admin_hospital/doctors">Medicines</a></li>
+          <li class="active"><a href="/admin_hospital/staffs">Staffs</a></li>
 
       </ol>
     </section>
@@ -393,51 +393,43 @@
   
           <div class="box">
               <div class="box-header">
-              <h3 class="box-title">Danh mục thuốc</h3>
+              <h3 class="box-title">Danh sách nhân viên</h3>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
               <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example1_length"><label>Show <select name="example1_length" aria-controls="example1" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
-                  <a href="/admin_hospital/medicines/add" type="button" class="btn btn-default">
+                  <a href="/admin_hospital/staffs/add" type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-plus-sign"></span>
                      Tạo mới
                   </a>
                   <thead>
-                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 160px;" aria-sort="ascending">Tên thuốc</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 100px;">Mã vạch</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 80px;">Danh mục</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 150px;">Xuất xứ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 90px;">Số lượng</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 110px;">Số lượng còn lại</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 90px;">Ngày hết hạn</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 70px;">Thao tác</th></tr>
+                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 160px;" aria-sort="ascending">Họ Tên</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 180px;">Địa chỉ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 80px;">Email</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 90px;">Phòng</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 90px;">Chức vụ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 90px;">Số điện thoại</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 50px;">Thao tác</th></tr>
                   </thead>
                   <tbody>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Paracetamol</td>
-                  <td class="">123456789</td>
-                  <td>Thuốc giảm đau</td>
-                  <td>Công ty dược Hà Nội</td>
-                  <td>2500</td>
-                  <td>500</td>
-                  <td>31-3-2020</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
-                    <a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="">Thanh Xuân-Hà Nội</td>
+                  <td>linh.nt@gmail.com</td>
+                  <td>Kế Toán</td>
+                  <td>Trưởng phòng</td>
+                  <td>0123456789</td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="even" id="s2">
-                    <td class="sorting_1">Paracetamol</td>
-                    <td class="">123456789</td>
-                    <td>Thuốc giảm đau</td>
-                    <td>Công ty dược Hà Nội</td>
-                    <td>2500</td>
-                    <td>500</td>
-                    <td>31-3-2020</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
-                    <a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                      <td class="sorting_1">Nguyễn Thị Linh</td>
+                      <td class="">Thanh Xuân-Hà Nội</td>
+                      <td>linh.nt@gmail.com</td>
+                      <td>Kế Toán</td>
+                      <td>Trưởng phòng</td>
+                      <td>0123456789</td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s3">
-                    <td class="sorting_1">APTX-4869</td>
-                    <td class="">123456789</td>
-                    <td>Thuốc giảm đau</td>
-                    <td>Công ty dược Hà Nội</td>
-                    <td>2500</td>
-                    <td>500</td>
-                    <td>31-3-2020</td>
-                    <td>
-                        <a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a>
-                        <a href="" class="delbut glyphicon glyphicon-trash"></a>
-                    </td>    
+                      <td class="sorting_1">Nguyễn Thị Linh</td>
+                      <td class="">Thanh Xuân-Hà Nội</td>
+                      <td>linh.nt@gmail.com</td>
+                      <td>Kế Toán</td>
+                      <td>Trưởng phòng</td>
+                      <td>0123456789</td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>    
                   </tr></tbody>
                   <tfoot>
                   </tfoot>
@@ -699,7 +691,7 @@
 <script src='{{asset("js/HI_06/modernizr.js")}}'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script>
-	if( !window.jQuery ) document.write('<script src=\'{{asset("js/HI_06/jquery-3.0.0.min.js")}}\'><\/script>');
+  if( !window.jQuery ) document.write('<script src=\'{{asset("js/HI_06/jquery-3.0.0.min.js")}}\'><\/script>');
 </script>
 <script src='{{asset("js/HI_06/main.js")}}'></script> <!-- Resource jQuery -->
 <script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"></script>
@@ -707,10 +699,6 @@
   $('#datetimepicker').datetimepicker({
     format: 'dd/MM/yyyy hh:mm:ss',
     language: 'en-US'
-  });
-  $('.delbut').click(function(event) {
-      event.preventDefault();
-      $(this).parent().parent().remove();
   });
 </script>
 </body>

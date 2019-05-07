@@ -1,11 +1,11 @@
-@extends('doctor.master')
+@extends('doctor.urgentmaster')
+
 
 @section('custom_css')
     <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
     <link href="{{ asset('css/doctor/bootstrap-datepicker.min.css')}}" rel="stylesheet">
     @endsection
-
 
 @section('page_body')
     <div class="container">
@@ -19,8 +19,6 @@
             <div id="calendar"></div>
         </div>
     </div>
-
-
     @endsection
 
 @section('custom_js')
