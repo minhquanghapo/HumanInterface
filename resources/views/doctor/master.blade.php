@@ -28,24 +28,11 @@
         }
         .incard{
             height: 80px;
-            overflow: hidden;
+            overflow-y: hidden;
             margin: 10px;
         }
         .mybtn{
             width: 100%;
-        }
-        .notification {
-            margin-top: 55px;
-            position: relative;
-        }
-        .notification .badge {
-            position: absolute;
-            top: -24px;
-            right: -10px;
-            padding: 8px 10px;
-            border-radius: 50%;
-            background-color: red;
-            color: white;
         }
 
         input[type='checkbox'] {
@@ -104,6 +91,8 @@
                                 </ul>
                             </li>
                         </ul>
+                        <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span></button> 
+
                     </div>
                     <!-- /.navbar-collapse -->
                 </div>
@@ -316,7 +305,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám khẩn cấp</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn">Đã được nhận</button>
+                                            <button type="button" class="btn mybtn" disabled>Đã được nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -338,7 +327,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn">Đã được nhận</button>
+                                            <button type="button" class="btn mybtn" disabled>Đã được nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -360,7 +349,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám Gấp</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                            <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -382,7 +371,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                                            <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -404,7 +393,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                                            <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -426,7 +415,7 @@
                                     <div class="col-sm-9">
                                         <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                         <div class="col-sm-4">
-                                            <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                            <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                         </div>
                                         <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                 Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
