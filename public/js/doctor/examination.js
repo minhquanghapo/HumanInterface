@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     var navListItems = $('ul.setup-panel li a'),
         allWells = $('.setup-content');
 
@@ -17,9 +16,22 @@ $(document).ready(function() {
             allWells.hide();
             $target.show();
         }
+        if(!($(this).parent().hasClass("disabled"))){
+            $current_step = $(this).parent().attr('id').split('st')[1];
+            for($i=1;$i<=4;$i++){
+                $id_st = "st"+$i;
+                if($("#"+$id_st).hasClass("passed")){
+                    $("#"+$id_st).removeClass("passed");
+                }
+            }
+            for($i=1;$i<$current_step;$i++){
+                $id_st = "st"+$i;
+                $("#"+$id_st).addClass("passed");
+            }
+        }
     });
 
-    $('ul.setup-panel li.active a').trigger('click');
+    // $('ul.setup-panel li.active a').trigger('click');
 
     // DEMO ONLY //
     $('#activate-step-3').on('click', function(e) {
@@ -32,6 +44,7 @@ $(document).ready(function() {
         $('ul.setup-panel li a[href="#step-4"]').trigger('click');
         $(this).remove();
     })
+
 
     $(document).on('click',"#complete-btn", function(e) {
         toastr["success"]("Ca khám kết thúc!");
