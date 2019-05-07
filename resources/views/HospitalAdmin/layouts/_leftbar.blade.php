@@ -39,6 +39,13 @@
                     <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
                 </a>
             </li>
+            <!-- Nhóm 2 -->
+            <li class="<?= (Request::segment(2)=='urgent') ? 'active' : ''; ?>">
+                <a href="/admin_hospital/urgent">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> <span>Lịch khám khẩn cấp</span>
+                </a>
+            </li>
+            <!-- end Nhóm 2 -->
         </ul>    
     </section>
     <!-- /.sidebar -->

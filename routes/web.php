@@ -16,8 +16,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/chat-box', function () {
-    return view('HI_02.index');
+Route::get('/tra-cuu-benh', function () {
+    return view('HI_02.tra_cuu_benh');
+});
+
+Route::get('/bai-viet', function () {
+    return view('HI_02.bai-viet');
 });
 
 Route::get('/video-call', function () {
@@ -42,6 +46,7 @@ Route::get('lich-kham-benh-nhan', [
 Route::match(['get', 'post'],'/result', 'PageControllerHI04@getFormSearch')->name('result');
 
 Route::get('/doctor',"DoctorController@index");
+Route::get('/doctor1',"DoctorController@urgent");
 Route::get('/doctor/examination',"DoctorController@examination");
 Route::get('/doctor/login',"DoctorController@login");
 
@@ -72,7 +77,9 @@ Route::get('/admin_hospital/doctors/edit', "HospitalAdminController@doctor_edit"
 Route::get('/admin_hospital/staffs/add', "HospitalAdminController@staff_add");
 Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
 Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
-
+// Nhóm 2
+Route::get('/admin_hospital/urgent', "HospitalAdminController@urgent");
+// end Nhóm 2
 Route::get('/receptionist/', "NewPatient@index");
 Route::get('/receptionist/checkin', "NewPatient@checkin");
 
