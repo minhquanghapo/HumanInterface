@@ -25,12 +25,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('HI_02/css/app.css') }}">
-    
+
     @yield('SPECIFIC CSS')
-    
+
 	<!-- YOUR CUSTOM CSS -->
 	<link href="{{ asset('HI_03/css/custom.css') }}" rel="stylesheet">
-	
+
 	<!-- Modernizr -->
 	<script src="{{ asset('HI_03/js/modernizr.js') }}"></script>
 
@@ -47,11 +47,11 @@
 	<!-- End Preload -->
 
     @include('HI_03.layouts.header')
-	<!-- /header -->	
-	
+	<!-- /header -->
+
 	@yield('content')
 	<!-- /main content -->
-	
+
 	@include('HI_03.layouts.footer')
 	<!--/footer-->
 

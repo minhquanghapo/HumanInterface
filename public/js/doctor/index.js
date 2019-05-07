@@ -4,7 +4,7 @@ $(document).ready(function() {
         language: "vi",
         todayHighlight: true,
         format: "yyyy-mm-dd",
-        todayBtn: "linked"
+        todayBtn: "linked",
     });
     $('#calendar_picker').datepicker('setDate', 'today');
     $picked_date = $('#calendar_picker').datepicker('getDate');
@@ -14,7 +14,6 @@ $(document).ready(function() {
         $('#calendar').fullCalendar('gotoDate', $picked_date);
         $('#calendar').fullCalendar('changeView', 'listDay');
     });
-
 
     $('#calendar').fullCalendar({
         header: {
@@ -182,6 +181,10 @@ $(document).ready(function() {
                 $('#calendar_picker').datepicker('setDate', $picked_date);
             }
         },
+        dayClick: function (date) {
+            $picked_date = date.format();
+            $('#calendar_picker').datepicker('setDate', $picked_date);
+        }
 
     });
 
@@ -493,4 +496,5 @@ $(document).ready(function() {
             $(this).css("background",$color);
         });
     });
+
 });
