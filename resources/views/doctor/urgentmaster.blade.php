@@ -184,48 +184,54 @@
     <!-- end nhóm 2 -->
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-default" style="background: #fff;border: none" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>
-            </div>
-
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav nav-mobile">
-                    <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
-                    <li><a href="/doctor/login">Đăng xuất</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right nav-pc">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                            <img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">
-                            <span>BS.Lê Hoàng Vũ</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
+<div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav nav-mobile">
+                            <li>
+                                <a href="/doctor">Trang chủ</a>
+                            </li>
                             <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
                             <li><a href="/doctor/login">Đăng xuất</a></li>
                         </ul>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span><span class="badge">3</span></button>
-            </div>
+                        <ul class="nav navbar-nav navbar-right nav-pc">
+                            <li>
+                                <a href="/doctor" style="line-height: 40px!important;">Trang chủ</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 0">
+                                    <img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">
+                                    <span>BS.Lê Hoàng Vũ</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
+                                    <li><a href="/doctor/login">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span><span class="badge">3</span></button>
 
-            <!-- /.navbar-collapse -->
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-</div>
+    </div>
 @yield('page_body')
 
 <div id="detailModal" class="modal fade" role="dialog">
@@ -512,7 +518,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" onclick="openDetail()" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                                <button type="button" onclick="openDetail()" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -536,7 +542,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                                                <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -560,7 +566,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                                                <button type="button" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
