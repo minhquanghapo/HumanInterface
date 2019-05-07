@@ -33,33 +33,34 @@
                                 </div>
                             </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Email</label>
+                            <label class="col-sm-2 control-label">Địa chỉ</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" value="linh.nt@gmail.com">
+                                <input type="email" class="form-control" value="Hà Nội">
                                 </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Tel</label>
+                            <label class="col-sm-2 control-label">Giới tính</label>
                             <div class="col-sm-10">
-                                <input type="tel" class="form-control" value="0123456789">
+                                <input type="tel" class="form-control" value="Nữ">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Địa chỉ</label>
+                            <label class="col-sm-2 control-label">Tuổi</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" value="Thanh Xuân, Hà Nội">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Phòng</label>
+                            <label class="col-sm-2 control-label">Tình trạng bệnh</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" value="Kế toán">
+                                <textarea class="form-control" cols="40" rows="5">Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt. Thành bụng căng cứng. Sốt nhẹ.</textarea>
+                                
                             </div>
                         </div>
                         <div class="form-group">
-                                <label class="col-sm-2 control-label">Chức vụ</label>
+                                <label class="col-sm-2 control-label">Thời gian</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" value="Trưởng phòng">
+                                    <input type="text" class="form-control" value="10/05/2019 10:30">
                                 </div>
                             </div>
                         
@@ -68,7 +69,8 @@
                 </div>
                 <div class="box-footer">
                         <button type="submit" class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-info pull-right">Save</button>
+                        <button type="" class="btn btn-info pull-right">Thêm người nhận</button>
+                        <button type="" class="btn btn-info pull-right" style="margin-right: 10px;">Gửi tới các bác sĩ có lịch trống</button>
                     </div>
             </div>
         </div>
@@ -77,16 +79,25 @@
                     <!-- Header -->
                     <div class="box-header with-border">
                         <div class="row">
-                            <div class="col-md-3">
-                                <h3 class="box-title">Upload avatar</h3>
+                            <div class="col-md-12">
+                                <h3 class="box-title">Danh sách bác sĩ đã nhận</h3>
                             </div>
                         </div>
                     </div>
                     <div class="box-body" id="doctor">
-                        <form id="form1" runat="server">
-                            <input type='file' id="imgInp" />
-                            <img id="blah" src="https://ddpnetwork.org/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg" alt="your image" style="width: 128px;height: 128px"/>
-                        </form>
+                        <span class="glyphicon glyphicon-check text-green"></span><span class="text-green">Nguyễn Văn A - Chuyên khoa 1 đã thực hiện lịch khám</span> 
+                        <hr>
+                        <span class="glyphicon glyphicon-ok text-green"></span> Nguyễn Văn A - Chuyên khoa 1 đã chấp nhận
+                        <hr>
+                        <span class="glyphicon glyphicon-remove text-red"></span> Hoàng Văn B - Chuyên Khoa 2 đã từ chối
+                        <hr>
+                        <span class="glyphicon glyphicon-share"></span> Nguyễn Thùy C - chuyên khoa D đã đọc
+                        <hr>
+                        <span class="glyphicon glyphicon-share"></span> Nguyễn Hoàng D - chuyên khoa X đã đọc
+                        <hr>
+                        <span class="glyphicon glyphicon-share"></span> Đại Cồ Việt - chuyên khoa D đã đọc
+                        <hr>
+                        Bách Văn Khoa - chuyên khoa X đã nhận
                     </div>
                 </div>
                           
