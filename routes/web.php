@@ -16,8 +16,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/chat-box', function () {
-    return view('HI_02.index');
+Route::get('/tra-cuu-benh', function () {
+    return view('HI_02.tra_cuu_benh');
+});
+
+Route::get('/bai-viet', function () {
+    return view('HI_02.bai-viet');
 });
 
 Route::get('/video-call', function () {
