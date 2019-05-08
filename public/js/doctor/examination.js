@@ -16,21 +16,24 @@ $(document).ready(function() {
             allWells.hide();
             $target.show();
         }
-        if(!($(this).parent().hasClass("disabled"))){
-            $current_step = $(this).parent().attr('id').split('st')[1];
-            for($i=1;$i<=4;$i++){
-                $id_st = "st"+$i;
-                if($("#"+$id_st).hasClass("passed")){
-                    $("#"+$id_st).removeClass("passed");
+        if(!$item.hasClass('disabled')){
+            var tmp = $item.attr('id');
+            if(tmp!=null){
+                $current_step = tmp.substring(2,3);
+                for($i=1;$i<=4;$i++){
+                    $id_st = "st"+$i;
+                    if($("#"+$id_st).hasClass("passed")){
+                        $("#"+$id_st).removeClass("passed");
+                    }
                 }
-            }
-            for($i=1;$i<$current_step;$i++){
-                $id_st = "st"+$i;
-                $("#"+$id_st).addClass("passed");
+                for($i=1;$i<=$current_step;$i++){
+                    $id_st = "st"+$i;
+                    $("#"+$id_st).addClass("passed");
+                }
             }
         }
     });
-
+    $("#st1 a").trigger('click');
     // $('ul.setup-panel li.active a').trigger('click');
 
     // DEMO ONLY //

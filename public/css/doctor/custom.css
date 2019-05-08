@@ -131,28 +131,28 @@ button a:hover{
     margin-right: 0;
     float: right;
 }
-.btn {
-    background: #74d1c6;
-    border: 2px solid #74d1c6;
-    color: #fff;
-    padding: 5px 20px;
-    font-weight: 500;
-    line-height: 1;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    border-radius: 30px;
-}
-.btn:hover {
-    background: #e74e84;
-    border: 2px solid #e74e84;
-    color: #fff;
-}
+/*.btn {*/
+    /*background: #74d1c6;*/
+    /*border: 2px solid #74d1c6;*/
+    /*color: #fff;*/
+    /*padding: 5px 20px;*/
+    /*font-weight: 500;*/
+    /*line-height: 1;*/
+    /*-moz-transition: all 0.3s ease-in-out;*/
+    /*-o-transition: all 0.3s ease-in-out;*/
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    /*-ms-transition: all 0.3s ease-in-out;*/
+    /*transition: all 0.3s ease-in-out;*/
+    /*-webkit-border-radius: 30px;*/
+    /*-moz-border-radius: 30px;*/
+    /*-ms-border-radius: 30px;*/
+    /*border-radius: 30px;*/
+/*}*/
+/*.btn:hover {*/
+    /*background: #e74e84;*/
+    /*border: 2px solid #e74e84;*/
+    /*color: #fff;*/
+/*}*/
 
 .nav a:hover{
     color: #e74e84!important;
@@ -164,4 +164,12 @@ button a:hover{
 li.passed > a{
     background: #74d1c6;
     color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+button{
+    outline: none;
 }
