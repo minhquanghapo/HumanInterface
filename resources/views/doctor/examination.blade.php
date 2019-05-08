@@ -146,7 +146,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="table-responsive text-center">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -169,6 +169,7 @@
     <div class="row setup-content" id="step-4">
         <div class="col-xs-12">
             <div class="col-md-12 well">
+                <button id="find_result" style="margin-bottom: 10px" data-toggle="modal" data-target="#findResultModal">Xem kết quả xét nghiệm</button>
                 <table class="table">
                     <tr>
                         <td><b>Kết luận bệnh</b></td>
@@ -254,7 +255,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="table-responsive text-center">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -375,6 +376,64 @@
                 <p><i>(Ký, ghi rõ họ tên)</i></p>
             </div>
         </div>
+    </div>
+</div>
+<div id="findResultModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Kết quả xét nghiêm</h4>
+            </div>
+            <div class="modal-body">
+                <p>Nhập tên bênh nhân:</p>
+                <div class="control-group">
+                    <select id="select-name" name="state[]" class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
+                        <option value="">Select a name...</option>
+                        <option value="Alabama">Nguyễn Văn A</option>
+                        <option value="Alaska">Nguyễn Văn B</option>
+                        <option value="Arizona">Lê Văn C</option>
+                        <option value="Arizona">Trần Văn C</option>
+                        <option value="Arizona">Nguyễn Văn D</option>
+                        <option value="Arizona">Nguyễn Mạnh C</option>
+                        <option value="Arizona">Nguyễn Mạnh D</option>
+                    </select>
+                </div>
+                <script>
+                    $('#select-name').selectize({
+
+                    });
+                </script>
+                <div id="info_history" style="display: none">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Tên xét nghiệm</th>
+                                <th>Kết quả </th>
+                            </tr>
+                            </thead>
+                            <tbody id="medicine_list" >
+                            <tr>
+                                <td>Xét nghiệm máu</td>
+                                <td>Bình thường</td>
+                            </tr>
+                            <tr>
+                                <td>Xét nghiệm nước tiểu</td>
+                                <td>Bình thường</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
 @endsection

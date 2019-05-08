@@ -94,5 +94,8 @@ $(document).ready(function() {
 
     })
 
+    $("#select-name").on("change",function () {
+        $("#info_history").css("display","block");
+    })
 });
 
