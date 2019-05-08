@@ -35,9 +35,12 @@
 @endsection
 
 @section('page_body')<div class="container">
+    <div class="title">
+        <h3>HI_01 Bác sĩ thực hiện một ca khám</h3>
+    </div>
     <div class="row form-group">
         <div class="col-xs-12">
-            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+            <ul class="process-nav nav nav-pills nav-justified thumbnail setup-panel">
                 <li id="st1" class="active passed"><a href="#step-1">
                         <p class="list-group-item-text">Thông tin bệnh nhân</p>
                     </a></li>
@@ -100,7 +103,6 @@
                         Từng mắc bệnh dạ dày ngày bé
                     </p>
                 </div>
-                <button id="activate-step-3" class="btn btn-primary btn-lg">Tiến hành khám</button>
             </div>
         </div>
     </div>
@@ -113,7 +115,7 @@
                         <td class="col-sm-9">
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter',100);" id="chuandoan" class="form-control" rows="5"  style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter',100);" id="chuandoan" class="form-control" rows="5"  style="padding-right:40px;resize: none"></textarea>
                             </div>
 
                         </td>
@@ -161,7 +163,6 @@
 
                     </tr>
                 </table>
-                <button id="activate-step-4" class="btn btn-primary btn-lg">Kết luận</button>
             </div>
         </div>
     </div>
@@ -174,7 +175,7 @@
                         <td class="col-sm-10">
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter1">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter1',100);" id="ketluan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter1',100);" id="ketluan" class="form-control" rows="5" style="padding-right:40px;resize: none"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -183,7 +184,7 @@
                         <td>
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter2">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter2',100);" id="chuandoan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter2',100);" id="chuandoan" class="form-control" rows="5" style="padding-right:40px;resize: none"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -281,8 +282,97 @@
                         </td>
                     </tr>
                 </table>
-                <button id="complete-btn" class="btn btn-primary btn-lg">Kết thúc ca khám</button>
+                <div class="pager">
+                    <button id="complete-btn">Kết thúc ca khám</button>
+                </div>
                 {{--<a href="/doctor" id="ketthuc" class="btn btn-primary btn-lg" style="margin-top: 10px" role="button">Kết thúc ca khám</a>--}}
+            </div>
+        </div>
+    </div>
+    <div class="pagination-btn">
+        <ul class="pager">
+            <li><button class="prev disabled">Quay lại</button></li>
+            <li><button class="next">Tiếp tục</button></li>
+
+        </ul>
+    </div>
+
+    <div id="print-form" style="display:none">
+        <div style="width: 80%;margin: auto">
+            <div class="title" style="text-align: center">
+                <h3>Bệnh viện quốc tế AS_K60</h3>
+                <h3>Khoa nội khoa</h3>
+                <h3>Đơn thuốc</h3>
+            </div>
+            <div class="info">
+                <table width="100%">
+                    <tr>
+                        <td><strong style="">Họ tên:</strong> Vũ Văn A</td>
+                        <td><strong>Tuổi</strong> 30</td>
+                        <td><strong>Giới tính</strong> Nam</td>
+                    </tr>
+                </table>
+                <p><strong>Địa chỉ:</strong> Hai Bà Trưng - Hà Nội</p>
+                <p><strong>Chẩn đoán:</strong> Đau dạ dày cấp tính</p>
+            </div>
+            <div id="prescription">
+                <p><strong>Đơn thuốc: </strong></p>
+                <table width="100%" style="text-align: center">
+                    <tr>
+                        <th>#</th>
+                        <th>Tên </th>
+                        <th>Số lượng</th>
+                        <th>Đơn vị</th>
+                        <th>Liều dùng</th>
+                        <th>Số lần / ngày</th>
+                        <th>Chỉ định</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Alaska</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arkansas</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Florida</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Connecticut</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-top: 30px">
+                <p><strong>Lời dặn:</strong> Khám lại sau 2 tuần</p>
+                <p>Khám lại xin mang theo đơn này.</p>
+            </div>
+            <div style="width: 50%;float: right;text-align: center">
+                <p>Ngày…… tháng…… năm 20.....</p>
+                <p>Bác sỹ/Y sỹ khám bệnh</p>
+                <p><i>(Ký, ghi rõ họ tên)</i></p>
             </div>
         </div>
     </div>
