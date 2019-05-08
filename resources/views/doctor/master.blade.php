@@ -115,16 +115,16 @@
                 <div class="row form-group">
                     <div class="col-xs-12">
                         <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                            <li class="active"><a href="#step-1">
+                            <li class="active"><a href="#urgent1">
                                     <p class="list-group-item-text">Thông tin bệnh nhân</p>
                                 </a></li>
-                            <li ><a href="#step-2">
+                            <li ><a href="#urgent2">
                                     <p class="list-group-item-text">Tình trang bệnh</p>
                                 </a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row setup-content" id="step-1">
+                <div class="row setup-content" id="urgent1">
                     <div class="col-xs-12">
                         <div class="col-md-12 well text-center">
                             <table class="table">
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row setup-content" id="step-2">
+                <div class="row setup-content" id="urgent2">
                     <div class="col-xs-12">
                         <div class="col-md-12 well">
                             <p>
@@ -450,16 +450,16 @@
                     <div class="row form-group">
                         <div class="col-xs-12">
                             <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                                <li ><a href="#step-3">
+                                <li ><a href="#urgent3">
                                         <p class="list-group-item-text">Thông tin bệnh nhân</p>
                                     </a></li>
-                                <li ><a href="#step-4">
+                                <li ><a href="#urgent4">
                                         <p class="list-group-item-text">Tình trang bệnh</p>
                                     </a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row setup-content" id="step-3">
+                    <div class="row setup-content" id="urgent3">
                         <div class="col-xs-12">
                             <div class="col-md-12 well text-center">
                                 <table class="table">
@@ -487,7 +487,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row setup-content" id="step-4">
+                    <div class="row setup-content" id="urgent4">
                         <div class="col-xs-12">
                             <div class="col-md-12 well">
                                 <p>
