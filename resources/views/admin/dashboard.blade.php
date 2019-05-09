@@ -145,7 +145,7 @@
                                     <canvas id="barChart" style="height:230px"></canvas>
                                 </div>
                                 <div style="text-align: center;">
-                                    <i class="fa fa-inbox"></i>Báo cáo kiểm tra y tế
+                                    <i class="fa fa-inbox"></i> Thống kê lịch khám
                                 </div>
                             </div>                              
                         </div>

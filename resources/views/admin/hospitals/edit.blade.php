@@ -23,7 +23,7 @@
         <section class="row">
             <div class="col-md-7">
                 <!-- Horizontal Form -->
-                <div class="box box-info">
+                <div class="box box-primary">
                     <div class="box-header with-border">
                         <h3 class="box-title"><strong>Thông tin bệnh viện</strong></h3>
                     </div>
@@ -144,6 +144,15 @@
 
             </div>
             <div class="col-sm-5">
+                <div class="box box-primary">
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#">Số lượng phòng khám <span class="pull-right badge bg-blue">230</span></a></li>
+                            <li><a href="#">Số lượng bác sỹ <span class="pull-right badge bg-aqua">50</span></a></li>
+                            <li><a href="#">Tiếp nhận lịch khám/ngày<span class="pull-right badge bg-green">640</span></a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="card">
                     <img class="card-img-top" src="{{asset('adminlte/images/benh-vien-bach-mai-1710478.jpg')}}" alt="Card image" style="width:100%">
                     <div class="card-body">
@@ -158,11 +167,9 @@
                     <a href="#" class="btn btn-primary" id="tabs1" onclick="showStuff(this)">Chi tiết</a>
                     <div id="tabs-1" class="tabContent">
                         <div class="card-text">
-                        Bệnh viện Bạch Mai (tên giao dịch tiếng Anh: Bach Mai Hospital) nằm ở 78 Giải Phóng, Phương Mai, Đống Đa, Hà Nội. Bệnh viện Bạch Mai là một trong những bệnh viện lớn nhất của Việt Nam.
+                            Bệnh viện Bạch Mai (tên giao dịch tiếng Anh: Bach Mai Hospital) nằm ở 78 Giải Phóng, Phương Mai, Đống Đa, Hà Nội. Bệnh viện Bạch Mai là một trong những bệnh viện lớn nhất của Việt Nam.
 
-Bệnh viện Bạch Mai là bệnh viện đầu tiên trong nước được nhận danh hiệu đặc biệt. Hiện tại bệnh viện Bạch Mai có 1.400 giường bệnh, tất cả trưởng khoa, giám đốc các trung tâm đều có trình độ sau đại học. Tỉ lệ tử vong của bệnh nhân chỉ từ 0,8-0,9% và tỉ lệ sử dụng giường bệnh đạt 153% (so với tiêu chí đề ra là 85%).
-
-Tháng 10 năm 2009, Bộ trưởng Y tế Nguyễn Quốc Triệu đã làm việc với Bệnh viện Bạch Mai về kế hoạch phát triển bệnh viện thành trung tâm y tế chuyên sâu với tất cả các chuyên ngành về nội khoa. Trong đó, bệnh viện sẽ tập trung phát triển 7 lĩnh vực: tim mạch, hồi sức - cấp cứu - chống độc, thần kinh, y học hạt nhân và ung bướu, chẩn đoán hình ảnh, hoá sinh, vi sinh có trình độ khoa học - kĩ thuật ngang tầm các nước trong khu vực và quốc tế.
+                            Bệnh viện Bạch Mai là bệnh viện đầu tiên trong nước được nhận danh hiệu đặc biệt. Hiện tại bệnh viện Bạch Mai có 1.400 giường bệnh, tất cả trưởng khoa, giám đốc các trung tâm đều có trình độ sau đại học. Tỉ lệ tử vong của bệnh nhân chỉ từ 0,8-0,9% và tỉ lệ sử dụng giường bệnh đạt 153% (so với tiêu chí đề ra là 85%).
                         </div>
                     </div>
                     </div>
