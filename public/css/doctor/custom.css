@@ -1,10 +1,181 @@
-button{
-    background: #74d1c6!important;
-    border-color: #74d1c6!important;
-    color: white!important;
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i,800");
+
+body{
+    background: #f5f8fa;
+    line-height: 1.4;
+    font-family: "Poppins", Helvetica, sans-serif;
 }
-button:hover{
-    background: #e83e8c!important;
-    border-color: #e83e8c!important;
-    color: white!important;
+
+.fc-list-item{
+    cursor: pointer;
+}
+.navbar{
+    margin-bottom: 0;
+    background: #fff;
+    border: none;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.header{
+    background: #fff;
+    padding-bottom: 10px;
+}
+@media (max-width: 992px) {
+
+    .avatar .btn{
+        max-width: 40%;
+        font-size: 10px;
+    }
+
+    .navbar-nav.nav-mobile{
+        display: block;
+    }
+    .navbar-nav.nav-pc{
+        display: none;
+    }
+    #calendar_picker {
+        display: none;
+    }
+    .header{
+        padding-bottom: 10px;
+    }
+    .fc-scroller:not(.fc-day-grid-container){
+        height: 500px!important;
+
+    }
+    .fc-day-grid-container{
+        height: 340px!important;
+    }
+    .fc-content-skeleton tbody{
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .avatar .btn{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .navbar-nav.nav-mobile{
+        display: none;
+    }
+    .navbar-nav.nav-pc{
+        display: block;
+    }
+    #calendar_picker {
+        margin-top: 52px;
+    }
+    .help{
+        display: none;
+    }
+}
+
+.help{
+    text-decoration: underline;
+    color: #e74e84;
+}
+
+.fc-view-container, .fc-list-empty{
+    background-color: #fff!important;
+}
+
+#calendar_picker {
+    padding: 0;
+    background: #fff;
+    margin-top: 52px;
+}
+#calendar_picker .datepicker.datepicker-inline,
+#calendar_picker .datepicker.datepicker-inline table {
+    width: 100%;
+}
+
+.datepicker thead tr th.prev:hover,
+.datepicker thead tr th.next:hover {
+    color: #e74e84;
+}
+
+
+.datepicker .day:hover {
+    background: #8ec549 !important;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.datepicker .active.day:hover {
+    background: #333 !important;
+    color: #fff;
+}
+
+
+.box_list ul li a {
+    color: #999;
+    font-weight: 500;
+}
+.box_list ul li a:hover {
+    color: #e74e84;
+}
+.box_list ul li:last-child {
+    margin-right: 0;
+    float: right;
+}
+.pager button, #find_result{
+    background: #74d1c6;
+    border: 2px solid #74d1c6;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    line-height: 1;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+}
+.pager button.disabled{
+
+    background: #eee;
+    border: 2px solid #eee;
+    color: #808080;
+}
+.pager button:not(.disabled):hover ,#find_result:hover{
+    background: #e74e84!important;
+    border: 2px solid #e74e84;
+    color: #fff;
+}
+
+.nav a:hover{
+    color: #e74e84!important;
+}
+.nav li:hover{
+    text-decoration: underline;
+}
+
+li.passed > a{
+    background: #74d1c6;
+    color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+button{
+    outline: none;
 }

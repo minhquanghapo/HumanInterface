@@ -32,35 +32,74 @@
 		
 		<div class="filters_listing">
 				<div class="container">
-					<ul class="clearfix">
-						<li>
-							<h6>Hiển thị</h6>
-							<div class="switch-field">
-								<input type="radio" id="all" name="type_patient" value="all" checked>
-								<label for="all">Tất cả</label>
-								<input type="radio" id="doctors" name="type_patient" value="doctors">
-								<label for="doctors">Chỉ bác sĩ</label>
-								<input type="radio" id="clinics" name="type_patient" value="clinics">
-								<label for="clinics">Chỉ bệnh viện</label>
-							</div>
-						</li>
-						<!-- <li>
-							<h6>Layout</h6>
-							<div class="layout_view">
-								<a href="#0" class="active"><i class="icon-th"></i></a>
-								<a href="#0"><i class="icon-th-list"></i></a>
-								<a href="#0"><i class="icon-map-1"></i></a>
-							</div>
-						</li> -->
-						<li>
-							<h6>Sắp xếp theo</h6>
-							<select name="orderby" class="selectbox">
-							<option value="Best rated">Kết quả đánh giá</option>
-							<option value="Men">Nam</option>
-							<option value="Women">Nữ</option>
-							</select>
-						</li>
-					</ul>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Chuyên khoa</label>
+                                <select name="" class="form-control">
+                                    <option value="">Tai mũi họng</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Xương khớp</option>
+                                    <option value="">Phụ khoa</option>
+                                    <option value="">Nam khoa</option>
+                                    <option value="">Nhi</option>
+                                    <option value="">Tai mũi họng</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Xương khớp</option>
+                                    <option value="">Phụ khoa</option>
+                                    <option value="">Nam khoa</option>
+                                    <option value="">Nhi</option>
+                                    <option value="">Tai mũi họng</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Xương khớp</option>
+                                    <option value="">Phụ khoa</option>
+                                    <option value="">Nam khoa</option>
+                                    <option value="">Nhi</option>
+                                    <option value="">Tai mũi họng</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Xương khớp</option>
+                                    <option value="">Phụ khoa</option>
+                                    <option value="">Nam khoa</option>
+                                    <option value="">Nhi</option>
+                                    <option value="">Tai mũi họng</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                    <option value="">Tim mạch</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Sắp xếp theo</label>
+                                <select name="" class="form-control">
+                                    <option value="">Đánh giá</option>
+                                    <option value="">Lượt đặt khám</option>
+                                    <option value="">Khoảng cách</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Khoảng cách</label>
+                                <select name="" class="form-control">
+                                    <option value="">< 1km</option>
+                                    <option value="">1-3km</option>
+                                    <option value="">3-5km</option>
+                                    <option value="">5-10km</option>
+                                    <option value="">> 10km</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn margin-25">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </form>
 				</div>
 				<!-- /container -->
 		</div>
@@ -94,7 +133,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -119,7 +158,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -144,7 +183,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -169,7 +208,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -194,7 +233,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -219,7 +258,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
 								</ul>
@@ -241,7 +280,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic1"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
@@ -264,7 +303,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_2.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic2"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
@@ -287,7 +326,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic3"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
@@ -310,7 +349,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_3.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 3)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 3)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic4"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
@@ -333,7 +372,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 1)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic5"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
@@ -356,7 +395,7 @@
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>
 								<ul>
-									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>Xem trên bản đồ</a></li>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 2)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
 									<li class="showClinic6"><a href="{{ url('detail-page') }}">Đọc thêm</a></li>
 								</ul>
