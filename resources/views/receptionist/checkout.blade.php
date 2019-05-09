@@ -18,7 +18,7 @@
         <ul id="checkin-tabs">
             <li class="current active"><span>1.</span> thông tin bệnh nhân</li>
             <li><span>2.</span> Thanh toán tiền ra viện</li>
-
+            <li><span>3.</span> Xuất hóa đơn </li>
         </ul>
         <div id="fieldsets">
 
@@ -162,12 +162,88 @@
 
 
             </fieldset>
+            <fieldset class="next">
+
+
+                <div class="row">
+                    <div class="col-sm-4" >
+                        <div class="row" style="position:relative;">
+                            <h3>Print</h3>
+                            <h4>Total:<b>1 sheet of paper</b> </h4>
+
+                            <br><br>
+                            <h1>
+                                <button type="button" class="btn " style="margin-right: 75px;">   Print</button> <button type="button" class="btn bg-white ">Cancel</button>
+
+                            </h1>
+
+                        </div><hr>
+
+                        <div class="row">
+
+                            <div class="col-sm-4" >Máy đích</div>
+                            <div class="col-sm-8" >
+                                <select>
+                                    <option value="volvo">Máy in Canon< PSQ 235 </option>
+                                    <option value="saab">Panasonic 952TX</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-4" >Page</div>
+                            <div class="col-sm-8" >
+                                <select>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-4" >Màu mực</div>
+                            <div class="col-sm-8" >
+                                <select>
+                                    <option value="volvo">Đen</option>
+                                    <option value="saab">Màu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-sm-4" >Kích thước </div>
+                            <div class="col-sm-8" >
+                                <select>
+                                    <option value="volvo">A5 </option>
+                                    <option value="saab">A4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-8" >
+                        <div class="bg-gray" style="padding: 20px;margin: 20px; width:450px"><img src="/img/receptionist/don_ra_vien.jpg" style="width: 400px"></div>
+
+                    </div>
+
+                </div>
 
 
 
-            <a class="btn" id="next">Tiếp ▷</a>
-            <input type="submit" class="btn" value="Thanh Toán">
+
+
+
+
+            </fieldset>
+
+
+
+
         </div>
+        <a class="btn" id="next">Tiếp ▷</a>
+        <input type="submit" class="btn" value="Thanh Toán">
     </form>
     </div>
 @endsection
