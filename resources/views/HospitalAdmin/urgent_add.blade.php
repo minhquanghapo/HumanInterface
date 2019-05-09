@@ -191,7 +191,7 @@
                                         <option>Chuyên Khoa 5</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-sm-5"name="tobehide">
                                     <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
                                         <ul class="pagination" style="margin-bottom:-20px;">
                                             <li class="paginate_button previous disabled" id="example1_previous">
@@ -221,7 +221,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3" name="tobehide">
                                     <input type="checkbox" style="margin-top: 30px;">Chỉ hiện các bác sĩ rảnh<br>
                                 </div>
                             </div>
@@ -547,7 +547,7 @@
                     </div>
                           
                 <div class="modal-footer">
-                    <input type="checkbox" onclick="toggle()"> Chọn tất cả bác sĩ rảnh từ Chuyên khoa 1 &nbsp;&nbsp;
+                    <span name="tobehide"><input type="checkbox" onclick="toggle()"> Chọn tất cả bác sĩ rảnh từ Chuyên khoa 1</span> &nbsp;&nbsp;
                     <button type="button" onclick="success()" class="btn btn-primary" >Gửi yêu cầu</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -581,7 +581,7 @@ for (i = 0; i < closebtns.length; i++) {
               }
             checkboxes = document.getElementsByName('tobeshow');
               for(var i=0, n=checkboxes.length;i<n;i++) {
-                checkboxes[i].style.display = "block";
+                checkboxes[i].style.display = "";
               }
 
         }, 3000);
@@ -591,7 +591,7 @@ for (i = 0; i < closebtns.length; i++) {
         setTimeout(function(){
             checkboxes = document.getElementsByName('tobehide');
               for(var i=0, n=checkboxes.length;i<n;i++) {
-                checkboxes[i].style.display = "block";
+                checkboxes[i].style.display = "";
               }
             checkboxes = document.getElementsByName('tobeshow');
               for(var i=0, n=checkboxes.length;i<n;i++) {
