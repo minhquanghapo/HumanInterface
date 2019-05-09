@@ -111,4 +111,7 @@ Route::get('/admin_hospital/doctors/schedule/add', "HospitalAdminController@doct
 Route::get('/admin_hospital/medicines', "HospitalAdminController@medicine_info");
 Route::get('/admin_hospital/medicines/edit', "HospitalAdminController@medicine_edit");
 Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_add");
+Route::get('/admin_hospital/services', "HospitalAdminController@service_info");
+Route::get('/admin_hospital/services/edit', "HospitalAdminController@service_edit");
+Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add");
 //}
