@@ -320,8 +320,8 @@
           <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>Quản Văn Lý</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
       <!-- search form -->
@@ -339,24 +339,36 @@
       <ul class="sidebar-menu" data-widget="tree">
           <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
               <a href="/admin_hospital">
-                  <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                  <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/doctors">
-                  <i class="fa fa-user"></i> <span>Doctor</span>
+                  <i class="fa fa-user-md"></i> <span>Bác sĩ</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/staffs">
-                  <i class="fa fa-user"></i> <span>Staff</span>
+                  <i class="fa fa-user"></i> <span>Nhân viên</span>
+              </a>
+          </li>
+          <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/medicines">
+                  <i class="fa fa-medkit"></i> <span>Thuốc</span>
               </a>
           </li>
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
               <a href="/admin_hospital/edit">
-                  <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
+                  <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
               </a>
           </li>
+          <!-- Nhóm 2 -->
+          <li class="<?= (Request::segment(2)=='urgent') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/urgent">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> <span>Lịch khám khẩn cấp</span>
+              </a>
+          </li>
+          <!-- end Nhóm 2 -->
       </ul>   
     </section>
     <!-- /.sidebar -->
@@ -395,13 +407,13 @@
                   </thead>
                   <tbody>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Minh Tuyết</td>
+                  <td class="sorting_1"><a href="{{ url()->current() }}/schedule">Nguyễn Thị Minh Tuyết</a></td>
                   <td class="">Thanh Xuân-Hà Nội</td>
                   <td>tuyet.ntm@gmail.com</td>
                   <td>Phụ Khoa</td>
                   <td>Trưởng khoa</td>
                   <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="even" id="s2">
                   <td class="sorting_1">Nguyễn Thị Minh Tuyết</td>
                   <td class="">Thanh Xuân-Hà Nội</td>
@@ -409,7 +421,7 @@
                   <td>Phụ Khoa</td>
                   <td>Trưởng khoa</td>
                   <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s3">
                   <td class="sorting_1">Nguyễn Thị Minh Tuyết</td>
                   <td class="">Thanh Xuân-Hà Nội</td>
@@ -417,7 +429,7 @@
                   <td>Phụ Khoa</td>
                   <td>Trưởng khoa</td>
                   <td>0123456789</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a></td>    
+                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Edit</a><a href="" class="delbut glyphicon glyphicon-trash"></a></td>    
                   </tr></tbody>
                   <tfoot>
                   </tfoot>

@@ -320,8 +320,8 @@
           <img src='{{("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>Quản Văn Lý</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
       <!-- search form -->
@@ -338,25 +338,37 @@
       <ul class="sidebar-menu" data-widget="tree">
           <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
               <a href="/admin_hospital">
-                  <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                  <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/doctors">
-                  <i class="fa fa-user"></i> <span>Doctor</span>
+                  <i class="fa fa-user-md"></i> <span>Bác sĩ</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/staffs">
-                  <i class="fa fa-user"></i> <span>Staff</span>
+                  <i class="fa fa-user"></i> <span>Nhân viên</span>
+              </a>
+          </li>
+          <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/medicines">
+                  <i class="fa fa-medkit"></i> <span>Thuốc</span>
               </a>
           </li>
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
               <a href="/admin_hospital/edit">
-                  <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
+                  <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
               </a>
           </li>
-      </ul>   
+          <!-- Nhóm 2 -->
+          <li class="<?= (Request::segment(2)=='urgent') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/urgent">
+                  <span class="glyphicon glyphicon-exclamation-sign"></span> <span>Lịch khám khẩn cấp</span>
+              </a>
+          </li>
+          <!-- end Nhóm 2 -->
+      </ul>     
       <!-- sidebar menu: : style can be found in sidebar.less -->
     </section>
     <!-- /.sidebar -->
@@ -384,8 +396,8 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
-
+              <h3>44 <i class="fa fa-user-md"></i></h3>
+              
               <p>Bác sĩ</p>
             </div>
             
@@ -397,7 +409,7 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>65</h3>
+              <h3>65 <i class="fa fa-user"></i></h3>
 
               <p>Nhân viên</p>
             </div>
@@ -405,6 +417,18 @@
             <a href="{{ url()->current() }}/staffs" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+              <div class="inner">
+                <h3>44 <i class="fa fa-medkit"></i></h3>
+                
+                <p>Danh mục thuốc</p>
+              </div>
+              
+              <a href="{{ url()->current() }}/medicines" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
         <!-- ./col -->
       </div>
     </section>
@@ -464,23 +488,12 @@
                     <li class="events-group">
                       <div class="top-info"><img src='{{("img/HI_06/dist/img/bshung.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Hùng</span></div>              
                       <ul>
-                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+                        <li class="single-event" data-start="9:30" data-end="11:15"  data-content="event-restorative-yoga" data-event="event-4">
                           <a href="#0">
                             <em class="event-name">Khám bệnh</em>
                           </a>
                         </li>
-              
-                        <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
+
                       </ul>
                     </li>
               
@@ -601,64 +614,79 @@
               
                   <div class="body">
                     <div class="event-info">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
-                            </div>
-                                
-                                <div class="row setup-content" id="step-1" style="">
-                                    
-                                    <div class="col-xs-12">
-                                        <div class="col-md-12 well text-center">
-                                            <table class="table">
-                                                <tbody><tr>
-                                                    <td><b>Mã hồ sơ</b></td>
-                                                    <td id="idhoso">1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Họ tên</b></td>
-                                                    <td>Vũ Văn A</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Giới tính</b></td>
-                                                    <td>Nam</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Tuổi</b></td>
-                                                    <td>30</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>Địa chỉ</b></td>
-                                                    <td>Hà Nội</td>
-                                                </tr>
-                                            </tbody></table>
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row form-group">
+                                        <div class="col-xs-12">
+                                            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+                                                <li class="active"><a href="#step-1" id="step-11">
+                                                        <p class="list-group-item-text">Thông tin bệnh nhân</p>
+                                                    </a></li>
+                                                <li class=""><a href="#step-2" id="step-22">
+                                                        <p class="list-group-item-text">Tình trang bệnh</p>
+                                                    </a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <h4 class="modal-title">Tình trạng bệnh</h4>
-                                    <div class="col-xs-12">
-                                        <div class="col-md-12 well">
-                                            <p>
-                                                Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                                Thành bụng căng cứng.
-                                                Sốt nhẹ.
-                                            </p>
+                                    <div class="row setup-content" id="step-1" style="">
+                                        <div class="col-xs-12">
+                                            <div class="col-md-12 well text-center">
+                                                <table class="table">
+                                                    <tbody><tr>
+                                                        <td><b>Mã hồ sơ</b></td>
+                                                        <td id="idhoso">8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Họ tên</b></td>
+                                                        <td>Vũ Văn A</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Giới tính</b></td>
+                                                        <td>Nam</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Tuổi</b></td>
+                                                        <td>30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Địa chỉ</b></td>
+                                                        <td>Hà Nội</td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setup-content" id="step-2" style="display: none;">
+                                        <div class="col-xs-12">
+                                            <div class="col-md-12 well">
+                                                <p>
+                                                    Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                                    Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                                    Thành bụng căng cứng.
+                                                    Sốt nhẹ.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
+                                    
+                                </div>
                             </div>
-                                <h4 class="modal-title">Tình trạng bệnh</h4>
-                            <div class="row setup-content" id="step-2" style="">
-                                
-                            </div>
+                    
                         </div>
                     </div>
                     
                     <div class="body-bg"></div>
                   </div>
-              
-                  <a href="#0" class="close">Close</a>
                 </div>
               
                 <div class="cover-layer"></div>
@@ -926,6 +954,15 @@
   $('#datetimepicker').datetimepicker({
     format: 'dd/MM/yyyy hh:mm:ss',
     language: 'en-US'
+  });
+  $('#step-11').click(function() {
+    console.log("ssấss");
+    $('#step-1').show();
+    $('#step-2').hide();
+  });
+  $('#step-22').click(function() {
+    $('#step-2').show();
+    $('#step-1').hide();
   });
 </script>
 </body>

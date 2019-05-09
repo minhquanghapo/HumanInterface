@@ -9728,7 +9728,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 	};
 
 	/**
-	 * Initializes the layout of the plugin and extends the carousel.
+	 * Initializes the layouts of the plugin and extends the carousel.
 	 * @protected
 	 */
 	Navigation.prototype.initialize = function() {

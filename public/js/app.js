@@ -47434,9 +47434,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! G:\HumanInterface\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! G:\HumanInterface\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! G:\HumanInterface\public\HI_02\scss\app.scss */"./public/HI_02/scss/app.scss");
+__webpack_require__(/*! D:\T6 HI\project\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\T6 HI\project\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\T6 HI\project\public\HI_02\scss\app.scss */"./public/HI_02/scss/app.scss");
 
 
 /***/ })
