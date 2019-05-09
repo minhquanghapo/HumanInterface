@@ -83,13 +83,13 @@ $(document).on('click', ".dark-background", function(event) {
 	$('body').removeClass('anti-scroll');
 });
 
-$(document).on('click', ".btn-danger", function(event) {
+$(document).on('click', ".btn-default", function(event) {
 	$('.dark-background').hide();
 	$('.full-info').hide();
 	$('body').removeClass('anti-scroll');
 });
 
-$(document).on('click', ".btn-warning", function(event) {
+$(document).on('click', ".btn-danger", function(event) {
 	// $('.dark-background').hide();
 	// $('.full-info').hide();
 	setTimeout(function(){
