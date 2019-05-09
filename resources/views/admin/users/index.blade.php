@@ -52,13 +52,13 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <form action="/search" method="POST" role="search">
                                 {{ csrf_field() }}
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="q" placeholder="Nhập tên người dùng..."> 
                                     <span class="input-group-btn">
-                                        <button type="submit" class="label label-default">
+                                        <button type="submit" class="btn btn-default">
                                             <span class="glyphicon glyphicon-search"></span>
                                         </button>
                                     </span>
