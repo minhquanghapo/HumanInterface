@@ -180,6 +180,16 @@
             checkboxes[i].checked = source.checked;
           }
         }
+
+        function addComment() {
+            document.getElementById("comment1").value += 'Tôi đang bận,  ';
+        }
+        function addComment1() {
+            document.getElementById("comment1").value += 'Lịch khám bị trùng không thể hủy,  ';
+        }
+        function addComment2() {
+            document.getElementById("comment1").value += 'Tôi đang không khỏe,  ';
+        }
     </script>
     <!-- end nhóm 2 -->
 </head>
@@ -443,7 +453,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" onclick="superdenyForm()" class="btn btn-danger inbtn">Từ chối</button>
                                             </div>
                                         </div>
@@ -468,7 +478,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -493,7 +503,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Khám Gấp</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -653,7 +663,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="accept()" class="btn btn-success" style="padding-left: 2px;">Chấp nhận</button>
+                    <button type="button" onclick="accept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="openDenyUrgent()" class="btn btn-danger" onclick="openDenyUrgent()">Từ chối</button>
                     <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
                 </div>
@@ -670,9 +680,16 @@
                     <h4 class="modal-title">Từ chối ca khám khẩn cấp</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="comment">Ghi chú (lý do):</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="row" style="margin: 10px;">
+                        <div class="form-group">
+                            <label for="comment">Ghi chú (lý do):</label>
+                            <textarea class="form-control" rows="5" id="comment1"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 10px;">
+                        <button type="button" onclick="addComment()" value="" class="btn" style="margin: 5px;">Tôi đang bận</button>
+                        <button type="button" onclick="addComment1()" value="" class="btn" style="margin: 5px;">Trùng lịch khám</button>
+                        <button type="button" onclick="addComment2()" value="" class="btn" style="margin: 5px;">Tôi đang không khỏe</button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -739,7 +756,7 @@
                         </div>
                     </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 2px;">Chấp nhận</button>
+                    <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="superdenyForm()" class="btn btn-danger">Từ chối</button>
                     <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
                 </div>

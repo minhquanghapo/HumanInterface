@@ -181,7 +181,7 @@
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
       <!-- search form -->
@@ -199,27 +199,27 @@
       <ul class="sidebar-menu" data-widget="tree">
           <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
               <a href="/admin_hospital">
-                  <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                  <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/doctors">
-                  <i class="fa fa-user-md"></i> <span>Doctor</span>
+                  <i class="fa fa-user-md"></i> <span>Bác sĩ</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/staffs">
-                  <i class="fa fa-user"></i> <span>Staff</span>
+                  <i class="fa fa-user"></i> <span>Nhân viên</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/medicines">
-                  <i class="fa fa-medkit"></i> <span>Medicine</span>
+                  <i class="fa fa-medkit"></i> <span>Thuốc</span>
               </a>
           </li>
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
               <a href="/admin_hospital/edit">
-                  <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
+                  <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
               </a>
           </li>
           <!-- Nhóm 2 -->
