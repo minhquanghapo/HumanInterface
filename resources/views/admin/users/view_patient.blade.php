@@ -6,7 +6,7 @@
 @section('pagename')
 <div class="container-fluid">
     <section class="row">
-        <div class="col-sm-8 col-xs-12">
+        <div class="col-sm-7 col-xs-12">
             <div class="box box-primary">
                 <!-- Header -->
                 <div class="box-header with-border">
@@ -63,6 +63,110 @@
                 <div class="box-footer">
                     <button type="submit" class="btn btn-default">Cancel</button>
                     <button type="submit" class="btn btn-info pull-right">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="box box-widget widget-user-2">
+                <div class="widget-user-header bg-aqua-active">
+                    <div class="widget-user-image">
+                        <img class="img-circle" src="{{asset('img/HI_06/dist/img/avatar.png')}}" alt="User Avatar">
+                    </div>
+                    <!-- /.widget-user-image -->
+                    <h3 class="widget-user-username">Nguyễn Văn D</h3>
+                    <h5 class="widget-user-desc">Thông tin các ca khám của bệnh nhân</h5>
+                </div>
+                <div class="box-footer no-padding">
+                    <ul class="nav nav-stacked">
+                        <li><a style="color:blue" href="#" id="tabs1" onclick="showStuff(this)">
+                            <b>Số ca khám đã đặt </b>
+                            <span><small style="color:gray"> xem chi tiết</small></span>
+                            <span class="pull-right badge bg-blue">4</span></a></li>
+                        <li><a style="color:green" href="#" id="tabs2" onclick="showStuff(this)">
+                            <b>Số ca khám đã khám </b>
+                            <span><small style="color:gray"> xem chi tiết</small></span>
+                            <span class="pull-right badge bg-green">1</span></a></li>
+                        <li><a style="color:red" href="#" id="tabs3" onclick="showStuff(this)">
+                            <b>Số ca khám đã hủy</b>
+                            <span><small style="color:gray"> xem chi tiết</small></span>
+                            <span class="pull-right badge bg-red">1</span></a></li>
+                    </ul>
+                </div>
+                <div class="box-body">
+                    <div class="box-footer box-comments">
+                        <div id="tabs-1" class="tabContent">
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/bstuyet.jpeg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Nguyễn Thị Tuyết
+                                        <span class="text-muted pull-right">10:03 PM Tommorow</span>
+                                    </span>
+                                    <p>Bệnh viện XYZ</p>
+                                    <p>Khám mắt</p>
+                                </div>
+                            </div>
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Maria Gonzales
+                                        <span class="text-muted pull-right">8:03 PM Today</span>
+                                    </span>
+                                    <p>Bệnh viện ABC</p>
+                                    <p>Điều trị bệnh abc</p>
+                                </div>
+                            </div>
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Maria Gonzales
+                                        <span class="text-muted pull-right">8:03 PM 2019/06/31</span>
+                                    </span>
+                                    <p>Bệnh viện ABC</p>
+                                    <p>Điều trị bệnh abc</p>
+                                </div>
+                            </div>
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Maria Gonzales
+                                        <span class="text-muted pull-right">8:03 PM 2019/07/09</span>
+                                    </span>
+                                    <p>Bệnh viện CUCXILAU</p>
+                                    <p>Điều trị bệnh ongbelap</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-2" class="tabContent">
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Maria Gonzales
+                                        <span class="text-muted pull-right">8:03 PM 2019/07/09</span>
+                                    </span>
+                                    <p>Bệnh viện ADU</p>
+                                    <p>Điều trị bệnh abc</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-3" class="tabContent">
+                            <div class="box-comment">
+                                <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                <div class="comment-text">
+                                    <span class="username">
+                                        Bs.Maria Gonzales
+                                        <span class="text-muted pull-right">8:03 PM 2019/07/09</span>
+                                    </span>
+                                    <p>Bệnh viện WTF</p>
+                                    <p>Điều trị bệnh xyz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
