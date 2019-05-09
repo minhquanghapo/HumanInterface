@@ -1,12 +1,28 @@
 
 $(document).ready(function() {
+    $('#calendar_picker').datepicker({
+        language: "vi",
+        todayHighlight: true,
+        format: "yyyy-mm-dd",
+        todayBtn: "linked",
+    });
+    $('#calendar_picker').datepicker('setDate', 'today');
+    $picked_date = $('#calendar_picker').datepicker('getDate');
+
+    $('#calendar_picker').datepicker().on('changeDate', function (e) {
+        $picked_date = e.date;
+        $('#calendar').fullCalendar('gotoDate', $picked_date);
+        $('#calendar').fullCalendar('changeView', 'listDay');
+    });
 
     $('#calendar').fullCalendar({
         header: {
-            left: 'prev,next today',
+            left: '',
             center: 'title',
             right: 'listDay,month'
         },
+        defaultView: 'listDay',
+        defaultDate: $picked_date,
         navLinks: true, // can click day/week names to navigate views
         eventLimit: true, // allow "more" link when too many events
         locale: 'vi',
@@ -38,8 +54,7 @@ $(document).ready(function() {
             {
                 id: 5,
                 title: 'ca khám',
-                start: '2019-05-03T09:30:00:00',
-
+                start: '2019-05-03T09:30:00',
             },
             {
                 id: 6,
@@ -69,8 +84,7 @@ $(document).ready(function() {
             {
                 id: 10,
                 title: 'ca khám',
-                start: '2019-05-20T8:30:00',
-                
+                start: '2019-05-20T08:30:00',
             },
             {
                 id: 11,
@@ -81,7 +95,7 @@ $(document).ready(function() {
             {
                 id: 12,
                 title: 'ca khám',
-                start: '2019-05-22T9:00:00',
+                start: '2019-05-22T09:00:00',
                 
             },
             {
@@ -105,8 +119,7 @@ $(document).ready(function() {
             {
                 id: 16,
                 title: 'ca khám',
-                start: '2019-05-25T8:00:00',
-                
+                start: '2019-05-25T08:00:00',
             },
             {
                 id: 17,
@@ -147,8 +160,7 @@ $(document).ready(function() {
             {
                 id: 23,
                 title: 'ca khám',
-                start: '2019-05-30T8:30:00',
-                
+                start: '2019-05-30T08:30:00',
             },
             {
                 id: 24,
@@ -163,6 +175,16 @@ $(document).ready(function() {
             $("#accept-remove").val(info.id);
             $("#detailModal").modal("show");
         },
+        viewRender: function () {
+            if($('#calendar').fullCalendar('getView').name == 'listDay'){
+                $picked_date=$('#calendar').fullCalendar('getView').start._d;
+                $('#calendar_picker').datepicker('setDate', $picked_date);
+            }
+        },
+        dayClick: function (date) {
+            $picked_date = date.format();
+            $('#calendar_picker').datepicker('setDate', $picked_date);
+        }
 
     });
 
@@ -225,6 +247,203 @@ $(document).ready(function() {
         $("#removeModal").modal("show");
     });
     
+    // Nhóm 2
+    $("#remove-urgent").on("click",function () {
+        $("#urgentModal").modal("hide");
+        $("#denyModal").modal("show");
+    });
+
+    $("#backto-urgent").on("click",function () {
+    $("#urgentdetailModal").modal("hide");
+    $("#urgentModal").modal("show");
+    });
+
+        $('#urgent-calendar').fullCalendar({
+        defaultView: 'listDay',
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'listDay,month'
+        },
+        navLinks: true, // can click day/week names to navigate views
+        eventLimit: true, // allow "more" link when too many events
+        locale: 'vi',
+        events: [
+            {
+                id: 1,
+                title: 'ca khám',
+                start: '2019-05-12T10:30:00',
+                
+            },
+            {
+                id: 2,
+                title: 'ca khám',
+                start: '2019-05-05T11:00:00',
+                
+            },
+            {
+                id: 3,
+                title: 'ca khám',
+                start: '2019-05-05T08:00:00',
+
+            },
+            {
+                id: 4,
+                title: 'ca khám',
+                start: '2019-05-03T09:00:00',
+
+            },
+            {
+                id: 5,
+                title: 'ca khám',
+                start: '2019-05-03T09:30:00',
+            },
+            {
+                id: 6,
+                title: 'ca khám',
+                start: '2019-05-03T13:00:00',
+                
+            },
+            {
+                id: 7,
+                title: 'ca khám',
+                start: '2019-05-03T15:00:00',
+                
+            },
+            {
+                id: 8,
+                title: 'ca khám',
+                start: '2019-05-03T15:30:00',
+                
+            },
+            {
+
+                id: 9,
+                title: 'ca khám',
+                start: '2019-05-03T16:00:00',
+                
+            },
+            {
+                id: 10,
+                title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
+                start: '2019-05-10T08:30:00',
+            },
+            {
+                id: 11,
+                title: 'Vũ Văn A, Nam - 30, Chán ăn, không thấy đói, ...',
+                start: '2019-05-10T09:00:00',
+                
+            },
+            {
+                id: 12,
+                title: 'ca khám',
+                start: '2019-05-22T09:00:00',
+                
+            },
+            {
+                id: 13,
+                title: 'ca khám',
+                start: '2019-05-22T13:30:00',
+                
+            },
+            {
+                id: 14,
+                title: 'ca khám',
+                start: '2019-05-24T14:00:00',
+                
+            },
+            {
+                id: 15,
+                title: 'ca khám',
+                start: '2019-05-24T14:30:00',
+                
+            },
+            {
+                id: 16,
+                title: 'ca khám',
+                start: '2019-05-25T08:00:00',
+            },
+            {
+                id: 17,
+                title: 'ca khám',
+                start: '2019-05-25T10:30:00',
+                
+            },
+            {
+                id: 18,
+                title: 'ca khám',
+                start: '2019-05-26T15:51:00',
+                
+            },
+            {
+                id: 19,
+                title: 'ca khám',
+                start: '2019-05-27T13:30:00',
+                
+            },
+            {
+                id: 20,
+                title: 'ca khám',
+                start: '2019-05-26T10:00:00',
+
+            },
+            {
+                id: 21,
+                title: 'ca khám',
+                start: '2019-05-26T10:30:00',
+
+            },
+            {
+                id: 22,
+                title: 'ca khám',
+                start: '2019-05-27T15:30:00',
+                
+            },
+            {
+                id: 23,
+                title: 'ca khám',
+                start: '2019-05-30T08:30:00',
+            },
+            {
+                id: 24,
+                title: 'ca khám',
+                start: '2019-05-30T10:30:00',
+                
+            },
+        ],
+    });
+
+    $("#deny-urgent").on("click",function () {
+        console.log($(this).val());
+        var del_val = $(this).val();
+        Swal.fire({
+            title: 'Xác nhận ?',
+            text: "Bạn sẽ không thể nhận lại lịch khám khẩn cấp đã từ chối",
+            type: 'warning',
+            width: '30%',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Vâng, tôi muốn từ chối!',
+            cancelButtonText: 'Không!',
+        }).then((result) => {
+            if (result.value) {
+                // Swal.fire(
+                //     'Deleted!',
+                //     'Your file has been deleted.',
+                //     'success'
+                // );
+                $("#calendar").fullCalendar('removeEvents', del_val);
+                toastr["success"]("Từ chối thành công!");
+            }
+            else{
+                toastr["error"]("từ chối không không thành công!");
+            }
+            $("#removeModal").modal("hide");
+        })
+    });
+    // end Nhóm 2
+
     $("#accept-remove").on("click",function () {
         console.log($(this).val());
         var del_val = $(this).val();
@@ -278,7 +497,4 @@ $(document).ready(function() {
         });
     });
 
-    $(document).on("click",".fc-day",function () {
-       window.location = "/doctor/examination-list";
-    });
 });

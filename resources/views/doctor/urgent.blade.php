@@ -1,4 +1,4 @@
-@extends('doctor.master')
+@extends('doctor.urgentmaster')
 
 @section('custom_css')
     <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
