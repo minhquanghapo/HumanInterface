@@ -12,7 +12,7 @@
                 <div class="box-header with-border">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="box-title">Doctor information</h3>
+                            <h3 class="box-title">Thông tin bác sĩ</h3>
                         </div>
                     </div>
                 </div>
@@ -22,49 +22,49 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Email address</label>
+                                    <label class="col-sm-2 control-label">Email</label>
                                     <div class="col-sm-10">
                                         <input type="email" class="form-control" placeholder="Enter email" disabled value="nguyenvana@.gmail.com">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Password</label>
+                                    <label class="col-sm-2 control-label">Mật khẩu</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" value="123123" disabled >
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                    <label class="col-sm-2 control-label">Xác thực mật khẩu</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" value="123123" disabled>
                                     </div>
                                 </div>  
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Name</label>
+                                    <label class="col-sm-2 control-label">Tên</label>
                                     <div class="col-sm-10">
                                         <input type="tel" class="form-control" value="Nguyễn Thị Lan" disabled>
                                     </div>
                                 </div>  
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Tel</label>
+                                    <label class="col-sm-2 control-label">Sđt</label>
                                     <div class="col-sm-10">
                                         <input type="tel" class="form-control" value="12328197231" disabled>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Address</label>
+                                    <label class="col-sm-2 control-label">Địa chỉ</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" value="Thanh Xuân, Hà Nội" disabled>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Hopital</label>
+                                    <label class="col-sm-2 control-label">Bệnh viện</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" value="Bạch Mai, Hà Nội" disabled>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Specialist</label>
+                                    <label class="col-sm-2 control-label">Chuyên khoa</label>
                                     <div class="col-sm-10">
                                         <select class="form-control" disabled>
                                             <option selected>Nội khoa</option>
@@ -82,8 +82,8 @@
                     </div>
                 </form>
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-info pull-right">Save</button>
+                    <button type="submit" class="btn btn-default">Hủy</button>
+                    <button type="submit" class="btn btn-info pull-right">Lưu</button>
                 </div>
             </div>    
         </div>
@@ -155,7 +155,7 @@
                         </div>
 
                         <ul class="pagination">
-                            <li class="paginate_button previous disabled"><a href="#">Previous</a></li>
+                            <li class="paginate_button previous disabled"><a href="#">Trước</a></li>
                             <li class="paginate_button active"><a href="#">1</a></li>
                             <li class="paginate_button"><a href="#">2</a></li>
                             <li class="paginate_button"><a href="#">3</a></li>

@@ -21,11 +21,11 @@
 @section('pagename')
     <div class="container-fluid">
         <section class="row">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <!-- Horizontal Form -->
                 <div class="box box-info">
                     <div class="box-header with-border">
-                        <h3 class="box-title"><strong>EDIT HOSPITAL FORM</strong></h3>
+                        <h3 class="box-title"><strong>Thông tin bệnh viện</strong></h3>
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
@@ -100,7 +100,7 @@
                                 <!-- /.form group -->
                             </div>
                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-2 control-label">Tel</label>
+                                <label for="inputEmail3" class="col-sm-2 control-label">Sđt</label>
                                 <div class="col-sm-10">
                                     <input class="form-control" id="inputEmail3" value="(084 – 4) 38686390; (084 – 4) 36291818" placeholder="Nhập số điện thoại">
                                 </div>                                
@@ -114,19 +114,19 @@
                             <div style="padding: 20px;"></div>
                             
                              <div class="form-group">
-                                <label class="col-sm-2 control-label">Username</label>
+                                <label class="col-sm-2 control-label">Tài khoản</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" value="admin">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">Password</label>
+                                <label class="col-sm-2 control-label">Mật khẩu</label>
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" placeholder="Password">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">Confirm Password</label>
+                                <label class="col-sm-2 control-label">Xác thực mật khẩu</label>
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" placeholder="Password">
                                 </div>
@@ -134,14 +134,39 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-default">Cancel</button>
-                            <button type="submit" class="btn btn-info pull-right">Save</button>
+                            <button type="submit" class="btn btn-default">Hủy</button>
+                            <button type="submit" class="btn btn-info pull-right">Lưu</button>
                         </div>
                         <!-- /.box-footer -->
                     </form>
                 </div>
                 <!-- /.box -->
 
+            </div>
+            <div class="col-sm-5">
+                <div class="card">
+                    <img class="card-img-top" src="{{asset('adminlte/images/benh-vien-bach-mai-1710478.jpg')}}" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                    <div class="card-title"><strong>Bệnh viện Bạch Mai</strong></div>
+                    <p class="card-text">78 Giải Phóng, Phương Mai, Đống Đa, Hà Nội</p>
+                    <i style="color:orange" class="fa fa-star"></i>
+                    <i style="color:orange" class="fa fa-star"></i>
+                    <i style="color:orange" class="fa fa-star"></i>
+                    <i style="color:orange" class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <br>
+                    <a href="#" class="btn btn-primary" id="tabs1" onclick="showStuff(this)">Chi tiết</a>
+                    <div id="tabs-1" class="tabContent">
+                        <div class="card-text">
+                        Bệnh viện Bạch Mai (tên giao dịch tiếng Anh: Bach Mai Hospital) nằm ở 78 Giải Phóng, Phương Mai, Đống Đa, Hà Nội. Bệnh viện Bạch Mai là một trong những bệnh viện lớn nhất của Việt Nam.
+
+Bệnh viện Bạch Mai là bệnh viện đầu tiên trong nước được nhận danh hiệu đặc biệt. Hiện tại bệnh viện Bạch Mai có 1.400 giường bệnh, tất cả trưởng khoa, giám đốc các trung tâm đều có trình độ sau đại học. Tỉ lệ tử vong của bệnh nhân chỉ từ 0,8-0,9% và tỉ lệ sử dụng giường bệnh đạt 153% (so với tiêu chí đề ra là 85%).
+
+Tháng 10 năm 2009, Bộ trưởng Y tế Nguyễn Quốc Triệu đã làm việc với Bệnh viện Bạch Mai về kế hoạch phát triển bệnh viện thành trung tâm y tế chuyên sâu với tất cả các chuyên ngành về nội khoa. Trong đó, bệnh viện sẽ tập trung phát triển 7 lĩnh vực: tim mạch, hồi sức - cấp cứu - chống độc, thần kinh, y học hạt nhân và ung bướu, chẩn đoán hình ảnh, hoá sinh, vi sinh có trình độ khoa học - kĩ thuật ngang tầm các nước trong khu vực và quốc tế.
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

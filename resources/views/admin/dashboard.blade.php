@@ -36,14 +36,14 @@
                         <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Calendar</span>
+                            <span class="info-box-text">Lịch khám</span>
                             <span class="info-box-number">41,410</span>
 
                             <div class="progress">
                                 <div class="progress-bar" style="width: 70%"></div>
                             </div>
                             <span class="progress-description">
-                                70% Increase in 30 Days
+                                Tăng 70% trong 30 ngày
                               </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -56,14 +56,14 @@
                         <span class="info-box-icon"><i class="fa fa-user"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Patients</span>
+                            <span class="info-box-text">Bệnh nhân</span>
                             <span class="info-box-number">41,410</span>
 
                             <div class="progress">
                                 <div class="progress-bar" style="width: 70%"></div>
                             </div>
                             <span class="progress-description">
-                                70% Increase in 30 Days
+                                Tăng 70% trong 30 ngày
                               </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -76,14 +76,14 @@
                         <span class="info-box-icon"><i class="fa fa-hospital-o"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Hospitals</span>
+                            <span class="info-box-text">Bệnh viện</span>
                             <span class="info-box-number">410</span>
 
                             <div class="progress">
                                 <div class="progress-bar" style="width: 70%"></div>
                             </div>
                             <span class="progress-description">
-                                70% Increase in 30 Days
+                                Tăng 70% trong 30 ngày
                               </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -96,14 +96,14 @@
                         <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Comments</span>
+                            <span class="info-box-text">Bình luận</span>
                             <span class="info-box-number">41,410</span>
 
                             <div class="progress">
                                 <div class="progress-bar" style="width: 70%"></div>
                             </div>
                             <span class="progress-description">
-                                70% Increase in 30 Days
+                                Tăng 70% trong 30 ngày
                               </span>
                         </div>
                         <!-- /.info-box-content -->
@@ -145,7 +145,7 @@
                                     <canvas id="barChart" style="height:230px"></canvas>
                                 </div>
                                 <div style="text-align: center;">
-                                    <i class="fa fa-inbox"></i>     Medical Examination Report
+                                    <i class="fa fa-inbox"></i>Báo cáo kiểm tra y tế
                                 </div>
                             </div>                              
                         </div>
@@ -201,15 +201,15 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <canvas id="pieChart1" style="height:250px"></canvas>
-                                    <p style="text-align: center;">Find doctors</p>
+                                    <p style="text-align: center;">Tìm bác sĩ</p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <canvas id="pieChart2" style="height:250px"></canvas>
-                                    <p style="text-align: center;">Create calendar</p>
+                                    <p style="text-align: center;">Đặt lịch</p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <canvas id="pieChart3" style="height:250px"></canvas>
-                                    <p style="text-align: center;">Sent request</p>
+                                    <p style="text-align: center;">Gửi yêu cầu</p>
                                 </div>
                             </div>
                         </div>
