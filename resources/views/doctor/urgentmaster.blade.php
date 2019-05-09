@@ -85,13 +85,15 @@
             $("#denyModal").modal("show");
         }
 
-        function denyToUrgent() {
+        function backToUrgent() {
+            $("#superurgentdetailModal").modal("hide");
+            $("#urgentdetailModal").modal("hide");
             $("#denyModal").modal("hide");
             $("#urgentModal").modal("show");
         }
 
-        function denyToUrgent() {
-            $("#denyModal").modal("hide");
+        function superToUrgent() {
+            $("#superurgentdetailModal").modal("hide");
             $("#urgentModal").modal("show");
         }
 
@@ -665,7 +667,7 @@
                 <div class="modal-footer">
                     <button type="button" onclick="accept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="openDenyUrgent()" class="btn btn-danger" onclick="openDenyUrgent()">Từ chối</button>
-                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
         </div>
@@ -694,7 +696,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" onclick="denyForm()" value="" class="btn btn-danger">Tiến hành từ chối</button>
-                    <button type="button" onclick="denyToUrgent();" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent();" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
 
@@ -758,7 +760,7 @@
                 <div class="modal-footer">
                     <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="superdenyForm()" class="btn btn-danger">Từ chối</button>
-                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
         </div>

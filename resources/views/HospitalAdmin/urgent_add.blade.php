@@ -492,7 +492,7 @@
                                           <li id="doctorD" style="display: none">Lê Thị D - chuyên khoa 2<span class="close">&times;</span></li>
                                           <li id="doctorB" style="display: none">Bác sĩ B - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="doctorA" style="display: none">Bác sĩ A - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li>Bác Văn sĩ - chuyên khoa 1<span class="close">&times;</span></li>
+                                          <li id="doctorS" style="display: none">Bác Văn sĩ - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li>Bệnh Văn Viện - chuyên khoa 2<span class="close">&times;</span></li>
                                           <li>Y Văn Tế - chuyên khoa 3<span class="close">&times;</span></li>
                                           <li>Giáo Văn Dục - chuyên khoa 1<span class="close">&times;</span></li>
@@ -508,7 +508,7 @@
                     </div>
                           
                 <div class="modal-footer">
-                    <input type="checkbox" onclick="toggle(this)"> Chọn tất cả bác sĩ rảnh &nbsp;&nbsp;
+                    <input type="checkbox" onclick="toggle()"> Chọn tất cả bác sĩ rảnh &nbsp;&nbsp;
                     <button type="button" onclick="success()" class="btn btn-primary" >Gửi yêu cầu</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -547,11 +547,8 @@ for (i = 0; i < closebtns.length; i++) {
         x.style.display = "none";
       }
     }
-    function toggle(source) {
-          checkboxes = document.getElementsByName('foo');
-          for(var i=0, n=checkboxes.length;i<n;i++) {
-            checkboxes[i].checked = source.checked;
-          }
+    function toggle() {
+          getElementById("doctorS").style.display = "block";
         }
 
     function success(){
