@@ -52,7 +52,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <form action="/search" method="POST" role="search">
                                 {{ csrf_field() }}
                                 <div class="input-group">
