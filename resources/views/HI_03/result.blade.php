@@ -64,6 +64,7 @@
 		
 		
 		<div class="container margin_60_35">
+			<h4>HI_04 Bệnh nhân, người nhà theo dõi lịch khám</h4>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="row" id="search-result">
