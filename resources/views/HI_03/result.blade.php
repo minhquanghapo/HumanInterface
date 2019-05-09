@@ -19,7 +19,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<h4>Có <span id="result_count">6</span> kết quả</h4>
+							<h4>Có <span id="result_count">6</span> lịch khám</h4>
 						</div>
 						<div class="col-md-4">
 								<div class="search_bar_list">
@@ -41,9 +41,7 @@
 								<h6>Tìm kiếm theo</h6>
 								<div class="switch-field">
 									<input type="radio" id="phone_number" name="type_patient" value="phone_number" checked>
-									<label for="phone_number">Số điện thoại</label>
-									<input type="radio" id="email" name="type_patient" value="email">
-									<label for="email">Email</label>
+									<label for="hospital">Bệnh viện</label>
 									<input type="radio" id="Code" name="type_patient" value="Code">
 									<label for="Code">Mã lịch khám</label>
 								</div>
@@ -71,19 +69,13 @@
 					<div class="row" id="search-result">
 						<div class="col-md-4">
 							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
 								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
+									<h3>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</h3>
 
 									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
+										<span>Mã số: 44 &nbsp;&nbsp;&nbsp; Trạng thái: Chưa khám</span><br>
+										<span>Bệnh viện: bạch mai</span><br>
+										<span>Bác sĩ: abc</span><br>
 									</p>
 								</div>
 							</div>
