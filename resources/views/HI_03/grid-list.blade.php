@@ -37,6 +37,7 @@
                             <div class="col-md-3">
                                 <label>Chuyên khoa</label>
                                 <select name="" class="form-control">
+                                    <option value="">Đa khoa</option>
                                     <option value="">Tai mũi họng</option>
                                     <option value="">Tim mạch</option>
                                     <option value="">Xương khớp</option>
@@ -116,6 +117,7 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="row">
+                        @if(!app('request')->has('clinic'))
 						<div class="col-md-6 doctor">
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
@@ -125,7 +127,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -150,7 +152,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -175,7 +177,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -200,7 +202,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -225,7 +227,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -250,7 +252,7 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng</small>
+									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
 									<h3>Bác sĩ Lê Thị Hương</h3>
 
 									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
@@ -264,6 +266,7 @@
 								</ul>
 							</div>
 						</div>
+                        @endif
 						<div class="col-md-6 clinic">
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
