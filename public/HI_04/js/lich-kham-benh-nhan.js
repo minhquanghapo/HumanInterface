@@ -56,8 +56,8 @@ function getDetailView(val){
 	var view = '';
 	view = '<div class="row"><div class="col-md-2"></div><div class="col-md-8" style="font-size: 20px"><div class="full-info-status"><h3 style="text-align: center"><b>Thông tin lịch khám</b></h3><hr><p><span>Mã lịch khám: '+ val["id"] +'</span><br><span>Bệnh nhân: Nguyễn Anh</span><br><span>Số điện thoại: 09876543210</span><br><br><span>Ngày hẹn: '+ val["date"] +' &nbsp; '+ val["time"] +'</span><br><span>Trạng thái: '+ getStatus(val["status"]) +'</span><br><br><span>Bệnh viện: '+ val["hospital"] +'</span><br><span>Phòng khám: '+ val["clinic"] +'</span><br><span>Bác sĩ: <a href="./detail-page" class="show-submenu">'+ val["doctor"] +'</a></span><br><span>Số thứ tự: '+ val["no"] +'</span><br><span>Triệu chứng: '+ val["symptom"] +'</span></p></div><div class="col-md-2"></div></div><div id="map" style="width:90%; margin: 0 5%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8247041000373!2d105.83842441424477!3d20.9996627941484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac776648c633%3A0xe60dbc3ea8ebaae9!2zQuG7h25oIHZp4buHbiBUYWkgTcWpaSBI4buNbmcgVHJ1bmcgxrDGoW5n!5e0!3m2!1svi!2s!4v1557425623862!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>';
 	view += '</div><div class="button-row">';
-	if(val["status"] == "imcomplete") view += '<button type="button" class="btn btn-warning" style="margin-right: 20px; color: #fff" id="cancel-' + val["id"] + '">HỦY LỊCH</button>';
-	view += '<button type="button" class="btn btn-danger">THOÁT</button></div>';
+	if(val["status"] == "imcomplete") view += '<button type="button" class="btn btn-danger" style="margin-right: 20px; color: #fff" id="cancel-' + val["id"] + '">HỦY LỊCH</button>';
+	view += '<button type="button" class="btn btn-default">THOÁT</button></div>';
 	return view;
 }
 
