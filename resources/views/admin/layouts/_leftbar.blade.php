@@ -16,17 +16,17 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
                 <a href="/admin">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
                 </a>
             </li>
             <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
                 <a href="/admin/users">
-                    <i class="fa fa-user"></i> <span>Users</span>
+                    <i class="fa fa-user"></i> <span>Người dùng</span>
                 </a>
             </li>
             <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
                 <a href="/admin/hospitals">
-                    <i class="fa fa-hospital-o"></i> <span>Hospitals</span>
+                    <i class="fa fa-hospital-o"></i> <span>Bệnh viện</span>
                 </a>
             </li>
         </ul>    

@@ -122,7 +122,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -137,7 +137,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -147,7 +147,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -162,7 +162,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -172,7 +172,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -187,7 +187,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -197,7 +197,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" height="565" width="565" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" height="565" width="565" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -212,7 +212,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -222,7 +222,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -237,7 +237,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -247,7 +247,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -262,7 +262,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
 								</ul>
 							</div>
 						</div>
@@ -406,7 +406,6 @@
 						</div>
 						<!-- /box_list -->
 						<!-- /box_list -->
-
 					</div>
 					<!-- /row -->
 
@@ -444,78 +443,6 @@
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
-    <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
-    <script>
-    	$(document).ready(function(){
-		  $("#doctors").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic1").css("display", "none");
-		    $("#clinic2").css("display", "none");
-		    $("#clinic3").css("display", "none");
-		    $("#clinic4").css("display", "none");
-		    $("#clinic5").css("display", "none");
-		    $("#clinic6").css("display", "none");
-		  });
-
-		  $("#clinics").click(function(){
-		    $(".clinic").show();
-		    $(".doctor").hide();
-		    $("#clinic1").css("display", "none");
-		    $("#clinic2").css("display", "none");
-		    $("#clinic3").css("display", "none");
-		    $("#clinic4").css("display", "none");
-		    $("#clinic5").css("display", "none");
-		    $("#clinic6").css("display", "none");
-		  });
-
-		  $("#all").click(function(){
-		    $(".clinic").show();
-		    $(".doctor").show();
-		    $("#clinic1").css("display", "none");
-		    $("#clinic2").css("display", "none");
-		    $("#clinic3").css("display", "none");
-		    $("#clinic4").css("display", "none");
-		    $("#clinic5").css("display", "none");
-		    $("#clinic6").css("display", "none");
-		  });
-
-		  $(".showClinic1").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic1").css("display", "block");
-		  });
-
-		  $(".showClinic2").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic2").css("display", "block");
-		  });
-
-		  $(".showClinic3").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic3").css("display", "block");
-		  });
-
-		  $(".showClinic4").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic4").css("display", "block");
-		  });
-
-		  $(".showClinic5").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic5").css("display", "block");
-		  });
-
-		  $(".showClinic6").click(function(){
-		    $(".doctor").show();
-		    $(".clinic").hide();
-		    $("#clinic6").css("display", "block");
-		  });
-		});
-    </script>
+  <script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
+  <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
 @endsection
