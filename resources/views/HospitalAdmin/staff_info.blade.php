@@ -700,6 +700,12 @@
     format: 'dd/MM/yyyy hh:mm:ss',
     language: 'en-US'
   });
+  $('.delbut').click(function(event) {
+      event.preventDefault();
+      if(confirm("Bạn có chắc chắn muốn xóa không?")) {
+        $(this).parent().parent().remove();
+      }
+  });
 </script>
 </body>
 </html>
