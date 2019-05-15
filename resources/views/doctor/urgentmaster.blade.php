@@ -79,6 +79,11 @@
             $("#superurgentdetailModal").modal("show");
         }
 
+        function openDetail2() {
+            $("#urgentModal").modal("hide");
+            $("#detailModal").modal("show");
+        }
+
         function openDenyUrgent() {
             $("#urgentModal").modal("hide");
             $("#urgentdetailModal").modal("hide");
@@ -88,6 +93,7 @@
         function backToUrgent() {
             $("#superurgentdetailModal").modal("hide");
             $("#urgentdetailModal").modal("hide");
+            $("#detailModal").modal("hide");
             $("#denyModal").modal("hide");
             $("#urgentModal").modal("show");
         }
@@ -310,9 +316,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                {{--<a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>--}}
-                <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
-                <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
+                <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -517,7 +521,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -530,7 +534,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" onclick="openDetail()" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                                <button type="button" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -541,7 +545,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -565,7 +569,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -672,6 +676,7 @@
             </div>
         </div>
     </div>
+
     <div id="denyModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 

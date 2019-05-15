@@ -13,9 +13,11 @@
                                 <a class="show-submenu">Tư vấn đặt lịch</a>
                                 <ul>
                                     <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bác sĩ nổi bật</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
+                                    <li><a href="{{ url('/grid-list?clinic=true') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
+                                    <li><a href="{{ url('/grid-list?clinic=true') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
                                 </ul>
+                            </li>
+                            <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi</a></li>
                         </ul>
                     </div>
                 </div>

@@ -56,19 +56,31 @@ Route::get('/doctor/login',"DoctorController@login");
 // HI_03
 Route::match(['get', 'post'],'/grid-list', function () {
     return view('HI_03.grid-list');
-})->name('grid-list');
+});
 
-Route::get('/detail-page', function () {
-    return view('HI_03.detail-page-3');
-})->name('detail-page');
+Route::get('/detail-page/{appointment_type}', function ($appointment_type) {
+    return view('HI_03.detail-page-3', compact('appointment_type'));
+})->name('doctor.detail');
 
 Route::get('/booking-page', function () {
     return view('HI_03.booking-page');
-})->name('booking-page');
+});
 
 Route::get('/confirm', function () {
     return view('HI_03.confirm');
-})->name('confirm');
+});
+
+Route::get('/schedule', function () {
+    return view('HI_03.pick_schedule');
+});
+
+Route::get('/hospital/list', function () {
+    return view('HI_03.hospital.list');
+});
+
+Route::get('/hospital/show', function () {
+    return view('HI_03.hospital.show');
+});
 // HI_03
 //HI_06_{
 Route::get('/admin_hospital', "HospitalAdminController@index");
@@ -114,4 +126,7 @@ Route::get('/admin_hospital/doctors/schedule/add', "HospitalAdminController@doct
 Route::get('/admin_hospital/medicines', "HospitalAdminController@medicine_info");
 Route::get('/admin_hospital/medicines/edit', "HospitalAdminController@medicine_edit");
 Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_add");
+Route::get('/admin_hospital/services', "HospitalAdminController@service_info");
+Route::get('/admin_hospital/services/edit', "HospitalAdminController@service_edit");
+Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add");
 //}

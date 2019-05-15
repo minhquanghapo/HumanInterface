@@ -27,14 +27,14 @@ function goToSection(i){
   $("#checkin-tabs li").eq(i).addClass("current").siblings().removeClass("current");
   setTimeout(function(){
     $("fieldset").eq(i).removeClass("next").addClass("current active");
-      if ($("fieldset.current").index() == 1){
+      if ($("fieldset.current").index() == 2){
         $("#next").hide();
         $("input[type=submit]").show();
       } else {
-        // $("#next").show();
-          $("#next").hide();
-          $("input[type=submit]").show();
-        // $("input[type=submit]").hide();
+        $("#next").show();
+          // $("#next").hide();
+          // $("input[type=submit]").show();
+        $("input[type=submit]").hide();
       }
   }, 80);
 
