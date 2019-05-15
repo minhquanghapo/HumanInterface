@@ -8,11 +8,25 @@ use App\Http\Controllers\Controller;
 class UserController extends Controller
 {
 
-    public function index()
+    public function system_admin()
     {
-        return view('admin.users.index');
+        return view('admin.users.system_admin');
     }
 
+    public function doctor()
+    {
+        return view('admin.users.doctor');        
+    }
+
+    public function patient()
+    {
+        return view('admin.users.patient');
+    }
+
+    public function hospital_staff()
+    {
+        return view('admin.users.hospital_staff');
+    }
 
     public function create()
     {
@@ -22,11 +36,11 @@ class UserController extends Controller
     public function show($id)
     {
         switch ($id) {
-            case 'staff':
+            case 'view_staff':
                 return view ('admin.users.view_staff');
-            case 'doctor':
+            case 'view_doctor':
                 return view ('admin.users.view_doctor');
-            case 'patient':
+            case 'view_patient':
                 return view ('admin.users.view_patient');
         }  
     }
