@@ -33,10 +33,10 @@
 			<!-- <p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p> -->
 			<div class="row justify-content-center">
 				<div class="col-xl-3">
-					<p class="text-right"><a href="{{ url('grid-list') }}" class="btn_1 medium"><strong>Khám theo bác sĩ</strong></a></p>
+					<p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo bác sĩ</strong></a></p>
 				</div>
 				<div class="col-xl-3">
-					<p class="text-left"><a href="{{ url('schedule') }}" class="btn_1 medium"><strong>Khám theo ngày</strong></a></p>
+					<p class="text-center"><a href="{{ url('schedule') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo ngày</strong></a></p>
 				</div>
 			</div>
 		</div>
