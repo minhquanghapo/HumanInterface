@@ -12,7 +12,7 @@
 					<li class="active">Chọn lịch khám</li>
 					<li class="active">Chọn bệnh viện</li>
 					<li>Chọn bác sĩ</li>
-					<li>Đặt lịch khám</li>
+					<li>Chọn hình thức khám</li>
 					<li>Thanh toán</li>
 				</ul>
 			</div>

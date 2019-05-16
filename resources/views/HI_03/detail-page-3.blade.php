@@ -16,7 +16,11 @@
                         <li class="active">Chọn bệnh viện</li>
                     @endif
                     <li class="active">Chọn bác sĩ</li>
-                    <li class="active">Đặt lịch khám</li>
+                    @if($appointment_type == "date")
+                        <li class="active">Chọn hình thức khám</li>
+                    @elseif($appointment_type == "doctor")
+                        <li class="active">Chọn lịch khám</li>
+                    @endif
                     <li>Thanh toán</li>
                 </ul>
             </div>

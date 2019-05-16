@@ -12,12 +12,13 @@
 			<div class="bar__container">
 				<ul class="bar" id="bar">
 					<li class="active">Chọn bác sĩ</li>
-					<li>Đặt lịch khám</li>
+					<li>Chọn lịch khám</li>
 					<li>Thanh toán</li>
 				</ul>
 			</div>
 		</div>
-		<div id="breadcrumb">
+
+		{{-- <div id="breadcrumb">
 			<div class="container">
 				<ul>
 					<li><a href="{{ url('/') }}">Trang chủ</a></li>
@@ -37,7 +38,7 @@
 				<!-- /row -->
 			</div>
 			<!-- /container -->
-		</div>
+		</div> --}}
 		<!-- /results -->
 		
 		<div class="filters_listing">
