@@ -14,9 +14,9 @@
 					<li>Kết quả tìm kiếm</li>
 				</ul>
 				<div class="row">
-					<div class="col-md-6">
+					<!-- <div class="col-md-6" id="search_result" style="display:none;">
 						<h4><strong>Hiển thị 10</strong> trong 140 kết quả tìm thấy</h4>
-					</div>
+					</div> -->
 					<!-- <div class="col-md-6">
 							<div class="search_bar_list">
 							<input type="text" class="form-control" placeholder="Ex. Specialist, Name, Doctor...">
@@ -34,7 +34,22 @@
 				<div class="container">
                     <form action="">
                         <div class="row">
-                            <div class="col-md-3">
+				            <div class="col-md-4">
+				            	<label>Nhập tên bác sĩ</label>
+				                <input type="text" name="search" id="form-autocomplete" class="form-control mdb-autocomplete" placeholder="Vd. Lê Thị Hương">
+				            </div>
+					        <div class="col-md-4">
+                                <label>Bệnh viện</label>
+                                <select name="" class="form-control">
+                                    <option value="">Bệnh viện Bạch Mai</option>
+                                    <option value="">Bệnh viện Trung Ương Quân Đội 108</option>
+                                    <option value="">Bệnh viện Việt Pháp Hà Nội</option>
+                                    <option value="">Bệnh viện Việt Nam Cuba</option>
+                                    <option value="">Bệnh viện Tai Mũi Họng Trung ương</option>
+                                    <option value="">Bệnh viện Y Học Cổ Truyền Trung Ương</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
                                 <label>Chuyên khoa</label>
                                 <select name="" class="form-control">
                                     <option value="">Tai mũi họng</option>
@@ -77,7 +92,10 @@
                                     <option value="">Tim mạch</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
+                        </div>
+                        <br>
+                        <div class="row">	
+                            <div class="col-md-4">
                                 <label>Sắp xếp theo</label>
                                 <select name="" class="form-control">
                                     <option value="">Đánh giá</option>
@@ -85,7 +103,7 @@
                                     <option value="">Khoảng cách</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <label>Khoảng cách</label>
                                 <select name="" class="form-control">
                                     <option value="">< 1km</option>
@@ -95,8 +113,8 @@
                                     <option value="">> 10km</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
-                                <button type="submit" class="btn margin-25">Tìm kiếm</button>
+                            <div class="col-md-4">
+                                <button type="button" id="search_button" class="btn_1 medium margin-25" style="font-size: 1rem; margin-left: 25px" onClick="window.location.reload();"><b>Tìm kiếm</b></button>
                             </div>
                         </div>
                     </form>
@@ -135,7 +153,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -160,7 +178,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -185,7 +203,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -210,7 +228,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -235,7 +253,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -260,7 +278,7 @@
 								<ul>
 									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
 									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
 								</ul>
 							</div>
 						</div>
@@ -301,6 +319,7 @@
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
-  <script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
-  <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
+  	<script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
+  	<script src="{{ asset('HI_03/js/infobox.js') }}"></script>
+
 @endsection
