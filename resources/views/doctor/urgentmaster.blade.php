@@ -446,7 +446,7 @@
                                         <input type="checkbox" name="foo">
                                     </div>
                                     <div class="col-sm-2" onclick="openDetail1()">
-                                        <p><strong>10/05 09:00</strong></p>
+                                        <p><strong>17/05 09:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -459,7 +459,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
+                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 5px;">Chấp nhận</button>
                                                 <button type="button" onclick="superdenyForm()" class="btn btn-danger inbtn">Từ chối</button>
                                             </div>
                                         </div>
@@ -476,7 +476,7 @@
                                         <input type="checkbox" name="foo">
                                     </div>
                                     <div class="col-sm-2" onclick="openDetail()">
-                                        <p><strong>10/05 09:30</strong></p>
+                                        <p><strong>17/05 09:30</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -484,7 +484,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 5px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -501,7 +501,7 @@
                                         <input type="checkbox" name="foo">
                                     </div>
                                     <div class="col-sm-2" onclick="openDetail()">
-                                        <p><strong>10/05 10:00</strong></p>
+                                        <p><strong>17/05 10:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -509,7 +509,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Khám Gấp</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 5px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -526,7 +526,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 08:00</strong></p>
+                                        <p><strong>17/05 08:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -550,7 +550,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 08:30</strong></p>
+                                        <p><strong>17/05 08:30</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -574,7 +574,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 10:30</strong></p>
+                                        <p><strong>17/05 10:30</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -634,6 +634,10 @@
                                     <tr>
                                         <td><b>Mã hồ sơ</b></td>
                                         <td>35</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Thời gian</b></td>
+                                        <td>10:30</td>
                                     </tr>
                                     <tr>
                                         <td><b>Họ tên</b></td>
@@ -731,6 +735,11 @@
                                         <td><b>Mã hồ sơ</b></td>
                                         <td>35</td>
                                         <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Thời gian</b></td>
+                                        <td>10:30</td>
+                                        <td>10:30</td>
                                     </tr>
                                     <tr>
                                         <td><b>Họ tên</b></td>

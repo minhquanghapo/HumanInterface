@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {
+  box-sizing: border-box;
+}
+
+/* .progress_bar {
+  background-color: #fff
+} */
+
+.cf:before, .bar:before,
+.cf:after,
+.bar:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after, .bar:after {
+  clear: both;
+}
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #020304;
+}
+
+.card {
+  max-width: 500px;
+  width: 90%;
+  background: white;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 2px;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+.card__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.card__text {
+  margin: 25px 0 40px 0;
+  color: grey;
+}
+.card:not(:first-of-type) {
+  display: none;
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.btn:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.bar__container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bar {
+  counter-reset: step;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.bar li {
+  list-style-type: none;
+  float: left;
+  width: 20%;
+  position: relative;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+  padding-left: 5px;
+}
+@media all and (min-width: 500px) {
+  .bar li {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.bar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+  color: #333;
+}
+.bar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.bar li:first-child:after {
+  content: none;
+}
+.bar li.active:before {
+  background: #47b7f0;
+  border: 1px solid #5fcdf5;
+  color: white;
+}
+.bar li.active + li.active:after {
+  background: #47aecc;
+}
+.bar li.active:first-child + li:after:not(.active) {
+  background: white;
+}
+
+.bar li a {
+  display:block;
+}

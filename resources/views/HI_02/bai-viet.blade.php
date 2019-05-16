@@ -69,14 +69,14 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="detail-footer">
+                    <div id="recommended" class="detail-footer">
                         <h5 class="title">Danh sách bác sĩ hàng đầu chuyên điều trị bệnh cao huyết áp: </h5>
                         <div class="row">
                             <div class="col-md-4 doctor">
                                 <div class="box_list wow fadeIn">
                                     <a href="#0" class="wish_bt"></a>
                                     <figure>
-                                        <a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
                                             <div class="preview"><span>Đọc thêm</span></div>
                                         </a>
                                     </figure>
@@ -93,7 +93,7 @@
                                     <ul>
                                         <li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
                                         <li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-                                        <li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+                                        <li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                 <div class="box_list wow fadeIn">
                                     <a href="#0" class="wish_bt"></a>
                                     <figure>
-                                        <a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
                                             <div class="preview"><span>Đọc thêm</span></div>
                                         </a>
                                     </figure>
@@ -118,7 +118,7 @@
                                     <ul>
                                         <li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
                                         <li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-                                        <li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+                                        <li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                                 <div class="box_list wow fadeIn">
                                     <a href="#0" class="wish_bt"></a>
                                     <figure>
-                                        <a href="{{ url('detail-page') }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
                                             <div class="preview"><span>Đọc thêm</span></div>
                                         </a>
                                     </figure>
@@ -142,35 +142,59 @@
                                     <ul>
                                         <li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
                                         <li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
-                                        <li><a href="{{ url('detail-page') }}">Đặt lịch</a></li>
+                                        <li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Đặt lịch</a></li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 show-more text-center">
+                                <h3><a href="{{ url('/grid-list') }}">Xem thêm (100) ...</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 relate-list">
                     <div class="position-fixed">
-                        <ul class="list-group">
-                            <li class="head list-group-item">
-                                <strong>Bài viết liên quan</strong>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="*">Điều trị huyết áp cao</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="*">Chứng đau đầu và Đau nửa đầu</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="*">Đau đầu nhức mắt là bệnh gì?</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="*">Đau đầu nhức mắt</a>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <ul class="list-group">
+                                <li class="head list-group-item">
+                                    <strong>Bài viết liên quan</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="*">Điều trị huyết áp cao</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="*">Chứng đau đầu và Đau nửa đầu</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="*">Đau đầu nhức mắt là bệnh gì?</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="*">Đau đầu nhức mắt</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row margin-top-30">
+                            <div class="col-md-12 text-center">
+                                <a id="booking" class="btn btn-style">Đặt lịch khám ngay</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+@endsection
+
+@section('SPECIFIC SCRIPTS')
+    <script>
+        $(document).ready(function() {
+            $('#booking').click(function () {
+                $('html, body').stop().animate({
+                    scrollTop: $('#recommended').offset().top - $(window).height() / 4
+                }, 800);
+            })
+        })
+    </script>
 @endsection

@@ -2,137 +2,101 @@
 
 @section('content')
 	<main>
-		<div class="header-video">
-			<div id="hero_video">
-				<div class="content">
-					<h3>Tìm bác sĩ</h3>
-					<br>
-					<!-- <p>
-						What is the name of your medical centre or doctor?
-					</p>
-					<p>Or, just type in your symptoms</p> -->
-					<form method="post" action="{{ route('grid-list') }}">
-						@csrf
-						<div id="custom-search-input">
-							<div class="input-group">
-								<input type="text" id="searchInp" class=" search-query" placeholder="Vd. Tên bác sĩ, triệu chứng ....">
-								<input type="submit" id="searchBtn" class="btn_search" value="Tìm kiếm">
-							</div>
-							<ul>
-								<li>
-									<input type="radio" id="all" name="radio_search" value="all" checked>
-									<label for="all">Tất cả</label>
-								</li>
-								<li>
-									<input type="radio" id="doctor" name="radio_search" value="doctor">
-									<label for="doctor">Bác sĩ</label>
-								</li>
-								<li>
-									<input type="radio" id="clinic" name="radio_search" value="clinic">
-									<label for="clinic">Bệnh viện</label>
-								</li>
-								<li>
-									<input type="radio" id="symptom" name="radio_search" value="symptom">
-									<label for="symptom">Triệu chứng</label>
-								</li>
-							</ul>
-						</div>
-					</form>
-				</div>
-			</div>
-			<img src="{{ asset('HI_03/img/video_fix.png') }}" alt="" class="header-video--media" data-video-src="{{ asset('HI_03/video/intro') }}" data-teaser-source="{{ asset('HI_03/video/intro') }}" data-provider="" data-video-width="1920" data-video-height="750">
-		</div>
-		<!-- /Header video -->
-
-		<div class="container margin_120_95">
+		<div class="container margin_120_95" style="padding-top: 80px">
 			<div class="main_title">
-				<h2>Khám phá website đặt lịch khám <strong>online</strong>!</h2>
+				<h3>Đặt lịch khám online!</h3>
 				<!-- <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel.</p> -->
 			</div>
 			<div class="row add_bottom_30">
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_1">
 						<span></span>
-						<h3>Tìm bác sĩ</h3>
-						<p>Bạn có thể tìm một bác sĩ dễ dàng chỉ trong vòng 1 phút.</p>
+						<h3>Chọn lịch khám</h3>
+						<p>Chọn ngày giờ, lịch khám bạn mong muốn.</p>
+						<br>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_2">
 						<span></span>
 						<h3>Xem hồ sơ</h3>
-						<p>Bạn có thể đọc thông tin về bác sĩ của mình, như bằng cấp, chuyên môn, kinh nghiệm làm việc.</p>
+						<p>Xem thông tin về bệnh viện, bác sĩ phù hợp với lịch của mình.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_3">
-						<h3>Đặt lịch khám</h3>
-						<p>Hẹn gặp bác sĩ mà bạn muốn.</p>
+						<h3>Chọn bác sĩ</h3>
+						<p>Chọn bác sĩ phù hợp với mình để đặt lịch khám bệnh</p>
 					</div>
 				</div>
 			</div>
 			<!-- /row -->
 			<!-- <p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p> -->
+			<div class="row justify-content-center">
+				<div class="col-xl-3">
+					<p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo bác sĩ</strong></a></p>
+				</div>
+				<div class="col-xl-3">
+					<p class="text-center"><a href="{{ url('schedule') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo ngày</strong></a></p>
+				</div>
+			</div>
 		</div>
 		<!-- /container -->
-
-		<div class="">
-			<div class="container margin_120_95">
-				<div class="main_title">
-					<h2>Tìm theo chuyên khoa</h2>
-					<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa tim mạch</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
-							<h3>Nha khoa</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa X-quang</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa tâm lý</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-				</div>
-				<!-- /row -->
+		
+		<div class="container margin_120_95">
+			<div class="main_title">
+				<h2>Tìm theo chuyên khoa</h2>
+				<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
 			</div>
-			<!-- /container -->
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa tim mạch</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
+						<h3>Nha khoa</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa X-quang</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa tâm lý</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<!-- /row -->
 		</div>
-		<!-- /white_bg -->
+		<!-- /container -->
 		
 		<!-- <div class="container margin_120_95">
 			<div class="main_title">
@@ -141,7 +105,7 @@
 			</div>
 			<div id="reccomended" class="owl-carousel owl-theme">
 				<div class="item">
-					<a href="{{ url('detail-page') }}">
+					<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">
 						<div class="views"><i class="icon-eye-7"></i>140</div>
 						<div class="title">
 							<h4>Dr. Julia Holmes<em>Pediatrician - Cardiologist</em></h4>
@@ -149,7 +113,7 @@
 					</a>
 				</div>
 				<div class="item">
-					<a href="{{ url('detail-page') }}">
+					<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">
 						<div class="views"><i class="icon-eye-7"></i>120</div>
 						<div class="title">
 							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -157,7 +121,7 @@
 					</a>
 				</div>
 				<div class="item">
-					<a href="{{ url('detail-page') }}">
+					<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">
 						<div class="views"><i class="icon-eye-7"></i>115</div>
 						<div class="title">
 							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -165,7 +129,7 @@
 					</a>
 				</div>
 				<div class="item">
-					<a href="{{ url('detail-page') }}">
+					<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">
 						<div class="views"><i class="icon-eye-7"></i>98</div>
 						<div class="title">
 							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>
@@ -173,7 +137,7 @@
 					</a>
 				</div>
 				<div class="item">
-					<a href="{{ url('detail-page') }}">
+					<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">
 						<div class="views"><i class="icon-eye-7"></i>98</div>
 						<div class="title">
 							<h4>Dr. Julia Holmes<em>Pediatrician</em></h4>

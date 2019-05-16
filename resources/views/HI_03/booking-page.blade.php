@@ -1,17 +1,38 @@
 @extends('HI_03.layouts.master')
 
+@section('SPECIFIC CSS')
+    <link href="{{ asset('HI_03/css/progress_bar.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
 	<main>
-		<div id="breadcrumb">
+		<div class="progress_bar">
+			<div class="bar__container">
+				<ul class="bar" id="bar">
+					@if($appointment_type == "date")
+                        <li class="active">Chọn lịch khám</li>
+                        <li class="active">Chọn bệnh viện</li>
+                    @endif
+                    <li class="active">Chọn bác sĩ</li>
+                    @if($appointment_type == "date")
+                        <li class="active">Chọn hình thức khám</li>
+                    @elseif($appointment_type == "doctor")
+                        <li class="active">Chọn lịch khám</li>
+                    @endif
+                    <li class="active">Thanh toán</li>
+				</ul>
+			</div>
+		</div>
+		{{-- <div id="breadcrumb">
 			<div class="container">
 				<ul>
 					<li><a href="{{ url('/') }}">Trang chủ</a></li>
 					<li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
-					<li><a href="{{ url('detail-page') }}">Thông tin bác sĩ</a></li>
+					<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Thông tin bác sĩ</a></li>
 					<li>Đặt lịch</li>
 				</ul>
 			</div>
-		</div>
+		</div> --}}
 		<!-- /breadcrumb -->
 
 		<div class="container margin_60">
