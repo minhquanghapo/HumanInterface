@@ -11,8 +11,8 @@
         <div class="progress_bar">
             <div class="bar__container">
                 <ul class="bar" id="bar">
-                    <li class="active">Chọn lịch khám</li>
-                    <li class="active">Chọn bệnh viện</li>
+					<li class="active"><a href="{{ url('schedule') }}">Chọn lịch khám</a></li>
+                    <li class="active"><a href="{{ url('hospital/list') }}">Chọn bệnh viện</a></li>
                     <li class="active">Chọn bác sĩ</li>
                     <li>Chọn hình thức khám</li>
                     <li>Thanh toán</li>
