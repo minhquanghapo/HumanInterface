@@ -19,10 +19,26 @@
                     <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
                 </a>
             </li>
-            <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
-                <a href="/admin/users">
-                    <i class="fa fa-user"></i> <span>Người dùng</span>
+            <li class="treeview <?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span>Người dùng</span>
+                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                 </a>
+                <ul class="treeview-menu">
+                    <li class="<?=  (Request::segment(3)=='system_admin') ? 'active' : ''; ?>">
+                        <a href="/admin/users/system_admin"><i class="fa fa-circle-o"></i> Quản trị hệ thống</a>
+                    </li>
+                    <li class="<?=  (Request::segment(3)=='hospital_staff') ? 'active' : ''; ?>">
+                        <a href="/admin/users/hospital_staff"><i class="fa fa-circle-o"></i> Nhân viên bệnh viện</a>
+                    </li>
+                    <li class="<?=  (Request::segment(3)=='doctor') ? 'active' : ''; ?>">
+                        <a href="/admin/users/doctor"><i class="fa fa-circle-o"></i> Bác sỹ</a>
+                    </li>
+                    <li class="<?=  (Request::segment(3)=='patient') ? 'active' : ''; ?>">
+                        <a href="/admin/users/patient"><i class="fa fa-circle-o"></i> Bệnh nhân</a>
+                    </li>
+                </ul>
             </li>
             <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
                 <a href="/admin/hospitals">

@@ -12,27 +12,27 @@
     </style>
 @endsection
 @section('pagename')
+
     <div class="container-fluid">
         <section class="content">
             <div class="row" style="background-color: white">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Quản lý thông tin bệnh viện</h1>
+                    <h1 class="page-header">Quản lý bệnh nhân</h1>
 
                     <div class="body-box">
-                        
                     <!--Create , Edit -->
                     <div style="margin:10px 0px 10px 0px">
-                        <a href="/admin/hospitals/create" type="button" class="btn btn-default">
+                        <a href="/admin/users/create" type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-plus-sign"></span>
-                        Đăng ký bệnh viện mới
-                        </a>
+                        Tài khoản bệnh nhân
+                        </a>   
                     </div>
 
                     <!--Show entries,search-->
                     <div class="row">
-                        <div class="col-sm-2">
-                            <div class="input-group">
-                                <span class="input-group-addon"title="Show">Hiển thị</span>
+                        <div class="col-sm-4">
+                            <div class="input-group" style="width: 50%">
+                                <span class="input-group-addon" title="Show">Hiển thị</span>
                                 <select class="form-control">
                                     <option value="5">5</option>
                                     <option value="10">10</option>
@@ -41,32 +41,12 @@
                                 </select>
                             </div>                  
                         </div>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <span class="input-group-addon" title="City">Tỉnh/TP</span>
-                                <select class="form-control">
-                                    <option value="1">HaNoi</option>
-                                    <option value="2">ThaiBinh</option>
-                                    <option value="3">DaNang</option>
-                                    <option value="4">TP.HCM</option>
-                                </select>
-                            </div>
-                        </div>
-                         <div class="col-sm-3">
-                            <div class="input-group">
-                                <span class="input-group-addon" title="Level">Tuyến</span>
-                                <select class="form-control">
-                                    <option value="TU">Trung ương</option>
-                                    <option value="TP">Tỉnh/thành phố</option>
-                                    <option value="HUYEN">Quận/huyện</option>
-                                </select>
-                            </div>
-                        </div>
+                         <div class="col-sm-4"></div>
                         <div class="col-sm-4">
                             <form action="/search" method="POST" role="search">
                                 {{ csrf_field() }}
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="q" placeholder="Nhập tên bệnh viện"> 
+                                    <input type="text" class="form-control" name="q" placeholder="Nhập tên người dùng..."> 
                                     <span class="input-group-btn">
                                         <button type="submit" class="btn btn-default">
                                             <span class="glyphicon glyphicon-search"></span>
@@ -79,59 +59,61 @@
                     <br>
 
                     <!--Table content-->
+                                        <!--Table content-->
                     <div>
-                        <table id="hospital_table" class="table table-bordered table-hover">
+                        <table id="patient_table" class="table table-bordered table-hover">
                             <thead class="bg-info">
                                 <tr>
                                     <th>#</th>
-                                    <th>Bệnh viện</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Tuyến</th>
+                                    <th>Tên</th>
+                                    <th>Ngày sinh</th>
                                     <th>Tỉnh/TP</th>
+                                    <th>Số ca khám</th>
                                     <th>Thao tác</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Bạch Mai</td>
-                                    <td>79 Giải Phóng, Hà Nội</td>
-                                    <td>Trung ương</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td>6</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
-                            <tr>
+                                <tr>
                                     <td>2</td>
-                                    <td>Bạch Mai</td>
-                                    <td>78 Giải Phóng, Hà Nội</td>
-                                    <td>Trung ương</td>
+                                    <td>Nguyễn Văn B</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td>10</td>
+                                    <td><a class="btn btn-default" href="/admin/users/staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Bạch Mai</td>
-                                    <td>78 Giải Phóng, Hà Nội</td>
-                                    <td>Trung ương</td>
+                                    <td>Nguyễn Văn C</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td>25</td>
+                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Bạch Mai</td>
-                                    <td>78 Giải Phóng, Hà Nội</td>
-                                    <td>Trung ương</td>
+                                    <td>Nguyễn Văn D</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td>14</td>
+                                    <td><a class="btn btn-default" href="/admin/users/patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Bạch Mai</td>
-                                    <td>78 Giải Phóng, Hà Nội</td>
-                                    <td>Trung ương</td>
+                                    <td>Nguyễn Văn E</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td>20</td>
+                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
+                            
                             </tbody>
                         </table>
                     </div>
@@ -167,7 +149,7 @@
     <script src="/adminlte/js/startmin.js"></script>
     <script>
         $(function () {
-            $('#hospital_table').DataTable({
+            $('#patient_table').DataTable({
                 "bPaginate": false,
                 "bLengthChange": false,
                 "bFilter": false,
@@ -175,6 +157,5 @@
                 "bAutoWidth": false
             });
         })
-
     </script>
 @endsection

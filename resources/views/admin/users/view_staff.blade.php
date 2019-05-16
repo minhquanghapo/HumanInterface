@@ -14,49 +14,50 @@
                         <div class="col-md-6">
                             <h3 class="box-title">Tài khoản nhân viên</h3>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Body -->
-                <form role="form" class="form-horizontal">
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" placeholder="Enter email" disabled value="nguyenvana@.gmail.com">
+                <div class="box-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" placeholder="Enter email" disabled value="nguyenvana@.gmail.com">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Mật khẩu</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" value="123123" disabled >
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Mật khẩu</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" value="123123" disabled >
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Xác thực mật khẩu</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" value="123123" disabled>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Xác thực mật khẩu</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" value="123123" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Sdt</label>
-                        <div class="col-sm-10">
-                            <input type="tel" class="form-control" value="12328197231" disabled>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Sdt</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" value="12328197231" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Địa chỉ email</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" value="Thanh Xuân, Hà Nội" disabled>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Địa chỉ email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" value="Thanh Xuân, Hà Nội" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Bệnh viện</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" value="Bạch Mai, Hà Nội" disabled>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Bệnh viện</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" value="Bạch Mai, Hà Nội" disabled>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
                 <div class="box-footer">
                     <button type="submit" class="btn btn-default">Hủy</button>
                     <button type="submit" class="btn btn-info pull-right">Lưu</button>

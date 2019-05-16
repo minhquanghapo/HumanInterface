@@ -128,8 +128,8 @@
                     </form>
                 </div>
                 <div class="box-footer">
-                        <button type="submit" class="btn btn-default">Cancel</button>
-                        <button type="" class="btn pull-right" style="margin-right: 10px;">cập nhật</button>
+                        <a href="/admin_hospital/urgent"><button class="btn btn-default">Cancel</button></a>
+                        <button type="" class="btn pull-right" style="margin-right: 10px; color: black" onclick="updatesuccess()">cập nhật</button>
                         <button type="" class="btn btn-info pull-right" onclick="openadddoctorModal()" style="margin-right: 10px;">Thêm người nhận</button>
 
                     </div>
@@ -177,12 +177,12 @@
                             <div class="nav-tabs-custom" style="margin-bottom: -15px;">
                             <!-- Tabs within a box -->
                             <ul class="nav nav-tabs pull-right">
-                              <li name="tobehide" class="pull-left header"><i class="fa fa-inbox"></i> Thời gian biểu 5 bác sĩ chuyên khoa 1 rảnh lúc  10:30 </li>
+                              <li name="tobehide" class="pull-left header"><i class="fa fa-inbox"></i> Thời gian biểu 1-5/12 bác sĩ chuyên khoa 1 rảnh lúc  10:30 </li>
                               <li name="tobeshow" class="pull-left header" style="display: none;"><i class="fa fa-inbox"></i> Thời gian biểu bác sĩ Hoàng Văn A </li>
                             </ul>
                             
                             <div class="row" style="margin: 20px;">
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <select class="form-control" style="width: 100%;" onclick="showhide()">
                                         <option selected="selected">Chuyên khoa 1</option>
                                         <option>Chuyên Khoa 2</option>
@@ -191,7 +191,7 @@
                                         <option>Chuyên Khoa 5</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-3">
                                     <form>
                                         <input class="form-control" list="browsers" name="browser" placeholder="Tìm Bác sĩ theo tên" onclick="addDoctor()" style="width: 100%;">
                                         <datalist id="browsers">
@@ -203,9 +203,12 @@
                                         </datalist>
                                     </form>
                                 </div>
-                                <div class="col-sm-4" name="tobehide">
-                                    <input type="checkbox">Chỉ hiện các bác sĩ rảnh<br>
+                                <div class="col-sm-3" name="tobehide" style="padding: 0px;">
+                                    <input type="checkbox">Chỉ hiện các BS rảnh<br>
                                 </div>
+                                <dir class="col-sm-3">
+                                  <div class="dataTables_paginate paging_simple_numbers" style="margin-top: -40px; margin-bottom: -50px;" id="example1_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">&lt;</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">1/3</a></li><li class="paginate_button next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">&gt;</a></li></ul></div>
+                                </dir>
                             </div>
                             <div class="tab-content no-padding" style="overflow-y: scroll; overflow-x: auto; height: 400px;width: 100%;">
                               <!-- Morris chart - Sales -->
@@ -231,14 +234,13 @@
                                     <li><span>17:00</span></li>
                                     <li><span>17:30</span></li>
                                     <li><span>18:00</span></li>
-
                                   </ul>
                                 </div> <!-- .timeline -->
                               
                                 <div class="events" style="cursor: pointer;">
                                     <ul name="tobeshow" style="display: none;">
                                         <li class="events-group">
-                                          <div class="top-info"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Hoàng Văn A</span></div>              
+                                          <div class="top-info" style="background-color: #ddd;cursor: not-allowed;"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác Sĩ A</span></div>              
                                           <ul>
                                             <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-restorative-yoga" data-event="event-4">
                                               <a href="#0">
@@ -250,7 +252,7 @@
                                         </li>
                                   
                                         <li class="events-group">
-                                          <div class="top-info" onclick="addB()"><img src="/img/HI_06/dist/img/bstruong.jpeg" class="img-circle bs-avatar" alt="User Image" ><span style="text-align: left">Bác sĩ B</span></div>
+                                          <div class="top-info" onclick="addB()"><img src="/img/HI_06/dist/img/bstruong.jpeg" class="img-circle bs-avatar" alt="User Image" ><span style="text-align: left;">Hoàng Văn A</span></div>
                                   
                                           <ul>
                                   
@@ -276,7 +278,7 @@
                                     </ul>
                                   <ul name="tobehide">
                                     <li class="events-group">
-                                      <div class="top-info"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ A</span></div>              
+                                      <div class="top-info" style="background-color: #ddd;cursor: not-allowed;"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ A</span></div>              
                                       <ul>
                                         <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-restorative-yoga" data-event="event-4">
                                           <a href="#0">
@@ -288,7 +290,7 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info" onclick="addB()"><img src="/img/HI_06/dist/img/bstruong.jpeg" class="img-circle bs-avatar" alt="User Image" ><span style="text-align: left">Bác sĩ B</span></div>
+                                      <div class="top-info" onclick="addB()"><img src="/img/HI_06/dist/img/bstruong.jpeg" class="img-circle bs-avatar" alt="User Image" ><span style="text-align: left">Hoàng Văn A</span></div>
                               
                                       <ul>
                               
@@ -313,7 +315,7 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info"><img src="/img/HI_06/dist/img/bstuyet.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left;">Bác sĩ C</span></div>
+                                      <div class="top-info" onclick="addC()"><img src="/img/HI_06/dist/img/bstuyet.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left;">Bác sĩ C</span></div>
                               
                                       <ul>
                                         <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
@@ -343,7 +345,7 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info"><img src="/img/HI_06/dist/img/bstu.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ D</span></div>
+                                      <div class="top-info" onclick="addD()"><img src="/img/HI_06/dist/img/bstu.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ D</span></div>
                               
                                       <ul>
                                         <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
@@ -432,6 +434,10 @@
                                                                         <td id="idhoso">8</td>
                                                                     </tr>
                                                                     <tr>
+                                                                        <td><b>Thời gian</b></td>
+                                                                        <td>10:30</td>
+                                                                    </tr>
+                                                                    <tr>
                                                                         <td><b>Họ tên</b></td>
                                                                         <td>Vũ Văn A</td>
                                                                     </tr>
@@ -495,15 +501,15 @@
                                     </div>
                                     <div class="my">
                                         <ul>
-                                          <li id="doctorD" style="display: none">Lê Thị D - chuyên khoa 2<span class="close">&times;</span></li>
-                                          <li id="doctorB" style="display: none">Bác sĩ B - chuyên khoa 1<span class="close">&times;</span></li>
+                                          <li id="doctorB" style="display: none">Hoàng Văn A - chuyên khoa 1<span class="close">&times;</span></li>
+                                          <li id="doctorC" style="display: none">Bác sĩ C - chuyên khoa 1<span class="close">&times;</span></li>
+                                          <li id="doctorD" style="display: none">Bác sĩ D - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="doctorA" style="display: none">Bác sĩ A - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="1" style="display: none">Bác Văn sĩ - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="2" style="display: none">Bệnh Văn Viện - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="3" style="display: none">Y Văn Tế - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="4" style="display: none">Giáo Văn Dục - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="5" style="display: none">Y Văn Tá - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li  id="6" style="display: none">Hoàng Văn A - chuyên khoa 1<span class="close">&times;</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -569,27 +575,36 @@ for (i = 0; i < closebtns.length; i++) {
         
     }
     function addB(){
-        document.getElementById("doctorB").style.display = "block";
+        document.getElementById("doctorB").style.display = "";
+    }
+    function addC(){
+        document.getElementById("doctorC").style.display = "";
+    }
+    function addD(){
+        document.getElementById("doctorD").style.display = "";
     }
     function showList() {
       var x = document.getElementById("myDIV");
       if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "";
       } else {
         x.style.display = "none";
       }
     }
     function toggle() {
-          document.getElementById("1").style.display = "block";
-          document.getElementById("2").style.display = "block";
-          document.getElementById("3").style.display = "block";
-          document.getElementById("4").style.display = "block";
-          document.getElementById("5").style.display = "block";
-          document.getElementById("6").style.display = "block";
+          document.getElementById("1").style.display = "";
+          document.getElementById("2").style.display = "";
+          document.getElementById("3").style.display = "";
+          document.getElementById("4").style.display = "";
+          document.getElementById("5").style.display = "";
         }
 
     function success(){
         toastr["success"]("Gửi yêu cầu khẩn cấp thành công!");
+        $("#adddoctorModal").modal("hide");
+    }
+    function updatesuccess(){
+        toastr["success"]("Cập nhật thành công!");
         $("#adddoctorModal").modal("hide");
     }
     function superdenyForm() {
