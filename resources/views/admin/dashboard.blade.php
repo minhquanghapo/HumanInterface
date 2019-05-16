@@ -180,7 +180,7 @@
                                     </li>
                                 </ul>
                                 <div class="chart">
-                                    <canvas id="barChart" style="height:230px"></canvas>
+                                    <canvas id="barChart" style="height:300px"></canvas>
                                 </div>
                             </div>                              
                         </div>
@@ -644,7 +644,7 @@
         };
 
         var options_bv = {
-            fontSize: 14,
+            fontSize: 18,
             chartArea: {width: 500, height: 300}
         };
 
