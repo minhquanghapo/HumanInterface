@@ -173,11 +173,11 @@ li.passed > a{
 }
 
 button:focus{
-    outline: none;
+    outline: none!important;
 }
 
 button{
-    outline: none;
+    outline: none!important;
 }
 
 #detailModal .nav-pills .active > a, #detailModal .btn-primary {

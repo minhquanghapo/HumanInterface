@@ -168,6 +168,168 @@ $(document).ready(function() {
                 start: '2019-05-30T10:30:00',
                 
             },
+            {
+                id: 25,
+                title: 'ca khám',
+                start: '2019-05-16T08:00:00',
+
+            },
+            {
+                id: 26,
+                title: 'ca khám',
+                start: '2019-05-16T08:30:00',
+
+            },
+            {
+                id: 27,
+                title: 'ca khám',
+                start: '2019-05-16T09:30:00',
+
+            },
+            {
+                id: 28,
+                title: 'ca khám',
+                start: '2019-05-16T10:30:00',
+
+            },
+            {
+                id: 29,
+                title: 'ca khám',
+                start: '2019-05-17T08:00:00',
+
+            },
+            {
+                id: 30,
+                title: 'ca khám',
+                start: '2019-05-17T08:30:00',
+
+            },
+            {
+                id: 31,
+                title: 'ca khám',
+                start: '2019-05-17T09:30:00',
+
+            },
+            {
+                id: 32,
+                title: 'ca khám',
+                start: '2019-05-17T10:30:00',
+
+            },
+            {
+                id: 33,
+                title: 'ca khám',
+                start: '2019-05-17T09:00:00',
+
+            },
+            {
+                id: 34,
+                title: 'ca khám',
+                start: '2019-05-17T10:00:00',
+
+            },
+            {
+                id: 35,
+                title: 'ca khám',
+                start: '2019-05-18T08:30:00',
+
+            },
+            {
+                id: 36,
+                title: 'ca khám',
+                start: '2019-05-18T08:30:00',
+
+            },
+            {
+                id: 37,
+                title: 'ca khám',
+                start: '2019-05-18T09:30:00',
+
+            },
+            {
+                id: 38,
+                title: 'ca khám',
+                start: '2019-05-18T10:30:00',
+
+            },
+            {
+                id: 39,
+                title: 'ca khám',
+                start: '2019-05-18T11:30:00',
+
+            },
+            {
+                id: 40,
+                title: 'ca khám',
+                start: '2019-05-18T12:30:00',
+
+            },
+            {
+                id: 41,
+                title: 'ca khám',
+                start: '2019-05-19T10:30:00',
+
+            },
+            {
+                id: 42,
+                title: 'ca khám',
+                start: '2019-05-19T11:30:00',
+
+            },
+            {
+                id: 43,
+                title: 'ca khám',
+                start: '2019-05-19T12:00:00',
+
+            },
+            {
+                id: 44,
+                title: 'ca khám',
+                start: '2019-05-19T12:30:00',
+
+            },
+            {
+                id: 45,
+                title: 'ca khám',
+                start: '2019-05-19T13:30:00',
+
+            },
+            {
+                id: 46,
+                title: 'ca khám',
+                start: '2019-05-19T14:00:00',
+
+            },
+            {
+                id: 47,
+                title: 'ca khám',
+                start: '2019-05-15T07:00:00',
+
+            },
+            {
+                id: 48,
+                title: 'ca khám',
+                start: '2019-05-15T07:30:00',
+
+            },
+            {
+                id: 49,
+                title: 'ca khám',
+                start: '2019-05-15T08:30:00',
+
+            },
+            {
+                id: 50,
+                title: 'ca khám',
+                start: '2019-05-15T09:30:00',
+
+            },
+            {
+                id: 51,
+                title: 'ca khám',
+                start: '2019-05-15T10:30:00',
+
+            },
         ],
         eventClick: function(info) {
             $("#idhoso").html(info.id);
