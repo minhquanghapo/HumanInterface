@@ -55,7 +55,7 @@
                     <div class="tabs_styled_2">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true">Chọn lịch khám</a>
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true">Đặt lịch khám</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-expanded="true">Thông tin chung</a>

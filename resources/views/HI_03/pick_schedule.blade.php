@@ -2,15 +2,23 @@
 
 @section('SPECIFIC CSS')
     <link href="{{ asset('HI_03/css/date_picker.css') }}" rel="stylesheet">
+    <link href="{{ asset('HI_03/css/progress_bar.css') }}" rel="stylesheet">
+    <!-- Stepper CSS -->
+    <link href="css/addons-pro/steppers.css" rel="stylesheet">
+    <!-- Stepper CSS - minified-->
+    <link href="css/addons-pro/steppers.min.css" rel="stylesheet">
 @endsection
 
 @section('content')
-<main>
-    <div id="breadcrumb">
-        <div class="container">
-            <ul>
-                <li><a href="{{ url('/') }}">Trang chủ</a></li>
-                <li>Khám theo ngày</li>
+<main style="background-color: #fff">
+    <div class="progress_bar">
+        <div class="bar__container">
+            <ul class="bar" id="bar">
+                <li class="active">Chọn lịch khám</li>
+                <li class="active">Chọn bệnh viện</li>
+                <li class="active">Chọn bác sĩ</li>
+                <li>Đặt lịch khám</li>
+                <li>Thanh toán</li>
             </ul>
         </div>
     </div>
@@ -108,5 +116,15 @@
 			format: "yyyy-mm-dd",
 			datesDisabled: ["2017/10/20", "2017/11/21", "2017/12/21", "2018/01/21", "2018/02/21", "2018/03/21"],
 		});
+    </script>
+    <!-- Stepper JavaScript -->
+    <script type="text/javascript" src="js/addons-pro/stepper.js"></script>
+    <!-- Stepper JavaScript - minified -->
+    <script type="text/javascript" src="js/addons-pro/stepper.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.stepper').mdbStepper();
+        })
     </script>
 @endsection
