@@ -140,10 +140,10 @@
 
 .bar li a {
   background-color: #fff;
-  color: #000
+  color: #e74e84
 }
 
 .bar li a:hover {
   background-color: #fff;
-  color: #e74e84
+  color: #000
 }
