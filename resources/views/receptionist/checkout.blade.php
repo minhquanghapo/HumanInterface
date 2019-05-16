@@ -58,14 +58,7 @@
                             </div>
                         </div>
                         <br><br>
-                        <div class="row">
-                            <div class="col-sm-4" >
-                                <label name="so_bhyt"   > chữ ký bác sỹ</label>
-                            </div>
-                            <div class="col-sm-4">
-                                <input type="checkbox"  value="Boat">
-                            </div>
-                        </div>
+
 
                     </div>
                 </div>
