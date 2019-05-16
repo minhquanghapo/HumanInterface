@@ -12,14 +12,15 @@
 					<div class="box_feat" id="icon_1">
 						<span></span>
 						<h3>Chọn lịch khám</h3>
-						<p>Chọn ngày giờ, lịch khám bạn mong muốn và triệu chứng bệnh của bạn.</p>
+						<p>Chọn ngày giờ, lịch khám bạn mong muốn.</p>
+						<br>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="box_feat" id="icon_2">
 						<span></span>
 						<h3>Xem hồ sơ</h3>
-						<p>Bạn có thể đọc thông tin về bệnh viện, bác sĩ phù hợp với lịch của mình.</p>
+						<p>Xem thông tin về bệnh viện, bác sĩ phù hợp với lịch của mình.</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -33,72 +34,69 @@
 			<!-- <p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium">Find Doctor</a></p> -->
 			<div class="row justify-content-center">
 				<div class="col-xl-3">
-					<p class="text-right"><a href="{{ url('grid-list') }}" class="btn_1 medium" style="font-size: 1.3125rem"><strong>Khám theo bác sĩ</strong></a></p>
+					<p class="text-center"><a href="{{ url('grid-list') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo bác sĩ</strong></a></p>
 				</div>
 				<div class="col-xl-3">
-					<p class="text-left"><a href="{{ url('schedule') }}" class="btn_1 medium" style="font-size: 1.3125rem"><strong>Khám theo ngày</strong></a></p>
+					<p class="text-center"><a href="{{ url('schedule') }}" class="btn_1 medium" style="font-size: 1.2125rem"><strong>Khám theo ngày</strong></a></p>
 				</div>
 			</div>
 		</div>
 		<!-- /container -->
-
-		<div class="bg_color_1">
-			<div class="container margin_120_95">
-				<div class="main_title">
-					<h2>Tìm theo chuyên khoa</h2>
-					<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa tim mạch</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
-							<h3>Nha khoa</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa X-quang</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="{{ url('grid-list') }}" class="box_cat_home">
-							<i class="icon-info-4"></i>
-							<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
-							<h3>Khoa tâm lý</h3>
-							<ul class="clearfix">
-								<li><strong>124</strong>Bác sĩ</li>
-								<li><strong>60</strong>Bệnh viện</li>
-							</ul>
-						</a>
-					</div>
-				</div>
-				<!-- /row -->
+		
+		<div class="container margin_120_95">
+			<div class="main_title">
+				<h2>Tìm theo chuyên khoa</h2>
+				<!-- <p>Nec graeci sadipscing disputationi ne, mea ea nonumes percipitur. Nonumy ponderum oporteat cu mel, pro movet cetero at.</p> -->
 			</div>
-			<!-- /container -->
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_2.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa tim mạch</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_5.svg') }}" width="60" height="60" alt="">
+						<h3>Nha khoa</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_6.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa X-quang</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<a href="{{ url('grid-list') }}" class="box_cat_home">
+						<i class="icon-info-4"></i>
+						<img src="{{ asset('HI_03/img/icon_cat_8.svg') }}" width="60" height="60" alt="">
+						<h3>Khoa tâm lý</h3>
+						<ul class="clearfix">
+							<li><strong>124</strong>Bác sĩ</li>
+							<li><strong>60</strong>Bệnh viện</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<!-- /row -->
 		</div>
-		<!-- /white_bg -->
+		<!-- /container -->
 		
 		<!-- <div class="container margin_120_95">
 			<div class="main_title">

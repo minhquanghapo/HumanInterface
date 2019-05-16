@@ -26,7 +26,7 @@
                             <img src="{{ asset('HI_03/img/doctor/doctor.png') }}" alt="" class="img-fluid">
                         </figure>
                         <small>Khoa Tai Mũi Họng</small>
-                        <h1><a href="#general-tab">Bác sĩ Lê Thị Hương</a></h1>
+                        <h1>Bác sĩ Lê Thị Hương</h1>
                         <span class="rating">
 							<i class="icon_star voted"></i>
 							<i class="icon_star voted"></i>
@@ -35,16 +35,17 @@
 							<i class="icon_star"></i>
 							<small>(145)</small>
 							<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level"
-                               class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15"
-                                                         height="15" alt=""></a>
+                               class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
                         </span>
-                        <ul class="contacts">
-                            <li><b>Điện thoại</b></br><a href="tel://000434323342">0975 056 124</a></li>
-                        </ul>
                         <ul class="statistic">
                             <li>854 lượt xem</li>
                             <li>124 bệnh nhân</li>
                         </ul>
+                        <ul class="contacts">
+                            <li><b>Điện thoại</b></br><a href="tel://000434323342">0975 056 124</a></li>
+                            <li><b>Bệnh viện đang công tác: </b></br>Bệnh viện Bạch Mai</li>
+                        </ul>
+                        
                     </div>
                 </aside>
                 <!-- /asdide -->
@@ -55,13 +56,13 @@
                     <div class="tabs_styled_2">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true">Chọn lịch khám</a>
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true"><b>Chọn lịch khám</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-expanded="true">Thông tin chung</a>
+                                <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-expanded="true"><b>Thông tin bác sĩ</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews">Đánh giá</a>
+                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"><b>Đánh giá</b></a>
                             </li>
                         </ul>
                         <!--/nav-tabs -->
@@ -189,7 +190,7 @@
                                         </li>
                                     </ul>
                                     <hr>
-                                    <div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Đặt lịch</a>
+                                    <div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Tiếp tục</a>
                                     </div>
                                 </div>
                             </div>
@@ -546,5 +547,6 @@
             format: "yyyy-mm-dd",
             datesDisabled: ["2017/10/20", "2017/11/21", "2017/12/21", "2018/01/21", "2018/02/21", "2018/03/21"],
         });
+
     </script>
 @endsection
