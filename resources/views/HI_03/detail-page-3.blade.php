@@ -3,11 +3,25 @@
 @section('SPECIFIC CSS')
     <link href="{{ asset('HI_03/css/date_picker.css') }}" rel="stylesheet">
     <link href="{{ asset('HI_02/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('HI_03/css/progress_bar.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
     <main class="detail-page">
-        <div id="breadcrumb">
+        <div class="progress_bar">
+            <div class="bar__container">
+                <ul class="bar" id="bar">
+                    @if($appointment_type == "date")
+                        <li class="active">Chọn lịch khám</li>
+                        <li class="active">Chọn bệnh viện</li>
+                    @endif
+                    <li class="active">Chọn bác sĩ</li>
+                    <li class="active">Đặt lịch khám</li>
+                    <li>Thanh toán</li>
+                </ul>
+            </div>
+        </div>
+        {{-- <div id="breadcrumb">
             <div class="container">
                 <ul>
                     <li><a href="{{ url('/') }}">Trang chủ</a></li>
@@ -15,7 +29,7 @@
                     <li>Thông tin bác sĩ</li>
                 </ul>
             </div>
-        </div>
+        </div> --}}
         <!-- /breadcrumb -->
 
         <div class="container margin_60">
@@ -190,7 +204,7 @@
                                         </li>
                                     </ul>
                                     <hr>
-                                    <div class="text-center"><a href="{{ url('booking-page') }}" class="btn_1 medium">Tiếp tục</a>
+                                    <div class="text-center"><a href="{{ route('booking', ['appointment_type' => $appointment_type]) }}" class="btn_1 medium">Tiếp tục</a>
                                     </div>
                                 </div>
                             </div>
