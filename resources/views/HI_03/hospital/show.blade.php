@@ -25,7 +25,7 @@
                         <figure>
                             <img src="{{ asset('HI_03/img/hospital/hospital.jpg') }}" alt="" class="img-fluid">
                         </figure>
-                        <h1><a href="#general-tab">Bệnh viện VinMec</a></h1>
+                        <h1>Bệnh viện Bạch Mai</h1>
                         <span class="rating">
 							<i class="icon_star voted"></i>
 							<i class="icon_star voted"></i>
@@ -42,7 +42,7 @@
                             <li>224 bác sĩ</li>
                         </ul>
                         <ul class="contacts">
-                            <li><b>Địa chỉ</b></br>29 Nguyễn Bỉnh Khiêm, Nguyễn Du, Hai Bà Trưng, Hà Nội</li>
+                            <li><b>Địa chỉ</b></br>78 Đường Giải Phóng, Phương Đình, Đống Đa, Hà Nội</li>
                             <li><b>Hotline</b></br><a href="tel://000434323342">0975 056 124</a></li>
                         </ul>
                         <div class="text-center"><a
@@ -55,7 +55,7 @@
                 <div class="col-xl-9 col-lg-8">
                     <div>
                         <div class="main_title_4">
-                            <h3><i class="icon_circle-slelected"></i>Danh sách bác sĩ</h3>
+                            <h3><i class="icon_circle-slelected"></i>Danh sách bác sĩ bạn nên chọn</h3>
                         </div>
                         <div class="row">
                             <div class="col-md-4 doctor">

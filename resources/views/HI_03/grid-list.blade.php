@@ -35,11 +35,11 @@
                     <form action="">
                         <div class="row">
 				            <div class="col-md-4">
-				            	<label>Nhập tên bác sĩ</label>
+				            	<label><b>Nhập tên bác sĩ</b></label>
 				                <input type="text" name="search" id="form-autocomplete" class="form-control mdb-autocomplete" placeholder="Vd. Lê Thị Hương">
 				            </div>
 					        <div class="col-md-4">
-                                <label>Bệnh viện</label>
+                                <label><b>Bệnh viện</b></label>
                                 <select name="" class="form-control">
                                     <option value="">Bệnh viện Bạch Mai</option>
                                     <option value="">Bệnh viện Trung Ương Quân Đội 108</option>
@@ -50,7 +50,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <label>Chuyên khoa</label>
+                                <label><b>Chuyên khoa</b></label>
                                 <select name="" class="form-control">
                                     <option value="">Tai mũi họng</option>
                                     <option value="">Tim mạch</option>
@@ -96,7 +96,7 @@
                         <br>
                         <div class="row">	
                             <div class="col-md-4">
-                                <label>Sắp xếp theo</label>
+                                <label><b>Sắp xếp theo</b></label>
                                 <select name="" class="form-control">
                                     <option value="">Đánh giá</option>
                                     <option value="">Lượt đặt khám</option>
@@ -104,7 +104,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <label>Khoảng cách</label>
+                                <label><b>Khoảng cách</b></label>
                                 <select name="" class="form-control">
                                     <option value="">< 1km</option>
                                     <option value="">1-3km</option>
