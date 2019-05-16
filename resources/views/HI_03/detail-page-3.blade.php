@@ -73,7 +73,7 @@
                     <div class="tabs_styled_2">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true">Đặt lịch khám</a>
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true"><b>Đặt lịch khám</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-expanded="true"><b>Thông tin bác sĩ</b></a>
@@ -360,7 +360,7 @@
                                     <hr>
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">
@@ -382,7 +382,7 @@
                                     <!-- End review-box -->
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">
@@ -404,7 +404,7 @@
                                     <!-- End review-box -->
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">
