@@ -3879,6 +3879,11 @@ ul.treatments.checkout li.total {
 /* 3.  COMMON */
 /*============================================================================================*/
 /*-------- 3.1 Misc --------*/
+.progress_bar {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
 .bg_color_1 {
   background-color: #fff;
 }

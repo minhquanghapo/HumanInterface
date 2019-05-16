@@ -2,6 +2,8 @@
 
 @section('SPECIFIC CSS')
     <link href="{{ asset('HI_03/css/date_picker.css') }}" rel="stylesheet">
+    <link href="{{ asset('HI_03/css/progress_bar.css') }}" rel="stylesheet">
+
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
     <style>
         li.active > a{
@@ -37,16 +39,19 @@
 
 @section('content')
 <main>
-    <div id="breadcrumb">
-        <div class="container">
-            <ul>
-                <li><a href="{{ url('/') }}">Trang chủ</a></li>
-                <li>Khám theo ngày</li>
+    <div class="progress_bar">
+        <div class="bar__container">
+            <ul class="bar" id="bar">
+                <li class="active">Chọn lịch khám</li>
+                <li>Chọn bệnh viện</li>
+                <li>Chọn bác sĩ</li>
+                <li>Chọn hình thức khám</li>
+                <li>Thanh toán</li>
             </ul>
         </div>
     </div>
         
-    <div class="date_box add_bottom_45">
+    <div class="date_box add_bottom_45" style="background-color: #f5f8fa">
         <div class="main_title_4">
             <h3><i class="icon_circle-slelected"></i>Triệu chứng của bạn</h3>
         </div>
@@ -75,7 +80,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9" style="background-color: #fff">
                 <div class="form-group">
                     <div id="calendar"></div>
                     <input type="hidden" id="my_hidden_input">
@@ -85,7 +90,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3" style="background-color: #fff">
                 <ul class="time_select version_2 add_top_20">
                     <li>
                         <input type="radio" id="radio1" name="radio_time" value="09.30am">
@@ -144,5 +149,3 @@
     </div>
 </main>
 @endsection
-
-

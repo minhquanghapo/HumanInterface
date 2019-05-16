@@ -62,9 +62,9 @@ Route::get('/detail-page/{appointment_type}', function ($appointment_type) {
     return view('HI_03.detail-page-3', compact('appointment_type'));
 })->name('doctor.detail');
 
-Route::get('/booking-page', function () {
-    return view('HI_03.booking-page');
-});
+Route::get('/booking-page/{appointment_type}', function ($appointment_type) {
+    return view('HI_03.booking-page', compact('appointment_type'));
+})->name('booking');
 
 Route::get('/confirm', function () {
     return view('HI_03.confirm');
