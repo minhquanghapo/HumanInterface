@@ -137,3 +137,7 @@
 .bar li.active:first-child + li:after:not(.active) {
   background: white;
 }
+
+.bar li a {
+  display:block;
+}

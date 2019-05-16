@@ -438,7 +438,7 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #47b7f0;
+  background: #74d1c6;
   cursor: pointer;
   padding: 7px 20px;
   display: inline-block;
@@ -3879,6 +3879,11 @@ ul.treatments.checkout li.total {
 /* 3.  COMMON */
 /*============================================================================================*/
 /*-------- 3.1 Misc --------*/
+.progress_bar {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
 .bg_color_1 {
   background-color: #fff;
 }
