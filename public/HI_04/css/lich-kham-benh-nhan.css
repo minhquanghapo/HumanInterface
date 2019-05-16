@@ -17,10 +17,8 @@
 .full-info{
 	position: fixed;
 	min-height: 390px;
-	max-height: 88vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	top: 10%;
+	max-height: 80vh;
+	top: 15%;
 	left: 20%;
 	width: 60vw;
 	background-color: #fff;

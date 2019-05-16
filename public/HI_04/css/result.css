@@ -6,8 +6,12 @@ h6{
 	font-size: 14px!important;
 }
 
+h3{
+	font-size:20px;
+}
+
 .full-info p, .full-info span{
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .wrapper-title{
@@ -20,7 +24,7 @@ h6{
 }
 
 .wrapper p, .wrapper table{
-	font-size: 18px;
+	font-size: 16px;
 	width: 100%;
 }
 
@@ -30,4 +34,9 @@ h6{
 
 .full-info .wrapper{
 	padding: 15px 25px;
+}
+
+.box_list .wrapper h3 {
+    font-size: 1.15rem;
+    margin-top: 0;
 }
