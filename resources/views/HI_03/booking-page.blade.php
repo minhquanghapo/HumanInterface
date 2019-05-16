@@ -10,16 +10,15 @@
 			<div class="bar__container">
 				<ul class="bar" id="bar">
 					@if($appointment_type == "date")
-                        <li class="active">Chọn lịch khám</li>
-                        <li class="active">Chọn bệnh viện</li>
-                    @endif
-                    <li class="active">Chọn bác sĩ</li>
-                    @if($appointment_type == "date")
-                        <li class="active">Chọn hình thức khám</li>
+                        <li class="active"><a href="{{ url('schedule') }}">Chọn lịch khám</a></li>
+                        <li class="active"><a href="{{ url('hospital/list') }}">Chọn bệnh viện</a></li>
+                        <li class="active"><a href="{{ url('hospital/show') }}">Chọn bác sĩ</a></li>
+                        <li class="active"><a href="{{ route('doctor.detail', ['appointment_type' => $appointment_type]) }}">Chọn hình thức khám</a></li>
                     @elseif($appointment_type == "doctor")
-                        <li class="active">Chọn lịch khám</li>
+                        <li class="active"><a href="{{ url('grid-list') }}">Chọn bác sĩ</a></li>
+                        <li class="active"><a href="{{ route('doctor.detail', ['appointment_type' => $appointment_type]) }}">Chọn lịch khám</a></li>
                     @endif
-                    <li class="active">Thanh toán</li>
+					<li class="active">Thanh toán</li>
 				</ul>
 			</div>
 		</div>
