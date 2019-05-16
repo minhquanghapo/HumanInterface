@@ -33,7 +33,9 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
     <link href="/adminlte/css/select2.min.css" rel="stylesheet" />
-
+    <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
+    <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+    <link href="{{ asset('css/doctor/bootstrap-datepicker.min.css')}}" rel="stylesheet">
     @yield('customcss')
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">

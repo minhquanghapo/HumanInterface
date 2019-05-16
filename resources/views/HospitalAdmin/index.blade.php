@@ -26,6 +26,9 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href='{{asset("css/HI_06/daterangepicker.css")}}'>
   <!-- bootstrap wysihtml5 - text editor -->
+  <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
+  <link href='{{asset('css/doctor/fullcalendar.print.min.css')}}' rel='stylesheet' media='print' />
+  <link href="{{ asset('css/doctor/bootstrap-datepicker.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href='{{asset("css/HI_06/bootstrap3-wysihtml5.min.css")}}'>
   <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,7 +44,21 @@
   <!-- Schedule custom-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
 	<link rel="stylesheet" href='{{asset("css/HI_06/reset.css")}}'> <!-- CSS reset -->
-	<link rel="stylesheet" href='{{asset("css/HI_06/style.css")}}'> <!-- Resource style -->
+  <link rel="stylesheet" href='{{asset("css/HI_06/style.css")}}'> <!-- Resource style -->
+  <link rel="stylesheet" href="/adminlte/css/toggle-switch.css"/>
+  <link rel="stylesheet" href="/adminlte/css/startmin.css"/>
+  <style >
+      .row{
+          font-size: medium;
+      }
+      .select2-selection__choice {
+          background: #00c0ef !important;
+          border: 1px #fff !important;
+      }
+      .select2-selection__choice__remove {
+          color: #fff !important;
+      }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -430,18 +447,7 @@
             </div>
           </div>
         <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>56 <i class="glyphicon glyphicon-wrench"></i></h3>
-              
-              <p>Danh mục dịch vụ</p>
-            </div>
-            
-            <a href="{{ url()->current() }}/services" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
+     
       <!-- ./col -->
     </section>
     <section class="content-header">
@@ -456,261 +462,24 @@
           <span class="glyphicon glyphicon-calendar"></span>
           <i style="display: none" data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
         </span>
+        
       </div>
+      <div class="pull-right">
+          Tìm kiếm bác sĩ: <input list="doctors" name="doctors">
+            <datalist id="doctors">
+              <option value="Bác sĩ Hùng">
+              <option value="Bác sĩ Tuyết">
+              <option value="Bác sĩ Tú">
+            </datalist>
+        </div>
       <!-- /.row -->
       <!-- Main row -->
       <div class="row">
-        <!-- Left col -->
-        <section class="col-lg-12 connectedSortable">
-          <!-- Custom tabs (Charts with tabs)-->
-          <div class="nav-tabs-custom">
-            <!-- Tabs within a box -->
-            <div class="pull-right">
-              Search  <input id="search" type="text">
-            </div>
-            <ul class="nav nav-tabs pull-right">
-              <li class="pull-left header"><i class="fa fa-inbox"></i> Thời gian biểu</li>
-            </ul>
-            
-            
-            <div class="tab-content no-padding">
-              <!-- Morris chart - Sales -->
-              <div class="cd-schedule loading">
-                <div class="timeline">
-                  <ul>
-                    <li><span>09:00</span></li>
-                    <li><span>09:30</span></li>
-                    <li><span>10:00</span></li>
-                    <li><span>10:30</span></li>
-                    <li><span>11:00</span></li>
-                    <li><span>11:30</span></li>
-                    <li><span>12:00</span></li>
-                    <li><span>12:30</span></li>
-                    <li><span>13:00</span></li>
-                    <li><span>13:30</span></li>
-                    <li><span>14:00</span></li>
-                    <li><span>14:30</span></li>
-                    <li><span>15:00</span></li>
-                    <li><span>15:30</span></li>
-                    <li><span>16:00</span></li>
-                    <li><span>16:30</span></li>
-                    <li><span>17:00</span></li>
-                    <li><span>17:30</span></li>
-                    <li><span>18:00</span></li>
-                  </ul>
-                </div> <!-- .timeline -->
-              
-                <div class="events">
-                  <ul>
-                    <li class="events-group drname" id="hung"> 
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bshung.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Hùng</span></div>              
-                      <ul>
-                        <li class="single-event" data-start="9:30" data-end="11:15"  data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-
-                      </ul>
-                    </li>
-              
-                    <li class="events-group drname" id="truong">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstruong.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Trường</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Họp</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Phẫu thuật</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group drname" id="tuyet">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstuyet.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Tuyết</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Họp bàn giao</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Phẫu thuật</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group drname" id="tu">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bstu.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Tú</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-              
-                        <li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Khám bệnh</em>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-              
-                    <li class="events-group drname" id="lan">
-                      <div class="top-info"><img src='{{("img/HI_06/dist/img/bslan.jpeg")}}' class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ Lan</span></div>
-              
-                      <ul>
-                        <li class="single-event" data-start="9:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-2">
-                          <a href="#0">
-                            <em class="event-name">Đi công tác</em>
-                          </a>
-                        </li>
-              
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              
-                <div class="event-modal">
-                  <header class="header">
-                    <div class="content">
-                      <span class="event-date"></span>
-                      <h3 class="event-name"></h3>
-                    </div>
-              
-                    <div class="header-bg"></div>
-                  </header>
-              
-                  <div class="body">
-                    <div class="event-info">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                    <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row form-group">
-                                        <div class="col-xs-12">
-                                            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                                                <li class="active"><a href="#step-1" id="step-11">
-                                                        <p class="list-group-item-text">Thông tin bệnh nhân</p>
-                                                    </a></li>
-                                                <li class=""><a href="#step-2" id="step-22">
-                                                        <p class="list-group-item-text">Tình trang bệnh</p>
-                                                    </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="row setup-content" id="step-1" style="">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12 well text-center">
-                                                <table class="table">
-                                                    <tbody><tr>
-                                                        <td><b>Mã hồ sơ</b></td>
-                                                        <td id="idhoso">8</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Họ tên</b></td>
-                                                        <td>Vũ Văn A</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Giới tính</b></td>
-                                                        <td>Nam</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Tuổi</b></td>
-                                                        <td>30</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Địa chỉ</b></td>
-                                                        <td>Hà Nội</td>
-                                                    </tr>
-                                                </tbody></table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row setup-content" id="step-2" style="display: none;">
-                                        <div class="col-xs-12">
-                                            <div class="col-md-12 well">
-                                                <p>
-                                                    Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                                                    Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                                                    Thành bụng căng cứng.
-                                                    Sốt nhẹ.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
-                                    
-                                </div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                    
-                    <div class="body-bg"></div>
-                  </div>
-                </div>
-              
-                <div class="cover-layer"></div>
-              </div> <!-- .cd-schedule -->
-            </div>
+        <div class="content">
+          <div class="col-md-12">
+              <div id="calendar"></div>
           </div>
-        </section>
+        </div>
       </div>
       <!-- /.row (main row) -->
 
@@ -722,6 +491,8 @@
       </section>
     <section class="content" data-select2-id="11">
          <!-- BAR CHART -->
+        <div class="row" id="crawl">
+        </div>
         <div class="row" data-select2-id="10">
             <div class="col-lg-8 col-md-8 col-sm-8" data-select2-id="9">
                 <div class="box box-success" data-select2-id="8">
@@ -1098,21 +869,6 @@
 </script>
 <script src='{{asset("js/HI_06/main.js")}}'></script> <!-- Resource jQuery -->
 <script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript">
-  $('#datetimepicker').datetimepicker({
-    format: 'dd/MM/yyyy hh:mm:ss',
-    language: 'en-US'
-  });
-  $('#step-11').click(function() {
-    console.log("ssấss");
-    $('#step-1').show();
-    $('#step-2').hide();
-  });
-  $('#step-22').click(function() {
-    $('#step-2').show();
-    $('#step-1').hide();
-  });
-</script>
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
@@ -1158,6 +914,7 @@
 <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://gist.github.com/raw/2625891/waitForKeyElements.js"></script>
 <script src="/adminlte/js/select2.full.min.js"></script>
     <script src="/adminlte/js/raphael.min.js"></script>
     <script src="/adminlte/js/morris.min.js"></script>
@@ -1363,10 +1120,97 @@
         $('.select2').select2()
         $('.timepicker').timepicker({
           showInputs: false
-        })
+        });
+    });
+    // $(document).ready(function () {
+    //   $("#crawl").load("/admin #crawl");
+    // });
+    function waitForKeyElements (
+    selectorTxt,    /* Required: The jQuery selector string that
+                        specifies the desired element(s).
+                    */
+    actionFunction, /* Required: The code to run when elements are
+                        found. It is passed a jNode to the matched
+                        element.
+                    */
+    bWaitOnce,      /* Optional: If false, will continue to scan for
+                        new elements even after the first match is
+                        found.
+                    */
+    iframeSelector  /* Optional: If set, identifies the iframe to
+                        search.
+                    */
+) {
+    var targetNodes, btargetsFound;
+
+    if (typeof iframeSelector == "undefined")
+        targetNodes     = $(selectorTxt);
+    else
+        targetNodes     = $(iframeSelector).contents ()
+                                           .find (selectorTxt);
+
+    if (targetNodes  &&  targetNodes.length > 0) {
+        btargetsFound   = true;
+        /*--- Found target node(s).  Go through each and act if they
+            are new.
+        */
+        targetNodes.each ( function () {
+            var jThis        = $(this);
+            var alreadyFound = jThis.data ('alreadyFound')  ||  false;
+
+            if (!alreadyFound) {
+                //--- Call the payload function.
+                var cancelFound     = actionFunction (jThis);
+                if (cancelFound)
+                    btargetsFound   = false;
+                else
+                    jThis.data ('alreadyFound', true);
+            }
+        } );
+    }
+    else {
+        btargetsFound   = false;
+    }
+
+    //--- Get the timer-control variable for this selector.
+    var controlObj      = waitForKeyElements.controlObj  ||  {};
+    var controlKey      = selectorTxt.replace (/[^\w]/g, "_");
+    var timeControl     = controlObj [controlKey];
+
+    //--- Now set or clear the timer as appropriate.
+    if (btargetsFound  &&  bWaitOnce  &&  timeControl) {
+        //--- The only condition where we need to clear the timer.
+        clearInterval (timeControl);
+        delete controlObj [controlKey]
+    }
+    else {
+        //--- Set a timer, if needed.
+        if ( ! timeControl) {
+            timeControl = setInterval ( function () {
+                    waitForKeyElements (    selectorTxt,
+                                            actionFunction,
+                                            bWaitOnce,
+                                            iframeSelector
+                                        );
+                },
+                300
+            );
+            controlObj [controlKey] = timeControl;
+        }
+    }
+    waitForKeyElements.controlObj   = controlObj;
+  }
+    waitForKeyElements (".datepicker",function commentCallbackFunction (jNode) {
+    //console.log(1);
+    //console.log(jNode);
+    jNode.remove();
     });
 
 </script>
+<script src='{{asset('js/fullcalendar.min.js')}}'></script>
+<script src="{{ asset('js/doctor/bootstrap-datepicker.min.js') }}"></script>
+<script src='{{asset('js/HI_06/index.js')}}'></script>
+<script src="{{ asset('js/doctor/bootstrap-datepicker.vi.min.js') }}"></script>
 <script>
   $("#search").on("keyup", function(){
     var str = this.value;
