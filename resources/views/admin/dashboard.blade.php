@@ -15,6 +15,9 @@
             font-size: 14px;
             color: #444;
         }
+        .fa-star {
+            color: #f4d742;
+        }
     </style>
 @endsection
 @section('pagename')
@@ -117,6 +120,35 @@
                 <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="box box-success">
                         <div class="box-header with-border">
+                            <div class="box-title"><strong><i class="fa fa-calendar"></i> Giờ cao điểm trong ngày</strong></div>
+                            <p style="text-align: center;"><strong>17-05-2019</strong></p>
+                        </div>
+                        <!-- LINE CHART -->
+                        <div class="box-body">
+                            <div class="nav-tabs-custom" style="cursor: move;">
+                                <!-- Tabs within a box -->
+                                <ul class="nav nav-tabs pull-right ui-sortable-handle">
+                                    <li class="pull-left"><strong>Chọn bệnh viện</strong></li>
+                                    <li class="pull-left">
+                                        <div class="form-group form-inline">
+                                            <select class="form-control select2" id="hour_select_hospital" data-placeholder="Select a State" style="width: 100%;">
+                                              <option selected="selected">Chọn tất cả</option>
+                                              <option>Bệnh viện Bạch Mai</option>
+                                              <option>Bệnh viện 198</option>
+                                              <option>Bệnh viện Nhi</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="chart">
+                                    <canvas id="lineChart" style="height:250px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"><i class="fa fa-inbox"></i> <strong>Thống kê số lượng lịch khám</strong></h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                 </button>
@@ -127,12 +159,12 @@
                             <div class="nav-tabs-custom" style="cursor: move;">
                                 <!-- Tabs within a box -->
                                 <ul class="nav nav-tabs pull-right ui-sortable-handle">
-                                    <li><a data-toggle="tab">Day</a></li>
-                                    <li class="active"><a data-toggle="tab">Month</a></li>
+                                    <li class="time-tab"><a data-toggle="tab">Day</a></li>
+                                    <li class="active time-tab"><a data-toggle="tab">Month</a></li>
                                     <li class="pull-left"><strong>Chọn bệnh viện</strong></li>
                                     <li class="pull-left">
                                         <div class="form-group form-inline">
-                                            <select class="form-control select2" data-placeholder="Select a State" style="width: 100%;">
+                                            <select class="form-control select2" id="calendar_select_hospital" data-placeholder="Select a State" style="width: 100%;">
                                               <option selected="selected">Chọn tất cả</option>
                                               <option>Bệnh viện Bạch Mai</option>
                                               <option>Bệnh viện 198</option>
@@ -144,9 +176,6 @@
                                 <div class="chart">
                                     <canvas id="barChart" style="height:230px"></canvas>
                                 </div>
-                                <div style="text-align: center;">
-                                    <i class="fa fa-inbox"></i> Thống kê lịch khám
-                                </div>
                             </div>                              
                         </div>
                     </div>
@@ -154,11 +183,19 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="box box-success">
+                        <div class="box-header with-border">
+                            <div class="box-title"><strong>Thống kê hoạt động</strong>
+                                <div class="input-group">
+                                    <button type="button" class="btn btn-default pull-right" id="daterange-btn">
+                                        <span>
+                                            <i class="fa fa-calendar"></i> Date range picker
+                                        </span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="box-body">
-                            <p class="text-center">
-                                <strong>Thống kê hoạt động</strong>
-                            </p>
-
                             <div class="progress-group">
                                 <span class="progress-text">Số lượt truy cập</span>
                                 <span class="progress-number"><b>1600</b></span>
@@ -197,7 +234,7 @@
                             <!-- /.progress-group -->
                         </div>
                         <!-- /.box-body -->
-                        <div class="box-footer">
+                        {{-- <div class="box-footer">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <canvas id="pieChart1" style="height:250px"></canvas>
@@ -212,30 +249,101 @@
                                     <p style="text-align: center;">Gửi yêu cầu</p>
                                 </div>
                             </div>
+                        </div> --}}
+                    </div>
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <div class="box-title"><strong>Phân loại ca khám</strong></div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <canvas id="pieChart" style="height:250px"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /.box -->
-                
-            <!-- LINE CHART -->
-            <div class="box box-success" style="display: none">
-                <div class="box-header with-border">
-                <h3 class="box-title"></h3>
-
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"><i class="fa fa-inbox"></i> <strong>Top bác sỹ được yêu thích</strong></h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="doctor_table" class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th>Tên</th>
+                                        <th>Bệnh viện</th>
+                                        <th>Khoa</th>
+                                        <th>Đánh giá</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Bạch Mai</td>
+                                        <td>Hồi sức cấp cứu</td>
+                                        <td><span style="display: none">2</span>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </td>
+                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Bạch Mai</td>
+                                        <td>Hồi sức cấp cứu</td>
+                                        <td><span style="display: none">2</span>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </td>
+                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Văn B</td>
+                                        <td>Bạch Mai</td>
+                                        <td>Hồi sức cấp cứu</td>
+                                        <td><span style="display: none">3</span>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </td>
+                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Văn C</td>
+                                        <td>Bạch Mai</td>
+                                        <td>Da liễu</td>
+                                        <td><span style="display: none">4</span>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </td>
+                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                    </tr>                                
+                                    <tr>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Bạch Mai</td>
+                                        <td>Hồi sức cấp cứu</td>
+                                        <td><span style="display: none">2</span>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </td>
+                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>   
+                        </div>
                     </div>
                 </div>
-                <div class="box-body">
-                    <div class="chart">
-                        <canvas id="lineChart" style="height:250px"></canvas>
-                    </div>
-                </div>
-            <!-- /.box-body -->
-            </div>
+            </div>                
+            
         </section>
     </div>
 @endsection
@@ -248,6 +356,24 @@
     <script src="/adminlte/js/startmin.js"></script>
     <script>
         $(function() {
+            
+            $('#daterange-btn').daterangepicker(
+              {
+                ranges   : {
+                  'Today'       : [moment(), moment()],
+                  'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                  'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+                  'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                startDate: moment().subtract(29, 'days'),
+                endDate  : moment()
+              },
+              function (start, end) {
+                $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+              }
+            )
             var areaChartData = {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
                 datasets: [
@@ -259,7 +385,7 @@
                         pointStrokeColor: 'rgba(60,141,188,1)',
                         pointHighlightFill: '#fff',
                         pointHighlightStroke: 'rgba(60,141,188,1)',
-                        data: [28, 48, 40, 29, 76, 57, 90, 70]
+                        data: [281, 483, 400, 299, 761, 576, 905, 701]
                     }
                 ]
             }
@@ -306,61 +432,80 @@
             //-------------
             //- LINE CHART -
             //--------------
+            var lineChartData = {
+                labels: ['6h', '7h', '8h', '9h', '10h', '11h', '13h', '14h', '15h', '16h', '17h'],
+                datasets: [
+                    {
+                        label: 'Digital Goods',
+                        fillColor: '#2f43f9',
+                        strokeColor: '#2f43f9',
+                        pointColor: '#3b8bba',
+                        pointStrokeColor: 'rgba(60,141,188)',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188)',
+                        data: [28, 48, 40, 50, 76, 57, 90, 70, 50, 48, 40]
+                    },
+                    {
+                        label               : 'Electronics',
+                        fillColor           : '#f3aefc',
+                        strokeColor         : '#f3aefc',
+                        pointColor          : '#f3aefc',
+                        pointStrokeColor    : '#c1c7d1',
+                        pointHighlightFill  : '#fff',
+                        pointHighlightStroke: 'rgba(220,220,220,1)',
+                        data                : [70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70]
+                    }
+                ]
+            }
             var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
             var lineChart = new Chart(lineChartCanvas)
             var lineChartOptions = areaChartOptions
             lineChartOptions.datasetFill = false
-            lineChart.Line(areaChartData, lineChartOptions)
+            function drawLineChart() {
+                lineChart.Line(lineChartData, lineChartOptions)
+            }
+            drawLineChart();
+            $('#hour_select_hospital').change(function () {
+                drawLineChart();
+            })
             //-------------
             //- PIE CHART -
             //-------------
             // Get context with jQuery - using jQuery's .get() method.
-            var pieChartCanvas1 = $('#pieChart1').get(0).getContext('2d')
-            var pieChartCanvas2 = $('#pieChart2').get(0).getContext('2d')
-            var pieChartCanvas3 = $('#pieChart3').get(0).getContext('2d')
-            var pieChart1       = new Chart(pieChartCanvas1)
-            var pieChart2       = new Chart(pieChartCanvas2)
-            var pieChart3       = new Chart(pieChartCanvas3)
-            var PieData1        = [
+            var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+            var pieChart       = new Chart(pieChartCanvas)
+            var PieData        = [
                 {
-                value    : 1400,
+                    value    : 1400,
                     color    : '#dd4b39',
                     highlight: '#dd4b39',
-                    label    : 'Find doctors'
+                    label    : 'Find doctors',
+                    labelColor : 'white',
+                    labelFontSize : '16'
                 },
                 {
                     value    :100,
                     color    : '#efefef',
                     highlight: '#efefef',
-                    label    : 'None'
-                }
-            ]
-            var PieData2        = [
+                    label    : 'None',
+                    labelColor : 'white',
+                    labelFontSize : '16'
+                },
                 {
                 value    : 900,
                     color    : '#f39c12',
                     highlight: '#f39c12',
-                    label    : 'Create calendar'
+                    label    : 'Create calendar',
+                    labelColor : 'white',
+                    labelFontSize : '16'
                 },
-                {
-                    value    : 400,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'None'
-                }
-            ]
-            var PieData3        = [
                 {
                 value    : 900,
                     color    : '#00a65a',
                     highlight: '#00a65a',
-                    label    : 'Sent request'
-                },
-                {
-                    value    : 500,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'IE'
+                    label    : 'Sent request',
+                    labelColor : 'white',
+                    labelFontSize : '16'
                 }
             ]
             var pieOptions     = {
@@ -371,7 +516,7 @@
                 //Number - The width of each segment stroke
                 segmentStrokeWidth   : 2,
                 //Number - The percentage of the chart that we cut out of the middle
-                percentageInnerCutout: 50, // This is 0 for Pie charts
+                percentageInnerCutout: 0, // This is 0 for Pie charts
                 //Number - Amount of animation steps
                 animationSteps       : 100,
                 //String - Animation easing effect
@@ -386,17 +531,14 @@
                 maintainAspectRatio  : true,
                 //String - A legend template
                 legendTemplate       : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>',
-                labelFontFamily : "Arial",
-                labelFontStyle : "normal",
-                labelFontSize : 24,
-                labelFontColor : "#666"
+                legend: {
+                    display: true,
+                }
             }
             //Create pie or douhnut chart
             // You can switch between pie and douhnut using the method below.
-            pieChart1.Doughnut(PieData1, pieOptions)
-            pieChart2.Doughnut(PieData2, pieOptions)
-            pieChart3.Doughnut(PieData3, pieOptions)
-
+            pieChart.Doughnut(PieData, pieOptions)
+            
             //-------------
             //- BAR CHART -
             //-------------
@@ -435,7 +577,16 @@
             }
 
             barChartOptions.datasetFill = false
-            barChart.Bar(barChartData, barChartOptions)
+            function drawBarChart() {
+                barChart.Bar(barChartData, barChartOptions)
+            }
+            drawBarChart();
+            $('.time-tab').click(function () {
+                drawBarChart();
+            })
+            $('#calendar_select_hospital').change(function () {
+                drawBarChart();
+            })
         })
     </script>
 @endsection

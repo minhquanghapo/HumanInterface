@@ -9,6 +9,9 @@
         .input-group-addon {
             border: none;
         }
+        .fa-star {
+            color: #f4d742;
+        }
     </style>
 @endsection
 @section('pagename')
@@ -17,14 +20,14 @@
         <section class="content">
             <div class="row" style="background-color: white">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Quản lý tài khoản người dùng</h1>
+                    <h1 class="page-header">Tài khoản bác sỹ</h1>
 
                     <div class="body-box">
                     <!--Create , Edit -->
                     <div style="margin:10px 0px 10px 0px">
                         <a href="/admin/users/create" type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-plus-sign"></span>
-                        Tạo tài khoản người dùng
+                        Tạo tài khoản mới
                         </a>   
                     </div>
 
@@ -41,17 +44,7 @@
                                 </select>
                             </div>                  
                         </div>
-                         <div class="col-sm-4">
-                            <div class="input-group">
-                                <span class="input-group-addon" title="Level">Loại người dùng</span>
-                                <select class="form-control">
-                                    <option value="TU">Quản trị hệ thống</option>
-                                    <option value="TP">Nhân viên bệnh viện</option>
-                                    <option value="TP">Bác sỹ</option>
-                                    <option value="HUYEN">Bệnh nhân</option>
-                                </select>
-                            </div>
-                        </div>
+                         <div class="col-sm-4"></div>
                         <div class="col-sm-4">
                             <form action="/search" method="POST" role="search">
                                 {{ csrf_field() }}
@@ -70,16 +63,17 @@
 
                     <!--Table content-->
                                         <!--Table content-->
-                    <div style="overflow-x:auto">
-                        <table class="table table-bordered table-hover">
+                    <div>
+                        <table id="doctor_table" class="table table-bordered table-hover">
                             <thead class="bg-info">
                                 <tr>
                                     <th>#</th>
                                     <th>Tên</th>
-                                    <th>Loại người dùng</th>
-                                    <th>Ngày sinh</th>
                                     <th>Bệnh viện</th>
+                                    <th>Khoa</th>
+                                    <th>Ngày sinh</th>
                                     <th>Tỉnh/TP</th>
+                                    <th>Đánh giá</th>
                                     <th>Thao tác</th>
                                 </tr>
                             </thead>
@@ -87,47 +81,62 @@
                                 <tr>
                                     <td>1</td>
                                     <td>Nguyễn Văn A</td>
-                                    <td>Quản trị hệ thống</td>
-                                    <td>19-2-1997</td>
                                     <td>Bạch Mai</td>
+                                    <td>Da liểu</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><span style="display: none">2</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>Nguyễn Văn B</td>
-                                    <td>Nhân viên bệnh viện</td>
-                                    <td>19-2-1997</td>
                                     <td>Bạch Mai</td>
+                                    <td>Hồi sức cấp cứu</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/users/staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Nguyễn Văn C</td>
-                                    <td>Bác sỹ</td>
-                                    <td>19-2-1997</td>
                                     <td>Bạch Mai</td>
+                                    <td>Da liễu</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><span style="display: none">4</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>Nguyễn Văn D</td>
-                                    <td>Bệnh nhân</td>
-                                    <td>19-2-1997</td>
                                     <td>Bạch Mai</td>
+                                    <td>Nội khoa</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/users/patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>Nguyễn Văn E</td>
-                                    <td>Bác sỹ</td>
-                                    <td>19-2-1997</td>
                                     <td>Bạch Mai</td>
+                                    <td>Ngoại khao</td>
+                                    <td>19-2-1997</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                             
                             </tbody>
@@ -163,4 +172,15 @@
     <script src="/adminlte/js/morris.min.js"></script>
     <script src="/adminlte/js/metisMenu.min.js"></script>
     <script src="/adminlte/js/startmin.js"></script>
+    <script>
+        $(function () {
+            $('#doctor_table').DataTable({
+                "bPaginate": false,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bInfo": false,
+                "bAutoWidth": false
+            });
+        })
+    </script>
 @endsection
