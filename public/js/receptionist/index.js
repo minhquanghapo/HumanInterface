@@ -27,7 +27,7 @@ function goToSection(i){
   $("#checkin-tabs li").eq(i).addClass("current").siblings().removeClass("current");
   setTimeout(function(){
     $("fieldset").eq(i).removeClass("next").addClass("current active");
-      if ($("fieldset.current").index() == 2){
+      if ($("fieldset.current").index() == 3    ){
         $("#next").hide();
         $("input[type=submit]").show();
       } else {
@@ -44,9 +44,18 @@ function nextSection(){
 
 
   var i = $("fieldset.current").index();
-  if (i < 3){
+  if (i < 4){
     $("li").eq(i+1).addClass("active");
     goToSection(i+1);
+  }
+
+  if(i==0){
+      alert("hello");
+      var video=document.querySelector("#videoElement_2");
+      navigator.getUserMedia=navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
+      if(navigator.getUserMedia){ navigator.getUserMedia({video:true},handleVideo,videoError); }
+      function handleVideo(stream){ video.srcObject = stream; }
+      function videoError(e){ }
   }
 }
  

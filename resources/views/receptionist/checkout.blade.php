@@ -9,7 +9,7 @@
         }
     </style>
 
-    <style> video { border-left:200px ;width:265px; height:200px; border:1px solid blue; } </style>
+    <style> video { border-left:200px ;width:100%; height:500px;} </style>
     {{--<style> #check_su_dung_bhyt { width:50px; height:50px; border:1px solid blue; } </style>--}}
 @endsectio  n
 @section('pagename')
@@ -17,14 +17,17 @@
     <form id="signup" action="somewhere" method="POST">
         <ul id="checkin-tabs">
             <li class="current active"><span>1.</span> thông tin bệnh nhân</li>
-            <li><span>2.</span> Thanh toán tiền ra viện</li>
-            <li><span>3.</span> Xuất hóa đơn </li>
+            <li><span>2.</span> Xác nhận đơn ra viện </li>
+            <li><span>3.</span> Thanh toán tiền ra viện</li>
+            <li><span>4.</span> Xuất hóa đơn </li>
         </ul>
         <div id="fieldsets">
 
             <fieldset class="current">
                 <div class="row"  >
-                    <div class="col-md-6"><video autoplay='true' id='videoElement'> </video><br></div>
+                   <div class="col-md-6"><video autoplay='true' id='videoElement'> </video><br></div>
+
+
 
 
                     <div class="col-md-6" id="doublecheckinfo">
@@ -61,6 +64,74 @@
                             </div>
                             <div class="col-sm-4">
                                 <input type="checkbox"  value="Boat">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </fieldset>
+
+            <fieldset class="next">
+                <div class="row"  >
+                    <div class="col-md-6">
+                        <div class="row"> <video autoplay='true' id='videoElement_2'> </video><br></div>
+                        <br>
+                        <div class="row" ><div class="col-md-3"></div>
+                            <div class="col-md-6"><div style="border: #5dade2 solid 2px; width: 30%; margin: auto; text-align: center;">
+                                    <div><i ><img src="/img/receptionist/camera_icon.png"/></i></div>
+                                    <div>Chụp đơn</div></div></div>
+                            </div>
+
+
+
+                    </div>
+
+
+                    <div class="col-md-6" id="doublecheckinfo">
+
+                        <div class="row">
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row">
+
+                                    <div> <select>
+                                            <option value="volvo">Khoa Tai mũi họng</option>
+                                            <option value="saab">Khoa phụ khoa</option>
+                                            <option value="mercedes">Khoa răng hàm mặt</option>
+                                            <option value="audi">Khoa y học phương đông</option>
+                                        </select> </div>
+
+                                    <br>
+                                </div>
+
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4" style="border: #5dade2 solid 2px; height: 164px;">
+                                            <div>Lê Thu Trang </div>
+                                            <div><img style="width: 80%"src="/img/receptionist/trang.png"/></div>
+                                        </div>
+                                        <div class="col-md-4" style="border: #5dade2 solid 2px; height: 164px;">
+                                            <div>Phan Mạnh Điệp </div>
+                                            <div><img style="width: 80%"src="/img/receptionist/diep.png"/></div>
+                                        </div>
+
+                                        <div class="col-md-4" style="border: #5dade2 solid 2px; height: 164px;">
+                                            <div>Phan Mạnh Điệp </div>
+                                            <div><img style="width:  80%"src="/img/receptionist/duc.png"/></div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <label class="label-big-check">
+                                    <input type="checkbox" value="1" name="option_1" id="option_1">
+                                    <label for="option_1" class="check-title">Xác nhận chữ ký bác sỹ</label>
+                                </label>
                             </div>
                         </div>
 
@@ -257,11 +328,18 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="/js/receptionist/index.js"></script>
 
-    <script> var video=document.querySelector("#videoElement");
+    <script>
+
+        var video=document.querySelector("#videoElement");
         navigator.getUserMedia=navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
         if(navigator.getUserMedia){ navigator.getUserMedia({video:true},handleVideo,videoError); }
         function handleVideo(stream){ video.srcObject = stream; }
-        function videoError(e){ } </script>﻿
+        function videoError(e){ }
+
+
+
+
+    </script>﻿
 
     <script>
         $('#so_bhyt').val('');
