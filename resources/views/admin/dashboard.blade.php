@@ -188,7 +188,7 @@
                                 <div class="input-group">
                                     <button type="button" class="btn btn-default pull-right" id="daterange-btn">
                                         <span>
-                                            <i class="fa fa-calendar"></i> Date range picker
+                                            <i class="fa fa-calendar"></i> Lọc theo...
                                         </span>
                                         <i class="fa fa-caret-down"></i>
                                     </button>
@@ -257,10 +257,16 @@
                         </div>
                         <div class="box-body">
                             <div class="chart">
-                                <canvas id="pieChart" style="height:250px"></canvas>
+                                <canvas id="pieChart" style="height:auto"></canvas>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-8">
+                    <div id="piechart" style="width:100%;heigh:auto"></div>
+                </div>
+                <div class="col-sm-8">
+                    <div id="piechart_bv" style="width:100%;heigh:auto"></div>
                 </div>
             </div>
             <!-- /.box -->
@@ -360,12 +366,11 @@
             $('#daterange-btn').daterangepicker(
               {
                 ranges   : {
-                  'Today'       : [moment(), moment()],
-                  'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                  'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                  'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-                  'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                  'Hôm nay'       : [moment(), moment()],
+                  'Hôm qua'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  '7 ngày qua' : [moment().subtract(6, 'days'), moment()],
+                  'tháng này'  : [moment().startOf('month'), moment().endOf('month')],
+                  'tháng vừa rồi'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 },
                 startDate: moment().subtract(29, 'days'),
                 endDate  : moment()
@@ -479,23 +484,23 @@
                     value    : 1400,
                     color    : '#dd4b39',
                     highlight: '#dd4b39',
-                    label    : 'Find doctors',
+                    label    : 'Tìm bác sĩ',
                     labelColor : 'white',
                     labelFontSize : '16'
                 },
+                // {
+                //     value    :100,
+                //     color    : '#efefef',
+                //     highlight: '#efefef',
+                //     label    : 'None',
+                //     labelColor : 'white',
+                //     labelFontSize : '16'
+                // },
                 {
-                    value    :100,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'None',
-                    labelColor : 'white',
-                    labelFontSize : '16'
-                },
-                {
-                value    : 900,
+                value    : 1000,
                     color    : '#f39c12',
                     highlight: '#f39c12',
-                    label    : 'Create calendar',
+                    label    : 'Tạo lịch',
                     labelColor : 'white',
                     labelFontSize : '16'
                 },
@@ -503,7 +508,7 @@
                 value    : 900,
                     color    : '#00a65a',
                     highlight: '#00a65a',
-                    label    : 'Sent request',
+                    label    : 'Gửi yêu cầu',
                     labelColor : 'white',
                     labelFontSize : '16'
                 }
@@ -588,6 +593,50 @@
                 drawBarChart();
             })
         })
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Bạch Mai',2200],
+          ['Việt Đức', 900],
+          ['Nhiệt Đới', 1500],
+          ['Xanh Pôn', 800],
+          ['108', 500],
+          ['Việt Xô', 700],
+          ['Khác', 200],
+        ]);
+
+        var data_bv = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Hà Nội',2200],
+          ['Thái Bình', 1200],
+          ['TP.Hồ Chí Minh', 3200],
+          ['TP.XYZ', 600],
+          ['TP.HHH', 800],
+          ['TP.KKK', 500],
+          ['Các BV khác...', 200],
+        ]);
+
+        var options = {
+          title: 'Bệnh Viện làm việc'
+        };
+
+        var options_bv = {
+          title: 'Khu vực hoạt động'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart_bv = new google.visualization.PieChart(document.getElementById('piechart_bv'));
+
+        chart.draw(data, options);
+        chart_bv.draw(data_bv, options_bv);
+      }
     </script>
 @endsection
 
