@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Find easily a doctor and book online an appointment">
 	<meta name="author" content="Ansonika">
-	<title>HI_03 Quy trình đặt lịch khám của bệnh nhân</title>
+	<title>HI_03 Bệnh nhân đặt lịch khám</title>
 
 	<!-- Favicons-->
 	<link rel="shortcut icon" href="{{ asset('HI_03/img/favicon.ico') }}" type="image/x-icon">
@@ -25,12 +25,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('HI_02/css/app.css') }}">
-    
+
     @yield('SPECIFIC CSS')
-    
+
 	<!-- YOUR CUSTOM CSS -->
 	<link href="{{ asset('HI_03/css/custom.css') }}" rel="stylesheet">
-	
+
 	<!-- Modernizr -->
 	<script src="{{ asset('HI_03/js/modernizr.js') }}"></script>
 
@@ -47,11 +47,11 @@
 	<!-- End Preload -->
 
     @include('HI_03.layouts.header')
-	<!-- /header -->	
-	
+	<!-- /header -->
+
 	@yield('content')
 	<!-- /main content -->
-	
+
 	@include('HI_03.layouts.footer')
 	<!--/footer-->
 

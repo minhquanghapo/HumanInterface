@@ -41,6 +41,7 @@
 									<h3>Bệnh viện Bạch Mai</h3>
 
 									<p>78 Đường Giải Phóng, Phương Đình, Đống Đa, Hà Nội</p>
+									<br>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -133,6 +134,7 @@
 								<div class="wrapper">
 									<h3>Bệnh viện Tai Mũi Họng Trung ương</h3>
 									<p>78 Giải Phóng, Phương Đình, Đống Đa, Hà Nội</p>
+									<br><br>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_4.svg') }}" width="15" height="15" alt=""></a>
 								</div>

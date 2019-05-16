@@ -3,10 +3,38 @@
 @section('SPECIFIC CSS')
     <link href="{{ asset('HI_03/css/date_picker.css') }}" rel="stylesheet">
     <link href="{{ asset('HI_03/css/progress_bar.css') }}" rel="stylesheet">
-    <!-- Stepper CSS -->
-    <link href="css/addons-pro/steppers.css" rel="stylesheet">
-    <!-- Stepper CSS - minified-->
-    <link href="css/addons-pro/steppers.min.css" rel="stylesheet">
+
+    <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
+    <style>
+        li.active > a{
+            background: #74d1c6!important;
+        }
+        .nav-pills li:hover > a{
+            background: #e74e84!important;
+            color: #fff!important;
+        }
+    </style>
+@endsection
+
+@section('SPECIFIC SCRIPTS')
+    <script src="{{ asset('HI_03/js/bootstrap-datepicker.js') }}"></script>
+    <script src='{{ asset('js/doctor/selectize.min.js')}}'></script>
+    <script src='{{ asset('js/doctor/select_index.js')}}'></script>
+    <script>
+        $('#calendar').datepicker({
+            todayHighlight: true,
+            daysOfWeekDisabled: [0],
+            weekStart: 1,
+            format: "yyyy-mm-dd",
+            datesDisabled: ["2017/10/20", "2017/11/21", "2017/12/21", "2018/01/21", "2018/02/21", "2018/03/21"],
+        });
+        
+        $('#select-symptom').selectize({
+            plugins: ['remove_button'],
+            delimiter: ',',
+            closeAfterSelect: true
+        });
+    </script>
 @endsection
 
 @section('content')
@@ -22,13 +50,29 @@
             </ul>
         </div>
     </div>
+        
     <div class="date_box add_bottom_45">
         <div class="main_title_4">
             <h3><i class="icon_circle-slelected"></i>Triệu chứng của bạn</h3>
         </div>
-        <div class="row add_bottom_30">
+        <div class="add_bottom_30">
             <div class="col-lg-12">
-                <input type="text" name="search" id="form-autocomplete" class="form-control mdb-autocomplete" placeholder="Triệu chứng...">
+                <div class="control-group">
+                    <select id="select-symptom" name="state[]" multiple class="demo-default" style="max-width: 100%"  placeholder="Nhập vào các triệu chứng bạn đang mắc phải...">
+                        <option value="">Chọn một triệu chứng...</option>
+                        <option value="Đau bụng">Đau bụng</option>
+                        <option value="Đau đầu">Đau đầu</option>
+                        <option value="Đau răng">Đau răng</option>
+                        <option value="Sốt cao">Sốt cao</option>
+                        <option value="Buồn nôn">Buồn nôn</option>
+                        <option value="Chóng mặt">Chóng mặt</option>
+                        <option value="Đau chân tay">Đau chân tay</option>
+                        <option value="Khó ngủ">Khó ngủ</option>
+                        <option value="Hay lo âu">Hay lo âu</option>
+                        <option value="Chán ăn">Chán ăn</option>
+                        <option value="Hay đầy hơi">Hay đầy hơi</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="main_title_4">
@@ -104,27 +148,4 @@
         </div>
     </div>
 </main>
-@endsection
-
-@section('SPECIFIC SCRIPTS')
-    <script src="{{ asset('HI_03/js/bootstrap-datepicker.js') }}"></script>
-	<script>
-		$('#calendar').datepicker({
-			todayHighlight: true,
-			daysOfWeekDisabled: [0],
-			weekStart: 1,
-			format: "yyyy-mm-dd",
-			datesDisabled: ["2017/10/20", "2017/11/21", "2017/12/21", "2018/01/21", "2018/02/21", "2018/03/21"],
-		});
-    </script>
-    <!-- Stepper JavaScript -->
-    <script type="text/javascript" src="js/addons-pro/stepper.js"></script>
-    <!-- Stepper JavaScript - minified -->
-    <script type="text/javascript" src="js/addons-pro/stepper.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('.stepper').mdbStepper();
-        })
-    </script>
 @endsection

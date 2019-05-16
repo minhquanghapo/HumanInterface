@@ -3,7 +3,15 @@
 
 @section('custom_css')
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
-
+    <style>
+        li.active > a{
+            background: #74d1c6!important;
+        }
+        .nav-pills li:hover > a{
+            background: #e74e84!important;
+            color: #fff!important;
+        }
+    </style>
 @endsection
 
 @section('custom_js2')
@@ -27,19 +35,22 @@
 @endsection
 
 @section('page_body')<div class="container">
+    <div class="title">
+        <h3>HI_01 Bác sĩ thực hiện một ca khám</h3>
+    </div>
     <div class="row form-group">
         <div class="col-xs-12">
-            <ul class="nav nav-pills nav-justified thumbnail setup-panel">
-                <li class="active"><a href="#step-1">
+            <ul class="process-nav nav nav-pills nav-justified thumbnail setup-panel">
+                <li id="st1" class="active passed"><a href="#step-1">
                         <p class="list-group-item-text">Thông tin bệnh nhân</p>
                     </a></li>
-                <li ><a href="#step-2">
+                <li id="st2"><a href="#step-2">
                         <p class="list-group-item-text">Tình trang bệnh</p>
                     </a></li>
-                <li class="disabled"><a href="#step-3">
+                <li class="disabled" id="st3"><a href="#step-3">
                         <p class="list-group-item-text">Chuẩn đoán và yêu cầu</p>
                     </a></li>
-                <li class="disabled"><a href="#step-4">
+                <li class="disabled" id="st4"><a href="#step-4">
                         <p class="list-group-item-text">Kết luận</p>
                     </a></li>
             </ul>
@@ -92,7 +103,6 @@
                         Từng mắc bệnh dạ dày ngày bé
                     </p>
                 </div>
-                <button id="activate-step-3" class="btn btn-primary btn-lg">Tiến hành khám</button>
             </div>
         </div>
     </div>
@@ -105,7 +115,7 @@
                         <td class="col-sm-9">
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter',100);" id="chuandoan" class="form-control" rows="5"  style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter',100);" id="chuandoan" class="form-control" rows="5"  style="padding-right:40px;resize: none"></textarea>
                             </div>
 
                         </td>
@@ -136,7 +146,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="table-responsive text-center">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -153,20 +163,20 @@
 
                     </tr>
                 </table>
-                <button id="activate-step-4" class="btn btn-primary btn-lg">Kết luận</button>
             </div>
         </div>
     </div>
     <div class="row setup-content" id="step-4">
         <div class="col-xs-12">
             <div class="col-md-12 well">
+                <button id="find_result" style="margin-bottom: 10px" data-toggle="modal" data-target="#findResultModal">Xem kết quả xét nghiệm</button>
                 <table class="table">
                     <tr>
                         <td><b>Kết luận bệnh</b></td>
                         <td class="col-sm-10">
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter1">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter1',100);" id="ketluan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter1',100);" id="ketluan" class="form-control" rows="5" style="padding-right:40px;resize: none"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -175,7 +185,7 @@
                         <td>
                             <div class="form-group" style="position:relative">
                                 <div style="position:absolute;right: 10px;top:5px"><span id="counter2">100</span>/100</div>
-                                <textarea onkeyup="textCounter(this,'counter2',100);" id="chuandoan" class="form-control" rows="5" style="padding-right:40px"></textarea>
+                                <textarea onkeyup="textCounter(this,'counter2',100);" id="chuandoan" class="form-control" rows="5" style="padding-right:40px;resize: none"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -245,7 +255,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="table-responsive text-center">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -273,10 +283,157 @@
                         </td>
                     </tr>
                 </table>
-                <button id="complete-btn" class="btn btn-primary btn-lg">Kết thúc ca khám</button>
+                <div class="pager">
+                    <button id="complete-btn">Kết thúc ca khám</button>
+                </div>
                 {{--<a href="/doctor" id="ketthuc" class="btn btn-primary btn-lg" style="margin-top: 10px" role="button">Kết thúc ca khám</a>--}}
             </div>
         </div>
+    </div>
+    <div class="pagination-btn">
+        <ul class="pager">
+            <li><button class="prev disabled">Quay lại</button></li>
+            <li><button class="next">Tiếp tục</button></li>
+
+        </ul>
+    </div>
+
+    <div id="print-form" style="display:none">
+        <div style="width: 80%;margin: auto">
+            <div class="title" style="text-align: center">
+                <h3>Bệnh viện quốc tế AS_K60</h3>
+                <h3>Khoa nội khoa</h3>
+                <h3>Đơn thuốc</h3>
+            </div>
+            <div class="info">
+                <table width="100%">
+                    <tr>
+                        <td><strong style="">Họ tên:</strong> Vũ Văn A</td>
+                        <td><strong>Tuổi</strong> 30</td>
+                        <td><strong>Giới tính</strong> Nam</td>
+                    </tr>
+                </table>
+                <p><strong>Địa chỉ:</strong> Hai Bà Trưng - Hà Nội</p>
+                <p><strong>Chẩn đoán:</strong> Đau dạ dày cấp tính</p>
+            </div>
+            <div id="prescription">
+                <p><strong>Đơn thuốc: </strong></p>
+                <table width="100%" style="text-align: center">
+                    <tr>
+                        <th>#</th>
+                        <th>Tên </th>
+                        <th>Số lượng</th>
+                        <th>Đơn vị</th>
+                        <th>Liều dùng</th>
+                        <th>Số lần / ngày</th>
+                        <th>Chỉ định</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Alaska</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arkansas</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Florida</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Connecticut</td>
+                        <td>30</td>
+                        <td>Viên</td>
+                        <td>2 Viên</td>
+                        <td>2</td>
+                        <td>Sau ăn</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-top: 30px">
+                <p><strong>Lời dặn:</strong> Khám lại sau 2 tuần</p>
+                <p>Khám lại xin mang theo đơn này.</p>
+            </div>
+            <div style="width: 50%;float: right;text-align: center">
+                <p>Ngày…… tháng…… năm 20.....</p>
+                <p>Bác sỹ/Y sỹ khám bệnh</p>
+                <p><i>(Ký, ghi rõ họ tên)</i></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="findResultModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Kết quả xét nghiêm</h4>
+            </div>
+            <div class="modal-body">
+                <p>Nhập tên bênh nhân:</p>
+                <div class="control-group">
+                    <select id="select-name" name="state[]" class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
+                        <option value="">Select a name...</option>
+                        <option value="Alabama">Nguyễn Văn A</option>
+                        <option value="Alaska">Nguyễn Văn B</option>
+                        <option value="Arizona">Lê Văn C</option>
+                        <option value="Arizona">Trần Văn C</option>
+                        <option value="Arizona">Nguyễn Văn D</option>
+                        <option value="Arizona">Nguyễn Mạnh C</option>
+                        <option value="Arizona">Nguyễn Mạnh D</option>
+                    </select>
+                </div>
+                <script>
+                    $('#select-name').selectize({
+
+                    });
+                </script>
+                <div id="info_history" style="display: none">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Tên xét nghiệm</th>
+                                <th>Kết quả </th>
+                            </tr>
+                            </thead>
+                            <tbody id="medicine_list" >
+                            <tr>
+                                <td>Xét nghiệm máu</td>
+                                <td>Bình thường</td>
+                            </tr>
+                            <tr>
+                                <td>Xét nghiệm nước tiểu</td>
+                                <td>Bình thường</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
 @endsection

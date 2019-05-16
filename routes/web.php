@@ -91,6 +91,8 @@ Route::get('/admin_hospital/doctors/add', "HospitalAdminController@doctor_add");
 Route::get('/admin_hospital/comment', "HospitalAdminController@review_comment");
 // Nhóm 2
 Route::get('/admin_hospital/urgent', "HospitalAdminController@urgent");
+Route::get('/admin_hospital/urgent/add', "HospitalAdminController@urgent_add");
+Route::get('/admin_hospital/urgent_sort', "HospitalAdminController@urgent_sort");
 // end Nhóm 2
 Route::get('/receptionist/', "NewPatient@index");
 Route::get('/receptionist/checkin', "NewPatient@checkin");
@@ -121,4 +123,7 @@ Route::get('/admin_hospital/doctors/schedule/add', "HospitalAdminController@doct
 Route::get('/admin_hospital/medicines', "HospitalAdminController@medicine_info");
 Route::get('/admin_hospital/medicines/edit', "HospitalAdminController@medicine_edit");
 Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_add");
+Route::get('/admin_hospital/services', "HospitalAdminController@service_info");
+Route::get('/admin_hospital/services/edit', "HospitalAdminController@service_edit");
+Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add");
 //}

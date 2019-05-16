@@ -79,19 +79,27 @@
             $("#superurgentdetailModal").modal("show");
         }
 
+        function openDetail2() {
+            $("#urgentModal").modal("hide");
+            $("#detailModal").modal("show");
+        }
+
         function openDenyUrgent() {
             $("#urgentModal").modal("hide");
             $("#urgentdetailModal").modal("hide");
             $("#denyModal").modal("show");
         }
 
-        function denyToUrgent() {
+        function backToUrgent() {
+            $("#superurgentdetailModal").modal("hide");
+            $("#urgentdetailModal").modal("hide");
+            $("#detailModal").modal("hide");
             $("#denyModal").modal("hide");
             $("#urgentModal").modal("show");
         }
 
-        function denyToUrgent() {
-            $("#denyModal").modal("hide");
+        function superToUrgent() {
+            $("#superurgentdetailModal").modal("hide");
             $("#urgentModal").modal("show");
         }
 
@@ -180,52 +188,68 @@
             checkboxes[i].checked = source.checked;
           }
         }
+
+        function addComment() {
+            document.getElementById("comment1").value += 'Tôi đang bận,  ';
+        }
+        function addComment1() {
+            document.getElementById("comment1").value += 'Lịch khám bị trùng không thể hủy,  ';
+        }
+        function addComment2() {
+            document.getElementById("comment1").value += 'Tôi đang không khỏe,  ';
+        }
     </script>
     <!-- end nhóm 2 -->
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-default" style="background: #fff;border: none" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>
-            </div>
-
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav nav-mobile">
-                    <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
-                    <li><a href="/doctor/login">Đăng xuất</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right nav-pc">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                            <img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">
-                            <span>BS.Lê Hoàng Vũ</span>
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
+<div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav nav-mobile">
+                            <li>
+                                <a href="/doctor">Trang chủ</a>
+                            </li>
                             <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
                             <li><a href="/doctor/login">Đăng xuất</a></li>
                         </ul>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span><span class="badge">3</span></button>
-            </div>
+                        <ul class="nav navbar-nav navbar-right nav-pc">
+                            <li>
+                                <a href="/doctor" style="line-height: 40px!important;">Trang chủ</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 0">
+                                    <img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">
+                                    <span>BS.Lê Hoàng Vũ</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
+                                    <li><a href="/doctor/login">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span><span class="badge">3</span></button>
 
-            <!-- /.navbar-collapse -->
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-</div>
+    </div>
 @yield('page_body')
 
 <div id="detailModal" class="modal fade" role="dialog">
@@ -292,9 +316,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                {{--<a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>--}}
-                <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
-                <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
+                <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -437,7 +459,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="urgentAccept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" onclick="superdenyForm()" class="btn btn-danger inbtn">Từ chối</button>
                                             </div>
                                         </div>
@@ -462,7 +484,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -487,7 +509,7 @@
                                         <div class="row">
                                             <div class="col-sm-7"><strong>Khám Gấp</strong></div>
                                             <div class="col-sm-5">
-                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 2px;">Chấp nhận</button>
+                                                <button type="button" onclick="accept()" class="btn btn-success inbtn" style="padding-left: 8px;">Chấp nhận</button>
                                                 <button type="button" id="remove-urgent" class="btn btn-danger inbtn" onclick="openDenyUrgent()">Từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
@@ -499,7 +521,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -512,7 +534,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Khám cháu giám đốc</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" onclick="openDetail()" class="btn mybtn"><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
+                                                <button type="button" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-remove"></span> Đã từ chối</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -523,7 +545,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -536,7 +558,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Bệnh nhân đã bị hủy hẹn nhiều lần</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
+                                                <button type="button" class="btn mybtn" disabled><span class="glyphicon glyphicon-ok"></span> Đã nhận</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -547,7 +569,7 @@
                                 </div>
                             </div>
                             <div class="row card">
-                                <div class="col-sm-12 incard" onclick="openDetail()">
+                                <div class="col-sm-12 incard" onclick="openDetail2()">
                                     <div class="col-sm-1">
                                         <input type="checkbox" disabled>
                                     </div>
@@ -560,7 +582,7 @@
                                         <div class="row">
                                             <div class="col-sm-8"><strong>Bệnh nhân đã chờ lâu</strong></div>
                                             <div class="col-sm-4">
-                                                <button type="button" class="btn mybtn"><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
+                                                <button type="button" class="btn mybtn" disabled=""><span class="glyphicon glyphicon-time"></span> Hết hạn</button>
                                             </div>
                                             <p>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
                                                     Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
@@ -647,13 +669,14 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="accept()" class="btn btn-success" style="padding-left: 2px;">Chấp nhận</button>
+                    <button type="button" onclick="accept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="openDenyUrgent()" class="btn btn-danger" onclick="openDenyUrgent()">Từ chối</button>
-                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div id="denyModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -664,14 +687,21 @@
                     <h4 class="modal-title">Từ chối ca khám khẩn cấp</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="comment">Ghi chú (lý do):</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="row" style="margin: 10px;">
+                        <div class="form-group">
+                            <label for="comment">Ghi chú (lý do):</label>
+                            <textarea class="form-control" rows="5" id="comment1"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 10px;">
+                        <button type="button" onclick="addComment()" value="" class="btn" style="margin: 5px;">Tôi đang bận</button>
+                        <button type="button" onclick="addComment1()" value="" class="btn" style="margin: 5px;">Trùng lịch khám</button>
+                        <button type="button" onclick="addComment2()" value="" class="btn" style="margin: 5px;">Tôi đang không khỏe</button>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" onclick="denyForm()" value="" class="btn btn-danger">Tiến hành từ chối</button>
-                    <button type="button" onclick="denyToUrgent();" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent();" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
 
@@ -733,9 +763,9 @@
                         </div>
                     </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 2px;">Chấp nhận</button>
+                    <button type="button" onclick="urgentAccept()" class="btn btn-success" style="padding-left: 8px;">Chấp nhận</button>
                     <button type="button" onclick="superdenyForm()" class="btn btn-danger">Từ chối</button>
-                    <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
+                    <button type="button" onclick="backToUrgent()" class="btn btn-primary">Quay lại</button>
                 </div>
             </div>
         </div>
