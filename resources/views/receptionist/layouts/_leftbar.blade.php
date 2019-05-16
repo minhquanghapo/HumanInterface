@@ -20,7 +20,7 @@
                 </a><i class=""></i>
             </li>
             <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
-                <a href="/receptionist/checkin">
+                <a href="/receptionist/checkout">
                     <i class="fa fa-sign-out " aria-hidden="true"></i>
                     <span>Thanh toán ra viện</span>
                 </a>
