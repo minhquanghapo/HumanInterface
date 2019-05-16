@@ -297,7 +297,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 08:00</strong></p>
+                                        <p><strong>17/05 08:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -319,7 +319,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 08:30</strong></p>
+                                        <p><strong>17/05 08:30</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -341,7 +341,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 09:00</strong></p>
+                                        <p><strong>17/05 09:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -363,7 +363,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 09:00</strong></p>
+                                        <p><strong>17/05 09:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -385,7 +385,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 09:30</strong></p>
+                                        <p><strong>17/05 09:30</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
@@ -407,7 +407,7 @@
                                         <input type="checkbox" disabled>
                                     </div>
                                     <div class="col-sm-2">
-                                        <p><strong>10/05 10:00</strong></p>
+                                        <p><strong>17/05 10:00</strong></p>
                                         <p>Vũ Văn A</p>
                                         <p>Nam - 30</p>
                                     </div>
