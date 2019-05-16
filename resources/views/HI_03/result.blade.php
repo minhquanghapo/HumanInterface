@@ -13,8 +13,6 @@
 		var search_type = "<?= $data['search_type'] ?>";
 	</script>
 	<main>
-		<form method="post" action="{{ route('result') }}">
-			@csrf
 			<div id="results">
 				<div class="container">
 					<div class="row">
@@ -22,9 +20,9 @@
 							<h4>Có <span id="result_count">6</span> lịch khám</h4>
 						</div>
 						<div class="col-md-4">
-								<div class="search_bar_list">
-								<input type="text" class="form-control" placeholder="<?= $data['search_value'] ?>">
-								<input type="submit" value="Tìm kiếm">
+							<div class="search_bar_list">
+								<input type="text" class="form-control" placeholder="Nhập mã lịch khám" id="search_data">
+								<input type="submit" value="Tìm kiếm" id="search_button_04">
 							</div>
 						</div>
 					</div>
@@ -38,13 +36,6 @@
 					<div class="container">
 						<ul class="clearfix">
 							<li>
-								<h6>Tìm kiếm theo</h6>
-								<div class="switch-field">
-									<input type="radio" id="phone_number" name="type_patient" value="phone_number" checked>
-									<label for="hospital">Bệnh viện</label>
-									<input type="radio" id="Code" name="type_patient" value="Code">
-									<label for="Code">Mã lịch khám</label>
-								</div>
 							</li>
 							<li>
 								<h6>Sắp xếp</h6>
@@ -60,7 +51,6 @@
 					<!-- /container -->
 			</div>
 			<!-- /filters -->
-		</form>
 		
 		
 		<div class="container margin_60_35">

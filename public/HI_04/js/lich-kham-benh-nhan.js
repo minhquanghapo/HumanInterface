@@ -49,14 +49,20 @@ function getResultView(array, sort_type = null){
 $("#search-result").html(getResultView(lich_kham));
 $(".add_top_20").hide();
 
-// function getDetailView(val){
-// 	var view = '';
-// 	view = '<div class="row"><div class="col-md-2"></div><div class="col-md-8" style="font-size: 20px"><div class="full-info-status"><h3>Ngày hẹn: ' + val["date"] +' &nbsp; Giờ: ' + val["time"] + '</h3><p><span>Mã lịch khám: '+ val["id"] +'</span><br><br><span>Ngày hẹn: '+ val["date"] +' &nbsp; Giờ: '+ val["time"] +'</span><br><span>Trạng thái: '+ getStatus(val["status"]) +'</span><br><br><span>Bệnh viện: '+ val["hospital"] +'</span><br><span>Phòng khám: '+ val["clinic"] +'</span><br><span>Bác sĩ: '+ val["doctor"] +'</span><br><span>Thứ tự: '+ val["no"] +'</span><br><br><span>Triệu chứng: '+ val["symptom"] +'</span></p></div><div class="col-md-2"></div></div>';
-// 	view += '</div><div class="button-row">';
-// 	if(val["status"] == "imcomplete") view += '<button type="button" class="btn btn-warning" style="margin-right: 20px; color: #fff" id="cancel-' + val["id"] + '">HỦY LỊCH</button>';
-// 	view += '<button type="button" class="btn btn-danger">THOÁT</button></div>';
-// 	return view;
-// }
+function search(data, array, sort_type = null){
+	var view = '';
+	if (data == 1 || data  == 2 || data == 3 || data == 4 || data == 5 || data == 6){
+		jQuery.each( array, function( i, val ) {
+			if(val["id"] == data) view += '<div class="col-md-6 info-container" id="'+ val["id"] +'"><div class="box_list wow fadeIn"><div class="wrapper wrapper-title"><h3>Ngày hẹn: ' + val["date"] +' &nbsp;Giờ: ' + val["time"] + '</h3></div><div class="wrapper"><table><tr><td>Mã số: ' + val["id"] + '</td><td>Bệnh viện: ' + val["hospital"] + '</td></tr><tr><td>Trạng thái: <span style="color: '+ getColor(val["status"]) +'">' + getStatus(val["status"]) + '</span></td><td>Phòng/Khoa: ' + val["clinic"] + '</td></tr><tr><td>Số thứ tự: ' + val["no"] + '</td><td>Bác sĩ: ' + val["doctor"] + '</td></tr></table></div></div></div>'
+		});
+	}
+	return view;
+}
+
+$('#search_button_04').click(function(){
+	var data = $('#search_data').val();
+	$("#search-result").html(search(data, lich_kham));
+})
 
 function getDetailView(val){
 	var view = '';
