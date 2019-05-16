@@ -64,125 +64,30 @@
 		
 		
 		<div class="container margin_60_35">
-			<h4>HI_04 Bệnh nhân, người nhà theo dõi lịch khám</h4>
+			<h4 style="margin-top: -40px">HI_04 Bệnh nhân, người nhà theo dõi lịch khám</h4>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="row" id="search-result">
-						<div class="col-md-4">
+						<div class="col-md-12">								
 							<div class="box_list wow fadeIn">
-								<div class="wrapper">
+								<div class="wrapper wrapper-title">
 									<h3>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</h3>
-
-									<p>
-										<span>Mã số: 44 &nbsp;&nbsp;&nbsp; Trạng thái: Chưa khám</span><br>
-										<span>Bệnh viện: bạch mai</span><br>
-										<span>Bác sĩ: abc</span><br>
-									</p>
 								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
 								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
+									<table>
+										<tr>
+											<td>Mã số</td>
+											<td>Bệnh viện</td>
+										</tr>
+										<tr>
+											<td>Trạng thái</td>
+											<td>Phòng/Khoa</td>
+										</tr>
+										<tr>
+											<td>Số thứ tự</td>
+											<td>Bác sĩ:</td>
+										</tr>
+									</table> 
 								</div>
 							</div>
 						</div>
@@ -217,7 +122,7 @@
 
 		<div class="full-info">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-8">
 					<div class="full-info-img">
 						<img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 					</div>
@@ -253,6 +158,6 @@
     <script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
-    <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>
+    <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>	
     <link href="{{ asset('HI_04/css/result.css') }}" rel="stylesheet">	
 @endsection

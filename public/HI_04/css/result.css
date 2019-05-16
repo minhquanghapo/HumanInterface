@@ -7,5 +7,27 @@ h6{
 }
 
 .full-info p, .full-info span{
-	font-size: 16px;
+	font-size: 18px;
+}
+
+.wrapper-title{
+	background-color: #3f4079;
+	color: #fff;
+}
+
+.wrapper-title h3{
+	color: #fff;
+}
+
+.wrapper p, .wrapper table{
+	font-size: 18px;
+	width: 100%;
+}
+
+.box_list .wrapper{
+	padding: 15px 25px;
+}
+
+.full-info .wrapper{
+	padding: 15px 25px;
 }
