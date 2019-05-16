@@ -440,9 +440,14 @@
             font-size: 1.5em;
         }
         
-        a {
+        .list-group a {
             color: black;
         }
+    }
+    
+    .btn-style {
+        padding: 15px 20px;
+        color: #fff !important;
     }
 }
 
@@ -460,4 +465,14 @@
     .show-more {
         text-align: center;
     }
+}
+
+.btn-style {
+    background: #74d1c6;
+    border: 2px solid #74d1c6;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 30px;
 }

@@ -131,7 +131,7 @@ button a:hover{
     margin-right: 0;
     float: right;
 }
-.btn {
+.pager button, #find_result{
     background: #74d1c6;
     border: 2px solid #74d1c6;
     color: #fff;
@@ -148,8 +148,14 @@ button a:hover{
     -ms-border-radius: 30px;
     border-radius: 30px;
 }
-.btn:hover {
-    background: #e74e84;
+.pager button.disabled{
+
+    background: #eee;
+    border: 2px solid #eee;
+    color: #808080;
+}
+.pager button:not(.disabled):hover ,#find_result:hover{
+    background: #e74e84!important;
     border: 2px solid #e74e84;
     color: #fff;
 }
@@ -164,4 +170,12 @@ button a:hover{
 li.passed > a{
     background: #74d1c6;
     color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+button{
+    outline: none;
 }

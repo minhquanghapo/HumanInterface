@@ -16,41 +16,86 @@ $(document).ready(function() {
             allWells.hide();
             $target.show();
         }
-        if(!($(this).parent().hasClass("disabled"))){
-            $current_step = $(this).parent().attr('id').split('st')[1];
-            for($i=1;$i<=4;$i++){
-                $id_st = "st"+$i;
-                if($("#"+$id_st).hasClass("passed")){
-                    $("#"+$id_st).removeClass("passed");
+        if(!$item.hasClass('disabled')){
+            var tmp = $item.attr('id');
+            if(tmp!=null){
+                $current_step = tmp.substring(2,3);
+                for($i=1;$i<=4;$i++){
+                    $id_st = "st"+$i;
+                    if($("#"+$id_st).hasClass("passed")){
+                        $("#"+$id_st).removeClass("passed");
+                    }
                 }
-            }
-            for($i=1;$i<$current_step;$i++){
-                $id_st = "st"+$i;
-                $("#"+$id_st).addClass("passed");
+                for($i=1;$i<=$current_step;$i++){
+                    $id_st = "st"+$i;
+                    $("#"+$id_st).addClass("passed");
+                }
             }
         }
     });
 
+    $(".pagination-btn button").on("click",function () {
+       if(!$(this).hasClass("disabled")){
+           var current_id = $(".process-nav li.active").attr('id');
+           var temp = parseInt(current_id.split('st')[1]);
+           if(temp == 2 || temp == 3){
+               // console.log($("ul.setup-panel li#st"+(temp+1)));
+               $("ul.setup-panel li#st"+(temp+1)).removeClass('disabled');
+           }
+           if($(this).hasClass("next")){
+               $("ul.setup-panel li#st"+(temp+1)+" a").trigger('click');
+               if(temp ==  1){
+                   $(".pagination-btn button.prev").removeClass("disabled");
+               }
+               else if(temp == 3){
+                   $(this).addClass("disabled");
+               }
+           }
+           else{
+               $("ul.setup-panel li#st"+(temp-1)+" a").trigger('click');
+               if(temp ==  4){
+                   $(".pagination-btn button.next").removeClass("disabled");
+               }
+               else if(temp == 2){
+                   $(this).addClass("disabled");
+               }
+           }
+
+
+       }
+    });
+
+    $("#st1 a").trigger('click');
     // $('ul.setup-panel li.active a').trigger('click');
 
-    // DEMO ONLY //
-    $('#activate-step-3').on('click', function(e) {
-        $('ul.setup-panel li:eq(2)').removeClass('disabled');
-        $('ul.setup-panel li a[href="#step-3"]').trigger('click');
-        $(this).remove();
-    })
-    $('#activate-step-4').on('click', function(e) {
-        $('ul.setup-panel li:eq(3)').removeClass('disabled');
-        $('ul.setup-panel li a[href="#step-4"]').trigger('click');
-        $(this).remove();
-    })
 
 
     $(document).on('click',"#complete-btn", function(e) {
+        // $("#prescription").html("<p><strong>Đơn thuốc: </strong></p>\n" +
+        //     "                <table width=\"100%\">\n" +
+        //     "                    <tr>\n" +
+        //     "                        <th>#</th>\n" +
+        //     "                        <th>Tên </th>\n" +
+        //     "                        <th>Số lượng</th>\n" +
+        //     "                        <th>Đơn vị</th>\n" +
+        //     "                        <th>Liều dùng</th>\n" +
+        //     "                        <th>Số lần / ngày</th>\n" +
+        //     "                        <th>Chỉ định</th>\n" +
+        //     "                    </tr>\n" +
+        //                         $("#medicine_list").html()+
+        //     "                </table>")
+        var newWin=window.open("");
+        newWin.document.open();
+        newWin.document.write('<html><body>'+$("#print-form").html()+'</body></html>');
+        newWin.print();
+        newWin.close();
         toastr["success"]("Ca khám kết thúc!");
         setTimeout(function(){ window.location = "/doctor"; }, 1000);
 
     })
 
+    $("#select-name").on("change",function () {
+        $("#info_history").css("display","block");
+    })
 });
 

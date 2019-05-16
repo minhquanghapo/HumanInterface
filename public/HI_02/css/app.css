@@ -47,6 +47,10 @@
   margin-bottom: 10px !important;
 }
 
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
 .margin-top-50 {
   margin-top: 50px !important;
 }
@@ -528,8 +532,13 @@
   font-size: 1.5em;
 }
 
-.article .relate-list a {
+.article .relate-list .list-group a {
   color: black;
+}
+
+.article .btn-style {
+  padding: 15px 20px;
+  color: #fff !important;
 }
 
 .detail-page .title {
@@ -542,5 +551,15 @@
 
 .detail-page .show-more {
   text-align: center;
+}
+
+.btn-style {
+  background: #74d1c6;
+  border: 2px solid #74d1c6;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 30px;
 }
 

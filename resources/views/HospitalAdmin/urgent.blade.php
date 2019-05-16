@@ -42,6 +42,11 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
   <link rel="stylesheet" href='{{asset("css/HI_06/reset.css")}}'> <!-- CSS reset -->
   <link rel="stylesheet" href='{{asset("css/HI_06/style.css")}}'> <!-- Resource style -->
+  <style type="text/css">
+    .navbar-custom-menu>.navbar-nav>li>.dropdown-menu{
+      width: 400px;
+    }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -69,76 +74,7 @@
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
             </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user3-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user4-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user3-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user4-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
+
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
@@ -153,28 +89,22 @@
                 <ul class="menu">
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <span class="glyphicon glyphicon-ok text-green"></span> Lịch khám Nguyễn Thị Linh - 10:30 đã được chấp nhận
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admin_hospital/urgent/add">
+                      <td><span class="glyphicon glyphicon-remove text-red"></span> Lịch khám Nguyễn Văn A - 8:30 đã bị từ chối
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
+                      <span class="glyphicon glyphicon-check text-green"></span> Lịch khám Nguyễn Thị Linh - 10:30 đã được thực hiện
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
+                      <span class="glyphicon glyphicon-time text-yellow"></span> Lịch khám Nguyễn Thị Linh - 10:30 đã hết hạn
                     </a>
                   </li>
                 </ul>
@@ -188,77 +118,7 @@
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
             </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small class="pull-right">40%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small class="pull-right">60%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small class="pull-right">80%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
+              
           </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
@@ -321,7 +181,7 @@
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
       <!-- search form -->
@@ -339,27 +199,27 @@
       <ul class="sidebar-menu" data-widget="tree">
           <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
               <a href="/admin_hospital">
-                  <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                  <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/doctors">
-                  <i class="fa fa-user-md"></i> <span>Doctor</span>
+                  <i class="fa fa-user-md"></i> <span>Bác sĩ</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/staffs">
-                  <i class="fa fa-user"></i> <span>Staff</span>
+                  <i class="fa fa-user"></i> <span>Nhân viên</span>
               </a>
           </li>
           <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
               <a href="/admin_hospital/medicines">
-                  <i class="fa fa-medkit"></i> <span>Medicine</span>
+                  <i class="fa fa-medkit"></i> <span>Thuốc</span>
               </a>
           </li>
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
               <a href="/admin_hospital/edit">
-                  <i class="fa fa-hospital-o"></i> <span>Hospital Information</span>
+                  <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
               </a>
           </li>
           <!-- Nhóm 2 -->
@@ -402,7 +262,7 @@
                   <div class="col-sm-3">
                     <a href="/admin_hospital/urgent/add" type="button" class="btn btn-default">
                       <span class="glyphicon glyphicon-plus-sign"></span>
-                       Tạo mới lịch khám khẩn cấp
+                       Thêm lịch khám khẩn cấp
                     </a>
                   </div>
                   <div class="col-sm-offset-6 col-sm-3">
@@ -422,10 +282,27 @@
                 <div class="col-sm-12">
                   <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                   <thead>
-                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">Họ Tên</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 60px;">Địa chỉ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 30px;">Giới tính</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 20px;">Tuổi</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 100px;">Tình trạng bệnh</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 80px;">Thời gian<a href="/admin_hospital/urgent" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 200px;">Trạng thái <a href="/admin_hospital/urgent_sort" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 30px;">Thao tác</th></tr>
+                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">Họ Tên</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 60px;">Địa chỉ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 30px;">Giới tính</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 20px;">Tuổi</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 100px;">Tình trạng bệnh</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 80px;">Thời gian<a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 200px;">Trạng thái <a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 30px;">Thao tác</th></tr>
                   </thead>
                   <tbody>
                   <tr role="row" class="odd" id="s1">
+                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="">Hà Nội</td>
+                  <td>Nữ</td>
+                  <td>30</td>
+                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>8:30</td>
+                  <td>Đang chờ <br> 5 người đã xem</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <tr role="row" class="odd" id="s1">
+                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="">Hà Nội</td>
+                  <td>Nữ</td>
+                  <td>30</td>
+                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>9:30</td>
+                  <td>Đang chờ <br> 3 người đã xem</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Thị Linh</td>
                   <td class="">Hà Nội</td>
@@ -433,8 +310,8 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>10:30</td>
-                  <td>Đang chờ</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <td>Đang chờ <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1 đã xem</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Thị Linh</td>
                   <td class="">Hà Nội</td>
@@ -442,8 +319,8 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-time"></span> Hết hạn</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <td><span class="glyphicon glyphicon-remove text-red"></span> Bị từ chối <br> Bác sĩ Hoàng Văn B - chuyên khoa 2 và 3 người khác</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Thị Linh</td>
                   <td class="">Hà Nội</td>
@@ -451,8 +328,8 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-ok"></span> Đã được nhận <br></td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <td><span class="glyphicon glyphicon-time text-yellow"></span> Hết hạn <br> 20 người đã xem</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Thị Linh</td>
                   <td class="">Hà Nội</td>
@@ -460,8 +337,8 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-remove"></span> Bị từ chối</td>
-                  <td><a href="{{ url()->current() }}/edit" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
+                  <td><span class="glyphicon glyphicon-ok text-green"></span> Đã được nhận <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" class="delbut glyphicon glyphicon-trash"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Thị Linh</td>
                   <td class="">Hà Nội</td>
@@ -469,7 +346,7 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>10:30</td>
-                  <td style="color: green">Đã thực hiện</td>
+                  <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span> Đã thực hiện <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1</td>
                   <td><a href="#" class="btn btn-primary" disabled>Sửa</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="delbut glyphicon glyphicon-trash"></a></td>
                   
                   </tr></tbody>

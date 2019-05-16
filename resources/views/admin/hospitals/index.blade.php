@@ -16,7 +16,7 @@
         <section class="content">
             <div class="row" style="background-color: white">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Hospitals manager</h1>
+                    <h1 class="page-header">Quản lý thông tin bệnh viện</h1>
 
                     <div class="body-box">
                         
@@ -24,7 +24,7 @@
                     <div style="margin:10px 0px 10px 0px">
                         <a href="/admin/hospitals/create" type="button" class="btn btn-default">
                         <span class="glyphicon glyphicon-plus-sign"></span>
-                         Create hospital
+                        Tạo
                         </a>
                     </div>
 
@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="input-group">
-                                <span class="input-group-addon"title="Show">Show</span>
+                                <span class="input-group-addon"title="Show">Hiển thị</span>
                                 <select class="form-control">
                                     <option value="5">5</option>
                                     <option value="10">10</option>
@@ -88,7 +88,7 @@
                                     <th>Địa chỉ</th>
                                     <th>Tuyến</th>
                                     <th>Tỉnh/TP</th>
-                                    <th>Action</th>
+                                    <th>Thao tác</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -98,7 +98,7 @@
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                             <tr>
                                     <td>2</td>
@@ -106,7 +106,7 @@
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -114,7 +114,7 @@
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -122,7 +122,7 @@
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -130,25 +130,25 @@
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
-                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Edit</a></td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="row">
                         <div class="col-sm-5">
-                            Showing 1 to 10 of 57 entries
+                            Hiển thị 1 to 10 of 57
                         </div>
                         <div class="col-sm-7">
                             <ul class="pagination">
-                                <li class="paginate_button previous disabled"><a href="#">Previous</a></li>
+                                <li class="paginate_button previous disabled"><a href="#">Trước</a></li>
                                 <li class="paginate_button active"><a href="#">1</a></li>
                                 <li class="paginate_button"><a href="#">2</a></li>
                                 <li class="paginate_button"><a href="#">3</a></li>
                                 <li class="paginate_button"><a href="#">4</a></li>
                                 <li class="paginate_button"><a href="#">5</a></li>
                                 <li class="paginate_button"><a href="#">6</a></li>
-                                <li class="paginate_button"><a href="#">Next</a></li>
+                                <li class="paginate_button"><a href="#">Tiếp</a></li>
                             </ul> 
                         </div>
                     </div>
