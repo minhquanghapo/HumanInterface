@@ -179,3 +179,20 @@ button:focus{
 button{
     outline: none;
 }
+
+#detailModal .nav-pills .active > a, #detailModal .btn-primary {
+    background: #74d1c6!important;
+    color: #fff!important;
+    border: none;
+}
+
+#detailModal .nav-pills  a:hover{
+    background: #e74e84!important;
+    color: #fff!important;
+}
+
+#detailModal .btn-danger{
+    background: #e74e84!important;
+    color: #fff!important;
+    border: none;
+}

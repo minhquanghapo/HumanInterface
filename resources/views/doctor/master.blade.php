@@ -169,7 +169,6 @@
                 {{--<a href="/doctor/examination" class="btn btn-primary" role="button">Bắt đầu ca khám</a>--}}
                 <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
                 <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
 
@@ -192,7 +191,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" id="accept-remove" value="" class="btn btn-danger">Tiến hành huỷ</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
             </div>
         </div>
 
@@ -237,7 +236,7 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" id="update-info" class="btn btn-primary">Cập nhật</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
             </div>
         </div>
 
@@ -270,7 +269,7 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" id="accept-pass" class="btn btn-primary">Cập nhật</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
             </div>
         </div>
 
@@ -430,7 +429,7 @@
                 <div class="modal-footer">
                     <input type="checkbox" disabled> Chọn tất cả &nbsp;&nbsp;
                     <button type="button" id="" class="btn btn-danger" disabled>Từ chối mục đã chọn</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
                 </div>
             </div>
 
@@ -502,7 +501,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="backto-urgent" class="btn btn-primary">Quay lại</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
                 </div>
             </div>
 
