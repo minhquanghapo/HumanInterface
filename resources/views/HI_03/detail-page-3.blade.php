@@ -12,13 +12,12 @@
             <div class="bar__container">
                 <ul class="bar" id="bar">
                     @if($appointment_type == "date")
-                        <li class="active">Chọn lịch khám</li>
-                        <li class="active">Chọn bệnh viện</li>
-                    @endif
-                    <li class="active">Chọn bác sĩ</li>
-                    @if($appointment_type == "date")
+                        <li class="active"><a href="{{ url('schedule') }}">Chọn lịch khám</a></li>
+                        <li class="active"><a href="{{ url('hospital/list') }}">Chọn bệnh viện</a></li>
+                        <li class="active"><a href="{{ url('hospital/show') }}">Chọn bác sĩ</a></li>
                         <li class="active">Chọn hình thức khám</li>
                     @elseif($appointment_type == "doctor")
+                        <li class="active"><a href="{{ url('grid-list') }}">Chọn bác sĩ</a></li>
                         <li class="active">Chọn lịch khám</li>
                     @endif
                     <li>Thanh toán</li>
@@ -74,7 +73,7 @@
                     <div class="tabs_styled_2">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true">Đặt lịch khám</a>
+                                <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-expanded="true"><b>Đặt lịch khám</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-expanded="true"><b>Thông tin bác sĩ</b></a>
@@ -361,7 +360,7 @@
                                     <hr>
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">
@@ -383,7 +382,7 @@
                                     <!-- End review-box -->
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">
@@ -405,7 +404,7 @@
                                     <!-- End review-box -->
 
                                     <div class="review-box clearfix">
-                                        <figure class="rev-thumb"><img src="http://via.placeholder.com/150x150.jpg"
+                                        <figure class="rev-thumb"><img src="{{ asset('HI_03/img/doctor/commentor.png') }}"
                                                                        alt="">
                                         </figure>
                                         <div class="rev-content">

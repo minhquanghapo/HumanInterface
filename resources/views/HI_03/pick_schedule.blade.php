@@ -6,9 +6,6 @@
 
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
     <style>
-        li.active > a{
-            background: #74d1c6!important;
-        }
         .nav-pills li:hover > a{
             background: #e74e84!important;
             color: #fff!important;
