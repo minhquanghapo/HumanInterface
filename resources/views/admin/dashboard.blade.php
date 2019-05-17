@@ -18,6 +18,9 @@
         .fa-star {
             color: #f4d742;
         }
+        .progress-group {
+            font-size: 20px;
+        }
     </style>
 @endsection
 @section('pagename')
@@ -117,7 +120,7 @@
             </div>
              <!-- BAR CHART -->
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="col-lg-7 col-md-7 col-sm-7">
                     <div class="box box-success">
                         <div class="box-header with-border">
                             <div class="box-title"><strong><i class="fa fa-calendar"></i> Giờ cao điểm trong ngày</strong></div>
@@ -141,9 +144,12 @@
                                     </li>
                                 </ul>
                                 <div class="chart">
-                                    <canvas id="lineChart" style="height:250px"></canvas>
+                                    <canvas id="lineChart" style="height:300px"></canvas>
                                 </div>
                             </div>
+                        </div>  
+                        <div class="overlay" id="overlay_hour" style="display: none">
+                            <i class="fa fa-refresh fa-spin"></i>
                         </div>
                     </div>
                     <div class="box box-success">
@@ -174,28 +180,44 @@
                                     </li>
                                 </ul>
                                 <div class="chart">
-                                    <canvas id="barChart" style="height:230px"></canvas>
+                                    <canvas id="barChart" style="height:300px"></canvas>
                                 </div>
                             </div>                              
+                        </div>
+                        <div class="overlay" id="overlay_calendar" style="display: none">
+                            <i class="fa fa-refresh fa-spin"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <div class="box-title"><strong>Phân bố bệnh viện</strong></div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="piechart_bv" style="width: 100%;"></div>
+{{--                                 <canvas id="pieChart" style="height:auto"></canvas> --}}
+                            </div>
+                        </div>
+                    </div>
                     <div class="box box-success">
                         <div class="box-header with-border">
                             <div class="box-title"><strong>Thống kê hoạt động</strong>
-                                <div class="input-group">
-                                    <button type="button" class="btn btn-default pull-right" id="daterange-btn">
-                                        <span>
-                                            <i class="fa fa-calendar"></i> Date range picker
-                                        </span>
-                                        <i class="fa fa-caret-down"></i>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                         <div class="box-body">
+                            <p>Hiện có 500 khách và 400 thành viên trực tuyến</p>
+                            <div class="input-group">
+                                <button type="button" class="btn btn-default pull-right" id="daterange-btn">
+                                    <span>
+                                        <i class="fa fa-calendar"></i> Lọc theo...
+                                    </span>
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                            </div>
+
                             <div class="progress-group">
                                 <span class="progress-text">Số lượt truy cập</span>
                                 <span class="progress-number"><b>1600</b></span>
@@ -206,7 +228,7 @@
                             </div>
                             <!-- /.progress-group -->
                             <div class="progress-group">
-                                <span class="progress-text">Số lượt tìm kiếm (93%)</span>
+                                <span class="progress-text">Số lượt tìm kiếm</span>
                                 <span class="progress-number"><b>1500</b></span>
 
                                 <div class="progress sm">
@@ -215,7 +237,7 @@
                             </div>
                             <!-- /.progress-group -->
                             <div class="progress-group">
-                                <span class="progress-text">Số lượt đặt lịch (67%)</span>
+                                <span class="progress-text">Số lượt đặt lịch</span>
                                 <span class="progress-number"><b>1220</b></span>
 
                                 <div class="progress sm">
@@ -224,7 +246,7 @@
                             </div>
                             <!-- /.progress-group -->
                             <div class="progress-group">
-                                <span class="progress-text">Gửi yêu cầu thành công (60%)</span>
+                                <span class="progress-text">Số yêu cầu gửi thành công</span>
                                 <span class="progress-number"><b>1150</b></span>
 
                                 <div class="progress sm">
@@ -233,39 +255,38 @@
                             </div>
                             <!-- /.progress-group -->
                         </div>
+                        <div class="overlay" id="overlay_bv" style="display: none">
+                            <i class="fa fa-refresh fa-spin"></i>
+                        </div>
                         <!-- /.box-body -->
                         {{-- <div class="box-footer">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <canvas id="pieChart1" style="height:250px"></canvas>
+                                    <canvas id="pieChart1" style="height:300px"></canvas>
                                     <p style="text-align: center;">Tìm bác sĩ</p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <canvas id="pieChart2" style="height:250px"></canvas>
+                                    <canvas id="pieChart2" style="height:300px"></canvas>
                                     <p style="text-align: center;">Đặt lịch</p>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <canvas id="pieChart3" style="height:250px"></canvas>
+                                    <canvas id="pieChart3" style="height:300px"></canvas>
                                     <p style="text-align: center;">Gửi yêu cầu</p>
                                 </div>
                             </div>
                         </div> --}}
                     </div>
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <div class="box-title"><strong>Phân loại ca khám</strong></div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="pieChart" style="height:250px"></canvas>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+{{--                 <div class="col-sm-8">
+                    <div id="piechart" style="width:100%;heigh:auto"></div>
+                </div>
+                <div class="col-sm-8">
+                    <div id="piechart_bv" style="width:100%;heigh:auto"></div>
+                </div> --}}
             </div>
             <!-- /.box -->
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="col-lg-7 col-md-7 col-sm-7">
                     <div class="box box-success">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-inbox"></i> <strong>Top bác sỹ được yêu thích</strong></h3>
@@ -356,21 +377,24 @@
     <script src="/adminlte/js/startmin.js"></script>
     <script>
         $(function() {
-            
+            $('#daterange-btn')
             $('#daterange-btn').daterangepicker(
               {
                 ranges   : {
-                  'Today'       : [moment(), moment()],
-                  'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                  'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-                  'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                  'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-                  'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                  'Hôm nay'       : [moment(), moment()],
+                  'Hôm qua'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                  '7 ngày qua' : [moment().subtract(6, 'days'), moment()],
+                  'tháng này'  : [moment().startOf('month'), moment().endOf('month')],
+                  'tháng vừa rồi'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 },
                 startDate: moment().subtract(29, 'days'),
                 endDate  : moment()
               },
               function (start, end) {
+                $('#overlay_bv').css("display", "block")
+                setTimeout(function () {
+                    $('.overlay').css("display", "none")
+                }, 1000)
                 $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
               }
             )
@@ -472,30 +496,30 @@
             //- PIE CHART -
             //-------------
             // Get context with jQuery - using jQuery's .get() method.
-            var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-            var pieChart       = new Chart(pieChartCanvas)
+            // var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+            // var pieChart       = new Chart(pieChartCanvas)
             var PieData        = [
                 {
                     value    : 1400,
                     color    : '#dd4b39',
                     highlight: '#dd4b39',
-                    label    : 'Find doctors',
+                    label    : 'Tìm bác sĩ',
                     labelColor : 'white',
                     labelFontSize : '16'
                 },
+                // {
+                //     value    :100,
+                //     color    : '#efefef',
+                //     highlight: '#efefef',
+                //     label    : 'None',
+                //     labelColor : 'white',
+                //     labelFontSize : '16'
+                // },
                 {
-                    value    :100,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'None',
-                    labelColor : 'white',
-                    labelFontSize : '16'
-                },
-                {
-                value    : 900,
+                value    : 1000,
                     color    : '#f39c12',
                     highlight: '#f39c12',
-                    label    : 'Create calendar',
+                    label    : 'Tạo lịch',
                     labelColor : 'white',
                     labelFontSize : '16'
                 },
@@ -503,7 +527,7 @@
                 value    : 900,
                     color    : '#00a65a',
                     highlight: '#00a65a',
-                    label    : 'Sent request',
+                    label    : 'Gửi yêu cầu',
                     labelColor : 'white',
                     labelFontSize : '16'
                 }
@@ -537,8 +561,8 @@
             }
             //Create pie or douhnut chart
             // You can switch between pie and douhnut using the method below.
-            pieChart.Doughnut(PieData, pieOptions)
-            
+            // pieChart.Doughnut(PieData, pieOptions)
+             
             //-------------
             //- BAR CHART -
             //-------------
@@ -588,6 +612,48 @@
                 drawBarChart();
             })
         })
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Bạch Mai',2200],
+          ['Việt Đức', 900],
+          ['Nhiệt Đới', 1500],
+          ['Xanh Pôn', 800],
+          ['108', 500],
+          ['Việt Xô', 700],
+          ['Khác', 200],
+        ]);
+
+        var data_bv = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Hà Nội',2200],
+          ['Hồ Chí Minh', 3200],
+          ['Thái Bình', 1200],
+          ['Khác', 200],
+        ]);
+
+        var options = {
+          title: 'Bệnh Viện làm việc'
+        };
+
+        var options_bv = {
+            fontSize: 18,
+            chartArea: {width: 500, height: 300}
+        };
+
+        // var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart_bv = new google.visualization.PieChart(document.getElementById('piechart_bv'));
+
+        // chart.draw(data, options);
+        chart_bv.draw(data_bv, options_bv);
+      }
     </script>
 @endsection
 

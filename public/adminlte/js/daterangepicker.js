@@ -69,10 +69,10 @@
             direction: 'ltr',
             format: moment.localeData().longDateFormat('L'),
             separator: ' - ',
-            applyLabel: 'Apply',
-            cancelLabel: 'Cancel',
+            applyLabel: 'Áp dụng',
+            cancelLabel: 'Hủy bỏ',
             weekLabel: 'W',
-            customRangeLabel: 'Custom Range',
+            customRangeLabel: 'Tùy chọn',
             daysOfWeek: moment.weekdaysMin(),
             monthNames: moment.monthsShort(),
             firstDay: moment.localeData().firstDayOfWeek()
@@ -874,7 +874,7 @@
 
             if (side == 'left') {
                 selected = this.startDate.clone();
-                minDate = this.minDate;
+                minDate = this.minDate;sss
             } else if (side == 'right') {
                 selected = this.endDate.clone();
                 minDate = this.startDate;
