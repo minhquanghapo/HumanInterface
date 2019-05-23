@@ -73,9 +73,9 @@ $(function () {
     }
 
     /**
-     * Toggles layout classes
+     * Toggles layouts classes
      *
-     * @param String cls the layout class to toggle
+     * @param String cls the layouts class to toggle
      * @returns void
      */
     function changeLayout(cls) {
@@ -121,8 +121,8 @@ $(function () {
             changeSkin($(this).data('skin'))
         })
 
-        // Add the layout manager
-        $('[data-layout]').on('click', function () {
+        // Add the layouts manager
+        $('[data-layouts]').on('click', function () {
             changeLayout($(this).data('layout'))
         })
 
@@ -150,18 +150,18 @@ $(function () {
             $(this).attr('disabled', true)
             $pushMenu.expandOnHover()
             if (!$('body').hasClass('sidebar-collapse'))
-                $('[data-layout="sidebar-collapse"]').click()
+                $('[data-layouts="sidebar-collapse"]').click()
         })
 
         //  Reset options
         if ($('body').hasClass('fixed')) {
-            $('[data-layout="fixed"]').attr('checked', 'checked')
+            $('[data-layouts="fixed"]').attr('checked', 'checked')
         }
         if ($('body').hasClass('layout-boxed')) {
-            $('[data-layout="layout-boxed"]').attr('checked', 'checked')
+            $('[data-layouts="layouts-boxed"]').attr('checked', 'checked')
         }
         if ($('body').hasClass('sidebar-collapse')) {
-            $('[data-layout="sidebar-collapse"]').attr('checked', 'checked')
+            $('[data-layouts="sidebar-collapse"]').attr('checked', 'checked')
         }
 
     }
@@ -191,26 +191,26 @@ $(function () {
         '<h4 class="control-sidebar-heading">'
         + 'Layout Options'
         + '</h4>'
-        // Fixed layout
+        // Fixed layouts
         + '<div class="form-group">'
         + '<label class="control-sidebar-subheading">'
-        + '<input type="checkbox"data-layout="fixed"class="pull-right"/> '
-        + 'Fixed layout'
+        + '<input type="checkbox"data-layouts="fixed"class="pull-right"/> '
+        + 'Fixed layouts'
         + '</label>'
-        + '<p>Activate the fixed layout. You can\'t use fixed and boxed layouts together</p>'
+        + '<p>Activate the fixed layouts. You can\'t use fixed and boxed layouts together</p>'
         + '</div>'
-        // Boxed layout
+        // Boxed layouts
         + '<div class="form-group">'
         + '<label class="control-sidebar-subheading">'
-        + '<input type="checkbox"data-layout="layout-boxed" class="pull-right"/> '
+        + '<input type="checkbox"data-layouts="layouts-boxed" class="pull-right"/> '
         + 'Boxed Layout'
         + '</label>'
-        + '<p>Activate the boxed layout</p>'
+        + '<p>Activate the boxed layouts</p>'
         + '</div>'
         // Sidebar Toggle
         + '<div class="form-group">'
         + '<label class="control-sidebar-subheading">'
-        + '<input type="checkbox"data-layout="sidebar-collapse"class="pull-right"/> '
+        + '<input type="checkbox"data-layouts="sidebar-collapse"class="pull-right"/> '
         + 'Toggle Sidebar'
         + '</label>'
         + '<p>Toggle the left sidebar\'s state (open or collapse)</p>'

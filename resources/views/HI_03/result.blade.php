@@ -1,4 +1,4 @@
-<!-- This file is of group HI_04, please not change this file -->
+<!-- This file is belong to group HI_04, please not change this file -->
 @extends('HI_03.layouts.master')
 
 @section('SPECIFIC CSS')
@@ -8,179 +8,76 @@
 
 
 @section('content')
+	<script>
+		var search_value = "<?= $data['search_value'] ?>";
+		var search_type = "<?= $data['search_type'] ?>";
+	</script>
 	<main>
-		<div id="results">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h4><strong>Showing 6</strong> of 18 results</h4>
-					</div>
-					<div class="col-md-4">
+			<div id="results">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h4>Có <span id="result_count">6</span> lịch khám</h4>
+						</div>
+						<div class="col-md-4">
 							<div class="search_bar_list">
-							<input type="text" class="form-control" placeholder="">
-							<input type="submit" value="Search">
+								<input type="text" class="form-control" placeholder="Nhập mã lịch khám" id="search_data">
+								<input type="submit" value="Tìm kiếm" id="search_button_04">
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /results -->
-		
-		<div class="filters_listing">
-				<div class="container">
-					<ul class="clearfix">
-						<li>
-							<h6>Type</h6>
-							<div class="switch-field">
-								<input type="radio" id="phone_number" name="type_patient" value="phone_number" checked>
-								<label for="phone_number">Phone number</label>
-								<input type="radio" id="email" name="type_patient" value="email">
-								<label for="email">Email</label>
-								<input type="radio" id="Code" name="type_patient" value="Code">
-								<label for="Code">Code</label>
-							</div>
-						</li>
-						<li>
-							<h6>Sort by</h6>
-							<select name="orderby" class="selectbox">
-							<option value="Closest">Closest</option>
-							<option value="Completed">Completed</option>
-							<option value="Incomplete">Incomplete</option>
-							</select>
-						</li>
-					</ul>
+					<!-- /row -->
 				</div>
 				<!-- /container -->
-		</div>
-		<!-- /filters -->
+			</div>
+			<!-- /results -->
+			
+			<div class="filters_listing">
+					<div class="container">
+						<ul class="clearfix">
+							<li>
+							</li>
+							<li>
+								<h6>Sắp xếp</h6>
+								<select name="orderby" class="selectbox" id="sort-box">
+									<option value="all">Tất cả</option>
+									<option value="imcomplete">Chưa xong</option>
+									<option value="completed">Đã xong</option>
+									<option value="canceled">Đã hủy</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+					<!-- /container -->
+			</div>
+			<!-- /filters -->
+		
 		
 		<div class="container margin_60_35">
+			<h4 style="margin-top: -40px">HI_04 Bệnh nhân, người nhà theo dõi lịch khám</h4>
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="row" id="search-result">
-						<div class="col-md-4">
+						<div class="col-md-12">								
 							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
+								<div class="wrapper wrapper-title">
+									<h3>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</h3>
 								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
 								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<!-- /box_list -->
-
-						<div class="col-md-4">
-							<div class="box_list wow fadeIn">
-								<figure>
-									<div><img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
-										<div class="preview"><span>Read more</span></div>
-									</div>
-								</figure>
-								<div class="wrapper">
-									<small>Tai - Mũi - Họng</small>
-									<h3>Dr. Sickman</h3>
-
-									<p>
-										<span>Ngày hẹn: 25/4/2019 &nbsp; Giờ: 9:00</span><br>
-										<span>Trạng thái: Chưa khám</span><br>
-										<span>Mã số: 44</span><br>
-									</p>
+									<table>
+										<tr>
+											<td>Mã số</td>
+											<td>Bệnh viện</td>
+										</tr>
+										<tr>
+											<td>Trạng thái</td>
+											<td>Phòng/Khoa</td>
+										</tr>
+										<tr>
+											<td>Số thứ tự</td>
+											<td>Bác sĩ:</td>
+										</tr>
+									</table> 
 								</div>
 							</div>
 						</div>
@@ -215,7 +112,7 @@
 
 		<div class="full-info">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-8">
 					<div class="full-info-img">
 						<img src="http://via.placeholder.com/565x565.jpg" class="img-fluid" alt="">
 					</div>
@@ -251,5 +148,6 @@
     <script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
     <script src="{{ asset('HI_03/js/infobox.js') }}"></script>
-    <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>
+    <script src="{{ asset('HI_04/js/lich-kham-benh-nhan.js') }}"></script>	
+    <link href="{{ asset('HI_04/css/result.css') }}" rel="stylesheet">	
 @endsection

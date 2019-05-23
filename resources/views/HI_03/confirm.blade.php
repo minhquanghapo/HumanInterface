@@ -5,9 +5,10 @@
 		<div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Category</a></li>
-					<li>Page active</li>
+					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
+					<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Thông tin bác sĩ</a></li>
+					<li>Đặt lịch</li>
 				</ul>
 			</div>
 		</div>
@@ -25,8 +26,8 @@
 								</g>
 							</svg>
 						</div>
-					<h2>Thanks for your booking!</h2>
-					<p>You'll receive a confirmation email at mail@example.com</p>
+					<h2>Cảm ơn vì đã sử dụng dịch vụ!</h2>
+					<p>Email xác nhận sẽ được gửi đến hộp thư của bạn. Xin hãy kiểm tra và bấm vào đường dẫn trong thư để hoàn tất thủ tục.</p>
 					</div>
 				</div>
 			</div>

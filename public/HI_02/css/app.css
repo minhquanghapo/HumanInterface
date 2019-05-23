@@ -34,6 +34,35 @@
   }
 }
 
+.text-blue {
+  color: #74d1c6;
+}
+
+.margin-25 {
+  margin: 25px !important;
+}
+
+.margin-tb-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-top-50 {
+  margin-top: 50px !important;
+}
+
+.padding-top-50 {
+  padding-top: 50px !important;
+}
+
+.padding-top-100 {
+  padding-top: 100px !important;
+}
+
 .need-help {
   display: none;
   z-index: 10001;
@@ -440,5 +469,97 @@
 
 .tutorial-icons .tutorial-icon.close {
   display: none;
+}
+
+.disease-search {
+  background: #f5f8fa;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.disease-search .search-box {
+  padding-bottom: 50px;
+}
+
+.disease-search .search-box > h3 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.disease-search .result {
+  text-align: left;
+}
+
+.disease-search .result .result-list {
+  overflow-y: auto;
+}
+
+.disease-search .result .result-list h3 {
+  font-size: 2em;
+}
+
+.disease-search .result .result-list .btn {
+  background: #74d1c6;
+  border: 2px solid #74d1c6;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 30px;
+}
+
+.article .detail-footer .title {
+  font-style: italic;
+}
+
+.article .detail-footer .doctor figure {
+  height: auto;
+}
+
+.article .relate-list {
+  position: relative;
+  padding-top: 60px;
+}
+
+.article .relate-list .position-fixed {
+  position: fixed;
+}
+
+.article .relate-list .head {
+  font-size: 1.5em;
+}
+
+.article .relate-list .list-group a {
+  color: black;
+}
+
+.article .btn-style {
+  padding: 15px 20px;
+  color: #fff !important;
+}
+
+.detail-page .title {
+  font-style: italic;
+}
+
+.detail-page .doctor figure {
+  height: auto;
+}
+
+.detail-page .show-more {
+  text-align: center;
+}
+
+.btn-style {
+  background: #74d1c6;
+  border: 2px solid #74d1c6;
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 30px;
 }
 
