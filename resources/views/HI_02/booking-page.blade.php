@@ -1,5 +1,9 @@
 @extends('HI_03.layouts.master')
 
+ @section('title')
+    HI_02 Tu van dat lich kham
+ @endsection
+
 @section('content')
 	<main>
 		<div id="breadcrumb">
