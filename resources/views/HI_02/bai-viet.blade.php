@@ -1,5 +1,9 @@
 @extends('HI_03.layouts.master')
 
+ @section('title')
+    HI_02 Tu van dat lich kham
+ @endsection
+
 @section('SPECIFIC CSS')
     <link href="{{ asset('HI_02/css/app.css') }}" rel="stylesheet">
 @endsection
