@@ -53,53 +53,89 @@
     <!-- end nhóm 2 -->
 </head>
 <body>
-    <div class="header">
+    {{--<div class="header">--}}
+        {{--<div class="container">--}}
+            {{--<nav class="navbar navbar-default" role="navigation">--}}
+                {{--<div class="container-fluid">--}}
+                    {{--<div class="navbar-header">--}}
+                        {{--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">--}}
+                            {{--<span class="sr-only">Menu</span>--}}
+                            {{--<span class="icon-bar"></span>--}}
+                            {{--<span class="icon-bar"></span>--}}
+                            {{--<span class="icon-bar"></span>--}}
+                        {{--</button>--}}
+                        {{--<a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>--}}
+                    {{--</div>--}}
+                    {{--<!-- Collect the nav links, forms, and other content for toggling -->--}}
+                    {{--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">--}}
+                        {{--<ul class="nav navbar-nav nav-mobile">--}}
+                            {{--<li>--}}
+                                {{--<a href="/doctor">Trang chủ</a>--}}
+                            {{--</li>--}}
+                            {{--<li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>--}}
+                            {{--<li><a href="/doctor/login">Đăng xuất</a></li>--}}
+                        {{--</ul>--}}
+                        {{--<ul class="nav navbar-nav navbar-right nav-pc">--}}
+                            {{--<li>--}}
+                                {{--<a href="/doctor" style="line-height: 40px!important;">Trang chủ</a>--}}
+                            {{--</li>--}}
+                            {{--<li class="dropdown">--}}
+                                {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 0">--}}
+                                    {{--<img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">--}}
+                                    {{--<span>BS.Lê Hoàng Vũ</span>--}}
+                                    {{--<span class="caret"></span>--}}
+                                {{--</a>--}}
+                                {{--<ul class="dropdown-menu">--}}
+                                    {{--<li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>--}}
+                                    {{--<li><a href="/doctor/login">Đăng xuất</a></li>--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
+                        {{--<button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span></button> --}}
+
+                    {{--</div>--}}
+                    {{--<!-- /.navbar-collapse -->--}}
+                {{--</div>--}}
+                {{--<!-- /.container-fluid -->--}}
+            {{--</nav>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+    <nav class="navbar navbar-default">
         <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Menu</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/doctor"><img src="{{asset('HI_03/img/logo.png')}}" alt=""></a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav nav-mobile">
-                            <li>
-                                <a href="/doctor">Trang chủ</a>
-                            </li>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">
+                    <img src="{{asset('HI_03/img/logo.png')}}" alt="logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Lịch làm việc</a></li>
+                    <li><a href="#">Lịch sử khám</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#urgentModal">Lịch khám khẩn cấp</a></li>
+                    <li class="dropdown" style="height: 50px">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 0;line-height: 50px">
+                            <img src="{{ asset('HI_03/img/doctor/avatar.png') }}" alt="" style="width: 35px">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
                             <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
+                            <li role="separator" class="divider"></li>
                             <li><a href="/doctor/login">Đăng xuất</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right nav-pc">
-                            <li>
-                                <a href="/doctor" style="line-height: 40px!important;">Trang chủ</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 0">
-                                    <img src="{{asset('img/avatar.jpg')}}" class="img-circle" style="height: 40px;border: 1px solid" alt="Cinque Terre">
-                                    <span>BS.Lê Hoàng Vũ</span>
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" data-toggle="modal" data-target="#infoModal">Thông tin cá nhân</a></li>
-                                    <li><a href="/doctor/login">Đăng xuất</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-primary notification navbar-right" data-toggle="modal" data-target="#urgentModal" style="margin: 20px;"><span>Thông báo khám khẩn cấp</span></button> 
-
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
-    </div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 @yield('page_body')
 
 <div id="detailModal" class="modal fade" role="dialog">

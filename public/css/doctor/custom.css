@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i,800");
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i,800");*/
 
 body{
     background: #f5f8fa;
@@ -23,10 +23,6 @@ button a{
 button a:hover{
     text-decoration: none;
     color: #fff;
-}
-.header{
-    background: #fff;
-    padding-bottom: 10px;
 }
 @media (max-width: 992px) {
 
@@ -195,4 +191,13 @@ button{
     background: #e74e84!important;
     color: #fff!important;
     border: none;
+}
+
+.navbar li.active>a{
+    background: #74d1c6!important;
+    color: #fff!important;
+}
+
+.dropdown-menu{
+    z-index: 1000;
 }
