@@ -437,3 +437,7 @@
     </div>
 </div>
 @endsection
+
+@section('page-title')
+    HI_01_Thực hiện ca khám
+@endsection

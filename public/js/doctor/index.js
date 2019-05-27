@@ -1,12 +1,14 @@
 
 $(document).ready(function() {
+    $("#schedule_nav").addClass('active');
+    $("#history_nav").removeClass('active');
     $('#calendar_picker').datepicker({
         language: "vi",
         todayHighlight: true,
         format: "yyyy-mm-dd",
         todayBtn: "linked",
     });
-    $('#calendar_picker').datepicker('setDate', 'today');
+    $('#calendar_picker').datepicker('setDate', new Date());
     $picked_date = $('#calendar_picker').datepicker('getDate');
 
     $('#calendar_picker').datepicker().on('changeDate', function (e) {
@@ -339,8 +341,18 @@ $(document).ready(function() {
         },
         viewRender: function () {
             if($('#calendar').fullCalendar('getView').name == 'listDay'){
-                $picked_date=$('#calendar').fullCalendar('getView').start._d;
+                $picked_date=$('#calendar').fullCalendar('getView').start.format("YYYY-MM-DD");
+                $current_date = $picked_date;
                 $('#calendar_picker').datepicker('setDate', $picked_date);
+                $list_event = $("#calendar").fullCalendar('clientEvents');
+                $count = 0;
+                for($i=0;$i<$list_event.length;$i++){
+                    $event = $list_event[$i];
+                    if(($current_date == $event.start.format("YYYY-MM-DD"))){
+                        $count +=1;
+                    }
+                };
+                $("#count_examination").html($count);
             }
         },
         dayClick: function (date) {
