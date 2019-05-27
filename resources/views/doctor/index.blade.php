@@ -40,3 +40,7 @@
     <script src="{{ asset('js/doctor/bootstrap-datepicker.vi.min.js') }}"></script>
 
 @endsection
+
+@section('page-title')
+    HI_01_Bác sĩ quản lý lịch làm việc
+    @endsection

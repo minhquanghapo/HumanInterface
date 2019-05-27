@@ -9,6 +9,11 @@ class DoctorController extends Controller
     public function index(){
         return view('doctor.index');
     }
+
+    public function history(){
+        return view('doctor.history');
+    }
+
     // nhóm 2
     public function urgent(){
         return view('doctor.urgent');

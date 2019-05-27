@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>HI_01_Bác sĩ quản lý lịch làm việc</title>
+    <title>@yield('page-title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='{{asset('css/bootstrap.min.css')}}' rel='stylesheet' />
     <link href='{{asset('css/doctor/toastr.min.css')}}' rel='stylesheet'/>
@@ -110,7 +110,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="/doctor">
                     <img src="{{asset('HI_03/img/logo.png')}}" alt="logo">
                 </a>
             </div>
@@ -118,8 +118,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Lịch làm việc</a></li>
-                    <li><a href="#">Lịch sử khám</a></li>
+                    <li id="schedule_nav" class="active"><a href="/doctor">Lịch làm việc</a></li>
+                    <li id="history_nav"><a href="/doctor/history">Lịch sử khám</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#urgentModal">Lịch khám khẩn cấp</a></li>
                     <li class="dropdown" style="height: 50px">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 0;line-height: 50px">

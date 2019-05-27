@@ -1,12 +1,14 @@
 
 $(document).ready(function() {
+    $("#schedule_nav").addClass('active');
+    $("#history_nav").removeClass('active');
     $('#calendar_picker').datepicker({
         language: "vi",
         todayHighlight: true,
         format: "yyyy-mm-dd",
         todayBtn: "linked",
     });
-    $('#calendar_picker').datepicker('setDate', 'today');
+    $('#calendar_picker').datepicker('setDate', new Date());
     $picked_date = $('#calendar_picker').datepicker('getDate');
 
     $('#calendar_picker').datepicker().on('changeDate', function (e) {
