@@ -292,59 +292,59 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>8:30</td>
-                  <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span>Nguyễn Văn A - chuyên khoa 1</td>Bác Sĩ A - Chuyên khoa 1</td>
+                  <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span>Nguyễn Văn A - chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary" disabled>Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Nguyễn Văn Minh</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>Nam</td>
+                  <td>19</td>
+                  <td>Buồn nôn đau đầu sau khi ngã xe ...</td>
                   <td>9:30</td>
                   <td>Bác sĩ B - Chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Hoàng Lê Nguyên</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>Nam</td>
+                  <td>44</td>
+                  <td>khó thở tức ngực đầy hơi ...</td>
                   <td>10:30</td>
                   <td>Bác sĩ B - Chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
-                  <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td class="sorting_1">Giang Văn Minh</td>
+                  <td class="">Đà Nẵng</td>
+                  <td>Nam</td>
+                  <td>24</td>
+                  <td>Mất niềm vui với cuộc sống, hay gặp ác mộng ...</td>
                   <td>10:30</td>
                   <td>Bác Văn Sĩ -chuyên khoa 3</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
-                  <td class="">Hà Nội</td>
+                  <td class="sorting_1">Đào Anh</td>
+                  <td class="">Hải Phòng</td>
                   <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>22</td>
+                  <td>Nhức đầu mỏi mắt đầy hơi ...</td>
                   <td>10:30</td>
                   <td>Y Văn Tá - chuyên khoa 2</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Lê Thị Dung</td>
                   <td class="">Hà Nội</td>
                   <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>26</td>
+                  <td>Rối loạn chu kì, nhức mỏi chân ...</td>
                   <td>10:30</td>
                   <td>Bệnh Văn Viện - chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Láng Hòa Lạc</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>Nam</td>
+                  <td>31</td>
+                  <td>ù tai chóng mặt ...</td>
                   <td>11:30</td>
                   <td>Nguyễn Văn A - chuyên khoa 1</td>
                   <td><a href="#" class="btn btn-primary">Sửa</a><a href="#" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>

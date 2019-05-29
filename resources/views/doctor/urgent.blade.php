@@ -1220,11 +1220,11 @@ body.swal2-no-backdrop .swal2-shown {
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" style="width: 300px;">
-                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Bệnh nhân đã chờ lâu <span style="float: right">9:30</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Laura Larau - Nữ 18 tuổi <span style="float: right">9:30</span></a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Khám cho con giám đốc <span style="float: right">10:30</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Giàu Văn Sang - Nam 7 tuổi <span style="float: right">10:30</span></a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Bệnh nhân đã bị từ chối nhiều lần <span style="float: right">13:30</span></a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#detailModal">Buồn Văn Phiền - Nam 22 tuổi <span style="float: right">13:30</span></a></li>
                         </ul>
                     </li>
                     <li class="dropdown" style="height: 50px">
@@ -1257,12 +1257,12 @@ body.swal2-no-backdrop .swal2-shown {
                   <div class="fc-toolbar fc-header-toolbar"><div class="fc-left"></div><div class="fc-right"><div class="fc-button-group"><button type="button" class="fc-listDay-button fc-button fc-state-default fc-corner-left fc-state-active">Lịch biểu</button><button type="button" class="fc-month-button fc-button fc-state-default fc-corner-right">Tháng</button></div></div><div class="fc-center"><h2>30 tháng 5 năm 2019</h2></div><div class="fc-clear"></div></div>
                   <div class="fc-view-container" style=""><div class="fc-view fc-listDay-view fc-list-view fc-widget-content" style=""><div class="fc-scroller" style="overflow: hidden auto; height: 439px;"><table class="fc-list-table "><tbody><tr class="fc-list-heading" data-date="2019-05-30"><td class="fc-widget-header" colspan="3"><a class="fc-list-heading-main" data-goto="{&quot;date&quot;:&quot;2019-05-30&quot;,&quot;type&quot;:&quot;day&quot;}">thứ năm</a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">08:30</td><td class="fc-list-item-marker fc-widget-content"></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Nguyễn Văn A - Nam 29 tuổi</strong></a></td></tr>
-                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">09:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Bệnh nhân đã chờ lâu: <strong>Laura Larau - Nữ 18 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
+                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">09:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Khám khẩn cấp: <strong>Laura Larau - Nữ 18 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">10:00</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Bệnh Văn Nhân - Nam 19 tuổi</strong></a></td></tr>
-                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">10:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Khám cho con giám đốc: <strong>Giàu Văn Sang - Nam 7 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
+                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">10:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Khám khẩn cấp: <strong>Giàu Văn Sang - Nam 7 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">11:00</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Người Văn Ốm - Nữ 39 tuổi</strong></a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">11:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Nguyễn Thị Lê - Nữ 26 tuổi</strong></a></td></tr>
-                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">13:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Bệnh nhân đã bị từ chối nhiều lần: <strong>Buồn Văn Phiền - Nam 22 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
+                    <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">13:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Khám khẩn cấp: <strong>Buồn Văn Phiền - Nam 22 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
 
                   </tbody></table></div></div></div>
                 </div>
@@ -1311,7 +1311,7 @@ body.swal2-no-backdrop .swal2-shown {
                                 </tr>
                                 <tr>
                                     <td><b>Họ tên</b></td>
-                                    <td>Vũ Văn A</td>
+                                    <td>Giàu Văn Sang</td>
                                 </tr>
                                 <tr>
                                     <td><b>Giới tính</b></td>
@@ -1319,7 +1319,7 @@ body.swal2-no-backdrop .swal2-shown {
                                 </tr>
                                 <tr>
                                     <td><b>Tuổi</b></td>
-                                    <td>30</td>
+                                    <td>7</td>
                                 </tr>
                                 <tr>
                                     <td><b>Địa chỉ</b></td>
