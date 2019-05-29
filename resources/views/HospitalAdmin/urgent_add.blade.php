@@ -256,7 +256,7 @@
                                   
                                           <ul>
                                   
-                                            <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+                                            <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-3">
                                               <a href="#0">
                                                 <em class="event-name">Khám bệnh</em>
                                               </a>
@@ -294,7 +294,7 @@
                               
                                       <ul>
                               
-                                        <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+                                        <li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-3">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
@@ -318,7 +318,7 @@
                                       <div class="top-info" onclick="addC()"><img src="/img/HI_06/dist/img/bstuyet.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left;">Bác sĩ C</span></div>
                               
                                       <ul>
-                                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
+                                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-2">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
@@ -354,7 +354,7 @@
                                           </a>
                                         </li>
                               
-                                        <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
+                                        <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-3">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
