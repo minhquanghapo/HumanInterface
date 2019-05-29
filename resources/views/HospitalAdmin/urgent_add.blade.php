@@ -316,7 +316,7 @@
                                       <div class="top-info" onclick="superdenyForm()"><img src="/img/HI_06/dist/img/bstu.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ D</span></div>
                               
                                       <ul>
-                                        <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-abs-circuit" data-event="event-1">
+                                        <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-abs-circuit" data-event="event-2">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
@@ -334,7 +334,7 @@
                                           </a>
                                         </li>
                               
-                                        <li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
+                                        <li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-3">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
@@ -343,10 +343,10 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info" onclick="tooMuchForm()"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
+                                      <div class="top-info" onclick="tooManyForm()"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
                               
                                       <ul>
-                                        <li class="single-event" data-start="12:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-2">
+                                        <li class="single-event" data-start="12:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-1">
                                           <a href="#0">
                                             <em class="event-name">Đi công tác</em>
                                           </a>
@@ -552,7 +552,7 @@ for (i = 0; i < closebtns.length; i++) {
     }
 
     function success(){
-        toastr["success"]("Gửi yêu cầu khẩn cấp thành công!");
+        toastr["success"]("Đã thêm bác sĩ!");
         $("#adddoctorModal").modal("hide");
     }
     function updatesuccess(){
@@ -565,6 +565,14 @@ for (i = 0; i < closebtns.length; i++) {
         type: 'error',
         title: 'Không thể gửi!',
         text: 'Bác sĩ đã có lịch khẩn cấp trùng thời gian hoặc đã nhận 3 lịch khẩn cấp. Không thể gửi!',
+        confirmButtonText: 'Xác nhận!',
+      })
+    }
+    function tooManyForm() {
+      Swal.fire({
+        type: 'error',
+        title: 'Không thể gửi!',
+        text: 'Chỉ có thể gửi cho 1 bác sĩ!',
         confirmButtonText: 'Xác nhận!',
       })
     }
