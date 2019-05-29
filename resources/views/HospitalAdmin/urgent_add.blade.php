@@ -73,7 +73,7 @@
         </ol>
     </section>
     <section class="content row">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
             <div class="box box-primary">
                 <!-- Header -->
                 <div class="box-header with-border">
@@ -107,7 +107,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Tuổi</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" value="Thanh Xuân, Hà Nội">
+                                <input type="text" class="form-control" value="18">
                             </div>
                         </div>
                         <div class="form-group">
@@ -118,11 +118,17 @@
                             </div>
                         </div>
                         <div class="form-group">
-                                <label class="col-sm-2 control-label">Thời gian</label>
-                                <div class="col-sm-10">
-                                    <input type="datetime-local" class="form-control" value="2019-05-10T10:30">
-                                </div>
+                          <label class="col-sm-2 control-label">Thời gian</label>
+                          <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" value="2019-05-10T10:30">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Bác sĩ nhận</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" value="Hoàng Văn A" readonly="readonly">
                             </div>
+                        </div>
                         
                         
                     </form>
@@ -135,32 +141,6 @@
                     </div>
             </div>
         </div>
-        <div class="col-sm-3">
-                <div class="box box-primary">
-                    <!-- Header -->
-                    <div class="box-header with-border">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="box-title">Danh sách bác sĩ đã nhận</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-body" id="doctor">
-                        <span class="glyphicon glyphicon-ok text-green"></span> Nguyễn Văn A - Chuyên khoa 1 đã chấp nhận
-                        <hr>
-                        <span class="glyphicon glyphicon-remove text-red"></span> Hoàng Văn B - Chuyên Khoa 2 đã từ chối
-                        <hr>
-                        <span class="glyphicon glyphicon-share"></span> Nguyễn Thùy C - chuyên khoa D đã đọc
-                        <hr>
-                        <span class="glyphicon glyphicon-share"></span> Nguyễn Hoàng D - chuyên khoa X đã đọc
-                        <hr>
-                        <span class="glyphicon glyphicon-share"></span> Đại Cồ Việt - chuyên khoa D đã đọc
-                        <hr>
-                        Bách Văn Khoa - chuyên khoa X đã nhận
-                    </div>
-                </div>
-                          
-            </div>
     </section>
 </div>
 <div id="adddoctorModal" class="modal fade" role="dialog" >
@@ -195,7 +175,7 @@
                                     <form>
                                         <input class="form-control" list="browsers" name="browser" placeholder="Tìm Bác sĩ theo tên" onclick="addDoctor()" style="width: 100%;">
                                         <datalist id="browsers">
-                                            <option value="Bác sĩ A - chuyên khoa 1">
+                                            <option value="Hoàng Văn A - chuyên khoa 1">
                                             <option value="Vũ Hoàng B - chuyên khoa 2">
                                             <option value="Nguyễn Vũ C - chuyên khoa 3">
                                             <option value="Lê thị D - chuyên khoa 2">
@@ -204,9 +184,9 @@
                                     </form>
                                 </div>
                                 <div class="col-sm-3" name="tobehide" style="padding: 0px;">
-                                    <input type="checkbox">Chỉ hiện các BS rảnh<br>
+                                    <input type="checkbox">Chỉ hiện BS phù hợp<br>
                                 </div>
-                                <dir class="col-sm-3">
+                                <dir class="col-sm-3" name="tobehide">
                                   <div class="dataTables_paginate paging_simple_numbers" style="margin-top: -40px; margin-bottom: -50px;" id="example1_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example1_previous"><a href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">&lt;</a></li><li class="paginate_button "><a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">1/3</a></li><li class="paginate_button next" id="example1_next"><a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">&gt;</a></li></ul></div>
                                 </dir>
                             </div>
@@ -240,18 +220,6 @@
                                 <div class="events" style="cursor: pointer;">
                                     <ul name="tobeshow" style="display: none;">
                                         <li class="events-group">
-                                          <div class="top-info" style="background-color: #ddd;cursor: not-allowed;"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác Sĩ A</span></div>              
-                                          <ul>
-                                            <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-restorative-yoga" data-event="event-4">
-                                              <a href="#0">
-                                                <em class="event-name">Khám bệnh</em>
-                                              </a>
-                                            </li>
-
-                                          </ul>
-                                        </li>
-                                  
-                                        <li class="events-group">
                                           <div class="top-info" onclick="addB()"><img src="/img/HI_06/dist/img/bstruong.jpeg" class="img-circle bs-avatar" alt="User Image" ><span style="text-align: left;">Hoàng Văn A</span></div>
                                   
                                           <ul>
@@ -278,7 +246,7 @@
                                     </ul>
                                   <ul name="tobehide">
                                     <li class="events-group">
-                                      <div class="top-info" style="background-color: #ddd;cursor: not-allowed;"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ A</span></div>              
+                                      <div class="top-info" style="background-color: #ddd;cursor: not-allowed;" onclick="tooMuchForm()"><img src="/img/HI_06/dist/img/bshung.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ A</span></div>              
                                       <ul>
                                         <li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-restorative-yoga" data-event="event-4">
                                           <a href="#0">
@@ -315,22 +283,22 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info" onclick="addC()"><img src="/img/HI_06/dist/img/bstuyet.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left;">Bác sĩ C</span></div>
+                                      <div class="top-info" style="background-color: #ddd;cursor: not-allowed;" onclick="tooMuchForm()"><img src="/img/HI_06/dist/img/bstuyet.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left;">Bác sĩ C</span></div>
                               
                                       <ul>
-                                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-2">
+                                        <li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
                                         </li>
                               
-                                        <li class="single-event" data-start="11:00" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
+                                        <li class="single-event" data-start="11:00" data-end="11:45" data-content="event-yoga-1" data-event="event-4">
                                           <a href="#0">
                                             <em class="event-name">Họp bàn giao</em>
                                           </a>
                                         </li>
                               
-                                        <li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
+                                        <li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-4">
                                           <a href="#0">
                                             <em class="event-name">Phẫu thuật</em>
                                           </a>
@@ -345,10 +313,10 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info" onclick="addD()"><img src="/img/HI_06/dist/img/bstu.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ D</span></div>
+                                      <div class="top-info" onclick="superdenyForm()"><img src="/img/HI_06/dist/img/bstu.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ D</span></div>
                               
                                       <ul>
-                                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+                                        <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-abs-circuit" data-event="event-1">
                                           <a href="#0">
                                             <em class="event-name">Khám bệnh</em>
                                           </a>
@@ -375,7 +343,7 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
+                                      <div class="top-info" onclick="tooMuchForm()"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
                               
                                       <ul>
                                         <li class="single-event" data-start="12:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-2">
@@ -496,7 +464,7 @@
                                     <!-- Header -->
                                     <div class="box-header with-border">
                                         <div class="row">
-                                                <h3 class="box-title">Danh sách bác sĩ nhận</h3>
+                                                <h3 class="box-title">&nbsp;&nbsp;Bác sĩ nhận</h3>
                                         </div>
                                     </div>
                                     <div class="my">
@@ -504,12 +472,6 @@
                                           <li id="doctorB" style="display: none">Hoàng Văn A - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="doctorC" style="display: none">Bác sĩ C - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="doctorD" style="display: none">Bác sĩ D - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="doctorA" style="display: none">Bác sĩ A - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="1" style="display: none">Bác Văn sĩ - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="2" style="display: none">Bệnh Văn Viện - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="3" style="display: none">Y Văn Tế - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="4" style="display: none">Giáo Văn Dục - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="5" style="display: none">Y Văn Tá - chuyên khoa 1<span class="close">&times;</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -520,7 +482,6 @@
                     </div>
                           
                 <div class="modal-footer">
-                    <span name="tobehide"><input type="checkbox" onclick="toggle()"> Chọn tất cả bác sĩ rảnh từ Chuyên khoa 1</span> &nbsp;&nbsp;
                     <button type="button" onclick="success()" class="btn btn-primary" >Gửi yêu cầu</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -577,9 +538,7 @@ for (i = 0; i < closebtns.length; i++) {
     function addB(){
         document.getElementById("doctorB").style.display = "";
     }
-    function addC(){
-        document.getElementById("doctorC").style.display = "";
-    }
+
     function addD(){
         document.getElementById("doctorD").style.display = "";
     }
@@ -591,13 +550,6 @@ for (i = 0; i < closebtns.length; i++) {
         x.style.display = "none";
       }
     }
-    function toggle() {
-          document.getElementById("1").style.display = "";
-          document.getElementById("2").style.display = "";
-          document.getElementById("3").style.display = "";
-          document.getElementById("4").style.display = "";
-          document.getElementById("5").style.display = "";
-        }
 
     function success(){
         toastr["success"]("Gửi yêu cầu khẩn cấp thành công!");
@@ -607,6 +559,16 @@ for (i = 0; i < closebtns.length; i++) {
         toastr["success"]("Cập nhật thành công!");
         $("#adddoctorModal").modal("hide");
     }
+
+    function tooMuchForm() {
+      Swal.fire({
+        type: 'error',
+        title: 'Không thể gửi!',
+        text: 'Bác sĩ đã có lịch khẩn cấp trùng thời gian hoặc đã nhận 3 lịch khẩn cấp. Không thể gửi!',
+        confirmButtonText: 'Xác nhận!',
+      })
+    }
+
     function superdenyForm() {
             Swal.fire({
                 title: 'Xác nhận ?',
@@ -621,12 +583,14 @@ for (i = 0; i < closebtns.length; i++) {
             }).then((result) => {
                 if (result.value) {
                     toastr["success"]("Đã thêm bác sĩ vào danh sách nhận yêu cầu khẩn cấp!");
-                    document.getElementById("doctorA").style.display = "block";
+                    document.getElementById("doctorD").style.display = "block";
                 }
                 $("#detailModal").modal("hide");
             })
             $("#detailModal").modal("hide");
         }
+
+
 
     function openadddoctorModal(){
         $("#adddoctorModal").modal("show");
