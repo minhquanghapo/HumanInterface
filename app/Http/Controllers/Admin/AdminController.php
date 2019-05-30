@@ -13,4 +13,8 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
+    
+    public function system_setting() {
+        return view('admin.settings');
+    }
 }

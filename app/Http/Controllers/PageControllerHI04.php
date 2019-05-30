@@ -16,4 +16,9 @@ class PageControllerHI04 extends Controller
     	$data["search_type"] = $req->radio_search;
     	return view('HI_03/result')->with('data',$data);;
     }
+///HI02
+    public function notification(){
+        return view('HI_03/result1');
+    }
+//end HI02
 }

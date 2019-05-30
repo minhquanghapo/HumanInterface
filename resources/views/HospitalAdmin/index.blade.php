@@ -488,7 +488,7 @@
         <h1>
           Thống kê
         </h1>
-      </section>
+    </section>
     <section class="content" data-select2-id="11">
          <!-- BAR CHART -->
         <div class="row" id="crawl">
