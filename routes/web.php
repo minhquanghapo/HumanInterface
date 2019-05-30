@@ -130,4 +130,6 @@ Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_ad
 Route::get('/admin_hospital/services', "HospitalAdminController@service_info");
 Route::get('/admin_hospital/services/edit', "HospitalAdminController@service_edit");
 Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add");
+
+Route::get('/result1', "PageControllerHI04@notification");
 //}
