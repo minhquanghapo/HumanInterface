@@ -363,9 +363,9 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Nội tiết, Nhi</small>
-									<h3>Bác sĩ Nguyễn Thị Hoàn</h3>
-									<p>Là bác sĩ đầu ngành, có 40 năm kinh nghiệm chuyên khoa nội tiết Nhi tại Việt Nam</p>
+									<small>Khoa Sản phụ khoa</small>
+									<h3>Bác sĩ Nguyễn Thị Tấn Sinh</h3>
+									<p>Nguyên là Phó Trưởng khoa Phụ Sản Bệnh viện Bạch Mai</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -389,9 +389,9 @@
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Sản phụ khoa</small>
-									<h3>Bác sĩ Đỗ Thị Ngọc Lan</h3>
-									<p>Thầy thuốc ưu tú, bác sĩ chuyên khoa II Đỗ Thị Ngọc Lan nguyên là Trưởng khoa Phụ Ngoại I</p>
+									<small>Khoa Nội tiết, Nhi</small>
+									<h3>Bác sĩ Nguyễn Thị Hoàn</h3>
+									<p>Là bác sĩ đầu ngành, có 40 năm kinh nghiệm chuyên khoa nội tiết Nhi tại Việt Nam</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
