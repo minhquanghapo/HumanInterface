@@ -40,7 +40,7 @@
                 <aside class="col-xl-3 col-lg-4" id="sidebar">
                     <div class="box_profile" style="padding-bottom: 0">
                         <figure>
-                            <img src="{{ asset('HI_03/img/doctor/doctor.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('HI_03/img/doctor/le-thi-huong.png') }}" alt="" class="img-fluid">
                         </figure>
                         <small>Khoa Tai Mũi Họng</small>
                         <h1>Bác sĩ Lê Thị Hương</h1>

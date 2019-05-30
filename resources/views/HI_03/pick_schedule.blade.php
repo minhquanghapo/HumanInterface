@@ -68,6 +68,8 @@
                         <option value="Hay lo âu">Hay lo âu</option>
                         <option value="Chán ăn">Chán ăn</option>
                         <option value="Hay đầy hơi">Hay đầy hơi</option>
+                        <option value="Ngã xe">Ngã xe</option>
+                        <option value="Ngã đập đầu">Ngã đập đầu</option>
                     </select>
                 </div>
             </div>

@@ -42,6 +42,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi<span class="badge">1</span></a></li>
+                            <li><a href="{{ url('/faq') }}" class="show-submenu">Câu hỏi thường gặp</a></li>
                         </ul>
                 </div>
             </nav>

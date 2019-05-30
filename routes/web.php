@@ -83,6 +83,10 @@ Route::get('/hospital/list', function () {
 Route::get('/hospital/show', function () {
     return view('HI_03.hospital.show');
 });
+
+Route::get('/faq', function() {
+    return view('HI_03.faq');
+});
 // HI_03
 //HI_06_{
 Route::get('/admin_hospital', "HospitalAdminController@index");
