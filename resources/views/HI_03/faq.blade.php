@@ -28,9 +28,9 @@
                 <aside class="col-lg-3" id="sidebar">
                         <div class="box_style_cat" id="faq_box">
                             <ul id="cat_nav">
-                                <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch hẹn</a></li>
+                                <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
 
-                                <li><a href="#hospital"><i class="icon_document_alt"></i>Câu hỏi cho các nhóm khác</a></li>
+                                <li><a href="#hospital"><i class="icon_document_alt"></i>Câu hỏi của các nhóm khác</a></li>
 
                                 
                             </ul>
@@ -40,18 +40,18 @@
                 <!--/aside -->
                 
                 <div class="col-lg-9" id="faq">
-                    <h4 class="nomargin_top">Đặt lịch hẹn</h4>
+                    <h4 class="nomargin_top">Đặt lịch khám</h4>
                     <div role="tablist" class="add_bottom_45 accordion" id="booking">
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapseOne_payment" aria-expanded="true"><i class="indicator icon_minus_alt2"></i>Làm thế nào để đặt lịch hẹn?</a>
+                                    <a data-toggle="collapse" href="#collapseOne_payment" aria-expanded="true"><i class="indicator icon_minus_alt2"></i>Làm thế nào để đặt lịch khám?</a>
                                 </h5>
                             </div>
 
                             <div id="collapseOne_payment" class="collapse show" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Đầu tiên, bạn cần chọn dịch vụ khám theo ngày bằng cách click vào ô “khám theo ngày”. Sau đó, bạn ghi triệu chứng của mình, thời gian ngày, giờ mà bạn muốn khám, sau đó bấm nút “Tiếp tục”. Tiếp theo bạn chọn bệnh viện mà mình muốn khám. Sau đó chọn bác sỹ mà bạn mong muốn được khám. Cuối cùng bạn tiến hành thanh toán, lịch hẹn của bạn sẽ được tạo thành. </p>
+                                    <p>Đầu tiên, bạn cần chọn dịch vụ khám theo ngày bằng cách nhấn vào nút “Khám theo ngày”. Sau đó, bạn ghi triệu chứng của mình, chọn ngày giờ mà bạn muốn khám, sau đó bấm nút “Tiếp tục”. Tiếp theo bạn chọn bệnh viện mà mình muốn khám. Sau đó chọn bác sĩ mà bạn mong muốn được khám. Cuối cùng bạn tiến hành điền thông tin cá nhân và thanh toán, lịch khám của bạn sẽ được tạo. </p>
                                 </div>
                             </div>
                         </div>
@@ -61,49 +61,31 @@
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#collapseTwo_payment" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
-                                        Làm cách nào để có thể tìm bác sỹ?
+                                        Làm cách nào để có thể tìm và khám với bác sĩ bạn muốn?
                                     </a>
                                 </h5>
                             </div>
                             <div id="collapseTwo_payment" class="collapse" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Bạn cần chọn dịch vụ khám theo bác sỹ. Click vào ô khám theo bác sỹ,chọn vào ô bác sỹ sau đó điền tên bác sỹ vào ô tìm kiếm ở trên trang chủ. Hệ thống sẽ hiện gợi ý tên của bác sỹ nếu bác sỹ đó có trong hệ thống, bấm enter, hệ thống sẽ trả lại danh sách các bác sĩ phù hợp với yêu cầu tìm kiếm. Sau đó, click vào bác sỹ mà bạn muốn tìm để đi đến trang thông tin bác sỹ.
+                                    <p>Bạn cần chọn dịch vụ khám theo bác sĩ. Nhấn vào nút "Khám theo bác sĩ", sau đó điền tên bác sĩ vào ô "Nhập tên bác sĩ". Hệ thống sẽ hiện gợi ý tên của bác sĩ nếu bác sĩ đó có trong hệ thống. Sau khi nhập tên xong bấm nút "Tìm kiếm", hệ thống sẽ trả lại danh sách các bác sĩ phù hợp với yêu cầu tìm kiếm. Sau đó, chọn khung thông tin bác sĩ mà bạn muốn để đi đến trang thông tin bác sĩ.
 									</p>
                                 </div>
                             </div>
                         </div>
                         <!-- /card -->
-                        <div class="card">
-                            <div class="card-header" role="tab">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree_payment" aria-expanded="false">
-                                        <i class="indicator icon_plus_alt2"></i>
-                                        Làm thế nào để tìm được bênh viện?
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree_payment" class="collapse" role="tabpanel" data-parent="#booking">
-                                <div class="card-body">
-                                    <p>Bạn cần chọn dịch vụ khám theo bác sỹ bằng cách click vào ô khám theo bác sỹ.Bạn cần chọn vào ô bệnh viện. Sau đó điền tên bệnh viện vào ô tìm kiếm ở trên trang chủ. Hệ thống sẽ hiện gợi ý tên của bệnh viện nếu bệnh viện đó có trong hệ thống.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /card -->
-
                  
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#collapseFour_payment" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
-                                        Làm thế nào để đặt lịch với bác sỹ tôi đã khám trước đó?
+                                        Làm thế nào để đặt lịch với bác sĩ tôi đã khám trước đó?
                                     </a>
                                 </h5>
                             </div>
                             <div id="collapseFour_payment" class="collapse" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Bạn cần chọn dịch vụ khám theo bác sỹ. Click vào ô khám theo bác sỹ, chọn vào ô bác sỹ sau đó điền tên bác sỹ vào ô tìm kiếm ở trên trang chủ. Hệ thống sẽ hiện gợi ý tên của bác sỹ nếu bác sỹ đó có trong hệ thống, bấm enter, hệ thống sẽ trả lại danh sách các bác sĩ phù hợp với yêu cầu tìm kiếm. Sau đó, click vào bác sỹ mà bạn muốn tìm để đi đến trang thông tin bác sỹ.
-</p>
+                                    <p>Bạn cần chọn dịch vụ khám theo bác sĩ. Nhấn vào nút "Khám theo bác sĩ", sau đó điền tên bác sĩ vào ô "Nhập tên bác sĩ". Hệ thống sẽ hiện gợi ý tên của bác sĩ nếu bác sĩ đó có trong hệ thống. Sau khi nhập tên xong bấm nút "Tìm kiếm", hệ thống sẽ trả lại danh sách các bác sĩ phù hợp với yêu cầu tìm kiếm. Sau đó, chọn khung thông tin bác sĩ mà bạn muốn để đi đến trang thông tin bác sĩ.</p>
                                 </div>
                             </div>
                         </div>
@@ -114,13 +96,13 @@
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#collapseFive_payment" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
-                                        Làm thế nào để tìm bác sỹ phù hợp với bệnh?
+                                        Làm thế nào để tìm bác sĩ phù hợp với triệu chứng bạn đang mắc phải?
                                     </a>
                                 </h5>
                             </div>
                             <div id="collapseFive_payment" class="collapse" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Đầu tiên, bạn cần chọn dịch vụ khám theo ngày bằng cách click vào ô “khám theo ngày”. Sau đó, bạn ghi triệu chứng của mình, thời gian ngày, giờ mà bạn muốn khám, sau đó bấm nút “Tiếp tục”. Hệ thống sẽ tự động tìm bác sỹ có chuyên môn có thể giải quyết được bệnh của bạn.</p>
+                                    <p>Đầu tiên, bạn cần chọn dịch vụ khám theo ngày bằng cách nhấn vào nút “Khám theo ngày” ở trang chủ. Sau đó, bạn ghi triệu chứng của mình, chọn ngày, giờ mà bạn muốn khám, sau đó bấm nút “Tiếp tục”. Hệ thống sẽ tự động tìm bác sĩ có chuyên môn phù hợp với triệu chứng của bạn.</p>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +119,7 @@
                             </div>
                             <div id="collapseSix_payment" class="collapse" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Bạn nhấn vào nút Thanh toán sau khi đặt xong lịch khám. Sau đó chọn thẻ ngân hàng mà muốn thanh toán. Hệ thống sẽ chuyển bạn đến trang giao dịch của ngân hàng tương ứng, ở đây bạn sẽ nhập tài khoản và mật khẩu để tiến hành thanh toán.</p>
+                                    <p>Ở phần điền thông tin cá nhân và thông tin thanh toán ở bước cuối cùng, bạn nhập thông tin thẻ có thể giao dịch online để thanh toán. Hoặc bạn có thể chọn "Thanh toán bằng Paypal", khi đó hệ thống sẽ chuyển bạn đến trang giao dịch của Paypal, ở đây bạn sẽ nhập tài khoản và mật khẩu để tiến hành đăng nhập và thanh toán.</p>
                                 </div>
                             </div>
                         </div>
@@ -148,13 +130,13 @@
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#collapseSeven_payment" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
-                                        Làm thế nào để có thể đặt lịch khám với bác sỹ có trình độ chuyên môn tốt?
+                                        Làm thế nào để có thể đặt lịch khám với bác sĩ có trình độ chuyên môn tốt?
                                     </a>
                                 </h5>
                             </div>
                             <div id="collapseSeven_payment" class="collapse" role="tabpanel" data-parent="#booking">
                                 <div class="card-body">
-                                    <p>Sau khi chọn vào phần “Khám theo ngày”, sau đó gh rõ triệu chứng và chọn lịch. Hệ thống sẽ đưa ra kết quả cho bạn danh sách các bác sỹ. Bạn có thể lựa chọn bác sỹ sau khi đọc thông tin cá nhân, trình độ chuyên môn của bác sỹ.</p>
+                                    <p>Khi chọn vào phần “Khám theo bác sĩ”, bạn có thể tìm kiếm các bác sĩ phù hợp với tiêu chuẩn mà bạn muốn. Hệ thống sẽ đưa ra kết quả là danh sách các bác sĩ phù hợp. Bạn có thể lựa chọn bác sĩ sau khi đọc thông tin cá nhân và trình độ chuyên môn của các bác sĩ.</p>
                                 </div>
                             </div>
                         </div>
