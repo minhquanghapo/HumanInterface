@@ -33,7 +33,8 @@ Route::get('/booking-page-2', function () {
 })->name('booking-page-2');
 
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
-	Route::get('/', 'AdminController@index');
+    Route::get('/', 'AdminController@index');
+    Route::get('/system_setting', 'AdminController@system_setting');
     Route::get('/users/system_admin', 'UserController@system_admin');
     Route::get('/users/hospital_staff', 'UserController@hospital_staff');
     Route::get('/users/doctor', 'UserController@doctor');
@@ -134,4 +135,6 @@ Route::get('/admin_hospital/medicines/add', "HospitalAdminController@medicine_ad
 Route::get('/admin_hospital/services', "HospitalAdminController@service_info");
 Route::get('/admin_hospital/services/edit', "HospitalAdminController@service_edit");
 Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add");
+
+Route::get('/result1', "PageControllerHI04@notification");
 //}
