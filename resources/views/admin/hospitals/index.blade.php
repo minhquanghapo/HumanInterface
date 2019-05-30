@@ -94,13 +94,13 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Bạch Mai</td>
-                                    <td>79 Giải Phóng, Hà Nội</td>
+                                    <td>Việt Đức</td>
+                                    <td>40 Tràng Thi, Hàng Bông, Hoàn Kiếm, Hà Nội </td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
                                     <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
-                            <tr>
+                                <tr>
                                     <td>2</td>
                                     <td>Bạch Mai</td>
                                     <td>78 Giải Phóng, Hà Nội</td>
@@ -110,14 +110,22 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Bạch Mai</td>
-                                    <td>78 Giải Phóng, Hà Nội</td>
+                                    <td>Xanh Pôn</td>
+                                    <td>12 Chu Văn An, Điện Bàn, Ba Đình, Hà Nội</td>
                                     <td>Trung ương</td>
                                     <td>Hà Nội</td>
                                     <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
+                                    <td>Trung ương Quân đội 108</td>
+                                    <td>Số 1 Trần Hưng Đạo, Bạch Đằng, Hai Bà Trưng, Hà Nội </td>
+                                    <td>Trung ương</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
                                     <td>Bạch Mai</td>
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>
@@ -125,7 +133,39 @@
                                     <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>Bạch Mai</td>
+                                    <td>78 Giải Phóng, Hà Nội</td>
+                                    <td>Trung ương</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Bạch Mai</td>
+                                    <td>78 Giải Phóng, Hà Nội</td>
+                                    <td>Trung ương</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Bạch Mai</td>
+                                    <td>78 Giải Phóng, Hà Nội</td>
+                                    <td>Trung ương</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Bạch Mai</td>
+                                    <td>78 Giải Phóng, Hà Nội</td>
+                                    <td>Trung ương</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/hospitals/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
                                     <td>Bạch Mai</td>
                                     <td>78 Giải Phóng, Hà Nội</td>
                                     <td>Trung ương</td>

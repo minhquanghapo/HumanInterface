@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-
     public function system_admin()
     {
         return view('admin.users.system_admin');
