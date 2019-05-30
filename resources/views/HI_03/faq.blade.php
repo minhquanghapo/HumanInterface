@@ -9,7 +9,7 @@
         <div id="breadcrumb">
             <div class="container">
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="{{ url('/') }}">Trang chủ</a></li>
                     <li>Câu hỏi thường gặp</li>
                 </ul>
             </div>

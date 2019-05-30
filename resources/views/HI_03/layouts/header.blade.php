@@ -28,6 +28,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi</a></li>
+                            <li><a href="{{ url('/faq') }}" class="show-submenu">Câu hỏi thường gặp</a></li>
                         </ul>
                 </div>
             </nav>
