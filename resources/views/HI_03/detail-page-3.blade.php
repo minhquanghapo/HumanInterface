@@ -477,24 +477,17 @@
                                     <a href="#0" class="wish_bt"></a>
                                     <figure>
                                         <a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
-<<<<<<< HEAD
-                                                src="{{ asset('HI_03/img/doctor/do-thi-ngoc-lan.jpeg') }}" class="img-fluid"
-=======
+
                                                 src="{{ asset('HI_03/img/doctor/nguyen-thi-tan-sinh.jpeg') }}" class="img-fluid"
->>>>>>> 92b1889a9e202a12ba394aa6da5b15fb6b8bd6b4
                                                 alt="">
                                             <div class="preview"><span>Đọc thêm</span></div>
                                         </a>
                                     </figure>
                                     <div class="wrapper">
                                         <small>Khoa Sản phụ khoa</small>
-<<<<<<< HEAD
-                                        <h3>Bác sĩ Đỗ Thị Ngọc Lan</h3>
-                                        <p>Thầy thuốc ưu tú, bác sĩ chuyên khoa II Đỗ Thị Ngọc Lan nguyên là Trưởng khoa Phụ Ngoại I</p>
-=======
+
                                         <h3>Bác sĩ Nguyễn Thị Tấn Sinh</h3>
                                         <p>Nguyên là Phó Trưởng khoa Phụ Sản Bệnh viện Bạch Mai</p>
->>>>>>> 92b1889a9e202a12ba394aa6da5b15fb6b8bd6b4
                                         <span class="rating">
                                             <i class="icon_star voted"></i><i class="icon_star voted"></i><i
                                                 class="icon_star voted"></i><i class="icon_star"></i><i
