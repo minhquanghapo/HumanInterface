@@ -67,6 +67,7 @@
                                     <th>#</th>
                                     <th>Tên</th>
                                     <th>Ngày sinh</th>
+                                    <th>Quyền hạn</th>
                                     <th>Email</th>
                                     <th>Thao tác</th>
                                 </tr>
@@ -77,6 +78,7 @@
                                     <td>Nguyễn Văn A</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvana@gmail.com</td>
+                                    <td>Quản trị kĩ thuật</td>
                                     <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
@@ -84,6 +86,7 @@
                                     <td>Nguyễn Văn B</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvanb@gmail.com</td>
+                                    <td>Quản trị điều hành</td>
                                     <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
@@ -91,6 +94,7 @@
                                     <td>Nguyễn Văn C</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvanc@gmail.com</td>
+                                    <td>Quản trị điều hành</td>
                                     <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
@@ -98,6 +102,7 @@
                                     <td>Nguyễn Văn D</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvand@gmail.com</td>
+                                    <td>Quản trị phụ tá</td>
                                     <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
@@ -105,9 +110,9 @@
                                     <td>Nguyễn Văn E</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvane@gmail.com</td>
+                                    <td>Quản trị phụ tá</td>
                                     <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
-                            
                             </tbody>
                         </table>
                     </div>
