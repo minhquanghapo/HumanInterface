@@ -30,7 +30,8 @@
                             <ul id="cat_nav">
                                 <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
                                 <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho lễ tân </a></li>
-                                <li><a href="#hospital"><i class="icon_document_alt"></i>Dành choquản trị bệnh viện </a></li>
+                                <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho quản trị bệnh viện </a></li>
+                                <li><a href="#admin"><i class="icon_document_alt"></i>Dành cho quản trị hệ thống </a></li>
                                 {{--//HI_02_BEGIN--}}
                                 <li><a href="#consulting"><i class="icon_document_alt"></i>Tư vấn đặt lịch</a></li>
                                 <li><a href="#emergency"><i class="icon_document_alt"></i>Lịch khám khẩn cấp</a></li>
@@ -215,6 +216,95 @@
 
 
 
+                    <h4 class="nomargin_top">Dành cho quản trị hệ thống</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="admin">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#admin1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Có bao nhiêu loại người dùng trên hệ thống?</a>
+                                </h5>
+                            </div>
+
+                            <div id="admin1" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Hệ thống gồm có: Người quản trị hệ thống, Nhân viên bệnh viện, Bác sĩ, Bệnh nhân.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin2" aria-expanded="false">
+                                        <i class="indicator icon_minus_alt2"></i>
+                                        Tôi có thể chỉnh sửa quyền người dùng hệ thống được không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin2" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Không. Quyền người dùng sẽ được hệ thống quy định. Bạn chỉ có thể xem được danh sách các quyền, chi tiết các quyền người sử dụng.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin3" aria-expanded="false">
+                                        <i class="indicator icon_minus_alt2"></i>
+                                        Làm thế nào để tối có thể quản lý dữ liệu của hệ thống, sao lưu dữ liệu phòng trường hợp hệ thống xảy ra sự cố?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin3" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Bạn có thể tạo bản sao lưu dữ liệu của hệ thống tại trang quan lý hệ thống. Tại đó bạn sẽ có danh sách những nhóm dữ liệu được lưu trong hệ thống và button cho phép tạo bản sao lưu dữ liệu trên máy tính.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin4" aria-expanded="false">
+                                        <i class="indicator icon_minus_alt2"></i>
+                                        Bạn có thể cho tôi biết quy trình tạo người dùng mới trong hệ thống không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin4" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>
+                                        Nhập thông tin cần thiết của mỗi người dùng phù hợp với loại người dùng. <br> 
+                                        Nhấn Save để gửi yêu cầu tạo người dùng. <br>
+                                        Chờ đến khi thông email thông báo tạo người dùng mới được chấp nhận. <br>
+                                        Khi thông báo được chấp nhận bạn sẽ có tin nhắn thông báo tạo người dùng thành công.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin5" aria-expanded="false">
+                                        <i class="indicator icon_minus_alt2"></i>
+                                        Bạn có thể cho tôi biết quy trình đăng ký một bệnh viện mới trong hệ thống không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin5" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>
+                                    Nhập thông tin cần thiết của bệnh viện muốn tạo. <br>
+                                    Nhấn Save để gửi yêu cầu tạo bệnh viện. <br>
+                                    Hệ thống điều hướng trực tiếp sang trang tạo người quản trị bệnh viện. Bạn bắt buộc phải tạo ít nhất một người quản trị bệnh viện cho mỗi bệnh viện. Nếu không chức năng tạo bệnh viện sẽ thất bại.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     {{--HI_02_BEGIN--}}
                     <h4 class="nomargin_top">Tư vấn đặt lịch</h4>
