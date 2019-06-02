@@ -17,13 +17,14 @@
 .full-info{
 	position: fixed;
 	min-height: 390px;
-	max-height: 80vh;
+	max-height: 85vh;
 	top: 15%;
 	left: 20%;
 	width: 60vw;
 	background-color: #fff;
 	z-index: 2000;
 	display: none;
+	overflow-y: scroll;
 }
 
 .full-info .col-md-5{
