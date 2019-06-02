@@ -201,7 +201,7 @@
         let loadingElm = replying();
         setTimeout(function() {
             loadingElm.remove();
-            reply(`<p>Bạn có thể click vào link sau để đặt lịch <a href="/booking-page-2" data-toggle="tooltip" title="Set appointment">14:30 29/4/2019 - Bác sĩ ABC - BV Chợ Rẫy</a></p>`);
+            reply(`<p>Bạn có thể click vào link sau để đặt lịch <a href="/booking-page/date" data-toggle="tooltip" title="Set appointment">14:30 29/4/2019 - Bác sĩ ABC - BV Chợ Rẫy</a></p>`);
         }, 3000)
     })
 

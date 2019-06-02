@@ -7,7 +7,7 @@
                 <img src="/adminlte/images/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Quản Văn Lý</p>
+                <p>Vo Tuan(HI_06)</p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
             </div>
         </div>
@@ -39,6 +39,11 @@
                     <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
                 </a>
             </li>
+            <li class="<?= (Request::segment(2)=='static') ? 'active' : ''; ?>">
+                    <a href="/admin_hospital/static">
+                        <i class="fa fa-line-chart"></i> <span>Thống kê</span>
+                    </a>
+                </li>
             <!-- Nhóm 2 -->
             <li class="<?= (Request::segment(2)=='urgent') ? 'active' : ''; ?>">
                 <a href="/admin_hospital/urgent">
