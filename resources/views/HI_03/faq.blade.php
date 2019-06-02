@@ -250,12 +250,10 @@
                             </div>
                         </div>
                         <!-- /card -->
->>>>>>> upstream/develop
 
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-<<<<<<< HEAD
                                     <a data-toggle="collapse show" href="#collapseOne_payment" aria-expanded="true">
                                         <i class="indicator icon_minus_alt2"></i> làm thế nào quản lý thông tin bác sỹ</a>
                                 </h5>
@@ -327,7 +325,6 @@
                                     <p>Bạn cần nhấn vào nút thuốc tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý.
                                         Hệ thống hiển thị thông tin cho phép bạn sửa thông tin của bệnh viện. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
 
-=======
                                     <a class="collapsed" data-toggle="collapse" href="#consulting3" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
                                         Tôi không chắc về bệnh của mình mặc dù đã tìm hiểu thông qua các triệu chứng?
@@ -383,12 +380,10 @@
                             <div id="emergency2" class="collapse" role="tabpanel" data-parent="#emergency">
                                 <div class="card-body">
                                     <p>Bạn ấn vào thẻ lịch khám của bạn, ở dưới cùng bạn có thể ấn vào nút "Đặt lại lịch khám với bác sĩ ABC" để đặt lịch khám lại với bác sĩ cũ.
->>>>>>> upstream/develop
                                     </p>
                                 </div>
                             </div>
                         </div>
-<<<<<<< HEAD
 
 
 
@@ -405,7 +400,6 @@
                     
                     
                     
-=======
                         <!-- /card -->
 
                     </div>
