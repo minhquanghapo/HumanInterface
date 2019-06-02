@@ -128,9 +128,169 @@
                     <!-- /.box -->
 
                 </div>
+                <div class="col-sm-4">
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <h3 class="box-title">Phân quyền hệ thống</h3>
+                                <button type="button" class="pull-right btn btn-default" data-toggle="modal" data-target="#modal-default">Phân quyền</button>
+        
+                            </div>
+                            <div class="box-body">
+                                <ul class="nav nav-stacked">
+                                    <li><a href="#">Quản trị kĩ thuật</a></li>
+                                    <li><a href="#">Quản trị điều hành</a></li>
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
     </div>
+    <div class="modal fade" id="modal-default">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Phân quyền</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <tr>
+                                <th>Chức năng</th>
+                                <th>Quản trị kỹ thuật</th>
+                                <th>Quản trị điều hành</th>
+                            </tr>
+                            <tr>
+                                <td>Sửa thông tin bệnh viện</td>
+                                <td>
+                                    <input type="checkbox" value="" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Xem danh sách bác sỹ</td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td>Thêm bác sỹ</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sửa thông tin bác sỹ</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gỡ bác sỹ</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Xem danh sách nhân viên</td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td>Thêm nhân viên</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sửa thông tin nhân viên</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gỡ nhân viên</td>
+                                <td>
+                                    <input type="checkbox" value="checked" disabled></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" value="" checked disabled></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>Thêm danh mục thuốc</td>
+                                    <td>
+                                        <input type="checkbox" value="checked" disabled></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" value="" checked disabled></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sửa danh mục thuốc</td>
+                                    <td>
+                                        <input type="checkbox" value="checked" disabled></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" value="" checked disabled></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gỡ danh mục thuốc</td>
+                                    <td>
+                                        <input type="checkbox" value="checked" disabled></label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" value="" checked disabled></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>Xem thống kê</td>
+                                        <td>
+                                            <input type="checkbox" value="" checked disabled></label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" value="" checked disabled></label>
+                                        </td>
+                                    </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
 @endsection
 @section('content')
 @endsection

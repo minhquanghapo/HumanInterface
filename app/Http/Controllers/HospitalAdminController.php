@@ -81,4 +81,8 @@ class HospitalAdminController extends Controller
         return view('HospitalAdmin.urgent_sort');
     }
 // end Nhóm 2
+    public function static() {
+        return view('HospitalAdmin.static');
+    }
+
 }

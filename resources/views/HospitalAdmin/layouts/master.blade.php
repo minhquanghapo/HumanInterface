@@ -30,7 +30,7 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="/adminlte/css/bootstrap3-wysihtml5.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-
+    
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap.min.css">
     <link href="/adminlte/css/select2.min.css" rel="stylesheet" />
     <link href='{{asset('css/doctor/fullcalendar.min.css')}}' rel='stylesheet' />
@@ -72,6 +72,7 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
+<script src="/adminlte/js/Chart.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="/adminlte/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
