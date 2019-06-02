@@ -61,7 +61,7 @@ $(".add_top_20").hide();
 
 function search(data, array, sort_type = null){
 	var view = '';
-	if (data == 1 || data  == 2 || data == 3 || data == 4 || data == 5 || data == 6){
+	if (data == 1 || data  == 2 || data == 3 || data == 4 || data == 5 || data == 6 || data == 7 || data == 8 || data == 9 || data == 10){
 		jQuery.each( array, function( i, val ) {
 			if(val["id"] == data) view += '<div class="col-md-6 info-container" id="'+ val["id"] +'"><div class="box_list wow fadeIn"><div class="wrapper wrapper-title"><h3>Ngày hẹn: ' + val["date"] +' &nbsp;Giờ: ' + val["time"] + '</h3></div><div class="wrapper"><table><tr><td>Mã số: ' + val["id"] + '</td><td>Bệnh viện: ' + val["hospital"] + '</td></tr><tr><td>Trạng thái: <span style="color: '+ getColor(val["status"]) +'">' + getCancelOne(val["canceled_by"]) + getStatus(val["status"]) + '</span></td><td>Phòng/Khoa: ' + val["clinic"] + '</td></tr><tr><td>Số thứ tự: ' + val["no"] + '</td><td>Bác sĩ: ' + val["doctor"] + '</td></tr></table></div></div></div>'
 		});
@@ -175,8 +175,8 @@ $(document).on('click', ".btn-prevent-cancel", function(event) {
 $( "#sort-box" ).change(function() {
 	console.log($("#sort-box").val());
 	$("#search-result").html(getResultView(lich_kham, $("#sort-box").val()));
-	if($("#sort-box").val() == "all") $("#result_count").html(6);
+	if($("#sort-box").val() == "all") $("#result_count").html(10);
 	if($("#sort-box").val() == "imcomplete") $("#result_count").html(2);
-	if($("#sort-box").val() == "completed") $("#result_count").html(3);
-	if($("#sort-box").val() == "canceled") $("#result_count").html(1);
+	if($("#sort-box").val() == "completed") $("#result_count").html(6);
+	if($("#sort-box").val() == "canceled") $("#result_count").html(2);
 });
