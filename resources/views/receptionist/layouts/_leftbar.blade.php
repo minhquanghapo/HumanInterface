@@ -16,12 +16,13 @@
             <li class="header">Tiếp đón bệnh nhân </li>
             <li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">
                 <a href="/receptionist/checkin">
-                    <i class="fa fa-user"></i> <span>Nhập viện</span>
-                </a>
+                    <i class="fa fa-sign-in " aria-hidden="true"></i> <span>Nhập viện</span>
+                </a><i class=""></i>
             </li>
             <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
-                <a href="/receptionist/checkin">
-                    <i class="fa fa-dashboard"></i> <span>Thanh toán ra viện</span>
+                <a href="/receptionist/checkout">
+                    <i class="fa fa-sign-out " aria-hidden="true"></i>
+                    <span>Thanh toán ra viện</span>
                 </a>
             </li>
             {{--<li class="<?=  (Request::segment(2)=='users') ? 'active' : ''; ?>">--}}

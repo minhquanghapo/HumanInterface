@@ -151,7 +151,7 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/le-thi-huong.png') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
@@ -176,15 +176,15 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/nguyen-thu-hoai.jpeg') }}" class="img-fluid" alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
-									<h3>Bác sĩ Lê Thị Hương</h3>
+									<small>Khoa Sản phụ, Nội soi - Bệnh viện Vinmec</small>
+									<h3>Bác sĩ Nguyễn Thu Hoài</h3>
 
-									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
+									<p>Đã có 12 năm kinh nghiệm trong ngành Sản phụ khoa</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -201,15 +201,15 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/duong-ba-truc.jpeg') }}" class="img-fluid">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
-									<h3>Bác sĩ Lê Thị Hương</h3>
-
-									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
+									<small>Nhi, Huyết học - Truyền máu</small>
+									<h3>Bác sĩ Dương Bá Trực</h3>
+									<p>Có kinh nghiệm gần 40 năm trong ngành và nguyên là Trưởng khoa huyết học lâm sàng</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -226,15 +226,16 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" height="565" width="565" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/huynh-cong-tan.png') }}" class="img-fluid"
+											alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
-									<h3>Bác sĩ Lê Thị Hương</h3>
-
-									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
+									<small>Khoa Sản Phụ Khoa</small>
+									<h3>Bác sĩ Huỳnh Công Tấn</h3>
+									<p>Có hơn 21 năm kinh nghiệm trong lĩnh vực sản – phụ khoa</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -251,15 +252,16 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/nguyen-thanh-liem.jpeg') }}" class="img-fluid"
+											alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
-									<h3>Bác sĩ Lê Thị Hương</h3>
-
-									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
+									<small>Nhi, Tự kỷ & Bại não</small>
+									<h3>Bác sĩ Đỗ Thanh Liêm</h3>
+									<p>Là chuyên gia đầu ngành trong lĩnh vực ngoại nhi của Việt Nam</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -276,15 +278,16 @@
 							<div class="box_list wow fadeIn">
 								<a href="#0" class="wish_bt"></a>
 								<figure>
-									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img src="{{ asset('HI_03/img/doctor/doctor.png') }}" class="img-fluid" alt="">
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/nguyen-thi-huong-linh.jpeg') }}" class="img-fluid"
+											alt="">
 										<div class="preview"><span>Đọc thêm</span></div>
 									</a>
 								</figure>
 								<div class="wrapper">
-									<small>Khoa Tai Mũi Họng - Bệnh viện Bạch Mai</small>
-									<h3>Bác sĩ Lê Thị Hương</h3>
-
-									<p>Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng</p>
+									<small>Khoa Sản phụ khoa</small>
+									<h3>Bác sĩ Nguyễn Thị Hương Linh</h3>
+									<p>Đã có 23 kinh nghiệm trong chuyên ngành sản phụ khoa.</p>
 									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
 									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
 								</div>
@@ -295,6 +298,112 @@
 								</ul>
 							</div>
 						</div>
+						<!-- /box_list -->
+
+						<div class="col-md-6 doctor">
+							<div class="box_list wow fadeIn">
+								<a href="#0" class="wish_bt"></a>
+								<figure>
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/le-thi-thu-hang.jpeg') }}" class="img-fluid"
+											alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
+									</a>
+								</figure>
+								<div class="wrapper">
+									<small>Khoa Khám bệnh & Nội khoa</small>
+									<h3>Bác sĩ Lê Thị Thu Hằng</h3>
+									<p>10 năm dày dặn kinh nghiệm trong điều trị bệnh da liễu người lớn và trẻ em</p>
+									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+								</div>
+								<ul>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
+									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_list -->
+
+						<div class="col-md-6 doctor">
+							<div class="box_list wow fadeIn">
+								<a href="#0" class="wish_bt"></a>
+								<figure>
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/do-thi-ngoc-lan.jpeg') }}" class="img-fluid"
+											alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
+									</a>
+								</figure>
+								<div class="wrapper">
+									<small>Khoa Sản phụ khoa</small>
+									<h3>Bác sĩ Đỗ Thị Ngọc Lan</h3>
+									<p>Thầy thuốc ưu tú, bác sĩ chuyên khoa II Đỗ Thị Ngọc Lan nguyên là Trưởng khoa Phụ Ngoại I</p>
+									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+								</div>
+								<ul>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
+									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_list -->
+
+						<div class="col-md-6 doctor">
+							<div class="box_list wow fadeIn">
+								<a href="#0" class="wish_bt"></a>
+								<figure>
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/nguyen-thi-tan-sinh.jpeg') }}" class="img-fluid"
+											alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
+									</a>
+								</figure>
+								<div class="wrapper">
+									<small>Khoa Sản phụ khoa</small>
+									<h3>Bác sĩ Nguyễn Thị Tấn Sinh</h3>
+									<p>Nguyên là Phó Trưởng khoa Phụ Sản Bệnh viện Bạch Mai</p>
+									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+								</div>
+								<ul>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
+									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_list -->
+
+						<div class="col-md-6 doctor">
+							<div class="box_list wow fadeIn">
+								<a href="#0" class="wish_bt"></a>
+								<figure>
+									<a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}"><img
+											src="{{ asset('HI_03/img/doctor/nguyen-thi-hoan.jpeg') }}" class="img-fluid"
+											alt="">
+										<div class="preview"><span>Đọc thêm</span></div>
+									</a>
+								</figure>
+								<div class="wrapper">
+									<small>Khoa Nội tiết, Nhi</small>
+									<h3>Bác sĩ Nguyễn Thị Hoàn</h3>
+									<p>Là bác sĩ đầu ngành, có 40 năm kinh nghiệm chuyên khoa nội tiết Nhi tại Việt Nam</p>
+									<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+									<a href="#0" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level" class="badge_list_1"><img src="{{ asset('HI_03/img/badges/badge_1.svg') }}" width="15" height="15" alt=""></a>
+								</div>
+								<ul>
+									<li><a href="#0" onclick="onHtmlClick('Doctors', 0)"><i class="icon_pin_alt"></i>Bản đồ (3km)</a></li>
+									<li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" target="_blank"><i class="icon_pin_alt"></i>Directions</a></li>
+									<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Tiếp tục</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_list -->
+
                         @endif
 						<!-- /box_list -->
 						<!-- /box_list -->

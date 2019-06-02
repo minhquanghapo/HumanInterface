@@ -1,3 +1,17 @@
+<!-- HI02 -->
+<style type="text/css">
+    .badge {
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            padding: 4px 6px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
+</style>
+<!-- HI02 -->
+
 <header class="header_sticky">
     <div class="container">
         <div class="row">
@@ -27,7 +41,8 @@
                                     <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi</a></li>
+                            <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi<span class="badge">1</span></a></li>
+                            <li><a href="{{ url('/faq') }}" class="show-submenu">Câu hỏi thường gặp</a></li>
                         </ul>
                 </div>
             </nav>

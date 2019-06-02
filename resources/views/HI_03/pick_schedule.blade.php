@@ -6,9 +6,6 @@
 
     <link href='{{asset('css/doctor/selectize.default.css')}}' rel='stylesheet'/>
     <style>
-        li.active > a{
-            background: #74d1c6!important;
-        }
         .nav-pills li:hover > a{
             background: #e74e84!important;
             color: #fff!important;
@@ -71,6 +68,8 @@
                         <option value="Hay lo âu">Hay lo âu</option>
                         <option value="Chán ăn">Chán ăn</option>
                         <option value="Hay đầy hơi">Hay đầy hơi</option>
+                        <option value="Ngã xe">Ngã xe</option>
+                        <option value="Ngã đập đầu">Ngã đập đầu</option>
                     </select>
                 </div>
             </div>

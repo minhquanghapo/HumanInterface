@@ -11,7 +11,7 @@
 @section('page_body')
     <div class="container">
         <div class="title">
-            <h3>HI_01 Bác sĩ quản lý lịch làm việc</h3>
+            <h3>Hiện tại có <strong id="count_examination"></strong> lịch khám đang đợi</h3>
         </div>
         <div class="content">
             <div class="col-md-4" style="padding: 0">
@@ -40,3 +40,7 @@
     <script src="{{ asset('js/doctor/bootstrap-datepicker.vi.min.js') }}"></script>
 
 @endsection
+
+@section('page-title')
+    HI_01_Bác sĩ quản lý lịch làm việc
+    @endsection

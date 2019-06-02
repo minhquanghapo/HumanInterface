@@ -44,11 +44,11 @@
                 <li id="st1" class="active passed"><a href="#step-1">
                         <p class="list-group-item-text">Thông tin bệnh nhân</p>
                     </a></li>
-                <li id="st2"><a href="#step-2">
-                        <p class="list-group-item-text">Tình trang bệnh</p>
+                <li  id="st2"><a href="#step-2">
+                        <p class="list-group-item-text">Chuẩn đoán và yêu cầu</p>
                     </a></li>
                 <li class="disabled" id="st3"><a href="#step-3">
-                        <p class="list-group-item-text">Chuẩn đoán và yêu cầu</p>
+                        <p class="list-group-item-text">Kết quả xét nghiệm</p>
                     </a></li>
                 <li class="disabled" id="st4"><a href="#step-4">
                         <p class="list-group-item-text">Kết luận</p>
@@ -84,29 +84,29 @@
             </div>
         </div>
     </div>
+    {{--<div class="row setup-content" id="step-2">--}}
+        {{--<div class="col-xs-12">--}}
+            {{--<div class="col-md-12 well ">--}}
+                {{--<div>--}}
+                    {{--<h3>Triệu chứng</h3>--}}
+                    {{--<p>--}}
+                        {{--Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.--}}
+                        {{--Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.--}}
+                        {{--Thành bụng căng cứng.--}}
+                        {{--Sốt nhẹ.--}}
+                    {{--</p>--}}
+                {{--</div>--}}
+                {{--<hr>--}}
+                {{--<div>--}}
+                    {{--<h3>Tiền sử bệnh</h3>--}}
+                    {{--<p>--}}
+                        {{--Từng mắc bệnh dạ dày ngày bé--}}
+                    {{--</p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <div class="row setup-content" id="step-2">
-        <div class="col-xs-12">
-            <div class="col-md-12 well ">
-                <div>
-                    <h3>Triệu chứng</h3>
-                    <p>
-                        Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
-                        Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
-                        Thành bụng căng cứng.
-                        Sốt nhẹ.
-                    </p>
-                </div>
-                <hr>
-                <div>
-                    <h3>Tiền sử bệnh</h3>
-                    <p>
-                        Từng mắc bệnh dạ dày ngày bé
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row setup-content" id="step-3">
         <div class="col-xs-12">
             <div class="col-md-12 well">
                 <table class="table">
@@ -166,10 +166,51 @@
             </div>
         </div>
     </div>
+    <div class="row setup-content" id="step-3">
+        <div class="col-xs-12">
+            <div class="col-md-12 well ">
+                <div>
+                    <h3>Kết quả xét nghiệm máu</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Tên xét nghiệm</th>
+                            <th>Kết quả</th>
+                            <th>Đánh giá</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Cholesterol toàn phần</td>
+                            <td><5,17 mmol/L</td>
+                            <td>Bình thường</td>
+                        </tr>
+                        <tr>
+                            <td>LDL-cholesterol</td>
+                            <td><2,58 mmol/L</td>
+                            <td>Tối ưu (tốt)</td>
+                        </tr>
+                        <tr>
+                            <td>Triglycrid</td>
+                            <td><1,659 mmol/L</td>
+                            <td>Bình thường</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <div>
+                    <h3>Kết quả nội soi</h3>
+                    <p><Strong>Thực quản: </Strong>Niêm mạc hồng nhẵn mềm mại, không phát hiện khối u, không giãn tĩnh mạch</p>
+                    <p><Strong>Dạ dày: </Strong>Dịch dạ dày trong. Niêm mạc dạ dày viêm xung huyêt</p>
+                    <button type="button" data-toggle="modal" class="btn btn-info btn-sm" data-target="#endoscopicResultModal">Xem hình ảnh</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row setup-content" id="step-4">
         <div class="col-xs-12">
             <div class="col-md-12 well">
-                <button id="find_result" style="margin-bottom: 10px" data-toggle="modal" data-target="#findResultModal">Xem kết quả xét nghiệm</button>
                 <table class="table">
                     <tr>
                         <td><b>Kết luận bệnh</b></td>
@@ -378,62 +419,27 @@
         </div>
     </div>
 </div>
-<div id="findResultModal" class="modal fade" role="dialog">
+<div class="modal fade" id="endoscopicResultModal" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Kết quả xét nghiêm</h4>
+                <h4 class="modal-title">Hình ảnh nội soi</h4>
             </div>
             <div class="modal-body">
-                <p>Nhập tên bênh nhân:</p>
-                <div class="control-group">
-                    <select id="select-name" name="state[]" class="demo-default" style="max-width: 100%"  placeholder="Select a medicine...">
-                        <option value="">Select a name...</option>
-                        <option value="Alabama">Nguyễn Văn A</option>
-                        <option value="Alaska">Nguyễn Văn B</option>
-                        <option value="Arizona">Lê Văn C</option>
-                        <option value="Arizona">Trần Văn C</option>
-                        <option value="Arizona">Nguyễn Văn D</option>
-                        <option value="Arizona">Nguyễn Mạnh C</option>
-                        <option value="Arizona">Nguyễn Mạnh D</option>
-                    </select>
-                </div>
-                <script>
-                    $('#select-name').selectize({
-
-                    });
-                </script>
-                <div id="info_history" style="display: none">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>Tên xét nghiệm</th>
-                                <th>Kết quả </th>
-                            </tr>
-                            </thead>
-                            <tbody id="medicine_list" >
-                            <tr>
-                                <td>Xét nghiệm máu</td>
-                                <td>Bình thường</td>
-                            </tr>
-                            <tr>
-                                <td>Xét nghiệm nước tiểu</td>
-                                <td>Bình thường</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <img src="{{asset('img/noisoi.jpeg')}}" alt="hinh anh noi soi" class="img-responsive">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
             </div>
         </div>
 
     </div>
 </div>
+@endsection
+
+@section('page-title')
+    HI_01_Thực hiện ca khám
 @endsection

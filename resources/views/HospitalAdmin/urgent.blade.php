@@ -282,7 +282,7 @@
                 <div class="col-sm-12">
                   <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                   <thead>
-                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">Họ Tên</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 60px;">Địa chỉ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 30px;">Giới tính</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 20px;">Tuổi</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 100px;">Tình trạng bệnh</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 80px;">Thời gian<a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 180px;">Trạng thái <a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 30px;">Thao tác</th></tr>
+                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;" aria-sort="ascending">Họ Tên</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 60px;">Địa chỉ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 30px;">Giới tính</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 20px;">Tuổi</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 100px;">Tình trạng bệnh</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 80px;">Thời gian<a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 180px;">Bác sĩ <a href="#" style="float: right;"><span class="glyphicon glyphicon-sort"></span></a></th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 30px;">Thao tác</th></tr>
                   </thead>
                   <tbody>
                   <tr role="row" class="odd" id="s1">
@@ -292,62 +292,62 @@
                   <td>30</td>
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>8:30</td>
-                  <td>Đang chờ <br> 5 người đã xem</td>
-                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
+                  <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span>Nguyễn Văn A - chuyên khoa 1</td>
+                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary" disabled>Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Nguyễn Văn Minh</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>Nam</td>
+                  <td>19</td>
+                  <td>Buồn nôn đau đầu sau khi ngã xe ...</td>
                   <td>9:30</td>
-                  <td>Đang chờ <br> 3 người đã xem</td>
+                  <td>Bác sĩ B - Chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Hoàng Lê Nguyên</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>Nam</td>
+                  <td>44</td>
+                  <td>khó thở tức ngực đầy hơi ...</td>
                   <td>10:30</td>
-                  <td>Đang chờ <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1 đã xem</td>
+                  <td>Bác sĩ B - Chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
-                  <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td class="sorting_1">Giang Văn Minh</td>
+                  <td class="">Đà Nẵng</td>
+                  <td>Nam</td>
+                  <td>24</td>
+                  <td>Mất niềm vui với cuộc sống, hay gặp ác mộng ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-remove text-red"></span> Bị từ chối <br> Bác sĩ Hoàng Văn B - chuyên khoa 2 và 3 người khác</td>
+                  <td>Bác Văn Sĩ -chuyên khoa 3</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
-                  <td class="">Hà Nội</td>
+                  <td class="sorting_1">Đào Anh</td>
+                  <td class="">Hải Phòng</td>
                   <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>22</td>
+                  <td>Nhức đầu mỏi mắt đầy hơi ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-time text-yellow"></span> Hết hạn <br> 20 người đã xem</td>
+                  <td>Y Văn Tá - chuyên khoa 2</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Lê Thị Dung</td>
                   <td class="">Hà Nội</td>
                   <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
+                  <td>26</td>
+                  <td>Rối loạn chu kì, nhức mỏi chân ...</td>
                   <td>10:30</td>
-                  <td><span class="glyphicon glyphicon-ok text-green"></span> Đã được nhận <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1</td>
+                  <td>Bệnh Văn Viện - chuyên khoa 1</td>
                   <td><a href="/admin_hospital/urgent/add" class="btn btn-primary">Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
-                  <td class="sorting_1">Nguyễn Thị Linh</td>
+                  <td class="sorting_1">Láng Hòa Lạc</td>
                   <td class="">Hà Nội</td>
-                  <td>Nữ</td>
-                  <td>30</td>
-                  <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
-                  <td>10:30</td>
-                  <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span> Đã thực hiện <br> Bác sĩ Nguyễn Văn A - chuyên khoa 1</td>
-                  <td><a href="#" class="btn btn-primary" disabled>Sửa</a><a href="#" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
+                  <td>Nam</td>
+                  <td>31</td>
+                  <td>ù tai chóng mặt ...</td>
+                  <td>11:30</td>
+                  <td>Nguyễn Văn A - chuyên khoa 1</td>
+                  <td><a href="#" class="btn btn-primary">Sửa</a><a href="#" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   
                   </tr></tbody>
                   <tfoot>

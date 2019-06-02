@@ -60,9 +60,6 @@
                         </div>
                     </div>
                     <br>
-
-                    <!--Table content-->
-                                        <!--Table content-->
                     <div>
                         <table id="doctor_table" class="table table-bordered table-hover">
                             <thead class="bg-info">
@@ -129,9 +126,69 @@
                                 <tr>
                                     <td>5</td>
                                     <td>Nguyễn Văn E</td>
+                                    <td>Việt Đức</td>
+                                    <td>Ngoại khoa</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Nguyễn Văn F</td>
+                                    <td>Việt Đức</td>
+                                    <td>Nội khoa</td>
+                                    <td>9-12-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Nguyễn Văn G</td>
+                                    <td>Quân Đội</td>
+                                    <td>Ngoại khoa</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Nguyễn Văn H</td>
+                                    <td>Xanh Pôn</td>
+                                    <td>Thần kinh</td>
+                                    <td>5-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Nguyễn Văn I</td>
+                                    <td>Thanh Nhàn</td>
+                                    <td>Ngoại khoa</td>
+                                    <td>19-6-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><span style="display: none">3</span>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Nguyễn Văn K</td>
                                     <td>Bạch Mai</td>
                                     <td>Ngoại khao</td>
-                                    <td>19-2-1997</td>
+                                    <td>19-2-1987</td>
                                     <td>Hà Nội</td>
                                     <td><span style="display: none">3</span>
                                         <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>

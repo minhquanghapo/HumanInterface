@@ -7,7 +7,7 @@
                 <img src="/adminlte/images/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>Vũ Công Duy</p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
@@ -43,6 +43,11 @@
             <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
                 <a href="/admin/hospitals">
                     <i class="fa fa-hospital-o"></i> <span>Bệnh viện</span>
+                </a>
+            </li>
+            <li class="<?= (Request::segment(2)=='system_setting') ? 'active' : ''; ?>">
+                <a href="/admin/system_setting">
+                    <i class="fa fa-cog"></i> <span>Quản lý hệ thống</span>
                 </a>
             </li>
         </ul>    

@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Find easily a doctor and book online an appointment">
 	<meta name="author" content="Ansonika">
-	<title>HI_03 Bệnh nhân đặt lịch khám</title>
-
+    <title>
+        @yield('title', 'HI_03 Bệnh nhân đặt lịch khám')
+    </title>
+	
 	<!-- Favicons-->
 	<link rel="shortcut icon" href="{{ asset('HI_03/img/favicon.ico') }}" type="image/x-icon">
 	<link rel="apple-touch-icon" type="image/x-icon" href="{{ asset('HI_03/img/apple-touch-icon-57x57-precomposed.png') }}">
