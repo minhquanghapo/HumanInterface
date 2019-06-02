@@ -175,8 +175,8 @@ $(document).on('click', ".btn-prevent-cancel", function(event) {
 $( "#sort-box" ).change(function() {
 	console.log($("#sort-box").val());
 	$("#search-result").html(getResultView(lich_kham, $("#sort-box").val()));
-	if($("#sort-box").val() == "all") $("#result_count").html(6);
+	if($("#sort-box").val() == "all") $("#result_count").html(10);
 	if($("#sort-box").val() == "imcomplete") $("#result_count").html(2);
-	if($("#sort-box").val() == "completed") $("#result_count").html(3);
-	if($("#sort-box").val() == "canceled") $("#result_count").html(1);
+	if($("#sort-box").val() == "completed") $("#result_count").html(6);
+	if($("#sort-box").val() == "canceled") $("#result_count").html(2);
 });
