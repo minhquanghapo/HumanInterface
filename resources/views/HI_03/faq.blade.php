@@ -163,7 +163,7 @@
                                 </h5>
                             </div>
 
-                            <div id="consulting1" class="collapse show" role="tabpanel" data-parent="#consulting">
+                            <div id="consulting1" class="collapse" role="tabpanel" data-parent="#consulting">
                                 <div class="card-body">
                                     <p>Đầu tiên, bạn chọn chức năng "tra cứu bệnh" ở trên thanh menu. Gõ vào triệu chứng của mình và tham khảo những bài viết đã được các bác sĩ giỏi nhất của chúng tôi biên soạn. Bạn có thể đặt lịch khám ngay trong màn hình bài viết.</p>
                                 </div>
@@ -210,11 +210,24 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Lịch khám của tôi hiện số ở trên, điều này nghĩa là gì?</a>
+                                </h5>
+                            </div>
+
+                            <div id="emergency1" class="collapse" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p> Lịch khám của bạn đã bị chuyển bác sĩ do bác sĩ cũ bận khám khẩn cấp. Bạn hãy ấn vào để xem chi tiết, từ đây bạn có thể giữ lịch mới, hủy lịch hoặc đặt lịch khám khác với bác sĩ cũ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Lịch khám của tôi bị chuyển bác sĩ, tôi phải làm thế nào?</a>
                                 </h5>
                             </div>
 
-                            <div id="emergency1" class="collapse show" role="tabpanel" data-parent="#emergency">
+                            <div id="emergency1" class="collapse" role="tabpanel" data-parent="#emergency">
                                 <div class="card-body">
                                     <p>Bác sĩ bạn đã hẹn đã phải chuyển đi khám khẩn cấp. Lịch hẹn có thời gian không đổi, chỉ chuyển bác sĩ cùng bệnh viện, vì vậy bạn chỉ cần đến hẹn đúng giờ và khám bác sĩ như trong lịch khám.</p>
                                 </div>
