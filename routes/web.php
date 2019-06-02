@@ -138,3 +138,4 @@ Route::get('/admin_hospital/services/add', "HospitalAdminController@service_add"
 
 Route::get('/result1', "PageControllerHI04@notification");
 //}
+Route::get('/admin_hospital/static', "HospitalAdminController@static");

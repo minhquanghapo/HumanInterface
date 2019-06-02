@@ -264,7 +264,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Vo Tuan(HI_06)</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -320,7 +320,7 @@
           <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Quản Văn Lý</p>
+          <p>Vo Tuan(HI_06)</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
@@ -360,6 +360,11 @@
           <li class="<?= (Request::segment(2)=='hospitals') ? 'active' : ''; ?>">
               <a href="/admin_hospital/edit">
                   <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
+              </a>
+          </li>
+          <li class="<?= (Request::segment(2)=='static') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/static">
+                  <i class="fa fa-line-chart"></i> <span>Thống kê</span>
               </a>
           </li>
           <!-- Nhóm 2 -->
