@@ -30,6 +30,12 @@
                             <ul id="cat_nav">
                                 <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
 
+                                {{--//HI_02_BEGIN--}}
+                                <li><a href="#consulting"><i class="icon_document_alt"></i>Tư vấn đặt lịch</a></li>
+                                <li><a href="#emergency"><i class="icon_document_alt"></i>Lịch khám khẩn cấp</a></li>
+                                {{--//HI_02_END--}}
+
+
                                 <li><a href="#hospital"><i class="icon_document_alt"></i>Câu hỏi của các nhóm khác</a></li>
 
                                 
@@ -144,15 +150,102 @@
 
                     </div>
                     <!-- /accordion booking -->
-                    
-                    
-       
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+                    {{--HI_02_BEGIN--}}
+                    <h4 class="nomargin_top">Tư vấn đặt lịch</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="consulting">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#consulting1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Tôi chưa biết rõ về bênh tình của mình. Làm thế nào để đặt được lịch khám?</a>
+                                </h5>
+                            </div>
+
+                            <div id="consulting1" class="collapse show" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bạn chọn chức năng "tra cứu bệnh" ở trên thanh menu. Gõ vào triệu chứng của mình và tham khảo những bài viết đã được các bác sĩ giỏi nhất của chúng tôi biên soạn. Bạn có thể đặt lịch khám ngay trong màn hình bài viết.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#consulting2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Tôi đã tìm được bệnh của mình khi tham khảo bài viết. Làm sao để đặt lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="consulting2" class="collapse" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Bạn có thể ấn vào nút "Đặt lịch khám ngay ở phía bên phải màn hình. Chọn 1 bác sĩ trong danh sách được gợi ý hoặc ấn "Xem thêm" để xem thêm những bác sĩ khác có chuyên môn điều trị bệnh của bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#consulting3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Tôi không chắc về bệnh của mình mặc dù đã tìm hiểu thông qua các triệu chứng?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="consulting3" class="collapse" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Bạn có thể chat trực tiếp với nhân viên bệnh viện bằng cách nhấn vào chatbox nằm ở góc phải dưới. Có thể lựa chọn nhắn trực tiếp, gọi thoại hoặc gọi camera. Nhân viên bệnh viện sẽ gửi link đăng ký trực tiếp cho bạn để có thể đăng ký khám một cách nhanh chóng nhất.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                    </div>
+                    <h4 class="nomargin_top">Lịch khám khẩn cấp</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="emergency">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Lịch khám của tôi bị chuyển bác sĩ, tôi phải làm thế nào?</a>
+                                </h5>
+                            </div>
+
+                            <div id="emergency1" class="collapse show" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p>Bác sĩ bạn đã hẹn đã phải chuyển đi khám khẩn cấp. Lịch hẹn có thời gian không đổi, chỉ chuyển bác sĩ cùng bệnh viện, vì vậy bạn chỉ cần đến hẹn đúng giờ và khám bác sĩ như trong lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#emergency2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Lịch khám của tôi bị chuyển bác sĩ do khám khẩn cấp, tôi phải làm sao để hẹn lại bác sĩ đó?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="emergency2" class="collapse" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p>Bạn ấn vào thẻ lịch khám của bạn, ở dưới cùng bạn có thể ấn vào nút "Đặt lại lịch khám với bác sĩ ABC" để đặt lịch khám lại với bác sĩ cũ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                    </div>
+
+                    {{--HI_02_END--}}
+
+
+
+
 
                 </div>
                 <!-- /col -->
