@@ -29,6 +29,7 @@
                         <div class="box_style_cat" id="faq_box">
                             <ul id="cat_nav">
                                 <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
+                                <li><a href="#patient"><i class="icon_document_alt"></i>Bệnh nhân và người nhà theo dõi lịch khám</a></li>
                                 <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho lễ tân </a></li>
                                 <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho quản trị bệnh viện </a></li>
                                 <li><a href="#admin"><i class="icon_document_alt"></i>Dành cho quản trị hệ thống </a></li>
@@ -36,7 +37,6 @@
                                 <li><a href="#consulting"><i class="icon_document_alt"></i>Tư vấn đặt lịch</a></li>
                                 <li><a href="#emergency"><i class="icon_document_alt"></i>Lịch khám khẩn cấp</a></li>
                                 {{--//HI_02_END--}}
-
                                 <li><a href="#hospital"><i class="icon_document_alt"></i>Câu hỏi của các nhóm khác</a></li>
 
 
@@ -152,6 +152,109 @@
 
                     </div>
                     <!-- /accordion booking -->
+
+                    <h4 class="nomargin_top">Bệnh nhân và người nhà theo dõi lịch khám</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="patient">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hi_04_1" aria-expanded="true"><i class="indicator icon_minus_alt2"></i>Làm thế nào để xem các lịch khám của bệnh nhân (vào trang “Lịch khám của tôi”)?</a>
+                                </h5>
+                            </div>
+
+                            <div id="hi_04_1" class="collapse show" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, người nhà hoặc bệnh nhân phải có tài khoản đăng nhập của bênh nhân. Tiếp theo, người nhà hoặc bệnh nhân ấn vào nút đăng nhập ở phía trên menu của trang web. Sau đó, điền thông tin vào ô tên đăng nhập, mật khẩu rồi ấn nút đăng nhập. Cuối cùng, ấn vào nút “Lịch khám của tôi” trên thanh menu. Sau khi vào ấn vào nút “Lịch khám của tôi” trên thanh menu, người nhà hoặc bệnh nhân sẽ được chuyển hướng đến trang có danh sách các lịch khám của bệnh nhân.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>Làm thế nào để xem thông tin chi tiết một lịch khám?</a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_2" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Sau khi vào trang “Lịch khám của tôi”. Bệnh nhân hoặc người nhà ấn vào một lịch khám cụ thể và một pop-up sẽ hiện ra với các thông tin chi tiết về lịch khám đó.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                 
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để hủy lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_3" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối với các lịch khám có trạng thái đã xong hoặc đã hủy thì bệnh nhân hoặc người nhà bệnh nhân không thể hủy lịch khám. Đối với các lịch khám có trạng thái chưa xong, dưới thông tin lịch khám có 1 nút “HỦY LỊCH”. Khi ấn vào đó, sẽ hiện ra một xác nhận bệnh nhận hoặc người nhà bệnh nhân có muốn hủy lịch hay không. Nếu ấn “HỦY LỊCH” thì màn hình thông báo hủy lịch khám thành công hiện ra, lịch khám sẽ bị hủy và trạng thái của lịch khám sẽ được cập nhật vào hệ thống. Còn nếu ấn vào “KHÔNG HỦY” thì màn hình thông báo không hủy lịch khám hiện ra và trạng thái của lịch khám sẽ vẫn không thay đổi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_4" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để lọc lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_4" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối Phía góc trên bên phải của danh sách có một trường sắp xếp để lọc lịch khám. Ấn vào để lựa chọn danh sách lịch khám được lọc theo trạng thái Chưa xong, Đã xong, Đã hủy hoặc Tất cả lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_5" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để tìm kiếm lịch khám? 
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_5" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối Để tìm kiếm lịch khám thì người dung cần có mã lịch khám. Để có mã lịch khám, bệnh nhân hoặc người nhà kiểm tra lại tin nhắn trong hộp thư gmail hoặc số điện thoại đã đăng kí. Sau khi có mã lịch khám, bệnh nhân hoặc người nhà điền vào ô tìm kiếm trong trang “Lịch khám của tôi”, sau đó ấn nút tìm kiếm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_6" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Sau hủy lịch khám thì có thể thay đổi lại trạng thái của lịch khám vừa hủy không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_6" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Sau khi hủy lịch khám thì không thể thay đổi trạng thái của lịch khám đó nữa. Nếu bệnh nhân hoặc người nhà muốn hẹn lại lịch thì phải bắt đầu lại quy trình đặt lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                    </div>
+                    <!-- /accordion patient -->
 
                     <h4 class="nomargin_top">Dành lễ tân bệnh viện</h4>
                     <div role="tablist" class="add_bottom_45 accordion" id="booking">
