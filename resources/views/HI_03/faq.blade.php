@@ -30,8 +30,8 @@
                             <ul id="cat_nav">
                                 <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
                                 <li><a href="#patient"><i class="icon_document_alt"></i>Bệnh nhân và người nhà theo dõi lịch khám</a></li>
-                                <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho lễ tân </a></li>
-                                <li><a href="#hospital"><i class="icon_document_alt"></i>Dành cho quản trị bệnh viện </a></li>
+                                <li><a href="#receptionist"><i class="icon_document_alt"></i>Dành cho lễ tân </a></li>
+                                <li><a href="#hospital_Admin"><i class="icon_document_alt"></i>Dành cho quản trị bệnh viện </a></li>
                                 <li><a href="#admin"><i class="icon_document_alt"></i>Dành cho quản trị hệ thống </a></li>
                                 {{--//HI_02_BEGIN--}}
                                 <li><a href="#consulting"><i class="icon_document_alt"></i>Tư vấn đặt lịch</a></li>
@@ -152,7 +152,6 @@
 
                     </div>
                     <!-- /accordion booking -->
-
                     <h4 class="nomargin_top">Bệnh nhân và người nhà theo dõi lịch khám</h4>
                     <div role="tablist" class="add_bottom_45 accordion" id="patient">
                         <div class="card">
@@ -184,7 +183,7 @@
                             </div>
                         </div>
                         <!-- /card -->
-                 
+
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
@@ -224,7 +223,7 @@
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#hi_04_5" aria-expanded="false">
                                         <i class="indicator icon_plus_alt2"></i>
-                                        Làm thế nào để tìm kiếm lịch khám? 
+                                        Làm thế nào để tìm kiếm lịch khám?
                                     </a>
                                 </h5>
                             </div>
@@ -256,17 +255,18 @@
                     </div>
                     <!-- /accordion patient -->
 
+
                     <h4 class="nomargin_top">Dành lễ tân bệnh viện</h4>
-                    <div role="tablist" class="add_bottom_45 accordion" id="booking">
+                    <div role="tablist" class="add_bottom_45 accordion" id="receptionist">
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapseOne_payment" aria-expanded="true">
+                                    <a data-toggle="collapse" href="#receptionist_1" aria-expanded="true">
                                         <i class="indicator icon_minus_alt2"></i> làm sao để đón tiếp bênh nhân nhập viện</a>
                                 </h5>
                             </div>
 
-                            <div id="collapseOne_payment" class="collapse show" role="tabpanel" data-parent="#booking">
+                            <div id="receptionist_1" class="collapse show" role="tabpanel" data-parent="#receptionist">
                                 <div class="card-body">
                                     <p>Nếu trường hợp bệnh nhân đã đăng ký và lên lịch hẹn trước,hoặc có thông tin trong hệ thống, bạn có thể giơ thẻ chứng minh thư hoặc thẻ bảo hiểm y tế của bệnh nhân để camera quét. Sau khi quét thành công ( thông tin được hiển thị lên và có tiếng bíp ) hãy xác nhận lại thông tin bệnh nhân.
                                         nếu đúng bạn có thể tiến hành cho bệnh nhân thực hiện thăm khám bình thường.
@@ -278,12 +278,12 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse show" href="#collapseOne_payment" aria-expanded="true">
-                                        <i class="indicator icon_minus_alt2"></i> làm sao để đón tiếp bênh nhân ra viện viện</a>
+                                    <a data-toggle="collapse" href="#receptionist_2" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> làm sao để đón tiếp bênh nhân ra viện viện</a>
                                 </h5>
                             </div>
 
-                            <div id="collapseOne_payment" class="collapse show" role="tabpanel" data-parent="#booking">
+                            <div id="receptionist_2" class="collapse" role="tabpanel" data-parent="#receptionist">
                                 <div class="card-body">
                                     <p>Bạn chỉ cần giơ thẻ bảo hiểm hoặc chứng min thư của bênh nhân lên cho camera quét. hoặc nhập tay vào trong trường camera hỏng hoặc bệnh nhân bị mất giấy tờ.Thông tin sau khi được xác nhận đúng. Bạn nhấn "Tiếp" để chuyển sang bước tiếp theo. hệ thống hiển thị chữ kỹ của các bác sỹ bệnh nhân có thể xinh phép để ra viện. Bạn hãy so sánh chữ ký trên đơn xin ra viện và chữ ký của bác sỹ tương ứng.Nêú ổn hãy chụp ảnh lại đơn xin và nhấn nút "Tiếp". Hệ thống tiếp tục hiển thị danh sách các mục cần thanh toán và số tiền cần thanh toán.
                                     Sau khi thanh toán xong, bạn hãy ấn "Tiếp". Hệ thống xuất màn hình in ấn, tại đây bạn có thể in hóa đơn cho bệnh nhân và hoàn tất thủ tục ra viện.</p>
@@ -299,25 +299,103 @@
 
                     </div>
 
+
                     <h4 class="nomargin_top">Dành cho quản trị bệnh viện</h4>
-                    <div role="tablist" class="add_bottom_45 accordion" id="booking">
+                    <div role="tablist" class="add_bottom_45 accordion" id="hospital_Admin">
+
+
 
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse show" href="#collapseOne_payment" aria-expanded="true">
-                                        <i class="indicator icon_minus_alt2"></i> làm thế nào để xem lịch một bác sỹ</a>
+                                    <a data-toggle="collapse" href="#hospital_Admin_2" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin bác sỹ</a>
                                 </h5>
                             </div>
 
-                            <div id="collapseOne_payment" class="collapse show" role="tabpanel" data-parent="#booking">
+                            <div id="hospital_Admin_2" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
                                 <div class="card-body">
-                                    <p>Bạn có thể nhấn vào ô chọn ngày, hoặc tìm kiếm theo tên bác sỹ. Kết quả lịch khám sẽ được hiển thị ngay bên dưới.</p>
+                                    <p>Bạn cần nhấn vào nút bác sỹ tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý. Tại dây một bảng thông tin các bác sỹ được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của bac sỹ, sau khi ấn tại đây sẽ có biểu mẫu hiện thị để bạn sửa thông tin của bác sỹ tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
 
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_3" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin nhân viên</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_3" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút nhân viên tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý. Tại dây một bảng thông tin các nhân viên
+                                        được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của nhân viên, sau khi ấn tại đây sẽ có biểu mẫu hiện thị để bạn sửa thông tin của nhân viên tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_1" aria-expanded="true">
+                                        <i class="indicator icon_minus_alt2"></i> làm thế nào để xem lịch một bác sỹ</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_1" class="collapse show" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn có thể nhấn vào ô chọn ngày, hoặc tìm kiếm theo tên bác sỹ. Kết quả lịch khám sẽ được hiển thị ngay bên dưới.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_4" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin thuốc</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_4" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút thuốc tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý.
+                                        Tại dây một bảng thông tin các thuốc
+                                        được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của thuốc, sau khi ấn tại đây sẽ có biểu mẫu hiện thị
+                                        để bạn sửa thông tin của thuốc tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_5" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin bệnh viện</a>
+                                </h5>
+                            </div>
+                            <div id="hospital_Admin_5" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút thuốc tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý.
+                                        Hệ thống hiển thị thông tin cho phép bạn sửa thông tin của bệnh viện. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu .
+                                    </p>
+                                </div>
+                            </div>
+
+                    </div>
+                    </div>
 
                     <h4 class="nomargin_top">Dành cho quản trị hệ thống</h4>
                     <div role="tablist" class="add_bottom_45 accordion" id="admin">
