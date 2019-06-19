@@ -153,7 +153,7 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#hi_04_1" aria-expanded="true"><i class="indicator icon_minus_alt2"></i>Làm thế nào để xem các lịch khám của bệnh nhân (vào trang “Lịch khám của tôi”)?</a>
+                                    <a data-toggle="collapse" href="#hi_04_1" aria-expanded="true"><i class="indicator icon_plus_alt2"></i>Làm thế nào để xem các lịch khám của bệnh nhân (vào trang “Lịch khám của tôi”)?</a>
                                 </h5>
                             </div>
 
@@ -258,11 +258,11 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#receptionist_1" aria-expanded="true">
-                                        <i class="indicator icon_minus_alt2"></i> làm sao để đón tiếp bênh nhân nhập viện</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm sao để đón tiếp bênh nhân nhập viện</a>
                                 </h5>
                             </div>
 
-                            <div id="receptionist_1" class="collapse show" role="tabpanel" data-parent="#receptionist">
+                            <div id="receptionist_1" class="collapse" role="tabpanel" data-parent="#receptionist">
                                 <div class="card-body">
                                     <p>Nếu trường hợp bệnh nhân đã đăng ký và lên lịch hẹn trước,hoặc có thông tin trong hệ thống, bạn có thể giơ thẻ chứng minh thư hoặc thẻ bảo hiểm y tế của bệnh nhân để camera quét. Sau khi quét thành công ( thông tin được hiển thị lên và có tiếng bíp ) hãy xác nhận lại thông tin bệnh nhân.
                                         nếu đúng bạn có thể tiến hành cho bệnh nhân thực hiện thăm khám bình thường.
@@ -274,8 +274,8 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#receptionist_2" aria-expanded="true">
-                                        <i class="indicator icon_plus_alt2"></i> làm sao để đón tiếp bênh nhân ra viện viện</a>
+                                    <a data-toggle="collapse" href="#receptionist_2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i> Làm sao để đón tiếp bênh nhân ra viện viện</a>
                                 </h5>
                             </div>
 
@@ -305,7 +305,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#hospital_Admin_2" aria-expanded="true">
-                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin bác sỹ</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin bác sỹ</a>
                                 </h5>
                             </div>
 
@@ -324,7 +324,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#hospital_Admin_3" aria-expanded="true">
-                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin nhân viên</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin nhân viên</a>
                                 </h5>
                             </div>
 
@@ -343,7 +343,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#hospital_Admin_1" aria-expanded="true">
-                                        <i class="indicator icon_minus_alt2"></i> làm thế nào để xem lịch một bác sỹ</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào để xem lịch một bác sỹ</a>
                                 </h5>
                             </div>
 
@@ -357,7 +357,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#hospital_Admin_4" aria-expanded="true">
-                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin thuốc</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin thuốc</a>
                                 </h5>
                             </div>
 
@@ -379,7 +379,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" href="#hospital_Admin_5" aria-expanded="true">
-                                        <i class="indicator icon_plus_alt2"></i> làm thế nào quản lý thông tin bệnh viện</a>
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin bệnh viện</a>
                                 </h5>
                             </div>
                             <div id="hospital_Admin_5" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
@@ -398,7 +398,7 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#admin1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Có bao nhiêu loại người dùng trên hệ thống?</a>
+                                    <a data-toggle="collapse" href="#admin1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Có bao nhiêu loại người dùng trên hệ thống?</a>
                                 </h5>
                             </div>
 
@@ -413,7 +413,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#admin2" aria-expanded="false">
-                                        <i class="indicator icon_minus_alt2"></i>
+                                        <i class="indicator icon_plus_alt2"></i>
                                         Tôi có thể chỉnh sửa quyền người dùng hệ thống được không?
                                     </a>
                                 </h5>
@@ -429,7 +429,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#admin3" aria-expanded="false">
-                                        <i class="indicator icon_minus_alt2"></i>
+                                        <i class="indicator icon_plus_alt2"></i>
                                         Làm thế nào để tối có thể quản lý dữ liệu của hệ thống, sao lưu dữ liệu phòng trường hợp hệ thống xảy ra sự cố?
                                     </a>
                                 </h5>
@@ -445,7 +445,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#admin4" aria-expanded="false">
-                                        <i class="indicator icon_minus_alt2"></i>
+                                        <i class="indicator icon_plus_alt2"></i>
                                         Bạn có thể cho tôi biết quy trình tạo người dùng mới trong hệ thống không?
                                     </a>
                                 </h5>
@@ -466,7 +466,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#admin5" aria-expanded="false">
-                                        <i class="indicator icon_minus_alt2"></i>
+                                        <i class="indicator icon_plus_alt2"></i>
                                         Bạn có thể cho tôi biết quy trình đăng ký một bệnh viện mới trong hệ thống không?
                                     </a>
                                 </h5>
