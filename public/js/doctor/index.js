@@ -32,304 +32,374 @@ $(document).ready(function() {
             {
                 id: 1,
                 title: 'ca khám bệnh nhân Nguyễn Văn A',
-                start: '2019-05-12T10:30:00',
+                start: '2019-06-12T10:30:00',
                 
             },
             {
                 id: 2,
                 title: 'ca khám bệnh nhân Nguyễn Văn B',
-                start: '2019-05-31T11:00:00',
+                start: '2019-06-04T11:00:00',
 
             },
             {
                 id: 3,
                 title: 'ca khám bệnh nhân Nguyễn Thị C',
-                start: '2019-05-31T08:00:00',
+                start: '2019-06-04T08:00:00',
 
             },
             {
                 id: 4,
                 title: 'ca khám bệnh nhân Lê Văn Hậu',
-                start: '2019-05-31T09:00:00',
+                start: '2019-06-04T09:00:00',
 
             },
             {
                 id: 5,
                 title: 'ca khám bệnh nhân Nguyễn Minh Quang',
-                start: '2019-05-31T09:30:00',
+                start: '2019-06-04T09:30:00',
             },
             {
                 id: 6,
                 title: 'ca khám bệnh nhân Nguyễn Văn B',
-                start: '2019-05-31T13:00:00',
+                start: '2019-06-04T13:00:00',
 
             },
             {
                 id: 7,
                 title: 'ca khám bệnh nhân Trần Thị Nụ',
-                start: '2019-05-31T15:00:00',
+                start: '2019-06-04T15:00:00',
 
             },
             {
                 id: 8,
                 title: 'ca khám bệnh nhân Nguyễn Đình Hưng ',
-                start: '2019-05-31T15:30:00',
+                start: '2019-06-04T15:30:00',
 
             },
             {
 
                 id: 9,
                 title: 'ca khám bệnh nhân Trần Thị Sen',
-                start: '2019-05-31T16:00:00',
+                start: '2019-06-04T16:00:00',
 
             },
             {
                 id: 10,
                 title: 'ca khám',
-                start: '2019-05-20T08:30:00',
+                start: '2019-06-20T08:30:00',
             },
             {
                 id: 11,
                 title: 'ca khám',
-                start: '2019-05-20T10:00:00',
+                start: '2019-06-20T10:00:00',
 
             },
             {
                 id: 12,
                 title: 'ca khám',
-                start: '2019-05-22T09:00:00',
+                start: '2019-06-22T09:00:00',
 
             },
             {
                 id: 13,
                 title: 'ca khám',
-                start: '2019-05-22T13:30:00',
+                start: '2019-06-22T13:30:00',
 
             },
             {
                 id: 14,
                 title: 'ca khám',
-                start: '2019-05-24T14:00:00',
+                start: '2019-06-24T14:00:00',
 
             },
             {
                 id: 15,
                 title: 'ca khám',
-                start: '2019-05-24T14:30:00',
+                start: '2019-06-24T14:30:00',
 
             },
             {
                 id: 16,
                 title: 'ca khám',
-                start: '2019-05-25T08:00:00',
+                start: '2019-06-25T08:00:00',
             },
             {
                 id: 17,
                 title: 'ca khám',
-                start: '2019-05-25T10:30:00',
+                start: '2019-06-25T10:30:00',
 
             },
             {
                 id: 18,
                 title: 'ca khám',
-                start: '2019-05-26T15:51:00',
+                start: '2019-06-26T15:51:00',
 
             },
             {
                 id: 19,
                 title: 'ca khám',
-                start: '2019-05-27T13:30:00',
+                start: '2019-06-27T13:30:00',
 
             },
             {
                 id: 20,
                 title: 'ca khám',
-                start: '2019-05-26T10:00:00',
+                start: '2019-06-26T10:00:00',
 
             },
             {
                 id: 21,
                 title: 'ca khám',
-                start: '2019-05-26T10:30:00',
+                start: '2019-06-26T10:30:00',
 
             },
             {
                 id: 22,
                 title: 'ca khám',
-                start: '2019-05-27T15:30:00',
+                start: '2019-06-27T15:30:00',
 
             },
             {
                 id: 23,
                 title: 'ca khám bệnh nhân Trần Minh Hậu',
-                start: '2019-05-30T08:30:00',
+                start: '2019-06-30T08:30:00',
             },
             {
                 id: 24,
                 title: 'ca khám bệnh nhân Vũ Hồng Quang',
-                start: '2019-05-30T10:30:00',
+                start: '2019-06-30T10:30:00',
 
             },
             {
                 id: 25,
                 title: 'ca khám',
-                start: '2019-05-16T08:00:00',
+                start: '2019-06-16T08:00:00',
 
             },
             {
                 id: 26,
                 title: 'ca khám',
-                start: '2019-05-16T08:30:00',
+                start: '2019-06-16T08:30:00',
 
             },
             {
                 id: 27,
                 title: 'ca khám',
-                start: '2019-05-16T09:30:00',
+                start: '2019-06-16T09:30:00',
 
             },
             {
                 id: 28,
                 title: 'ca khám',
-                start: '2019-05-16T10:30:00',
+                start: '2019-06-16T10:30:00',
 
             },
             {
                 id: 29,
                 title: 'ca khám',
-                start: '2019-05-17T08:00:00',
+                start: '2019-06-17T08:00:00',
 
             },
             {
                 id: 30,
                 title: 'ca khám',
-                start: '2019-05-17T08:30:00',
+                start: '2019-06-17T08:30:00',
 
             },
             {
                 id: 31,
                 title: 'ca khám',
-                start: '2019-05-17T09:30:00',
+                start: '2019-06-17T09:30:00',
 
             },
             {
                 id: 32,
                 title: 'ca khám',
-                start: '2019-05-17T10:30:00',
+                start: '2019-06-17T10:30:00',
 
             },
             {
                 id: 33,
                 title: 'ca khám',
-                start: '2019-05-17T09:00:00',
+                start: '2019-06-17T09:00:00',
 
             },
             {
                 id: 34,
                 title: 'ca khám',
-                start: '2019-05-17T10:00:00',
+                start: '2019-06-17T10:00:00',
 
             },
             {
                 id: 35,
                 title: 'ca khám',
-                start: '2019-05-18T08:30:00',
+                start: '2019-06-18T08:30:00',
 
             },
             {
                 id: 36,
                 title: 'ca khám',
-                start: '2019-05-18T08:30:00',
+                start: '2019-06-18T08:30:00',
 
             },
             {
                 id: 37,
                 title: 'ca khám',
-                start: '2019-05-18T09:30:00',
+                start: '2019-06-18T09:30:00',
 
             },
             {
                 id: 38,
                 title: 'ca khám',
-                start: '2019-05-18T10:30:00',
+                start: '2019-06-18T10:30:00',
 
             },
             {
                 id: 39,
                 title: 'ca khám',
-                start: '2019-05-18T11:30:00',
+                start: '2019-06-18T11:30:00',
 
             },
             {
                 id: 40,
                 title: 'ca khám',
-                start: '2019-05-18T12:30:00',
+                start: '2019-06-18T12:30:00',
 
             },
             {
                 id: 41,
                 title: 'ca khám',
-                start: '2019-05-19T10:30:00',
+                start: '2019-06-19T10:30:00',
 
             },
             {
                 id: 42,
                 title: 'ca khám',
-                start: '2019-05-19T11:30:00',
+                start: '2019-06-19T11:30:00',
 
             },
             {
                 id: 43,
                 title: 'ca khám',
-                start: '2019-05-19T12:00:00',
+                start: '2019-06-19T12:00:00',
 
             },
             {
                 id: 44,
                 title: 'ca khám',
-                start: '2019-05-19T12:30:00',
+                start: '2019-06-19T12:30:00',
 
             },
             {
                 id: 45,
                 title: 'ca khám',
-                start: '2019-05-19T13:30:00',
+                start: '2019-06-19T13:30:00',
 
             },
             {
                 id: 46,
                 title: 'ca khám',
-                start: '2019-05-19T14:00:00',
+                start: '2019-06-19T14:00:00',
 
             },
             {
                 id: 47,
                 title: 'ca khám',
-                start: '2019-05-15T07:00:00',
+                start: '2019-06-15T07:00:00',
 
             },
             {
                 id: 48,
                 title: 'ca khám',
-                start: '2019-05-15T07:30:00',
+                start: '2019-06-15T07:30:00',
 
             },
             {
                 id: 49,
                 title: 'ca khám',
-                start: '2019-05-15T08:30:00',
+                start: '2019-06-15T08:30:00',
 
             },
             {
                 id: 50,
                 title: 'ca khám',
-                start: '2019-05-15T09:30:00',
+                start: '2019-06-15T09:30:00',
 
             },
             {
                 id: 51,
                 title: 'ca khám',
-                start: '2019-05-15T10:30:00',
+                start: '2019-06-15T10:30:00',
+
+            },
+            {
+                id: 52,
+                title: 'ca khám bệnh nhân Nguyễn Văn A',
+                start: '2019-06-12T10:30:00',
+
+            },
+            {
+                id: 53,
+                title: 'ca khám bệnh nhân Nguyễn Văn B',
+                start: '2019-06-05T11:00:00',
+
+            },
+            {
+                id: 54,
+                title: 'ca khám bệnh nhân Nguyễn Thị C',
+                start: '2019-06-05T08:00:00',
+
+            },
+            {
+                id:55,
+                title: 'ca khám bệnh nhân Lê Văn Hậu',
+                start: '2019-06-05T09:00:00',
+
+            },
+            {
+                id: 56,
+                title: 'ca khám bệnh nhân Nguyễn Minh Quang',
+                start: '2019-06-05T09:30:00',
+            },
+            {
+                title: 'ca khám bệnh nhân Nguyễn Văn B',
+                start: '2019-06-05T13:00:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Trần Thị Nụ',
+                start: '2019-06-05T15:00:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Nguyễn Đình Hưng ',
+                start: '2019-06-05T15:30:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Trần Thị Sen',
+                start: '2019-06-05T16:00:00',
+
+            },
+
+            {
+                title: 'ca khám bệnh nhân Nguyễn Văn B',
+                start: '2019-06-03T13:00:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Trần Thị Nụ',
+                start: '2019-06-03T15:00:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Nguyễn Đình Hưng ',
+                start: '2019-06-03T15:30:00',
+
+            },
+            {
+                title: 'ca khám bệnh nhân Trần Thị Sen',
+                start: '2019-06-03T16:00:00',
 
             },
         ],
@@ -446,7 +516,7 @@ $(document).ready(function() {
             {
                 id: 1,
                 title: 'ca khám',
-                start: '2019-05-12T10:30:00',
+                start: '`-12T10:30:00',
 
             },
             {
