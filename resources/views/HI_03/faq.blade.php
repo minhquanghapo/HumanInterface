@@ -489,7 +489,7 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#consulting1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Tôi chưa biết rõ về bênh tình của mình. Làm thế nào để đặt được lịch khám?</a>
+                                    <a data-toggle="collapse" href="#consulting1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Tôi chưa biết rõ về bênh tình của mình. Làm thế nào để đặt được lịch khám?</a>
                                 </h5>
                             </div>
 
@@ -522,7 +522,7 @@
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
                                     <a class="collapsed" data-toggle="collapse" href="#consulting3" aria-expanded="false">
-                                        <i class="indicator icon_minus_alt2"></i>
+                                        <i class="indicator icon_plus_alt2"></i>
                                         Tôi không chắc về bệnh của mình mặc dù đã tìm hiểu thông qua các triệu chứng?
                                     </a>
                                 </h5>
@@ -541,7 +541,7 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Lịch khám của tôi hiện số ở trên, điều này nghĩa là gì?</a>
+                                    <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Lịch khám của tôi hiện số ở trên, điều này nghĩa là gì?</a>
                                 </h5>
                             </div>
 
@@ -554,7 +554,7 @@
                         <div class="card">
                             <div class="card-header" role="tab">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#emergency2" aria-expanded="false"><i class="indicator icon_minus_alt2"></i>Lịch khám của tôi bị chuyển bác sĩ, tôi phải làm thế nào?</a>
+                                    <a data-toggle="collapse" href="#emergency2" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Lịch khám của tôi bị chuyển bác sĩ, tôi phải làm thế nào?</a>
                                 </h5>
                             </div>
 
