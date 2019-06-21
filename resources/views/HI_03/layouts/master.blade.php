@@ -108,7 +108,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-9">
-                                <input id="messageInp" type="text" class="form-control message-input" placeholder="Type and press [Enter]">
+                                <input id="messageInp" type="text" class="form-control message-input" placeholder="Nhấn phím [Enter] để gửi">
                             </div>
                             <div class="col-md-3 action-group">
                                 <i class="fas fa-paperclip action" id="btnAddFile"></i>
