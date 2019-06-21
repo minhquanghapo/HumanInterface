@@ -1211,7 +1211,7 @@ body.swal2-no-backdrop .swal2-shown {
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">  
+                <ul class="nav navbar-nav navbar-right">
                     <li id="schedule_nav"  class="active"><a href="/doctor">Lịch làm việc</a></li>
                     <li id="history_nav"><a href="/doctor/history">Lịch sử khám</a></li>
                     <li class="dropdown" style="height: 50px; margin-right: 20px;">
