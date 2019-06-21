@@ -1164,16 +1164,16 @@ body.swal2-no-backdrop .swal2-shown {
         .mybtn{
             width: 100%;
         }
-        .badge {
-            position: absolute;
-            top: 2px;
-            right: -2px;
-            padding: 4px 6px;
-            border-radius: 50%;
-            background-color: red;
-            color: white;
-            font-size: 14px;
-        }
+          .badge {
+              position: absolute;
+              top: 1px;
+              right: -2px;
+              padding: 4px 6px;
+              border-radius: 50%;
+              background-color: red;
+              color: white;
+              font-size: 14px;
+          }
 
         input[type='checkbox'] {
             width:20px;
@@ -1211,8 +1211,8 @@ body.swal2-no-backdrop .swal2-shown {
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="schedule_nav" class="active"><a href="/doctor">Lịch làm việc</a></li>
+                <ul class="nav navbar-nav navbar-right">  
+                    <li id="schedule_nav"  class="active"><a href="/doctor">Lịch làm việc</a></li>
                     <li id="history_nav"><a href="/doctor/history">Lịch sử khám</a></li>
                     <li class="dropdown" style="height: 50px; margin-right: 20px;">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 0;line-height: 50px">
@@ -1254,8 +1254,9 @@ body.swal2-no-backdrop .swal2-shown {
             </div>
             <div class="col-md-8">
                 <div class="fc fc-unthemed fc-ltr">
-                  <div class="fc-toolbar fc-header-toolbar"><div class="fc-left"></div><div class="fc-right"><div class="fc-button-group"><button type="button" class="fc-listDay-button fc-button fc-state-default fc-corner-left fc-state-active">Lịch biểu</button><button type="button" class="fc-month-button fc-button fc-state-default fc-corner-right">Tháng</button></div></div><div class="fc-center"><h2>30 tháng 5 năm 2019</h2></div><div class="fc-clear"></div></div>
-                  <div class="fc-view-container" style=""><div class="fc-view fc-listDay-view fc-list-view fc-widget-content" style=""><div class="fc-scroller" style="overflow: hidden auto; height: 439px;"><table class="fc-list-table "><tbody><tr class="fc-list-heading" data-date="2019-05-30"><td class="fc-widget-header" colspan="3"><a class="fc-list-heading-main" data-goto="{&quot;date&quot;:&quot;2019-05-30&quot;,&quot;type&quot;:&quot;day&quot;}">thứ năm</a></td></tr>
+                  <div class="fc-toolbar fc-header-toolbar"><div class="fc-left"></div><div class="fc-right"><div class="fc-button-group"><button type="button" class="fc-listDay-button fc-button fc-state-default fc-corner-left fc-state-active">Lịch biểu</button><button type="button" class="fc-month-button fc-button fc-state-default fc-corner-right">Tháng</button></div></div><div class="fc-center"><h2>22 tháng 6 năm 2019</h2></div><div class="fc-clear"></div></div>
+                  
+                  <div class="fc-view-container" style=""><div class="fc-view fc-listDay-view fc-list-view fc-widget-content" style=""><div class="fc-scroller" style="overflow: hidden auto; height: 439px;"><table class="fc-list-table "><tbody><tr class="fc-list-heading" data-date="2019-05-30"><td class="fc-widget-header" colspan="3"><a class="fc-list-heading-main" data-goto="{&quot;date&quot;:&quot;2019-05-30&quot;,&quot;type&quot;:&quot;day&quot;}">thứ bảy</a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">08:30</td><td class="fc-list-item-marker fc-widget-content"></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Nguyễn Văn A - Nam 29 tuổi</strong></a></td></tr>
                     <tr class="fc-list-item" style="background-color: #FDEDEC;"><td class="fc-list-item-time fc-widget-content">09:30</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Khám khẩn cấp: <strong>Laura Larau - Nữ 18 tuổi</strong><span class="glyphicon glyphicon-exclamation-sign" style="float: right;"></span></a></td></tr>
                     <tr class="fc-list-item"><td class="fc-list-item-time fc-widget-content">10:00</td><td class="fc-list-item-marker fc-widget-content"><span class="fc-event-dot"></span></td><td class="fc-list-item-title fc-widget-content"><a href="#" data-toggle="modal" data-target="#detailModal">Ca khám thường: <strong>Bệnh Văn Nhân - Nam 19 tuổi</strong></a></td></tr>
@@ -1343,7 +1344,6 @@ body.swal2-no-backdrop .swal2-shown {
                 </div>
             </div>
             <div class="modal-footer">
-                
                 <button type="button" id="start-examination" class="btn btn-primary" value="">Bắt đầu ca khám</button>
                 <button type="button" id="remove-examination" class="btn btn-danger">Huỷ ca khám</button>
             </div>
