@@ -184,7 +184,7 @@
             chatBoxContentElm.append(`
                 <div class="chat-message message-send">
                     <div class="avatar">
-                        <img src="/HI_02/svg/female-35.svg" class="img-responsive img-rounded" alt="">
+                        <img src="/HI_02/img/user.png" class="img-responsive img-rounded" alt="">
                     </div>
                     <div class="messages">
                         ${newMessageHtml}
