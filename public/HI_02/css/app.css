@@ -150,6 +150,10 @@
   width: 80px;
 }
 
+.chat-bubble-container .chat-box .chat-box-content .chat-message .avatar img {
+  max-width: 50px;
+}
+
 .chat-bubble-container .chat-box .chat-box-content .chat-message .messages {
   width: 100%;
 }
@@ -385,6 +389,31 @@
 }
 
 .chat-bubble-container .loading span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.hi02 .loading {
+  font-size: 50px;
+}
+
+.hi02 .loading span {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.hi02 .loading span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.hi02 .loading span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }

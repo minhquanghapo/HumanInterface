@@ -9,12 +9,12 @@
 @endsection
 
 @section('content')
-    <main>
+    <main class="hi02">
         <div class="disease-search header-video">
             <div class="search-box content text-center">
                 <h3>Nhập vào triệu chứng bệnh</h3>
                 <br>
-                <form>
+                <div>
                     <div id="custom-search-input">
                         <div class="input-group">
                             <input type="text" name="symptom" class=" search-query" id="symptomInp"
@@ -23,7 +23,10 @@
                             >
                         </div>
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="loading-containter container text-center" style="display: none">
+                Đang tìm kiếm <p class="loading"><span>.</span><span>.</span><span>.</span></p>
             </div>
             <div class="result container" style="display: none">
                 <div class="result-list row">
@@ -68,10 +71,37 @@
 
 @section('SPECIFIC SCRIPTS')
     <script>
-        $(document).ready(function() {
-            $('#symptomInp').on('keyup', function() {
-                $('.result').show('fade');
+        // Returns a function, that, as long as it continues to be invoked, will not
+        // be triggered. The function will be called after it stops being called for
+        // N milliseconds. If `immediate` is passed, trigger the function on the
+        // leading edge, instead of the trailing.
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        $(document).ready(debounce(function() {
+            $('#symptomInp').on('keyup', function(e) {
+                e.preventDefault();
+                $('.result').hide();
+                $('.loading-containter').show('fade', function() {
+                    setTimeout(function(){
+                        $('.loading-containter').hide();
+                        $('.result').show('fade');
+                    }, 300);
+                })
+
             });
-        });
+        }), 500);
     </script>
 @endsection
