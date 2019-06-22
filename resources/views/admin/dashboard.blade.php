@@ -25,16 +25,6 @@
 @endsection
 @section('pagename')
     <div class="container-fluid">
-        <section class="content-header">
-            <h1>
-                Dashboard
-                <small>Version 2.0</small>
-              </h1>
-            <ol class="breadcrumb">
-                <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
-        </section>
         <section class="content">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">

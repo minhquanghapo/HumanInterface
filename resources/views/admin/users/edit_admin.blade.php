@@ -5,13 +5,6 @@
 @endsection
 @section('pagename')
 <div class="container-fluid">
-    <section class="content-header">
-        <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
-            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/users">Users</a></li>
-            <li class="active"> Edit</li>
-        </ol>
-    </section>
     <section class="content">
         <div class="row">
             <div class="col-sm-8">

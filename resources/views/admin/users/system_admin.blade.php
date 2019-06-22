@@ -75,7 +75,7 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Nguyễn Văn A</td>
+                                    <td>Nguyễn Quốc Chung</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvana@gmail.com</td>
                                     <td>Quản trị kĩ thuật</td>
@@ -83,7 +83,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Nguyễn Văn B</td>
+                                    <td>Nguyễn Khánh Huyền</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvanb@gmail.com</td>
                                     <td>Quản trị điều hành</td>
@@ -91,7 +91,7 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Nguyễn Văn C</td>
+                                    <td>Vũ Đức Long</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvanc@gmail.com</td>
                                     <td>Quản trị điều hành</td>
@@ -99,7 +99,7 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Nguyễn Văn D</td>
+                                    <td>Vũ Thanh Tùng</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvand@gmail.com</td>
                                     <td>Quản trị phụ tá</td>
@@ -107,6 +107,46 @@
                                 </tr>
                                 <tr>
                                     <td>5</td>
+                                    <td>Hồ Thị Linh</td>
+                                    <td>19-2-1997</td>
+                                    <td>nguyenvane@gmail.com</td>
+                                    <td>Quản trị phụ tá</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>19-2-1997</td>
+                                    <td>nguyenvana@gmail.com</td>
+                                    <td>Quản trị kĩ thuật</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Nguyễn Văn B</td>
+                                    <td>19-2-1997</td>
+                                    <td>nguyenvanb@gmail.com</td>
+                                    <td>Quản trị điều hành</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Nguyễn Văn C</td>
+                                    <td>19-2-1997</td>
+                                    <td>nguyenvanc@gmail.com</td>
+                                    <td>Quản trị điều hành</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Nguyễn Văn D</td>
+                                    <td>19-2-1997</td>
+                                    <td>nguyenvand@gmail.com</td>
+                                    <td>Quản trị phụ tá</td>
+                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
                                     <td>Nguyễn Văn E</td>
                                     <td>19-2-1997</td>
                                     <td>nguyenvane@gmail.com</td>

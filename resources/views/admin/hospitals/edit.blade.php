@@ -28,8 +28,7 @@
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#detail">Thông tin chung</a></li>
                             <li><a data-toggle="tab" href="#account">Cấp tài khoản</a></li>
-                            <a href="/admin_hospital" class="btn btn-primary pull-right">Xem chi tiết</a>
-
+                            <li><a data-toggle="tab" href="#account_manager">Quản lý nhân viên</a></li>
                         </ul>
                         <!-- <h3 class="box-title"><strong>Thông tin chung</strong></h3> -->
                     </div>
@@ -123,34 +122,8 @@
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="account">
-                                <table class="table table-bordered table-hover">
-                                    <thead class="bg-info">
-                                        <tr>
-                                            <th>Username</th>
-                                            <th>Email</th>
-                                            <th>Ngày tạo</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>anhnv</td>
-                                            <td>anhnv@gmail.com</td>
-                                            <td>22-12-2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ngocnv</td>
-                                            <td>ngocnv@gmail.com</td>
-                                            <td>22-12-2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ducnv</td>
-                                            <td>ducnv@gmail.com</td>
-                                            <td>22-12-2018</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                
                                 <form class="form-horizontal">
+                                    <p><strong>Cấp tài khoản mới cho nhân viên bệnh viện</strong></p>
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label">Tài khoản</label>
                                         <div class="col-sm-10">
@@ -178,6 +151,33 @@
                                     <button type="submit" class="btn btn-info pull-right">Gửi</button>
                                 </form>
                             </div>    
+                            <div class="tab-pane fade" id="account_manager">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="bg-info">
+                                        <tr>
+                                            <th>Chức vụ</th>
+                                            <th>Số lượng</th>
+                                            <th>Chi tiết</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bác sỹ</td>
+                                            <td>150</td>
+                                            <td>
+                                                <a class="btn btn-primary" target="_blank" href="/admin_hospital/doctors"><i class="fa fa-eye"></i>Chi tiết</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nhân viên bệnh viện</td>
+                                            <td>20</td>
+                                            <td>
+                                                <a class="btn btn-primary" target="_blank" href="/admin_hospital/staffs"><i class="fa fa-eye"></i>Chi tiết</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,6 +185,10 @@
                 <!-- /.box -->
             <div class="col-sm-5">
                 <div class="box box-primary">
+                    <div class="box-body">   
+                        <span class="box-title pull-left" style="padding-bottom: 10px;"><strong>Thông tin hoạt động</strong></span>
+                        <a target="_blank" href="/admin_hospital" class="btn btn-primary pull-right">Xem chi tiết</a><br>
+                    </div>
                     <div class="box-footer no-padding">
                         <ul class="nav nav-stacked">
                             <li><a href="#">Số lượng phòng khám <span class="pull-right badge bg-blue">230</span></a></li>
