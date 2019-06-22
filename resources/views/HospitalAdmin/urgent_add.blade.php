@@ -134,9 +134,9 @@
                     </form>
                 </div>
                 <div class="box-footer">
-                        <a href="/admin_hospital/urgent"><button class="btn btn-default">Cancel</button></a>
-                        <button type="" class="btn pull-right" style="margin-right: 10px; color: black" onclick="updatesuccess()">cập nhật</button>
-                        <button type="" class="btn btn-info pull-right" onclick="openadddoctorModal()" style="margin-right: 10px;">Thêm người nhận</button>
+                        <a href="/admin_hospital/urgent"><button class="btn btn-default">Quay lại</button></a>
+                        <button href="/admin_hospital/urgent" type="" class="btn pull-right" style="margin-right: 10px; color: black" onclick="updatesuccess()">Cập nhật</button>
+                        <button type="" class="btn btn-info pull-right" onclick="openadddoctorModal()" style="margin-right: 10px;">Thêm / Thay đổi người nhận</button>
 
                     </div>
             </div>
@@ -343,7 +343,7 @@
                                     </li>
                               
                                     <li class="events-group">
-                                      <div class="top-info" onclick="tooManyForm()"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
+                                      <div class="top-info" onclick="addE()"><img src="/img/HI_06/dist/img/bslan.jpeg" class="img-circle bs-avatar" alt="User Image"><span style="text-align: left">Bác sĩ E</span></div>
                               
                                       <ul>
                                         <li class="single-event" data-start="12:00" data-end="18:00"  data-content="event-rowing-workout" data-event="event-1">
@@ -438,10 +438,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" onclick="superdenyForm()" class="btn btn-danger">Yêu cầu hủy lịch hẹn do khám khẩn cấp</button>
-                                                    
-                                                </div>
                                             </div>
                                     
                                         </div>
@@ -470,7 +466,7 @@
                                     <div class="my">
                                         <ul>
                                           <li id="doctorB" style="display: none">Hoàng Văn A - chuyên khoa 1<span class="close">&times;</span></li>
-                                          <li id="doctorC" style="display: none">Bác sĩ C - chuyên khoa 1<span class="close">&times;</span></li>
+                                          <li id="doctorE" style="display: none">Bác sĩ E - chuyên khoa 1<span class="close">&times;</span></li>
                                           <li id="doctorD" style="display: none">Bác sĩ D - chuyên khoa 1<span class="close">&times;</span></li>
                                         </ul>
                                     </div>
@@ -497,11 +493,12 @@
 
 <script>
 var closebtns = document.getElementsByClassName("close");
-var i;
+var i,z=0;
 
 for (i = 0; i < closebtns.length; i++) {
   closebtns[i].addEventListener("click", function() {
     this.parentElement.style.display = 'none';
+    z=0;
   });
 }
 </script>
@@ -536,12 +533,33 @@ for (i = 0; i < closebtns.length; i++) {
         
     }
     function addB(){
+      console.log(z);
+      if (z==0) {
         document.getElementById("doctorB").style.display = "";
+        z=1;
+      }else{
+        tooManyForm();
+      }
     }
 
     function addD(){
+      if (z==0) {
         document.getElementById("doctorD").style.display = "";
+          z=1;
+      }else{
+        tooManyForm();
+      }
     }
+
+    function addE(){
+      if (z==0) {
+        document.getElementById("doctorE").style.display = "";
+          z=1;
+      }else{
+        tooManyForm();
+      }
+    }
+
     function showList() {
       var x = document.getElementById("myDIV");
       if (x.style.display === "none") {
@@ -572,7 +590,7 @@ for (i = 0; i < closebtns.length; i++) {
       Swal.fire({
         type: 'error',
         title: 'Không thể gửi!',
-        text: 'Chỉ có thể gửi cho 1 bác sĩ!',
+        text: 'Chỉ có thể gửi cho 1 bác sĩ! Hãy xóa bác sĩ đã chọn để thêm bác sĩ này',
         confirmButtonText: 'Xác nhận!',
       })
     }
@@ -590,8 +608,13 @@ for (i = 0; i < closebtns.length; i++) {
                 cancelButtonText: 'Không!',
             }).then((result) => {
                 if (result.value) {
+                  if (z==0) {
                     toastr["success"]("Đã thêm bác sĩ vào danh sách nhận yêu cầu khẩn cấp!");
                     document.getElementById("doctorD").style.display = "block";
+                    z=1;
+                  } else{
+                    tooManyForm();
+                  }
                 }
                 $("#detailModal").modal("hide");
             })
