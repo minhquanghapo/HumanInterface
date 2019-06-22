@@ -9,7 +9,7 @@
         <div id="breadcrumb">
             <div class="container">
                 <ul>
-                    <li><a href="{{ url('/') }}">Trang chủ</a></li>
+                    <li><a href="{{ url('home') }}">Trang chủ</a></li>
                     <li>Câu hỏi thường gặp</li>
                 </ul>
             </div>
@@ -29,10 +29,14 @@
                         <div class="box_style_cat" id="faq_box">
                             <ul id="cat_nav">
                                 <li><a href="#booking"><i class="icon_document_alt"></i>Đặt lịch khám</a></li>
-
-                                <li><a href="#hospital"><i class="icon_document_alt"></i>Câu hỏi của các nhóm khác</a></li>
-
-                                
+                                <li><a href="#patient"><i class="icon_document_alt"></i>Bệnh nhân và người nhà theo dõi lịch khám</a></li>
+                                <li><a href="#receptionist"><i class="icon_document_alt"></i>Dành cho lễ tân </a></li>
+                                <li><a href="#hospital_Admin"><i class="icon_document_alt"></i>Dành cho quản trị bệnh viện </a></li>
+                                <li><a href="#admin"><i class="icon_document_alt"></i>Dành cho quản trị hệ thống </a></li>
+                                {{--//HI_02_BEGIN--}}
+                                <li><a href="#consulting"><i class="icon_document_alt"></i>Tư vấn đặt lịch</a></li>
+                                <li><a href="#emergency"><i class="icon_document_alt"></i>Lịch khám khẩn cấp</a></li>
+                                {{--//HI_02_END--}}
                             </ul>
                         </div>
                         <!--/sticky -->
@@ -144,16 +148,445 @@
 
                     </div>
                     <!-- /accordion booking -->
-                    
-                    
-       
-                    
-                    
-                    
-                    
-                    
-                    
+                    <h4 class="nomargin_top">Bệnh nhân và người nhà theo dõi lịch khám</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="patient">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hi_04_1" aria-expanded="true"><i class="indicator icon_plus_alt2"></i>Làm thế nào để xem các lịch khám của bệnh nhân (vào trang “Lịch khám của tôi”)?</a>
+                                </h5>
+                            </div>
 
+                            <div id="hi_04_1" class="collapse show" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, người nhà hoặc bệnh nhân phải có tài khoản đăng nhập của bênh nhân. Tiếp theo, người nhà hoặc bệnh nhân ấn vào nút đăng nhập ở phía trên menu của trang web. Sau đó, điền thông tin vào ô tên đăng nhập, mật khẩu rồi ấn nút đăng nhập. Cuối cùng, ấn vào nút “Lịch khám của tôi” trên thanh menu. Sau khi vào ấn vào nút “Lịch khám của tôi” trên thanh menu, người nhà hoặc bệnh nhân sẽ được chuyển hướng đến trang có danh sách các lịch khám của bệnh nhân.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>Làm thế nào để xem thông tin chi tiết một lịch khám?</a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_2" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Sau khi vào trang “Lịch khám của tôi”. Bệnh nhân hoặc người nhà ấn vào một lịch khám cụ thể và một pop-up sẽ hiện ra với các thông tin chi tiết về lịch khám đó.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để hủy lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_3" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối với các lịch khám có trạng thái đã xong hoặc đã hủy thì bệnh nhân hoặc người nhà bệnh nhân không thể hủy lịch khám. Đối với các lịch khám có trạng thái chưa xong, dưới thông tin lịch khám có 1 nút “HỦY LỊCH”. Khi ấn vào đó, sẽ hiện ra một xác nhận bệnh nhận hoặc người nhà bệnh nhân có muốn hủy lịch hay không. Nếu ấn “HỦY LỊCH” thì màn hình thông báo hủy lịch khám thành công hiện ra, lịch khám sẽ bị hủy và trạng thái của lịch khám sẽ được cập nhật vào hệ thống. Còn nếu ấn vào “KHÔNG HỦY” thì màn hình thông báo không hủy lịch khám hiện ra và trạng thái của lịch khám sẽ vẫn không thay đổi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_4" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để lọc lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_4" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối Phía góc trên bên phải của danh sách có một trường sắp xếp để lọc lịch khám. Ấn vào để lựa chọn danh sách lịch khám được lọc theo trạng thái Chưa xong, Đã xong, Đã hủy hoặc Tất cả lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_5" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để tìm kiếm lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_5" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bệnh nhân hoặc người nhà cần vào trang lịch khám của tôi. Đối Để tìm kiếm lịch khám thì người dung cần có mã lịch khám. Để có mã lịch khám, bệnh nhân hoặc người nhà kiểm tra lại tin nhắn trong hộp thư gmail hoặc số điện thoại đã đăng kí. Sau khi có mã lịch khám, bệnh nhân hoặc người nhà điền vào ô tìm kiếm trong trang “Lịch khám của tôi”, sau đó ấn nút tìm kiếm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#hi_04_6" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Sau hủy lịch khám thì có thể thay đổi lại trạng thái của lịch khám vừa hủy không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="hi_04_6" class="collapse" role="tabpanel" data-parent="#booking">
+                                <div class="card-body">
+                                    <p>Sau khi hủy lịch khám thì không thể thay đổi trạng thái của lịch khám đó nữa. Nếu bệnh nhân hoặc người nhà muốn hẹn lại lịch thì phải bắt đầu lại quy trình đặt lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                    </div>
+                    <!-- /accordion patient -->
+
+
+                    <h4 class="nomargin_top">Dành lễ tân bệnh viện</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="receptionist">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#receptionist_1" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm sao để đón tiếp bênh nhân nhập viện</a>
+                                </h5>
+                            </div>
+
+                            <div id="receptionist_1" class="collapse" role="tabpanel" data-parent="#receptionist">
+                                <div class="card-body">
+                                    <p>Nếu trường hợp bệnh nhân đã đăng ký và lên lịch hẹn trước,hoặc có thông tin trong hệ thống, bạn có thể giơ thẻ chứng minh thư hoặc thẻ bảo hiểm y tế của bệnh nhân để camera quét. Sau khi quét thành công ( thông tin được hiển thị lên và có tiếng bíp ) hãy xác nhận lại thông tin bệnh nhân.
+                                        nếu đúng bạn có thể tiến hành cho bệnh nhân thực hiện thăm khám bình thường.
+                                    Nếu trường hợp bệnh nhân không có thông tin, bạn cần nhập tay vào các ô tương ứng.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#receptionist_2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i> Làm sao để đón tiếp bênh nhân ra viện viện</a>
+                                </h5>
+                            </div>
+
+                            <div id="receptionist_2" class="collapse" role="tabpanel" data-parent="#receptionist">
+                                <div class="card-body">
+                                    <p>Bạn chỉ cần giơ thẻ bảo hiểm hoặc chứng min thư của bênh nhân lên cho camera quét. hoặc nhập tay vào trong trường camera hỏng hoặc bệnh nhân bị mất giấy tờ.Thông tin sau khi được xác nhận đúng. Bạn nhấn "Tiếp" để chuyển sang bước tiếp theo. hệ thống hiển thị chữ kỹ của các bác sỹ bệnh nhân có thể xinh phép để ra viện. Bạn hãy so sánh chữ ký trên đơn xin ra viện và chữ ký của bác sỹ tương ứng.Nêú ổn hãy chụp ảnh lại đơn xin và nhấn nút "Tiếp". Hệ thống tiếp tục hiển thị danh sách các mục cần thanh toán và số tiền cần thanh toán.
+                                    Sau khi thanh toán xong, bạn hãy ấn "Tiếp". Hệ thống xuất màn hình in ấn, tại đây bạn có thể in hóa đơn cho bệnh nhân và hoàn tất thủ tục ra viện.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- /card -->
+
+
+                    </div>
+
+
+                    <h4 class="nomargin_top">Dành cho quản trị bệnh viện</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="hospital_Admin">
+
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_2" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin bác sỹ</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_2" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút bác sỹ tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý. Tại dây một bảng thông tin các bác sỹ được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của bac sỹ, sau khi ấn tại đây sẽ có biểu mẫu hiện thị để bạn sửa thông tin của bác sỹ tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_3" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin nhân viên</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_3" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút nhân viên tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý. Tại dây một bảng thông tin các nhân viên
+                                        được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của nhân viên, sau khi ấn tại đây sẽ có biểu mẫu hiện thị để bạn sửa thông tin của nhân viên tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_1" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào để xem lịch một bác sỹ</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_1" class="collapse show" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn có thể nhấn vào ô chọn ngày, hoặc tìm kiếm theo tên bác sỹ. Kết quả lịch khám sẽ được hiển thị ngay bên dưới.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_4" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin thuốc</a>
+                                </h5>
+                            </div>
+
+                            <div id="hospital_Admin_4" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút thuốc tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý.
+                                        Tại dây một bảng thông tin các thuốc
+                                        được hiển thị đi kèm tương ứng với nút chỉnh thông tin và nút xóa.
+                                        Nút chỉnh thông tin cho phép bạn sửa thông tin của thuốc, sau khi ấn tại đây sẽ có biểu mẫu hiện thị
+                                        để bạn sửa thông tin của thuốc tương ứng. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu ..
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#hospital_Admin_5" aria-expanded="true">
+                                        <i class="indicator icon_plus_alt2"></i> Làm thế nào quản lý thông tin bệnh viện</a>
+                                </h5>
+                            </div>
+                            <div id="hospital_Admin_5" class="collapse" role="tabpanel" data-parent="#hospital_Admin">
+                                <div class="card-body">
+                                    <p>Bạn cần nhấn vào nút thuốc tại thanh điều khiển bên trái.Hệ thông sẽ hiển thị màn hình quản lý.
+                                        Hệ thống hiển thị thông tin cho phép bạn sửa thông tin của bệnh viện. sau khi sửa xong, bạn nhấn nút "Lưu" để lưu .
+                                    </p>
+                                </div>
+                            </div>
+
+                    </div>
+                    </div>
+
+                    <h4 class="nomargin_top">Dành cho quản trị hệ thống</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="admin">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#admin1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Có bao nhiêu loại người dùng trên hệ thống?</a>
+                                </h5>
+                            </div>
+
+                            <div id="admin1" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Hệ thống gồm có: Người quản trị hệ thống, Nhân viên bệnh viện, Bác sĩ, Bệnh nhân.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Tôi có thể chỉnh sửa quyền người dùng hệ thống được không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin2" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Không. Quyền người dùng sẽ được hệ thống quy định. Bạn chỉ có thể xem được danh sách các quyền, chi tiết các quyền người sử dụng.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Làm thế nào để tối có thể quản lý dữ liệu của hệ thống, sao lưu dữ liệu phòng trường hợp hệ thống xảy ra sự cố?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin3" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>Bạn có thể tạo bản sao lưu dữ liệu của hệ thống tại trang quan lý hệ thống. Tại đó bạn sẽ có danh sách những nhóm dữ liệu được lưu trong hệ thống và button cho phép tạo bản sao lưu dữ liệu trên máy tính.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin4" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Bạn có thể cho tôi biết quy trình tạo người dùng mới trong hệ thống không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin4" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>
+                                        Nhập thông tin cần thiết của mỗi người dùng phù hợp với loại người dùng. <br> 
+                                        Nhấn Save để gửi yêu cầu tạo người dùng. <br>
+                                        Chờ đến khi thông email thông báo tạo người dùng mới được chấp nhận. <br>
+                                        Khi thông báo được chấp nhận bạn sẽ có tin nhắn thông báo tạo người dùng thành công.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#admin5" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Bạn có thể cho tôi biết quy trình đăng ký một bệnh viện mới trong hệ thống không?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="admin5" class="collapse" role="tabpanel" data-parent="#admin">
+                                <div class="card-body">
+                                    <p>
+                                    Nhập thông tin cần thiết của bệnh viện muốn tạo. <br>
+                                    Nhấn Save để gửi yêu cầu tạo bệnh viện. <br>
+                                    Hệ thống điều hướng trực tiếp sang trang tạo người quản trị bệnh viện. Bạn bắt buộc phải tạo ít nhất một người quản trị bệnh viện cho mỗi bệnh viện. Nếu không chức năng tạo bệnh viện sẽ thất bại.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{--HI_02_BEGIN--}}
+                    <h4 class="nomargin_top">Tư vấn đặt lịch</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="consulting">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#consulting1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Tôi chưa biết rõ về bênh tình của mình. Làm thế nào để đặt được lịch khám?</a>
+                                </h5>
+                            </div>
+
+                            <div id="consulting1" class="collapse" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Đầu tiên, bạn chọn chức năng "tra cứu bệnh" ở trên thanh menu. Gõ vào triệu chứng của mình và tham khảo những bài viết đã được các bác sĩ giỏi nhất của chúng tôi biên soạn. Bạn có thể đặt lịch khám ngay trong màn hình bài viết.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#consulting2" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Tôi đã tìm được bệnh của mình khi tham khảo bài viết. Làm sao để đặt lịch khám?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="consulting2" class="collapse" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Bạn có thể ấn vào nút "Đặt lịch khám ngay ở phía bên phải màn hình. Chọn 1 bác sĩ trong danh sách được gợi ý hoặc ấn "Xem thêm" để xem thêm những bác sĩ khác có chuyên môn điều trị bệnh của bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#consulting3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Tôi không chắc về bệnh của mình mặc dù đã tìm hiểu thông qua các triệu chứng?
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="consulting3" class="collapse" role="tabpanel" data-parent="#consulting">
+                                <div class="card-body">
+                                    <p>Bạn có thể chat trực tiếp với nhân viên bệnh viện bằng cách nhấn vào chatbox nằm ở góc phải dưới. Có thể lựa chọn nhắn trực tiếp, gọi thoại hoặc gọi camera. Nhân viên bệnh viện sẽ gửi link đăng ký trực tiếp cho bạn để có thể đăng ký khám một cách nhanh chóng nhất.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                    </div>
+                    <h4 class="nomargin_top">Lịch khám khẩn cấp</h4>
+                    <div role="tablist" class="add_bottom_45 accordion" id="emergency">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#emergency1" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Lịch khám của tôi hiện số ở trên, điều này nghĩa là gì?</a>
+                                </h5>
+                            </div>
+
+                            <div id="emergency1" class="collapse" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p> Lịch khám của bạn đã bị chuyển bác sĩ do bác sĩ cũ bận khám khẩn cấp. Bạn hãy ấn vào để xem chi tiết, từ đây bạn có thể giữ lịch mới, hủy lịch hoặc đặt lịch khám khác với bác sĩ cũ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#emergency2" aria-expanded="false"><i class="indicator icon_plus_alt2"></i>Lịch khám của tôi bị chuyển bác sĩ, tôi phải làm thế nào?</a>
+                                </h5>
+                            </div>
+
+                            <div id="emergency2" class="collapse" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p>Bác sĩ bạn đã hẹn đã phải chuyển đi khám khẩn cấp. Lịch hẹn có thời gian không đổi, chỉ chuyển bác sĩ cùng bệnh viện, vì vậy bạn chỉ cần đến hẹn đúng giờ và khám bác sĩ như trong lịch khám.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#emergency3" aria-expanded="false">
+                                        <i class="indicator icon_plus_alt2"></i>
+                                        Lịch khám của tôi bị chuyển bác sĩ do khám khẩn cấp, tôi phải làm sao để hẹn lại bác sĩ đó?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="emergency3" class="collapse" role="tabpanel" data-parent="#emergency">
+                                <div class="card-body">
+                                    <p>Bạn ấn vào thẻ lịch khám của bạn, ở dưới cùng bạn có thể ấn vào nút "Đặt lại lịch khám với bác sĩ ABC" để đặt lịch khám lại với bác sĩ cũ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card -->
+                    </div>
+                    <!-- /card -->
+
+                    </div>
+                    {{--HI_02_END--}}
                 </div>
                 <!-- /col -->
             </div>

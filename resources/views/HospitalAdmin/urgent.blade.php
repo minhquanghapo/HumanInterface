@@ -293,7 +293,7 @@
                   <td>Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng. Xuất hiện các triệu chứng rối ...</td>
                   <td>8:30</td>
                   <td style="color: green"><span class="glyphicon glyphicon-check text-green"></span>Nguyễn Văn A - chuyên khoa 1</td>
-                  <td><a href="/admin_hospital/urgent/add" class="btn btn-primary" disabled>Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
+                  <td><a href="#" class="btn btn-primary" disabled>Sửa</a><a href="" class="delbut glyphicon glyphicon-trash" style="float: right;"></a></td>
                   <tr role="row" class="odd" id="s1">
                   <td class="sorting_1">Nguyễn Văn Minh</td>
                   <td class="">Hà Nội</td>

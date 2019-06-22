@@ -5,7 +5,7 @@
 		<div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('home') }}">Trang chủ</a></li>
 					<li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
 					<li><a href="{{ route('doctor.detail', ['appointment_type' => 'doctor']) }}">Thông tin bác sĩ</a></li>
 					<li>Đặt lịch</li>

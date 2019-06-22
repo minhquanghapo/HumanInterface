@@ -184,7 +184,7 @@
             chatBoxContentElm.append(`
                 <div class="chat-message message-send">
                     <div class="avatar">
-                        <img src="/HI_02/svg/female-35.svg" class="img-responsive img-rounded" alt="">
+                        <img src="/HI_02/img/user.png" class="img-responsive img-rounded" alt="">
                     </div>
                     <div class="messages">
                         ${newMessageHtml}
@@ -201,7 +201,7 @@
         let loadingElm = replying();
         setTimeout(function() {
             loadingElm.remove();
-            reply(`<p>Bạn có thể click vào link sau để đặt lịch <a href="/booking-page-2" data-toggle="tooltip" title="Set appointment">14:30 29/4/2019 - Bác sĩ ABC - BV Chợ Rẫy</a></p>`);
+            reply(`<p>Bạn có thể click vào link sau để đặt lịch <a href="/booking-page/date" data-toggle="tooltip" title="Set appointment">14:30 29/4/2019 - Bác sĩ ABC - BV Chợ Rẫy</a></p>`);
         }, 3000)
     })
 

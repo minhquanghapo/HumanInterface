@@ -335,7 +335,9 @@
         <ul class="pager">
             <li><button class="prev disabled">Quay lại</button></li>
             <li><button class="next">Tiếp tục</button></li>
-
+        </ul>
+        <ul class="pager">
+            <a href="/doctor"><li><button>Quay lại trang chủ</button></li></a>
         </ul>
     </div>
 

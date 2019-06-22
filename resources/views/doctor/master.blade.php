@@ -31,6 +31,16 @@
             overflow-y: hidden;
             margin: 10px;
         }
+        .badge {
+              position: absolute;
+              top: 1px;
+              right: -2px;
+              padding: 4px 6px;
+              border-radius: 50%;
+              background-color: red;
+              color: white;
+              font-size: 14px;
+          }
         .mybtn{
             width: 100%;
         }
@@ -120,7 +130,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li id="schedule_nav" class="active"><a href="/doctor">Lịch làm việc</a></li>
                     <li id="history_nav"><a href="/doctor/history">Lịch sử khám</a></li>
-                    <li><a href="/doctor1">Lịch khám khẩn cấp</a></li>
+                    <li style="height: 50px; margin-right: 20px;"><a href="/doctor1" style="padding: 0;line-height: 50px">Lịch khám khẩn cấp<span class="badge">3</span>
+                        <span class="caret"></span></a></li>
                     <li class="dropdown" style="height: 50px">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 0;line-height: 50px">
                             <img src="{{ asset('HI_03/img/doctor/avatar.png') }}" alt="" style="width: 35px">

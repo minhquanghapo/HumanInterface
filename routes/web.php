@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('HI_03.index-2');
+    return view('HI_03.login');
 });
 
 
@@ -28,9 +28,35 @@ Route::get('/video-call', function () {
     return view('HI_02.video-call');
 })->name('video_call');
 
+Route::get('/voice-call', function () {
+    return view('HI_02.voice_call');
+})->name('voice_call');
+
 Route::get('/booking-page-2', function () {
     return view('HI_02.booking-page');
 })->name('booking-page-2');
+
+Route::get('/hospital_list', function () {
+    return view('HI_02.hospital_list');
+})->name('HI02.hospital_list');
+
+Route::get('/pick_schedule', function () {
+    return view('HI_02.pick_schedule');
+})->name('HI02.pick_schedule');
+
+Route::get('/hospital_show', function () {
+    return view('HI_02.hospital_show');
+})->name('HI02.hospital_show');
+
+Route::get('/detail-page-date', function () {
+    $appointment_type = 'date';
+    return view('HI_02.detail-page-3', compact('appointment_type'));
+})->name('HI02.doctor.detail');
+
+Route::get('/booking-page-hi02', function () {
+    $appointment_type = 'date';
+    return view('HI_02.booking-page', compact('appointment_type'));
+})->name('HI02.booking');
 
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'prefix' => 'admin'], function () {
     Route::get('/', 'AdminController@index');
@@ -56,6 +82,10 @@ Route::get('/doctor/examination',"DoctorController@examination");
 Route::get('/doctor/login',"DoctorController@login");
 
 // HI_03
+Route::get('/home', function () {
+    return view('HI_03.index-2');
+});
+
 Route::match(['get', 'post'],'/grid-list', function () {
     return view('HI_03.grid-list');
 });

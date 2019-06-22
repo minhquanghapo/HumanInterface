@@ -11,15 +11,18 @@
         <div class="progress_bar">
             <div class="bar__container">
                 <ul class="bar" id="bar">
-                    @if($appointment_type == "date")
-                        <li class="active"><a href="{{ url('schedule') }}">Chọn lịch khám</a></li>
-                        <li class="active"><a href="{{ url('hospital/list') }}">Chọn bệnh viện</a></li>
-                        <li class="active"><a href="{{ url('hospital/show') }}">Chọn bác sĩ</a></li>
-                        <li class="active">Chọn hình thức khám</li>
-                    @elseif($appointment_type == "doctor")
-                        <li class="active"><a href="{{ url('grid-list') }}">Chọn bác sĩ</a></li>
-                        <li class="active">Chọn lịch khám</li>
-                    @endif
+                    <li class="active">
+                        <a href="{{ route('HI02.hospital_list', app('request')->query()) }}">Chọn bệnh viện</a>
+                    </li>
+                    <li class="active">
+                        <a href="{{ route('HI02.pick_schedule', app('request')->query()) }}">Chọn lịch khám</a>
+                    </li>
+                    <li class="active">
+                        <a href="{{ route('HI02.hospital_show', app('request')->query()) }}">Chọn bác sĩ</a>
+                    </li>
+                    <li class="active">
+                        Chọn hình thức khám
+                    </li>
                     <li>Thanh toán</li>
                 </ul>
             </div>
@@ -27,7 +30,7 @@
         {{-- <div id="breadcrumb">
             <div class="container">
                 <ul>
-                    <li><a href="{{ url('home') }}">Trang chủ</a></li>
+                    <li><a href="{{ url('/') }}">Trang chủ</a></li>
                     <li><a href="{{ url('grid-list') }}">Danh sách bác sĩ</a></li>
                     <li>Thông tin bác sĩ</li>
                 </ul>
@@ -207,7 +210,10 @@
                                         </li>
                                     </ul>
                                     <hr>
-                                    <div class="text-center"><a href="{{ route('booking', ['appointment_type' => $appointment_type]) }}" class="btn_1 medium">Tiếp tục</a>
+                                    <div class="text-center">
+                                        <a href="{{ route('HI02.booking', app('request')->query()) }}" class="btn_1 medium">
+                                            Tiếp tục
+                                        </a>
                                     </div>
                                 </div>
                             </div>

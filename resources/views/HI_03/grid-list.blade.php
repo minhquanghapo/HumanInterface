@@ -21,7 +21,7 @@
 		{{-- <div id="breadcrumb">
 			<div class="container">
 				<ul>
-					<li><a href="{{ url('/') }}">Trang chủ</a></li>
+					<li><a href="{{ url('home') }}">Trang chủ</a></li>
 					<li>Kết quả tìm kiếm</li>
 				</ul>
 				<div class="row">
@@ -70,38 +70,9 @@
                                     <option value="">Phụ khoa</option>
                                     <option value="">Nam khoa</option>
                                     <option value="">Nhi</option>
-                                    <option value="">Tai mũi họng</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Xương khớp</option>
-                                    <option value="">Phụ khoa</option>
-                                    <option value="">Nam khoa</option>
-                                    <option value="">Nhi</option>
-                                    <option value="">Tai mũi họng</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Xương khớp</option>
-                                    <option value="">Phụ khoa</option>
-                                    <option value="">Nam khoa</option>
-                                    <option value="">Nhi</option>
-                                    <option value="">Tai mũi họng</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Xương khớp</option>
-                                    <option value="">Phụ khoa</option>
-                                    <option value="">Nam khoa</option>
-                                    <option value="">Nhi</option>
-                                    <option value="">Tai mũi họng</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
-                                    <option value="">Tim mạch</option>
+									<option value="">Da liễu</option>
+									<option value="">Nội khoa</option>
+									<option value="">Nội tiết</option>
                                 </select>
                             </div>
                         </div>

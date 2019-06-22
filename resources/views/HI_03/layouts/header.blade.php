@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-3 col-6">
                 <div id="logo_home">
-                    <h1><a href="{{ url('/') }}" title="Findoctor">Findoctor</a></h1>
+                    <h1><a href="{{ url('home') }}" title="Findoctor">Findoctor</a></h1>
                 </div>
             </div>
             <nav class="col-lg-9 col-6">
@@ -37,8 +37,8 @@
                                 <a class="show-submenu">Tư vấn đặt lịch<i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bác sĩ nổi bật</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
+                                    <li><a href="{{ url('/hospital_list?top=1') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
+                                    <li><a href="{{ url('/hospital_list?near=1') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi<span class="badge">1</span></a></li>

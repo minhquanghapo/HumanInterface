@@ -13,7 +13,7 @@
                 <div class="box-header with-border">
                     <div class="row">
                         <div class="col-md-3">
-                            <h3 class="box-title">Create User</h3>
+                            <h3 class="box-title">Tạo tài khoản mới</h3>
                         </div>
                         <div class="col-md-4 col-md-offset-5">
                             <div class="form-horizontal">
@@ -177,11 +177,28 @@
             </div>
         </div>
     </section>
+    <button style="display:none" type="button" class="btn btn-primary" id="choose_type" data-toggle="modal" data-target="#exampleModal">
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <strong>Chọn loại tài khoản muốn tạo trước khi bắt đầu</strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 @section('content')
 @endsection
 @section('customscript')
+<script>
+    $("#choose_type").trigger( "click" );
+</script>
 <script src="/adminlte/js/raphael.min.js"></script>
 <script src="/adminlte/js/morris.min.js"></script>
 <script src="/adminlte/js/metisMenu.min.js"></script>
