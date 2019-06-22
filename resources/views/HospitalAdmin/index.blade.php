@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Trang điều khiển</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -85,7 +85,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="user-image" alt="User Image">
-              <span class="hidden-xs">Vo Tuan(HI_06)/span>
+              <span class="hidden-xs">Vo Tuan(HI_06)</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -145,7 +145,7 @@
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Tìm kiếm...">
           <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -202,12 +202,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        Trang điều khiển
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Trang điều khiển</a></li>
       </ol>
     </section>
 
@@ -224,7 +222,7 @@
               <p>Bác sĩ</p>
             </div>
             
-            <a href="{{ url()->current() }}/doctors" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ url()->current() }}/doctors" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -237,7 +235,7 @@
               <p>Nhân viên</p>
             </div>
 
-            <a href="{{ url()->current() }}/staffs" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ url()->current() }}/staffs" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-xs-6">
@@ -249,7 +247,7 @@
                 <p>Danh mục thuốc</p>
               </div>
               
-              <a href="{{ url()->current() }}/medicines" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ url()->current() }}/medicines" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-xs-6">
@@ -261,7 +259,7 @@
                   <p>Thống kê</p>
                 </div>
                 
-                <a href="{{ url()->current() }}/static" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url()->current() }}/static" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>  
         <!-- ./col -->
@@ -318,7 +316,6 @@
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
@@ -767,6 +764,7 @@
 
 </script>
 <script src='{{asset('js/fullcalendar.min.js')}}'></script>
+<script src="{{asset('js/doctor/locale-all.js')}}"></script>
 <script src="{{ asset('js/doctor/bootstrap-datepicker.min.js') }}"></script>
 <script src='{{asset('js/HI_06/index.js')}}'></script>
 <script src="{{ asset('js/doctor/bootstrap-datepicker.vi.min.js') }}"></script>
