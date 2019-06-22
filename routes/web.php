@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('HI_03.index-2');
+    return view('HI_03.login');
 });
 
 
@@ -56,6 +56,10 @@ Route::get('/doctor/examination',"DoctorController@examination");
 Route::get('/doctor/login',"DoctorController@login");
 
 // HI_03
+Route::get('/home', function () {
+    return view('HI_03.index-2');
+});
+
 Route::match(['get', 'post'],'/grid-list', function () {
     return view('HI_03.grid-list');
 });
