@@ -14,48 +14,73 @@
 		markersData = {
 			'Doctors': [
 			{
-				name: 'Dr. Jhoanna Steel',
-				location_latitude: 48.873792, 
-				location_longitude: 2.295028,
-				map_image_url: 'img/doctor_listing_1.jpg',
-				type: 'Psicologist - Pediatrician',
-				url_detail: 'detail-page.html',
-				name_point: 'Dr. Jhoanna Steel',
-				description_point: '35 Newtownards Road, Belfast, BT4.',
+				name: 'Bác sĩ Lê Thị Hương',
+				location_latitude: 21.0009521, 
+				location_longitude: 105.8406854,
+				map_image_url: '/HI_03/img/doctor/le-thi-huong.png',
+				type: 'Khoa Tai Mũi Họng',
+				name_point: 'Bệnh viện Bạch Mai',
+				description_point: 'Chuyên môn chính: Lấy dị vật trong tai, điều trị viêm xoang dị ứng',
 				get_directions_start_address: '',
-				phone: '+3934245255'
-			},
-				{
-				name: 'Dr. Robert Carl',
-				location_latitude: 48.800040, 
-				location_longitude: 2.139670,
-				map_image_url: 'img/doctor_listing_1.jpg',
-				type: 'Psicologist',
-				url_detail: 'detail-page.html',
-				name_point: 'Dr. Robert Carl',
-				description_point: '35 Newtownards Road, Belfast, BT4.',
-				get_directions_start_address: '',
-				phone: '+3934245255'
 			},
 			{
-				name: 'Dr. Mark Twain',
-				location_latitude: 48.846222, 
-				location_longitude: 2.346414,
-				map_image_url: 'img/doctor_listing_1.jpg',
-				type: 'Primary Care',
-				url_detail: 'detail-page.html',
-				name_point: 'Dr. Mark Twain',
-				description_point: '35 Newtownards Road, Belfast, BT4.',
+				name: 'Bác sĩ Nguyễn Thu Hoài',
+				location_latitude: 21.0009521, 
+				location_longitude: 105.8406854,
+				map_image_url: '/HI_03/img/doctor/nguyen-thu-hoai.jpeg',
+				type: 'Khoa Sản phụ',
+				name_point: 'Bệnh viện Vinmec',
+				description_point: 'Đã có 12 năm kinh nghiệm trong ngành Sản phụ',
 				get_directions_start_address: '',
-				phone: '+3934245255'
+			},
+			{
+				name: 'Bác sĩ Dương Bá Trực',
+				location_latitude: 21.0009521, 
+				location_longitude: 105.8406854,
+				map_image_url: '/HI_03/img/doctor/duong-ba-truc.jpeg',
+				type: 'Khoa Nhi, Huyết học',
+				name_point: 'Bệnh viện Vinmec',
+				description_point: 'Có kinh nghiệm gần 40 năm trong ngành',
+				get_directions_start_address: '',
+			}
+			],
+			'Hospitals': [
+			{
+				name: 'Bệnh viện Đa khoa Quốc tế Vinmec Times City',
+				location_latitude: 20.9963439, 
+				location_longitude: 105.8647761,
+				map_image_url: '/HI_03/img/hospital/vinmec.jpg',
+				type: 'Bệnh viện Đa khoa Quốc tế Vinmec Times City',
+				name_point: 'Q. Hai Bà Trưng Hà Nội',
+				description_point: '458 Minh Khai',
+				get_directions_start_address: ''
+			},
+			{
+				name: 'Bệnh viện quân y 103',
+				location_latitude: 20.9676941, 
+				location_longitude: 105.7869382,
+				map_image_url: '/HI_03/img/hospital/quan-y-103.jpg',
+				type: 'Bệnh viện quân y 103',
+				name_point: 'P. Phúc La, Hà Đông, Hà Nội',
+				description_point: '261 Phùng Hưng',
+				get_directions_start_address: ''
+			},
+			{
+				name: 'Bệnh viện Bạch Mai',
+				location_latitude: 21.0009521, 
+				location_longitude: 105.8406854,
+				map_image_url: '/HI_03/img/hospital/bach-mai.jpg',
+				type: 'Bệnh viện Bạch Mai',
+				name_point: 'Đống Đa, Hà Nội',
+				description_point: '78 Đường Giải Phóng, Phương Đình',
+				get_directions_start_address: ''
 			}
 			]
-
 		};
 
 			var mapOptions = {
 				zoom: 10,
-				center: new google.maps.LatLng(48.865633, 2.321236),
+				center: new google.maps.LatLng(21.0009521, 105.8406854),
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 
 				mapTypeControl: false,
@@ -237,20 +262,19 @@
 			return new InfoBox({
 				content:
 				'<div class="marker_info">' +
-				'<figure><a href='+ item.url_detail +'><img src="' + item.map_image_url + '" alt="Image"></a></figure>' +
+				'<figure><img src="' + item.map_image_url + '" alt="Image"></figure>' +
 				'<small>'+ item.type +'</small>' +
-				'<h3><a href='+ item.url_detail +'>'+ item.name_point +'</a></h3>' +
+				'<h3>'+ item.name_point +'</h3>' +
 				'<span>'+ item.description_point +'</span>' +
 				'<div class="marker_tools">' +
-				'<form action="http://maps.google.com/maps" method="get" target="_blank" style="display:inline-block""><input name="saddr" value="'+ item.get_directions_start_address +'" type="hidden"><input type="hidden" name="daddr" value="'+ item.location_latitude +',' +item.location_longitude +'"><button type="submit" value="Get directions" class="btn_infobox_get_directions">Directions</button></form>' +
-					'<a href="tel://'+ item.phone +'" class="btn_infobox_phone">'+ item.phone +'</a>' +
+				'<form action="http://maps.google.com/maps" method="get" target="_blank" style="display:inline-block""><input name="saddr" value="'+ item.get_directions_start_address +'" type="hidden"><input type="hidden" name="daddr" value="'+ item.location_latitude +',' +item.location_longitude +'"><button type="submit" value="Get directions" class="btn_infobox_get_directions">Chỉ đường</button></form>' +
 					'</div>' +
 				'</div>',
 				disableAutoPan: false,
 				maxWidth: 0,
 				pixelOffset: new google.maps.Size(10, 105),
 				closeBoxMargin: '',
-				closeBoxURL: "img/close_infobox.png",
+				closeBoxURL: "HI_03/img/close_infobox.png",
 				isHidden: false,
 				alignBottom: true,
 				pane: 'floatPane',
