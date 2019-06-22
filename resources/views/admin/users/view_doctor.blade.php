@@ -114,41 +114,41 @@
                 <div class="box-body">
                     <div class="box-footer box-comments">
                         <div class="box-comment">
-                            <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                            <img class="img-circle img-sm" src="{{asset('img/benhnhan_linh.jpg')}}" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
-                                    Maria Gonzales
-                                    <span class="text-muted pull-right">8:03 PM Today</span>
+                                    Lê Văn Cường
+                                    <span class="text-muted pull-right">8:03 PM Hôm nay</span>
                                 </span>
                                 Bác sỹ rất nhiệt tình
                             </div>
                         </div>
                         <div class="box-comment">
-                            <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                            <img class="img-circle img-sm" src="{{asset('img/benhnhan_thang.jpeg')}}" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
-                                    Maria Gonzales
-                                    <span class="text-muted pull-right">8:03 PM Today</span>
+                                    Ngô Minh Đức
+                                    <span class="text-muted pull-right">8:03 PM Hôm nay</span>
                                 </span>
                                 Bác sỹ rất nhiệt tình
                             </div>
                         </div>
                         <div class="box-comment">
-                            <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                            <img class="img-circle img-sm" src="{{asset('img/benhnhan_thang.jpeg')}}" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
-                                    Maria Gonzales
-                                    <span class="text-muted pull-right">8:03 PM Today</span>
+                                    Vũ Đình Hải
+                                    <span class="text-muted pull-right">8:03 PM Hôm nay</span>
                                 </span>
-                                Bác sỹ rất nhiệt tình
+                                Bác sỹ rất thân thiện
                             </div>
                         </div>
                         <div class="box-comment">
-                            <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                            <img class="img-circle img-sm" src="{{asset('img/benhnhan_thang.jpeg')}}" alt="User Image">
                             <div class="comment-text">
                                 <span class="username">
-                                    Maria Gonzales
-                                    <span class="text-muted pull-right">8:03 PM Today</span>
+                                    Nguyễn Hà Long
+                                    <span class="text-muted pull-right">8:03 PM Hôm nay</span>
                                 </span>
                                 Bác sỹ rất nhiệt tình
                             </div>
@@ -165,70 +165,6 @@
                     </div>
                 </div>
             </div>
-{{--             <div class="box box-primary">
-                <!-- Header -->
-                <div class="box-header with-border">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3 class="box-title">Doctor activity</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box-body">
-                    <div class="progress-group">
-                        <span class="progress-text">Số lượt được tìm kiếm</span>
-                        <span class="progress-number"><b>160</b></span>
-                        <div class="progress sm">
-                            <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <!-- /.progress-group -->
-                    <div class="progress-group">
-                        <span class="progress-text">Số yêu cầu nhận được</span>
-                        <span class="progress-number"><b>310</b></span>
-
-                        <div class="progress sm">
-                            <div class="progress-bar progress-bar-red" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <!-- /.progress-group -->
-                    <div class="progress-group">
-                        <span class="progress-text">Số ca khám thực hiện</span>
-                        <span class="progress-number"><b>480</b></span>
-
-                        <div class="progress sm">
-                            <div class="progress-bar progress-bar-green" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <!-- /.progress-group -->
-                    <div class="progress-group">
-                        <span class="progress-text">Số phản hồi từ người bệnh</span>
-                        <span class="progress-number"><b>250</b></span>
-
-                        <div class="progress sm">
-                            <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <!-- /.progress-group -->
-                </div>
-                <div class="box-footer box-comments">
-                    <div class="box-comment">
-                        <!-- User image -->
-                        <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/bstuyet.jpeg')}}" alt="User Image">
-
-                        <div class="comment-text">
-                            <span class="username">
-                                        Maria Gonzales
-                                        <span class="text-muted pull-right">8:03 PM Today</span>
-                            </span>
-                            <!-- /.username -->
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layouts.
-                        </div>
-                        <!-- /.comment-text -->
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </section>
 </div>

@@ -26,7 +26,7 @@
                     <!-- Horizontal Form -->
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><strong>CREATE HOSPITAL FORM</strong></h3>
+                            <h3 class="box-title"><strong>Đăng ký bệnh viện mới</strong></h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
@@ -114,20 +114,24 @@
                                     </div>                                
                                 </div>
                                 <div style="padding: 20px;"></div>
+
+                                <div class="box-header with-border">
+                                    <h3 class="box-title"><strong>Cấp tài khoản quản lý bệnh viện</strong></h3>
+                                </div>
                                  <div class="form-group">
-                                    <label class="col-sm-2 control-label">Username</label>
+                                    <label class="col-sm-2 control-label">Tên tài khoản</label>
                                     <div class="col-sm-10">
                                         <input type="email" class="form-control" placeholder="Enter email">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Password</label>
+                                    <label class="col-sm-2 control-label">Mật khẩu</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" placeholder="Password">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                    <label class="col-sm-2 control-label">Xác nhận mật khẩu</label>
                                     <div class="col-sm-10">
                                         <input type="password" class="form-control" placeholder="Password">
                                     </div>
@@ -144,6 +148,9 @@
                     </div>
                     <!-- /.box -->
 
+                </div>
+                <div class="col-md-4">
+                    
                 </div>
             </div>
         </section>

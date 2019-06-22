@@ -74,9 +74,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                            <tr>
                                     <td>1</td>
-                                    <td>Nguyễn Văn A</td>
+                                    <td>Hồ Thị Linh</td>
                                     <td>Bạch Mai</td>
                                     <td>Da liểu</td>
                                     <td>19-2-1997</td>
@@ -85,7 +85,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Nguyễn Văn B</td>
+                                    <td>Vũ Thanh Tùng</td>
                                     <td>Bạch Mai</td>
                                     <td>Hồi sức cấp cứu</td>
                                     <td>19-2-1997</td>
@@ -94,7 +94,7 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Nguyễn Văn C</td>
+                                    <td>Vũ Đức Long</td>
                                     <td>Bạch Mai</td>
                                     <td>Da liễu</td>
                                     <td>19-2-1997</td>
@@ -103,7 +103,7 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Nguyễn Văn D</td>
+                                    <td>Nguyễn Khánh Huyền</td>
                                     <td>Bạch Mai</td>
                                     <td>Nội khoa</td>
                                     <td>19-2-1997</td>
@@ -112,6 +112,51 @@
                                 </tr>
                                 <tr>
                                     <td>5</td>
+                                    <td>Nguyễn Quốc Chung</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Ngoại khao</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Nguyễn Văn A</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Da liểu</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Nguyễn Văn B</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Hồi sức cấp cứu</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Nguyễn Văn C</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Da liễu</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Nguyễn Văn D</td>
+                                    <td>Bạch Mai</td>
+                                    <td>Nội khoa</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
                                     <td>Nguyễn Văn E</td>
                                     <td>Bạch Mai</td>
                                     <td>Ngoại khao</td>
