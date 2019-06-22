@@ -34,6 +34,35 @@ $(document).ready(function() {
         }
     });
 
+    $(".process-nav>li").on("click",function () {
+        if(!$(this).hasClass('disabled')){
+            $temp = parseInt($(this).attr('id').split('st')[1]);
+            if($temp==1){
+                if(!$(".pagination-btn button.prev").hasClass("disabled")){
+                    $(".pagination-btn button.prev").addClass("disabled");
+                }
+                if($(".pagination-btn button.next").hasClass("disabled")){
+                    $(".pagination-btn button.next").removeClass("disabled");
+                }
+            }
+            else if($temp == 4){
+                if(!$(".pagination-btn button.next").hasClass("disabled")){
+                    $(".pagination-btn button.next").addClass("disabled");
+                }
+                if($(".pagination-btn button.prev").hasClass("disabled")){
+                    $(".pagination-btn button.prev").removeClass("disabled");
+                }
+            }
+            else{
+                if($(".pagination-btn button.next").hasClass("disabled")){
+                    $(".pagination-btn button.next").removeClass("disabled");
+                }
+                if($(".pagination-btn button.prev").hasClass("disabled")){
+                    $(".pagination-btn button.prev").removeClass("disabled");
+                }
+            }
+        }
+    });
     $(".pagination-btn button").on("click",function () {
        if(!$(this).hasClass("disabled")){
            var current_id = $(".process-nav li.active").attr('id');
