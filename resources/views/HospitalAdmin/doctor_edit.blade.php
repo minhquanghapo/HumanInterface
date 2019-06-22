@@ -7,9 +7,9 @@
 <div class="container-fluid">
     <section class="content-header">
         <ol class="breadcrumb" style="float: left; left : 0px; top : 0px;">
-            <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin_hospital/doctors">Doctors</a></li>
-            <li class="active"> Edit</li>
+            <li><a href="/admin_hospital"><i class="fa fa-dashboard"></i>Trang chủ</a></li>
+            <li><a href="/admin_hospital/doctors">Danh sách bác sĩ</a></li>
+            <li class="active">Chỉnh sửa thông tin</li>
         </ol>
     </section>
     <section class="content row">
@@ -17,11 +17,7 @@
             <div class="box box-primary">
                 <!-- Header -->
                 <div class="box-header with-border">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3 class="box-title">Edit Doctor</h3>
-                        </div>
-                    </div>
+                            <h3 class="box-title">Sửa thông tin bác sĩ</h3>
                 </div>
                 <div class="box-body" id="doctor">
                     <!-- Body -->
