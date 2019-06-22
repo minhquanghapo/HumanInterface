@@ -414,7 +414,7 @@
 
 @section('SPECIFIC SCRIPTS')
 	<!-- SPECIFIC SCRIPTS -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyRy2MAdBIFtFflL1Ug6RE5MpX9ponFQI"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_API_KEY')}}"></script>
   	<script src="{{ asset('HI_03/js/map_listing.js') }}"></script>
   	<script src="{{ asset('HI_03/js/infobox.js') }}"></script>
 

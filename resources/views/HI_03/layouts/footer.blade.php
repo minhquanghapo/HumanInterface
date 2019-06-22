@@ -29,7 +29,7 @@
                 <h5>Liên hệ</h5>
                 <ul class="contacts">
                     <li><a href="tel://61280932400"><i class="icon_mobile"></i> + 61 23 8093 3400</a></li>
-                    <li><a href="mailto:info@timbacsi.com"><i class="icon_mail_alt"></i> help@findoctor.com</a></li>
+                    <li><a href="mailto:info@timbacsi.com"><i class="icon_mail_alt"></i> help@healthcare.com</a></li>
                 </ul>
                 <!-- <div class="follow_us">
                     <h5>Follow us</h5>

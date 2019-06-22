@@ -274,7 +274,7 @@
 				maxWidth: 0,
 				pixelOffset: new google.maps.Size(10, 105),
 				closeBoxMargin: '',
-				closeBoxURL: "HI_03/img/close_infobox.png",
+				closeBoxURL: "/HI_03/img/close_infobox.png",
 				isHidden: false,
 				alignBottom: true,
 				pane: 'floatPane',
