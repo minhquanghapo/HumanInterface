@@ -7,13 +7,12 @@
                 <img src="/adminlte/images/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Vũ Công Duy</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <p>Vũ Công Duy (HI_05)</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Trực tuyến</a>
             </div>
         </div>
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">MAIN NAVIGATION</li>
             <li class="<?= empty(Request::segment(2)) ? 'active' : ''; ?>">
                 <a href="/admin">
                     <i class="fa fa-dashboard"></i> <span>Bảng điều khiển</span>

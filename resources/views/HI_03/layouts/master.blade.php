@@ -89,15 +89,7 @@
                         <div class="messages">
                             <div class="message-wrapper">
                                 <div class="message">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
-                                </div>
-                                <div class="message-time">
-                                    <span>12:30</span>
-                                </div>
-                            </div>
-                            <div class="message-wrapper">
-                                <div class="message">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sequi.</p>
+                                    <p>Xin chào, tôi có thể giúp gì cho bạn ?</p>
                                 </div>
                                 <div class="message-time">
                                     <span>12:30</span>
@@ -116,7 +108,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-9">
-                                <input id="messageInp" type="text" class="form-control message-input" placeholder="Type and press [Enter]">
+                                <input id="messageInp" type="text" class="form-control message-input" placeholder="Nhấn phím [Enter] để gửi">
                             </div>
                             <div class="col-md-3 action-group">
                                 <i class="fas fa-paperclip action" id="btnAddFile"></i>
@@ -171,6 +163,9 @@
         $(document).ready(function () {
             $('#videoCallBtn').click(function () {
                 window.open("{{ route('video_call') }}", "", "width=640,height=480");
+            });
+            $('#voiceCallBtn').click(function () {
+                window.open("{{ route('voice_call') }}", "", "width=640,height=480");
             });
 
             setTimeout(function() {

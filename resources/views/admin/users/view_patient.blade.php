@@ -81,10 +81,10 @@
             <div class="box box-widget  widget-user-2">
                 <div class="widget-user-header">
                     <div class="widget-user-image">
-                        <img class="img-circle" src="{{asset('img/HI_06/dist/img/avatar.png')}}" alt="User Avatar">
+                        <img class="img-circle" src="{{asset('img/benhnhan_hanh.jpg')}}" alt="User Avatar">
                     </div>
                     <!-- /.widget-user-image -->
-                    <h3 class="widget-user-username">Nguyễn Thị Lan</h3>
+                    <h3 class="widget-user-username">Nguyễn Thị Hạnh</h3>
                     <h5 class="widget-user-desc">Thanh Xuân Hà Nội</h5>
                 </div>
                 <div class="box-footer no-padding">
@@ -115,10 +115,10 @@
                                         </div>
                                     </div>
                                     <div class="box-comment">
-                                        <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                        <img class="img-circle img-sm" src="{{asset('img/bacsy_luong.jpg')}}" alt="User Image">
                                         <div class="comment-text">
                                             <span class="username">
-                                                Bs.Maria Gonzales
+                                                Bs.Hoàng Công Lương
                                                 <span class="text-muted pull-right">8:03 PM Today</span>
                                             </span>
                                             <p>Bệnh viện ABC</p>
@@ -126,27 +126,16 @@
                                         </div>
                                     </div>
                                     <div class="box-comment">
-                                        <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
+                                        <img class="img-circle img-sm" src="{{asset('img/bacsy_minh.jpg')}}" alt="User Image">
                                         <div class="comment-text">
                                             <span class="username">
-                                                Bs.Maria Gonzales
+                                                Bs.Đinh Ngọc Minh
                                                 <span class="text-muted pull-right">8:03 PM 2019/06/31</span>
                                             </span>
                                             <p>Bệnh viện ABC</p>
                                             <p>Điều trị bệnh abc</p>
                                         </div>
                                     </div>
-                                    <div class="box-comment">
-                                        <img class="img-circle img-sm" src="{{asset('img/HI_06/dist/img/user1-128x128.jpg')}}" alt="User Image">
-                                        <div class="comment-text">
-                                            <span class="username">
-                                                Bs.Maria Gonzales
-                                                <span class="text-muted pull-right">8:03 PM 2019/07/09</span>
-                                            </span>
-                                            <p>Bệnh viện CUCXILAU</p>
-                                            <p>Điều trị bệnh ongbelap</p>
-                                        </div>
-                                    </div>                      
                                 </div>  
                             </div>
                             <!-- /.tab-pane -->

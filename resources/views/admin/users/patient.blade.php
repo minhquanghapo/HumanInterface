@@ -73,47 +73,86 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                            <tr>
                                     <td>1</td>
+                                    <td>Nguyễn Quốc Chung</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td>6</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nguyễn Khánh Huyền</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td>10</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Vũ Đức Long</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td>25</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Vũ Thanh Tùng</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td>14</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hồ Thị Linh</td>
+                                    <td>19-2-1997</td>
+                                    <td>Hà Nội</td>
+                                    <td>20</td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
                                     <td>Nguyễn Văn A</td>
                                     <td>19-2-1997</td>
                                     <td>Hà Nội</td>
                                     <td>6</td>
-                                    <td><a class="btn btn-default" href="/admin/users/15/edit"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
+                                    <td>7</td>
                                     <td>Nguyễn Văn B</td>
                                     <td>19-2-1997</td>
                                     <td>Hà Nội</td>
                                     <td>10</td>
-                                    <td><a class="btn btn-default" href="/admin/users/staff"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td>8</td>
                                     <td>Nguyễn Văn C</td>
                                     <td>19-2-1997</td>
                                     <td>Hà Nội</td>
                                     <td>25</td>
-                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
+                                    <td>9</td>
                                     <td>Nguyễn Văn D</td>
                                     <td>19-2-1997</td>
                                     <td>Hà Nội</td>
                                     <td>14</td>
-                                    <td><a class="btn btn-default" href="/admin/users/patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
                                 </tr>
                                 <tr>
-                                    <td>5</td>
+                                    <td>10</td>
                                     <td>Nguyễn Văn E</td>
                                     <td>19-2-1997</td>
                                     <td>Hà Nội</td>
                                     <td>20</td>
-                                    <td><a class="btn btn-default" href="/admin/users/doctor"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
-                                </tr>
-                            
+                                    <td><a class="btn btn-default" href="/admin/users/view_patient"><i class="fa fa-edit"></i>Chỉnh sửa</a></td>
+                                </tr>                            
                             </tbody>
                         </table>
                     </div>

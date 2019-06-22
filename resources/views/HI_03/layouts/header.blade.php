@@ -37,8 +37,8 @@
                                 <a class="show-submenu">Tư vấn đặt lịch<i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bác sĩ nổi bật</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
-                                    <li><a href="{{ url('/grid-list') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
+                                    <li><a href="{{ url('/hospital_list?top=1') }}" class="show-submenu">Bệnh viện hàng đầu</a></li>
+                                    <li><a href="{{ url('/hospital_list?near=1') }}" class="show-submenu">Bệnh viện gần nhà</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('result') }}" class="show-submenu">Lịch khám của tôi<span class="badge">1</span></a></li>

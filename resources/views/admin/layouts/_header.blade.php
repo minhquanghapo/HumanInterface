@@ -28,15 +28,11 @@
 
                 <p>
                     Vũ Công Duy - Quản trị kĩ thuật
-                  <small>Member since Nov. 2012</small>
                 </p>
               </li>
               <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="#" class="btn btn-default btn-flat">Đăng xuất</a>
                 </div>
               </li>
             </ul>

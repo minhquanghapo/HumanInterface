@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Trang điều khiển</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -81,207 +81,11 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user3-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user4-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user3-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src='{{asset("img/HI_06/dist/img/user4-128x128.jpg")}}' class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
-          </li>
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
-          <!-- Tasks: style can be found in dropdown.less -->
-          <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Create a nice theme
-                        <small class="pull-right">40%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">40% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Some task I need to do
-                        <small class="pull-right">60%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Make beautiful transitions
-                        <small class="pull-right">80%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">80% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src='{{asset("img/HI_06/dist/img/user2-160x160.jpg")}}' class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Vo Tuan(HI_06)</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -289,7 +93,7 @@
                 <img src='{{("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  Vo Tuan(HI_06)
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -320,9 +124,6 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -337,14 +138,14 @@
           <img src='{{("img/HI_06/dist/img/user2-160x160.jpg")}}' class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Quản Văn Lý</p>
+          <p>Vo Tuan(HI_06)</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Đang hoạt động</a>
         </div>
       </div>
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Tìm kiếm...">
           <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -378,6 +179,11 @@
                   <i class="fa fa-hospital-o"></i> <span>Thông tin bệnh viện</span>
               </a>
           </li>
+          <li class="<?= (Request::segment(2)=='static') ? 'active' : ''; ?>">
+              <a href="/admin_hospital/static">
+                  <i class="fa fa-line-chart"></i> <span>Thống kê</span>
+              </a>
+          </li>
           <!-- Nhóm 2 -->
           <li class="<?= (Request::segment(2)=='urgent') ? 'active' : ''; ?>">
               <a href="/admin_hospital/urgent">
@@ -396,12 +202,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        Trang điều khiển
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Trang điều khiển</a></li>
       </ol>
     </section>
 
@@ -418,7 +222,7 @@
               <p>Bác sĩ</p>
             </div>
             
-            <a href="{{ url()->current() }}/doctors" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ url()->current() }}/doctors" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -431,7 +235,7 @@
               <p>Nhân viên</p>
             </div>
 
-            <a href="{{ url()->current() }}/staffs" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ url()->current() }}/staffs" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-xs-6">
@@ -443,9 +247,21 @@
                 <p>Danh mục thuốc</p>
               </div>
               
-              <a href="{{ url()->current() }}/medicines" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ url()->current() }}/medicines" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3><i class="fa fa-line-chart"></i></h3>
+                  
+                  <p>Thống kê</p>
+                </div>
+                
+                <a href="{{ url()->current() }}/static" class="small-box-footer">Xem thêm <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div>  
         <!-- ./col -->
      
       <!-- ./col -->
@@ -484,139 +300,6 @@
       <!-- /.row (main row) -->
 
     </section>
-    <section class="content-header">
-        <h1>
-          Thống kê
-        </h1>
-    </section>
-    <section class="content" data-select2-id="11">
-         <!-- BAR CHART -->
-        <div class="row" id="crawl">
-        </div>
-        <div class="row" data-select2-id="10">
-            <div class="col-lg-8 col-md-8 col-sm-8" data-select2-id="9">
-                <div class="box box-success" data-select2-id="8">
-                    <div class="box-header with-border">
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <div class="box-body" data-select2-id="7">
-                        <div class="nav-tabs-custom" style="cursor: move;" data-select2-id="6">
-                            <!-- Tabs within a box -->
-                            <ul class="nav nav-tabs pull-right ui-sortable-handle in" data-select2-id="5">
-                                <li><a data-toggle="tab" class="active">Day</a></li>
-                                <li class="active"><a data-toggle="tab" class="active">Month</a></li>
-                                <li class="pull-left"><strong>Chọn chuyên khoa</strong></li>
-                                <li class="pull-left">
-                                    <div class="form-group form-inline">
-                                        <select class="form-control" data-placeholder="Select a State" style="width: 100%;" tabindex="-1" aria-hidden="true">
-                                          <option selected="selected">Chọn tất cả</option>
-                                          <option>Khoa tim mạch</option>
-                                          <option>Khoa cấp cứu</option>
-                                          <option>Khoa Răng hàm mặt</option>
-                                        </select>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="chart">
-                                <canvas id="barChart" style="height: 231px; width: 413px;" width="413" height="231"></canvas>
-                            </div>
-                            <div style="text-align: center;">
-                                <i class="fa fa-inbox"></i> Thống kê lịch khám
-                            </div>
-                        </div>                              
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <div class="box box-success">
-                    <div class="box-body">
-                        <p class="text-center">
-                            <strong>Thống kê hoạt động</strong>
-                        </p>
-
-                        <div class="progress-group">
-                            <span class="progress-text">Số lượt tìm kiếm</span>
-                            <span class="progress-number"><b>1600</b></span>
-
-                            <div class="progress sm">
-                                <div class="progress-bar progress-bar-aqua" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <!-- /.progress-group -->
-                        <div class="progress-group">
-                            <span class="progress-text">Số lượt truy cập (93%)</span>
-                            <span class="progress-number"><b>1500</b></span>
-
-                            <div class="progress sm">
-                                <div class="progress-bar progress-bar-red" style="width: 93%"></div>
-                            </div>
-                        </div>
-                        <!-- /.progress-group -->
-                        <div class="progress-group">
-                            <span class="progress-text">Số ca khám đặt lịch (67%)</span>
-                            <span class="progress-number"><b>1220</b></span>
-
-                            <div class="progress sm">
-                                <div class="progress-bar progress-bar-yellow" style="width: 67%"></div>
-                            </div>
-                        </div>
-                        <!-- /.progress-group -->
-                        <div class="progress-group">
-                            <span class="progress-text">Số ca khám thành công (60%)</span>
-                            <span class="progress-number"><b>1150</b></span>
-
-                            <div class="progress sm">
-                                <div class="progress-bar progress-bar-green" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <!-- /.progress-group -->
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer" style="display: none">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <canvas id="pieChart1" style="height: 221px; width: 443px;" width="443" height="221"></canvas>
-                                <p style="text-align: center;">Tìm bác sĩ</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <canvas id="pieChart2" style="height: 221px; width: 443px;" width="443" height="221"></canvas>
-                                <p style="text-align: center;">Đặt lịch</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <canvas id="pieChart3" style="height: 221px; width: 443px;" width="443" height="221"></canvas>
-                                <p style="text-align: center;">Gửi yêu cầu</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.box -->
-            
-        <!-- LINE CHART -->
-        <div class="box box-success" style="display: none">
-            <div class="box-header with-border">
-            <h3 class="box-title"></h3>
-
-            <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                </div>
-            </div>
-            <div class="box-body">
-                <div class="chart">
-                    <canvas id="lineChart" style="height: 0px; width: 0px;" width="0" height="0"></canvas>
-                </div>
-            </div>
-        <!-- /.box-body -->
-        </div>
-    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -633,7 +316,6 @@
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
@@ -822,7 +504,73 @@
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+<div id="detailModal" class="modal fade" role="dialog" style="display: none;">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Thông tin chi tiết ca khám</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+                            <li class="active"><a href="#urgent1">
+                                    <p class="list-group-item-text">Thông tin bệnh nhân</p>
+                                </a></li>
+                            <li class=""><a href="#urgent2">
+                                    <p class="list-group-item-text">Tình trang bệnh</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row setup-content" id="urgent1" style="">
+                    <div class="col-xs-12">
+                        <div class="col-md-12 well text-center">
+                            <table class="table">
+                                <tbody><tr>
+                                    <td><b>Mã hồ sơ</b></td>
+                                    <td id="idhoso">23</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Họ tên</b></td>
+                                    <td>Vũ Văn A</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Giới tính</b></td>
+                                    <td>Nam</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Tuổi</b></td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Địa chỉ</b></td>
+                                    <td>Hà Nội</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row setup-content" id="urgent2" style="display: none;">
+                    <div class="col-xs-12">
+                        <div class="col-md-12 well">
+                            <p>
+                                Chán ăn, không thấy đói, mất cảm giác thèm ăn, ăn không ngon miệng.
+                                Xuất hiện các triệu chứng rối loạn tiêu hóa như chướng bụng, khó tiểu, tiểu dắt.
+                                Thành bụng căng cứng.
+                                Sốt nhẹ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <!-- jQuery 3 -->
 <script src='{{asset("js/HI_06/jquery.min.js")}}'></script>
@@ -916,203 +664,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="https://gist.github.com/raw/2625891/waitForKeyElements.js"></script>
 <script src="/adminlte/js/select2.full.min.js"></script>
-    <script src="/adminlte/js/raphael.min.js"></script>
-    <script src="/adminlte/js/morris.min.js"></script>
-    <script src="/adminlte/js/metisMenu.min.js"></script>
-    <script src="/adminlte/js/startmin.js"></script>
-    <script>
-        $(function() {
-            var areaChartData = {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
-                datasets: [
-                    {
-                        label: 'Digital Goods',
-                        fillColor: 'rgba(60,141,188,0.9)',
-                        strokeColor: 'rgba(60,141,188,0.8)',
-                        pointColor: '#3b8bba',
-                        pointStrokeColor: 'rgba(60,141,188,1)',
-                        pointHighlightFill: '#fff',
-                        pointHighlightStroke: 'rgba(60,141,188,1)',
-                        data: [28, 48, 40, 29, 76, 57, 90, 70]
-                    }
-                ]
-            }
-
-            var areaChartOptions = {
-                //Boolean - If we should show the scale at all
-                showScale: true,
-                //Boolean - Whether grid lines are shown across the chart
-                scaleShowGridLines: false,
-                //String - Colour of the grid lines
-                scaleGridLineColor: 'rgba(0,0,0,.05)',
-                //Number - Width of the grid lines
-                scaleGridLineWidth: 1,
-                //Boolean - Whether to show horizontal lines (except X axis)
-                scaleShowHorizontalLines: true,
-                //Boolean - Whether to show vertical lines (except Y axis)
-                scaleShowVerticalLines: true,
-                //Boolean - Whether the line is curved between points
-                bezierCurve: true,
-                //Number - Tension of the bezier curve between points
-                bezierCurveTension: 0.3,
-                //Boolean - Whether to show a dot for each point
-                pointDot: false,
-                //Number - Radius of each point dot in pixels
-                pointDotRadius: 4,
-                //Number - Pixel width of point dot stroke
-                pointDotStrokeWidth: 1,
-                //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-                pointHitDetectionRadius: 20,
-                //Boolean - Whether to show a stroke for datasets
-                datasetStroke: true,
-                //Number - Pixel width of dataset stroke
-                datasetStrokeWidth: 2,
-                //Boolean - Whether to fill the dataset with a color
-                datasetFill: true,
-                //String - A legend template
-                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-                //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-                maintainAspectRatio: true,
-                //Boolean - whether to make the chart responsive to window resizing
-                responsive: true
-            }
-
-            //-------------
-            //- LINE CHART -
-            //--------------
-            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
-            var lineChart = new Chart(lineChartCanvas)
-            var lineChartOptions = areaChartOptions
-            lineChartOptions.datasetFill = false
-            lineChart.Line(areaChartData, lineChartOptions)
-            //-------------
-            //- PIE CHART -
-            //-------------
-            // Get context with jQuery - using jQuery's .get() method.
-            var pieChartCanvas1 = $('#pieChart1').get(0).getContext('2d')
-            var pieChartCanvas2 = $('#pieChart2').get(0).getContext('2d')
-            var pieChartCanvas3 = $('#pieChart3').get(0).getContext('2d')
-            var pieChart1       = new Chart(pieChartCanvas1)
-            var pieChart2       = new Chart(pieChartCanvas2)
-            var pieChart3       = new Chart(pieChartCanvas3)
-            var PieData1        = [
-                {
-                value    : 1400,
-                    color    : '#dd4b39',
-                    highlight: '#dd4b39',
-                    label    : 'Find doctors'
-                },
-                {
-                    value    :100,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'None'
-                }
-            ]
-            var PieData2        = [
-                {
-                value    : 900,
-                    color    : '#f39c12',
-                    highlight: '#f39c12',
-                    label    : 'Create calendar'
-                },
-                {
-                    value    : 400,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'None'
-                }
-            ]
-            var PieData3        = [
-                {
-                value    : 900,
-                    color    : '#00a65a',
-                    highlight: '#00a65a',
-                    label    : 'Sent request'
-                },
-                {
-                    value    : 500,
-                    color    : '#efefef',
-                    highlight: '#efefef',
-                    label    : 'IE'
-                }
-            ]
-            var pieOptions     = {
-                //Boolean - Whether we should show a stroke on each segment
-                segmentShowStroke    : true,
-                //String - The colour of each segment stroke
-                segmentStrokeColor   : '#fff',
-                //Number - The width of each segment stroke
-                segmentStrokeWidth   : 2,
-                //Number - The percentage of the chart that we cut out of the middle
-                percentageInnerCutout: 50, // This is 0 for Pie charts
-                //Number - Amount of animation steps
-                animationSteps       : 100,
-                //String - Animation easing effect
-                animationEasing      : 'easeOutBounce',
-                //Boolean - Whether we animate the rotation of the Doughnut
-                animateRotate        : true,
-                //Boolean - Whether we animate scaling the Doughnut from the centre
-                animateScale         : false,
-                //Boolean - whether to make the chart responsive to window resizing
-                responsive           : true,
-                // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-                maintainAspectRatio  : true,
-                //String - A legend template
-                legendTemplate       : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>',
-                labelFontFamily : "Arial",
-                labelFontStyle : "normal",
-                labelFontSize : 24,
-                labelFontColor : "#666"
-            }
-            //Create pie or douhnut chart
-            // You can switch between pie and douhnut using the method below.
-            pieChart1.Doughnut(PieData1, pieOptions)
-            pieChart2.Doughnut(PieData2, pieOptions)
-            pieChart3.Doughnut(PieData3, pieOptions)
-
-            //-------------
-            //- BAR CHART -
-            //-------------
-            var barChartCanvas = $('#barChart').get(0).getContext('2d')
-            var barChart = new Chart(barChartCanvas)
-            var barChartData = areaChartData
-            barChartData.datasets[0].fillColor = '#00a65a'
-            barChartData.datasets[0].strokeColor = '#00a65a'
-            barChartData.datasets[0].pointColor = '#00a65a'
-            var barChartOptions = {
-                //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-                scaleBeginAtZero: true,
-                //Boolean - Whether grid lines are shown across the chart
-                scaleShowGridLines: true,
-                //String - Colour of the grid lines
-                scaleGridLineColor: 'rgba(0,0,0,.05)',
-                //Number - Width of the grid lines
-                scaleGridLineWidth: 1,
-                //Boolean - Whether to show horizontal lines (except X axis)
-                scaleShowHorizontalLines: true,
-                //Boolean - Whether to show vertical lines (except Y axis)
-                scaleShowVerticalLines: true,
-                //Boolean - If there is a stroke on each bar
-                barShowStroke: true,
-                //Number - Pixel width of the bar stroke
-                barStrokeWidth: 2,
-                //Number - Spacing between each of the X value sets
-                barValueSpacing: 15,
-                //Number - Spacing between data sets within X values
-                barDatasetSpacing: 1,
-                //String - A legend template
-                legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-                //Boolean - whether to make the chart responsive
-                responsive: true,
-                maintainAspectRatio: true
-            }
-
-            barChartOptions.datasetFill = false
-            barChart.Bar(barChartData, barChartOptions)
-        })
-    </script>
-    <script>
+<script src="/adminlte/js/raphael.min.js"></script>
+<script src="/adminlte/js/morris.min.js"></script>
+<script src="/adminlte/js/metisMenu.min.js"></script>
+<script src="/adminlte/js/startmin.js"></script>
+<script>
     // Basic example
     $(document).ready(function () {
         $('#listtable').DataTable({
@@ -1208,6 +764,7 @@
 
 </script>
 <script src='{{asset('js/fullcalendar.min.js')}}'></script>
+<script src="{{asset('js/doctor/locale-all.js')}}"></script>
 <script src="{{ asset('js/doctor/bootstrap-datepicker.min.js') }}"></script>
 <script src='{{asset('js/HI_06/index.js')}}'></script>
 <script src="{{ asset('js/doctor/bootstrap-datepicker.vi.min.js') }}"></script>

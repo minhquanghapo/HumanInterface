@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('HospitalAdmin.layouts.master')
 @section('customcss')
     <link rel="stylesheet" href="/adminlte/css/toggle-switch.css"/>
     <link rel="stylesheet" href="/adminlte/css/startmin.css"/>
@@ -25,6 +25,16 @@
 @endsection
 @section('pagename')
     <div class="container-fluid">
+        <section class="content-header">
+            <h1>
+                Dashboard
+                <small>Version 2.0</small>
+              </h1>
+            <ol class="breadcrumb">
+                <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Dashboard</li>
+            </ol>
+        </section>
         <section class="content">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -69,10 +79,10 @@
                 <!-- /.col -->
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-yellow">
-                        <span class="info-box-icon"><i class="fa fa-hospital-o"></i></span>
+                        <span class="info-box-icon"><i class="fa fa-medkit"></i></span>
 
                         <div class="info-box-content">
-                            <span class="info-box-text">Bệnh viện</span>
+                            <span class="info-box-text">Kho thuốc</span>
                             <span class="info-box-number">410</span>
 
                             <div class="progress">
@@ -121,14 +131,15 @@
                             <div class="nav-tabs-custom" style="cursor: move;">
                                 <!-- Tabs within a box -->
                                 <ul class="nav nav-tabs pull-right ui-sortable-handle">
-                                    <li class="pull-left"><strong>Chọn bệnh viện</strong></li>
+                                    <li class="pull-left"><strong>Chọn khoa</strong></li>
                                     <li class="pull-left">
                                         <div class="form-group form-inline">
                                             <select class="form-control select2" id="hour_select_hospital" data-placeholder="Select a State" style="width: 100%;">
                                               <option selected="selected">Chọn tất cả</option>
-                                              <option>Bệnh viện Bạch Mai</option>
-                                              <option>Bệnh viện 198</option>
-                                              <option>Bệnh viện Nhi</option>
+                                              <option>Khoa Cấp cứu</option>
+                                              <option>Khoa Răng Hàm Mặt</option>
+                                              <option>Khoa Nội tiết</option>
+                                              <option>Khoa Chuẩn Đoán</option>
                                             </select>
                                         </div>
                                     </li>
@@ -144,7 +155,7 @@
                     </div>
                     <div class="box box-success">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-inbox"></i> <strong>Thống kê số lượng lịch khám</strong></h3>
+                            <h3 class="box-title"><i class="fa fa-inbox"></i> <strong>Thống kê số lượng lịch khám các khoa</strong></h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                 </button>
@@ -155,16 +166,17 @@
                             <div class="nav-tabs-custom" style="cursor: move;">
                                 <!-- Tabs within a box -->
                                 <ul class="nav nav-tabs pull-right ui-sortable-handle">
-                                    <li class="time-tab"><a data-toggle="tab">Day</a></li>
-                                    <li class="active time-tab"><a data-toggle="tab">Month</a></li>
-                                    <li class="pull-left"><strong>Chọn bệnh viện</strong></li>
+                                    <li class="time-tab"><a data-toggle="tab">Ngày</a></li>
+                                    <li class="active time-tab"><a data-toggle="tab">Tháng</a></li>
+                                    <li class="pull-left"><strong>Chọn khoa</strong></li>
                                     <li class="pull-left">
                                         <div class="form-group form-inline">
                                             <select class="form-control select2" id="calendar_select_hospital" data-placeholder="Select a State" style="width: 100%;">
-                                              <option selected="selected">Chọn tất cả</option>
-                                              <option>Bệnh viện Bạch Mai</option>
-                                              <option>Bệnh viện 198</option>
-                                              <option>Bệnh viện Nhi</option>
+                                              <option selected="selected">Chọn khoa</option>
+                                              <option>Khoa Cấp cứu</option>
+                                              <option>Khoa Răng Hàm Mặt</option>
+                                              <option>Khoa Nội tiết</option>
+                                              <option>Khoa Chuẩn Đoán</option>
                                             </select>
                                         </div>
                                     </li>
@@ -183,7 +195,7 @@
                 <div class="col-lg-5 col-md-5 col-sm-5">
                     <div class="box box-success">
                         <div class="box-header with-border">
-                            <div class="box-title"><strong>Phân bố bệnh viện</strong></div>
+                            <div class="box-title"><strong>Phân bố khoa</strong></div>
                         </div>
                         <div class="box-body">
                             <div class="chart">
@@ -291,62 +303,61 @@
                                 <tbody>
                                     <tr>
                                         <th>Tên</th>
-                                        <th>Bệnh viện</th>
                                         <th>Khoa</th>
                                         <th>Đánh giá</th>
                                         <th>Thao tác</th>
                                     </tr>
                                     <tr>
                                         <td>Nguyễn Văn A</td>
-                                        <td>Bạch Mai</td>
+                                        
                                         <td>Hồi sức cấp cứu</td>
                                         <td><span style="display: none">2</span>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                         </td>
-                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                        <td><a class="btn btn-default" href="/admin_hospital/doctors/edit"><i class="fa fa-edit"></i>Chi tiết</a></td>
                                     </tr>
                                     <tr>
                                         <td>Nguyễn Văn A</td>
-                                        <td>Bạch Mai</td>
+                                        
                                         <td>Hồi sức cấp cứu</td>
                                         <td><span style="display: none">2</span>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                         </td>
-                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                        <td><a class="btn btn-default" href="/admin_hospital/doctors/edit"><i class="fa fa-edit"></i>Chi tiết</a></td>
                                     </tr>
                                     <tr>
                                         <td>Nguyễn Văn B</td>
-                                        <td>Bạch Mai</td>
+                                        
                                         <td>Hồi sức cấp cứu</td>
                                         <td><span style="display: none">3</span>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                         </td>
-                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                        <td><a class="btn btn-default" href="/admin_hospital/doctors/edit"><i class="fa fa-edit"></i>Chi tiết</a></td>
                                     </tr>
                                     <tr>
                                         <td>Nguyễn Văn C</td>
-                                        <td>Bạch Mai</td>
+                                        
                                         <td>Da liễu</td>
                                         <td><span style="display: none">4</span>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                         </td>
-                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                        <td><a class="btn btn-default" href="/admin_hospital/doctors/edit"><i class="fa fa-edit"></i>Chi tiết</a></td>
                                     </tr>                                
                                     <tr>
                                         <td>Nguyễn Văn A</td>
-                                        <td>Bạch Mai</td>
+                                        
                                         <td>Hồi sức cấp cứu</td>
                                         <td><span style="display: none">2</span>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i><i class="fa fa-star"></i>
                                         </td>
-                                        <td><a class="btn btn-default" href="/admin/users/view_doctor"><i class="fa fa-edit"></i>Chi tiết</a></td>
+                                        <td><a class="btn btn-default" href="/admin_hospital/doctors/edit"><i class="fa fa-edit"></i>Chi tiết</a></td>
                                     </tr>
                                 </tbody>
                             </table>   
@@ -612,20 +623,20 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Bạch Mai',2200],
-          ['Việt Đức', 900],
-          ['Nhiệt Đới', 1500],
-          ['Xanh Pôn', 800],
-          ['108', 500],
-          ['Việt Xô', 700],
+          ['Khoa Cấp Cứu',2200],
+          ['Khoa Tim Mạch', 900],
+          ['Khoa Răng Hàm', 1500],
+          ['Khoa Phụ Sản', 800],
+          ['Khoa Giải Phẫu', 500],
+          ['Khoa Điều Dưỡng', 700],
           ['Khác', 200],
         ]);
 
         var data_bv = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Hà Nội',2200],
-          ['Hồ Chí Minh', 3200],
-          ['Thái Bình', 1200],
+          ['Khoa Cấp cứu',2200],
+          ['Khoa Tim Mạch', 3200],
+          ['Khoa Giải Phẫu', 1200],
           ['Khác', 200],
         ]);
 
