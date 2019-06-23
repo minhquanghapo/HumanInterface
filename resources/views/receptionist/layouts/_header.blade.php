@@ -22,7 +22,7 @@
               <span class="label label-success">4</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">Bạn có 4 tin nhắn</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -70,9 +70,9 @@
                       </div>
                       <h4>
                         Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        <small><i class="fa fa-clock-o"></i> Hôm qua</small>
                       </h4>
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Tại sao bạn không mua sản phẩm mới?</p>
                     </a>
                   </li>
                   <li>
@@ -82,9 +82,9 @@
                       </div>
                       <h4>
                         Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        <small><i class="fa fa-clock-o"></i> 2 ngày</small>
                       </h4>
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Tại sao bạn không mua sản phẩm mới?</p>
                     </a>
                   </li>
                 </ul>
@@ -99,13 +99,13 @@
               <span class="label label-warning">10</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">Bạn có 10 thông báo mới</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <i class="fa fa-users text-aqua"></i> 5 thành viên mới tham gia
                     </a>
                   </li>
                   <li>
@@ -116,7 +116,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
+                      <i class="fa fa-users text-red"></i> 5 thành viên mới tham gia
                     </a>
                   </li>
                   <li>
@@ -126,7 +126,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
+                      <i class="fa fa-user text-red"></i> Bạn đã thay đổi tên đăng nhập
                     </a>
                   </li>
                 </ul>
